@@ -1,4 +1,4 @@
-# my introduction to http-server
+# my introduction to `http-server`
 
 [`http-server`](https://www.npmjs.com/package/http-server) is my lightweight way of running a tiny website from any folder on my machine. From a Windows-biased point of view (and a LAMP-biased point of view), this is a radical move away from the massive ceremony around setting up a website.
 
