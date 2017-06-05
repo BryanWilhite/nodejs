@@ -4,7 +4,6 @@
 
 From my Visual Studio Code shell (with this repository folder open), run:
 
-
 ```bash
 
 http-server http-server -o

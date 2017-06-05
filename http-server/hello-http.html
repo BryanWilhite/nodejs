@@ -1,10 +1,33 @@
 <html>
-    <head>
-        <title>Using http-server</title>
-    </head>
-    <body>
-        <h1>Hello <code>http-server</code>!</h1>
-        <p><a href="https://www.npmjs.com/package/http-server"><code>http-server</code></a></p>
-        <p>See “<a href="https://stackoverflow.com/questions/37497914/node-http-server-not-working-on-windows-10-ubuntu-bash">Node http-server not working on Windows 10 Ubuntu Bash</a>” on StackOverflow.com.</p>
-    </body>
+
+<head>
+    <title>my introduction to http-server</title>
+</head>
+
+<body>
+    <h1 id="my-introduction-to-http-server">my introduction to http-server</h1>
+    <p><a href="https://www.npmjs.com/package/http-server"><code>http-server</code></a> is my lightweight way of running a tiny
+        website from any folder on my machine. From a Windows-biased point of view (and a LAMP-biased point of view), this
+        is a radical move away from the massive ceremony around setting up a website.</p>
+    <p>From my Visual Studio Code shell (with this repository folder open), run:</p>
+    <pre><code class="lang-bash">
+http-server http-server -o
+</code></pre>
+    <h2 id="installation-notes">installation notes</h2>
+    <p>On Windows, from ChocolateyGUI, install <code>nodejs</code> and/or from bash:</p>
+    <pre><code class="lang-bash">
+sudo apt-get install nodejs
+</code></pre>
+    <p>Then in bash and/or PowerShell:</p>
+    <pre><code class="lang-bash">
+npm install http-server -g
+</code></pre>
+    <p>I was attracted to running this exclusively from Ubuntu Bash on Windows. I found that this was incompatible with the
+        defaults of Visual Studio Code on Windows. Additionally, I ran into the issue documented in “<a href="https://stackoverflow.com/questions/37497914/node-http-server-not-working-on-windows-10-ubuntu-bash">Node http-server not working on Windows 10 Ubuntu Bash</a>”—which
+        can be summarized by this bash command:</p>
+    <pre><code class="lang-bash">
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+</code></pre>
+</body>
+
 </html>
