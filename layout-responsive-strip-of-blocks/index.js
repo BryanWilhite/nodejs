@@ -2,15 +2,6 @@
 /*global jQuery */
 (function ($) {
     "use strict";
-    $(function () {
-        var controls = $(".block-container.header > .controls");
-        $(".command.left", controls).click(function (e) {
-            slideBlocks(e, "right");
-        });
-        $(".command.right", controls).click(function (e) {
-            slideBlocks(e, "left");
-        });
-    });
 
     var slideBlocks = function (event, direction) {
         //console.log("slideBlocks called...");
@@ -58,4 +49,14 @@
                 break;
         }
     };
+
+    $(function () {
+        var controls = $(".block-container.header > .controls");
+        $(".command.left", controls).click(function (e) {
+            slideBlocks(e, "right");
+        });
+        $(".command.right", controls).click(function (e) {
+            slideBlocks(e, "left");
+        });
+    });
 }(jQuery));
