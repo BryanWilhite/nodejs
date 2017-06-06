@@ -1,0 +1,16 @@
+#BackContainer {
+    margin: 24px auto;
+    max-width: 1024px;
+}
+
+#BackFlow {
+    background: url(http://dummyimage.com/1024x768/ccc/cfc.png) no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    border: 2px dashed #ccc;
+    height: 0;
+    padding-bottom: 75%;
+    /* http://www.wolframalpha.com/input/?i=100*%28768%2F1024%29 */
+}
