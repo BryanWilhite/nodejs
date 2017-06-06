@@ -1,0 +1,10 @@
+.svg.codepen.icon {
+    background-image: url(./codepen-logo.svg);
+    background-position: left center;
+    -webkit-background-size: 763px 152px;
+    background-repeat: no-repeat;
+    background-size: 763px 152px;
+    display: inline-block;
+    padding: .75em 0;
+    width: 763px;
+}
