@@ -1,0 +1,30 @@
+body > * {
+    margin: 0.5em;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #000;
+    width: 800px;
+}
+
+td {
+    cursor: pointer;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 4px;
+}
+
+tr.SelectedRow td {
+    background-color: #ffff00;
+}
+
+td.SelectedCell {
+    background-color: #ff0000 !important;
+}
+
+td.SelectedColumn, th.SelectedColumn {
+    background-color: #ff8000;
+}
