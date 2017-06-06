@@ -1,0 +1,17 @@
+* {
+    /* Trebuchet-based sans serif stack */
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+}
+
+h2 {
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: url(http://placekitten.com/301/301);
+    color: rgba(0, 0, 0, 0);
+    font-size: 20.6em;
+    font-weight: bold;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
