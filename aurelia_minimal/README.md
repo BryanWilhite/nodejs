@@ -11,7 +11,7 @@ index.html
 
 ```
 
-In order to present these three files, it takes 9000 files, upwards of 60MB. These come from this setup sketch:
+In order to present these three files, it takes over 9000 files, upwards of 60MB. These come from this setup sketch:
 
 ```bash
 
