@@ -1,0 +1,67 @@
+* {
+    font-family: Segoe UI, Sans-Serif;
+}
+
+a:hover, a:link, a:visited {
+    color: White;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.Menu {
+    list-style-type: none;
+    text-align: left;
+}
+
+.Menu a {
+    display: block;
+    padding: 0.25em;
+}
+
+.Menu li {
+    background: #285EA6;
+    position: relative;
+    width: 10em;
+}
+
+.Menu > li > a:after {
+    content: " ▼"
+}
+
+.Menu li ul {
+    display: none;
+    list-style-type: none;
+    left: 0;
+    position: absolute;
+}
+
+.Menu li:hover > ul {
+    display: block;
+}
+
+.Menu > li:hover > ul {
+    top: 1.66em; /* when this value is too high it can break the mouse-hover */
+}
+
+.Menu li ul a:hover {
+    background-color: #D3D3D3;
+    color: Black;
+}
+
+.Menu ul {
+    border: 1px solid Black;
+}
+
+.Menu ul ul {
+    top: -1px;
+    left: 10em;
+}
+
+
+/*
+    IE7 Hacks
+    [https://css-tricks.com/how-to-create-an-ie-only-stylesheet/]
+*/
+*+html .Menu ul li {
+    margin-bottom: -0.25em;
+}
