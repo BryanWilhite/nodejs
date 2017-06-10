@@ -28,7 +28,7 @@ jspm install npm:aurelia-pal-browser
 
 Set up our three files in `aurelia_minimal` according to [Erik’s article](http://www.programwitherik.com/hello-world-tutorial-aurelia-2016/). This sample compels us to install `jspm` locally and globally. I do not understand this redundancy. Currently I assume that this is done because using [npm scripts](https://docs.npmjs.com/misc/scripts) to replace the convenience of finding an executable in a shell `PATH` would distract and confuse us.
 
-In order to reuse the huge amount of files in the `jspm_packages` and `node_modules` folders, we must alter the instructions in [Erik’s article](http://www.programwitherik.com/hello-world-tutorial-aurelia-2016/), changing `aurelia_minimal/config.js` (lines 14–16):
+In order to reuse the huge amount of files in the `jspm_packages` and `node_modules` folders, we must alter the instructions in [Erik’s article](http://www.programwitherik.com/hello-world-tutorial-aurelia-2016/), changing `aurelia_minimal/config.js` (lines [14](https://github.com/BryanWilhite/nodejs/blob/master/aurelia_minimal/config.js#L14)–16):
 
 ```js
 
@@ -40,7 +40,7 @@ paths: {
 
 ```
 
-and `aurelia_minimal/index.html` (line 10):
+and `aurelia_minimal/index.html` (line [10](https://github.com/BryanWilhite/nodejs/blob/master/aurelia_minimal/index.html#L10)):
 
 ```html
 
