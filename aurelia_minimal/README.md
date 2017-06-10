@@ -11,13 +11,12 @@ index.html
 
 ```
 
-In order to present these three files, it takes over 9000 files, upwards of 60MB. These come from this setup sketch:
+In order to present these three files, it takes over 9000 files, upwards of 60MB. These come from this setup sketch at the root folder of this repository (in PowerShell):
 
 ```PowerShell
 
 npm install jspm -g
 
-Push-Location .\aurelia_minimal\
 jspm init
 npm install jspm --save-dev
 
@@ -29,12 +28,35 @@ jspm install npm:aurelia-pal-browser
 
 Set up our three files in `aurelia_minimal` according to [Erik’s article](http://www.programwitherik.com/hello-world-tutorial-aurelia-2016/). This sample compels us to install `jspm` locally and globally. I do not understand this redundancy. Currently I assume that this is done because using [npm scripts](https://docs.npmjs.com/misc/scripts) to replace the convenience of finding an executable in a shell `PATH` would distract and confuse us.
 
-```PowerShell
+In order to reuse the huge amount of files in the `jspm_packages` and `node_modules` folders, we must alter the instructions in [Erik’s article](http://www.programwitherik.com/hello-world-tutorial-aurelia-2016/), changing `aurelia_minimal/config.js` (lines 14–16):
 
-Pop-Location
-http-server aurelia_minimal -o -c-1
+```js
+
+paths: {
+    "*": "aurelia_minimal/src/*",
+    "github:*": "../jspm_packages/github/*",
+    "npm:*": "../jspm_packages/npm/*"
+}
 
 ```
+
+and `aurelia_minimal/index.html` (line 10):
+
+```html
+
+<script src="../jspm_packages/system.js"></script>
+
+```
+
+With these modifications, we return to the root of the repository and run:
+
+```PowerShell
+
+http-server ./ -o -c-1
+
+```
+
+The `http-server` command will index the root folder of this repository, allowing us to navigate to the `aurelia_minimal` folder.
 
 ## related links
 

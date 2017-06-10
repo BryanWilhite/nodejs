@@ -5,7 +5,7 @@
         "sourceMap": true
     },
     "exclude": [
-        "aurelia_minimal/jspm_packages",
-        "aurelia_minimal/node_modules"
+        "jspm_packages",
+        "node_modules"
     ]
 }
