@@ -10,7 +10,7 @@ npm install -g typescript
 
 ```
 
-After `Ctrl+Shift+B` with HelloWorld.ts in context is invoked:
+After `Ctrl+Shift+B` invokes the Build Task and completes we can run:
 
 ```PowerShell
 
