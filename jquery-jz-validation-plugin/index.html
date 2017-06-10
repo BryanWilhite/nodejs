@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="This is a sample for my self-education." />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.js"></script>
+    <script src="./index.js"></script>
+
+    <title>jQuery: Jörn Zaefferer’s validation plug-in with bootstrap layout</title>
+</head>
+
+<body>
+    <h1>jQuery: Jörn Zaefferer's validation plug-in with bootstrap layout</h1>
+    <form id="DataFormFlow" class="form-horizontal" method="get" action="#">
+        <div class="form-group">
+            <label class="col-sm-2" for="InputFullName">Full Name:<span class="DataRequired">*</span></label>
+            <div class="col-sm-10">
+                <input class="form-control required" id="InputFullName" name="FullName" type="text" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2" for="InputEmail">Email:<span class="DataRequired">*</span></label>
+            <div class="col-sm-10">
+                <input class="form-control required email" id="InputEmail" name="Email" type="text" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2" for="InputNotes">Notes:<span class="DataRequired">*</span></label>
+            <div class="col-sm-10">
+                <textarea class="form-control required" id="InputNotes" name="Notes" cols="30" rows="4"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2" for="InputOptions">Your Options:<span class="DataRequired">*</span></label>
+            <div class="col-sm-10">
+                <select class="form-control required" id="InputOptions" name="YourOptions">
+                <option value="">Default Option</option>
+                <!--FUNKYKB: use value="" to trigger required -->
+                <optgroup label="Option Group Label">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                </optgroup>
+                <optgroup label="Another Option Group Label">
+                    <option>Option one</option>
+                    <option>Option two</option>
+                    <option>Option three</option>
+                </optgroup>
+            </select>
+            </div>
+        </div>
+        <fieldset class="col-sm-12 form-group">
+            <legend>Checkbox Group <span class="GroupDataRequired">*</span></legend>
+            <label for="Check1" class="checkbox-inline">
+            <input id="Check1" class="required" name="CheckGroup[]" type="checkbox" />
+            Check1
+        </label>
+            <label for="Check2" class="checkbox-inline">
+            <input id="Check2" name="CheckGroup[]" type="checkbox" />
+            Check2
+        </label>
+            <label for="Check3" class="checkbox-inline">
+            <input id="Check3" name="CheckGroup[]" type="checkbox" />
+            Check3
+        </label>
+        </fieldset>
+        <fieldset class="col-sm-12 form-group">
+            <legend>Radio Group <span class="GroupDataRequired">*</span></legend>
+            <label for="Radio1" class="radio-inline">
+            <input id="Radio1" class="required" name="RadioGroup" type="radio" />
+            Radio1
+        </label>
+            <label for="Radio2" class="radio-inline">
+            <input id="Radio2" name="RadioGroup" type="radio" />
+            Radio2
+        </label>
+            <label for="Radio3" class="radio-inline">
+            <input id="Radio3" name="RadioGroup" type="radio" />
+            Radio3
+        </label>
+        </fieldset>
+        <button class="btn btn-primary">Submit</button>
+    </form>
+</body>
+
+</html>
