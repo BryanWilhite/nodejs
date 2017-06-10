@@ -1,0 +1,19 @@
+div > div {
+    background: #000;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 auto;
+    min-width: 240px;
+    width: 30%;
+    text-align: center;
+}
+
+#lorempix {
+    background: url(http://lorempixel.com/720/405/) no-repeat center center;
+    background-size: cover;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+}
