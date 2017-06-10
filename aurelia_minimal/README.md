@@ -13,7 +13,7 @@ index.html
 
 In order to present these three files, it takes over 9000 files, upwards of 60MB. These come from this setup sketch:
 
-```bash
+```PowerShell
 
 npm install jspm -g
 
@@ -29,7 +29,7 @@ jspm install npm:aurelia-pal-browser
 
 Set up our three files in `aurelia_minimal` according to [Erik’s article](http://www.programwitherik.com/hello-world-tutorial-aurelia-2016/). This sample compels us to install `jspm` locally and globally. I do not understand this redundancy. Currently I assume that this is done because using [npm scripts](https://docs.npmjs.com/misc/scripts) to replace the convenience of finding an executable in a shell `PATH` would distract and confuse us.
 
-```bash
+```PowerShell
 
 Pop-Location
 http-server aurelia_minimal -o -c-1

@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "sourceMap": true
+    },
+    "exclude": [
+        "aurelia_minimal/jspm_packages",
+        "aurelia_minimal/node_modules"
+    ]
+}
