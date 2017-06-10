@@ -1,5 +1,18 @@
 # aurelia minimal (hello world)
 
+This is minimal sample of three files:
+
+```plaintext
+
+index.html
+    \src
+        app.html
+        app.js
+
+```
+
+In order to present these three files, it takes 9000 files, upwards of 60MB. These come from this setup sketch:
+
 ```bash
 
 npm install jspm -g
