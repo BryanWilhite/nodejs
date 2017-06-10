@@ -27,7 +27,7 @@ jspm install npm:aurelia-pal-browser
 
 ```
 
-Set up files in `aurelia_minimal` according to [Erik’s article](http://www.programwitherik.com/hello-world-tutorial-aurelia-2016/).
+Set up our three files in `aurelia_minimal` according to [Erik’s article](http://www.programwitherik.com/hello-world-tutorial-aurelia-2016/).
 
 ```bash
 
