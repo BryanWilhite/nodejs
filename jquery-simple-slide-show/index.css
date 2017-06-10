@@ -1,0 +1,47 @@
+* {
+    font-family: Segoe UI, Sans-Serif;
+}
+
+a:link,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+#SlideshowFlow {
+    height: 320px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 320px;
+}
+
+#SlideshowFlow>div {
+    position: relative;
+    z-index: 110;
+}
+
+#SlideshowFlow>div>a {
+    display: inline-block;
+    background-color: #285EA6;
+    border: none;
+    color: White;
+    font-weight: bold;
+    height: 2em;
+    margin: 0.5em;
+    margin-top: 280px;
+    text-align: center;
+    width: 2em;
+}
+
+#SlideshowFlow>div>a.Selected {
+    background-color: White;
+    border: 2px solid #285EA6;
+    color: #285EA6;
+}
+
+#SlideshowFlow img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
