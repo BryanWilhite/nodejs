@@ -27,7 +27,7 @@ jspm install npm:aurelia-pal-browser
 
 ```
 
-Set up our three files in `aurelia_minimal` according to [Erik’s article](http://www.programwitherik.com/hello-world-tutorial-aurelia-2016/).
+Set up our three files in `aurelia_minimal` according to [Erik’s article](http://www.programwitherik.com/hello-world-tutorial-aurelia-2016/). This sample compels us to install `jspm` locally and globally. I do not understand this redundancy. Currently I assume that this is done because using [npm scripts](https://docs.npmjs.com/misc/scripts) to replace the convenience of finding an executable in a shell `PATH` would distract and confuse us.
 
 ```bash
 
@@ -40,3 +40,4 @@ http-server aurelia_minimal -o -c-1
 
 * “[Hello World Tutorial With Aurelia.js 2016](http://www.programwitherik.com/hello-world-tutorial-aurelia-2016/)”
 * Answer: “[Run Aurelia Framework without NodeJs and JSPM](https://stackoverflow.com/a/28400725)”
+* Answer: “[Why do we need to install gulp globally and locally?](https://stackoverflow.com/a/30742196)”
