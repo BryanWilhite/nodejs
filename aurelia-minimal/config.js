@@ -11,7 +11,7 @@ System.config({
     ]
   },
   paths: {
-    "*": "aurelia_minimal/src/*",
+    "*": "aurelia-minimal/src/*",
     "github:*": "../jspm_packages/github/*",
     "npm:*": "../jspm_packages/npm/*"
   },
