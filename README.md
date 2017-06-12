@@ -23,3 +23,12 @@ My current bias for Aurelia ‘encourages’ me into taking [Rob Eisenberg’s](
 * [jspm](http://jspm.io/)
 * [SystemJS](https://github.com/systemjs/systemjs)
 * TypeScript (already biased toward this)
+
+You may already have the associated npm packages already installed. As a reminder (to me), [the commands](https://stackoverflow.com/questions/17937960/how-to-list-npm-user-installed-packages) to check for this are:
+
+```bash
+
+npm list -g --depth=0
+npm list --depth=0
+
+```
