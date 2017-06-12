@@ -20,6 +20,7 @@ Currently my “road map” around these samples is to [invest in Aurelia](./aur
 
 My current bias for Aurelia ‘encourages’ me into taking [Rob Eisenberg’s](http://robeisenberg.com/) defaults:
 
+* node (>= 6.x => see below)
 * [jspm](http://jspm.io/)
 * [SystemJS](https://github.com/systemjs/systemjs)
 * [TypeScript](https://www.typescriptlang.org/) (already biased toward this)
@@ -32,3 +33,18 @@ npm list -g --depth=0
 npm list --depth=0
 
 ```
+
+## node (>= 6)
+
+Aurelia is so cutting-edge that it requires versions of Node.js® that are not available ‘by default’ through the _default_ apt-get repositories and the _default_ Chocolatey package(s).
+
+To install node 6.x on Ubuntu bash (Windows or Linux), run:
+
+```bash
+
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+```
+
+For detail, see “[Installing Node.js via package manager](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions).”
