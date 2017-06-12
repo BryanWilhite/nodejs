@@ -10,11 +10,27 @@ npm install -g typescript
 
 ```
 
+and/or in bash:
+
+```bash
+
+sudo npm install -g typescript
+
+```
+
 After `Ctrl+Shift+B` invokes the Build Task and completes we can run:
 
 ```PowerShell
 
 node .\typescript_minimal\src\HelloWorld.js
+
+```
+
+and/or in bash:
+
+```bash
+
+node ./typescript_minimal/src/HelloWorld.js
 
 ```
 
