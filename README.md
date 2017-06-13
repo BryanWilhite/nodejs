@@ -16,7 +16,7 @@ My first CDN of choice is “[Microsoft Ajax Content Delivery Network](https://d
 
 ## my samples road map
 
-Currently my “road map” around these samples is to [invest in Aurelia](./aurelia-minimal) as a replacement for my Angular 1.x legacy. I would also like to play around with [elm](./elm-minimal) and attempt to bring [Aurelia and Angular together](https://www.npmjs.com/package/aurelia-elm) as functional alternative to TypeScript.
+Currently my “road map” around these samples is to [invest in Aurelia](./aurelia-official) as a replacement for my Angular 1.x legacy. I would also like to play around with [elm](./elm-minimal) and attempt to bring [Aurelia and Angular together](https://www.npmjs.com/package/aurelia-elm) as functional alternative to TypeScript.
 
 My current bias for Aurelia ‘encourages’ me into taking [Rob Eisenberg’s](http://robeisenberg.com/) defaults for _all_ of my Web Client development:
 
