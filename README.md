@@ -1,6 +1,6 @@
 # nodejs
 
-## my Node.js® stack of self-educational samples
+## my collection of self-educational samples on the Node.js® stack
 
 This repository is based on the assumption that Node.js®-related technology is sitting at the bottom of every Web Client stack I will be concerned about for years to come.
 
@@ -38,7 +38,7 @@ npm list --depth=0
 
 ## node (>= 6.x)
 
-Aurelia is so cutting-edge that it requires versions of Node.js® (>= 6.x) that are not available ‘by default’ through the _default_ `apt-get` repositories (and, by the way, [the available Chocolatey packages](https://chocolatey.org/packages?q=nodejs)).
+The [Aurelia CLI](https://github.com/aurelia/cli) (command-line interface) is so cutting-edge that it requires versions of Node.js® (>= 6.x) that are not available ‘by default’ through the _default_ `apt-get` repositories (and, by the way, [the available Chocolatey packages](https://chocolatey.org/packages?q=nodejs)).
 
 To install node 6.x on Ubuntu bash (Windows or Linux), run:
 
