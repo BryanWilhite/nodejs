@@ -38,3 +38,11 @@ wget http://aurelia.io/downloads/contact-manager-assets.zip --content-dispositio
 ```
 
 We then “Copy all of these files to the `src` folder of your project. TypeScript users should also rename the file extensions from `.js` to `.ts`.”
+
+Additionally, you may need to install `[jshint](https://github.com/jshint/jshint)`:
+
+```bash
+
+sudo npm install jshint -g
+
+```
