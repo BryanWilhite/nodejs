@@ -1,6 +1,7 @@
 'use strict';
 const path = require('path');
 const project = require('./aurelia_project/aurelia.json');
+const tsconfig = require('./tsconfig.json');
 
 let testSrc = [
   { pattern: project.unitTestRunner.source, included: false },
@@ -22,7 +23,10 @@ module.exports = function(config) {
     preprocessors: {
       [project.unitTestRunner.source]: [project.transpiler.id]
     },
-    'babelPreprocessor': { options: project.transpiler.options },
+    typescriptPreprocessor: {
+      typescript: require('typescript'),
+      options: tsconfig.compilerOptions
+    },
     reporters: ['progress'],
     port: 9876,
     colors: true,

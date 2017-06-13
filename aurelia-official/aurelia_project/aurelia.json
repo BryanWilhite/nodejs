@@ -1,5 +1,5 @@
 {
-  "name": "aurelia-contact-manager",
+  "name": "aurelia-official",
   "type": "project:application",
   "platform": {
     "id": "web",
@@ -9,15 +9,13 @@
     "baseDir": "."
   },
   "transpiler": {
-    "id": "babel",
-    "displayName": "Babel",
-    "fileExtension": ".js",
-    "options": {
-      "plugins": [
-        "transform-es2015-modules-amd"
-      ]
-    },
-    "source": "src/**/*.js"
+    "id": "typescript",
+    "displayName": "TypeScript",
+    "fileExtension": ".ts",
+    "dtsSource": [
+      "./custom_typings/**/*.d.ts"
+    ],
+    "source": "src/**/*.ts"
   },
   "markupProcessor": {
     "id": "minimum",
@@ -38,7 +36,7 @@
   "unitTestRunner": {
     "id": "karma",
     "displayName": "Karma",
-    "source": "test/unit/**/*.js"
+    "source": "test/unit/**/*.ts"
   },
   "paths": {
     "root": "src",

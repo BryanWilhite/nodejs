@@ -1,16 +1,12 @@
-import gulp from 'gulp';
-import browserSync from 'browser-sync';
-import historyApiFallback from 'connect-history-api-fallback/lib';
-import project from '../aurelia.json';
+import * as gulp from 'gulp';
+import * as browserSync from 'browser-sync';
+import * as historyApiFallback from 'connect-history-api-fallback/lib';
+import * as project from '../aurelia.json';
 import build from './build';
 import {CLIOptions} from 'aurelia-cli';
 
-function log(message) {
-  console.log(message); //eslint-disable-line no-console
-}
-
 function onChange(path) {
-  log(`File Changed: ${path}`);
+  console.log(`File Changed: ${path}`);
 }
 
 function reload(done) {
@@ -33,11 +29,11 @@ let serve = gulp.series(
           next();
         }]
       }
-    }, function(err, bs) {
+    }, function (err, bs) {
       if (err) return done(err);
       let urls = bs.options.get('urls').toJS();
-      log(`Application Available At: ${urls.local}`);
-      log(`BrowserSync Available At: ${urls.ui}`);
+      console.log(`Application Available At: ${urls.local}`);
+      console.log(`BrowserSync Available At: ${urls.ui}`);
       done();
     });
   }
@@ -74,3 +70,4 @@ if (CLIOptions.hasFlag('watch')) {
 }
 
 export { run as default, watch };
+

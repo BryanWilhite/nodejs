@@ -1,8 +1,8 @@
-import gulp from 'gulp';
-import path from 'path';
-import minimatch from 'minimatch';
-import changedInPlace from 'gulp-changed-in-place';
-import project from '../aurelia.json';
+import * as gulp from 'gulp';
+import * as path from 'path';
+import * as minimatch from 'minimatch';
+import * as changedInPlace from 'gulp-changed-in-place';
+import * as project from '../aurelia.json';
 
 export default function copyFiles(done) {
   if (typeof project.build.copyFiles !== 'object') {

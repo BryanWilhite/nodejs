@@ -1,7 +1,7 @@
-import gulp from 'gulp';
-import htmlmin from 'gulp-htmlmin';
-import changedInPlace from 'gulp-changed-in-place';
-import project from '../aurelia.json';
+import * as gulp from 'gulp';
+import * as htmlmin from 'gulp-htmlmin';
+import * as changedInPlace from 'gulp-changed-in-place';
+import * as project from '../aurelia.json';
 import {build} from 'aurelia-cli';
 
 export default function processMarkup() {
