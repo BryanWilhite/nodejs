@@ -36,6 +36,8 @@ npm list --depth=0
 
 ```
 
+You should also run `ls /usr/local/lib/node_modules/` in bash to verify that any uninstalled packages are removed (additionally, consider `sudo npm cache clean` and `sudo npm -g update`).
+
 ## node (>= 6.x)
 
 The [Aurelia CLI](https://github.com/aurelia/cli) (command-line interface) is so cutting-edge that it requires versions of Node.js® (>= 6.x) that are not available ‘by default’ through the _default_ `apt-get` repositories (and, by the way, [the available Chocolatey packages](https://chocolatey.org/packages?q=nodejs)).
