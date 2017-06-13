@@ -1,3 +1,20 @@
 <template>
-  <h1>${message}</h1>
+  <require from="bootstrap/css/bootstrap.css"></require>
+  <require from="./styles.css"></require>
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <i class="fa fa-user"></i>
+        <span>Contacts</span>
+      </a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">Contact List Placeholder</div>
+      <router-view class="col-md-8"></router-view>
+    </div>
+  </div>
 </template>
