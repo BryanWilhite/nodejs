@@ -21,7 +21,6 @@ Currently my “road map” around these samples is to [invest in Aurelia](./aur
 My current bias for Aurelia ‘encourages’ me into taking [Rob Eisenberg’s](http://robeisenberg.com/) defaults for _all_ of my Web Client development:
 
 * node (>= 6.x => see below)
-* [jspm](http://jspm.io/)
 * [RequireJS](http://requirejs.org/) (installed as a default project dependency by `aurelia-cli`)
 * [TypeScript](https://www.typescriptlang.org/) (already biased toward this)
 * [bluebird](http://bluebirdjs.com/docs/why-bluebird.html) (promise library installed as a default project dependency by `aurelia-cli`)
@@ -37,9 +36,9 @@ npm list --depth=0
 
 ```
 
-## node (>= 6)
+## node (>= 6.x)
 
-Aurelia is so cutting-edge that it requires versions of Node.js® that are not available ‘by default’ through the _default_ `apt-get` repositories (and, by the way, [the available Chocolatey packages](https://chocolatey.org/packages?q=nodejs)).
+Aurelia is so cutting-edge that it requires versions of Node.js® (>= 6.x) that are not available ‘by default’ through the _default_ `apt-get` repositories (and, by the way, [the available Chocolatey packages](https://chocolatey.org/packages?q=nodejs)).
 
 To install node 6.x on Ubuntu bash (Windows or Linux), run:
 
