@@ -16,14 +16,17 @@ My first CDN of choice is “[Microsoft Ajax Content Delivery Network](https://d
 
 ## my samples road map
 
-Currently my “road map” around these samples is to [invest in Aurelia](./aurelia-minimal) as a replacement for my Angular 1.x legacy. I would also like to play around with [elm](./elm-minimal) and attempt to bring [Aurelia and Angular together](https://www.npmjs.com/package/aurelia-elm).
+Currently my “road map” around these samples is to [invest in Aurelia](./aurelia-minimal) as a replacement for my Angular 1.x legacy. I would also like to play around with [elm](./elm-minimal) and attempt to bring [Aurelia and Angular together](https://www.npmjs.com/package/aurelia-elm) as functional alternative to TypeScript.
 
-My current bias for Aurelia ‘encourages’ me into taking [Rob Eisenberg’s](http://robeisenberg.com/) defaults:
+My current bias for Aurelia ‘encourages’ me into taking [Rob Eisenberg’s](http://robeisenberg.com/) defaults for _all_ of my Web Client development:
 
 * node (>= 6.x => see below)
 * [jspm](http://jspm.io/)
-* [SystemJS](https://github.com/systemjs/systemjs)
+* [RequireJS](http://requirejs.org/) (installed as a default project dependency by `aurelia-cli`)
 * [TypeScript](https://www.typescriptlang.org/) (already biased toward this)
+* [bluebird](http://bluebirdjs.com/docs/why-bluebird.html) (promise library installed as a default project dependency by `aurelia-cli`)
+* [karma](https://github.com/karma-runner/karma) (test runner installed as a default project dependency by `aurelia-cli` as a part of [`aurelia-testing`](https://github.com/aurelia/testing))
+* [jasmine](https://github.com/jasmine/jasmine) (test framework installed as a default project dependency by `aurelia-cli`)
 
 You may already have the associated npm packages already installed. As a reminder (to me), [the commands](https://stackoverflow.com/questions/17937960/how-to-list-npm-user-installed-packages) to check for this are:
 
@@ -36,7 +39,7 @@ npm list --depth=0
 
 ## node (>= 6)
 
-Aurelia is so cutting-edge that it requires versions of Node.js® that are not available ‘by default’ through the _default_ apt-get repositories and the _default_ Chocolatey package(s).
+Aurelia is so cutting-edge that it requires versions of Node.js® that are not available ‘by default’ through the _default_ `apt-get` repositories (and, by the way, [the available Chocolatey packages](https://chocolatey.org/packages?q=nodejs)).
 
 To install node 6.x on Ubuntu bash (Windows or Linux), run:
 
