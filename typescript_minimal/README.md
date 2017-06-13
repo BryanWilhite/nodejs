@@ -51,3 +51,4 @@ Note that `tsconfig.json` excludes any `jspm_packages` or `node_modules` folders
 * “[TypeScript](https://www.typescriptlang.org/)”
 * “[tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)”
 * Answer: “[TypeScript—How to keep compiled files in a separate directory?](https://stackoverflow.com/a/24454551/22944)”
+* “[VS Code ships with a recent stable version of the TypeScript language service and it may not match the version of TypeScript installed globally on your computer…](https://code.visualstudio.com/docs/languages/typescript#_using-newer-typescript-versions)”
