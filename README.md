@@ -36,7 +36,14 @@ npm list --depth=0
 
 ```
 
-You should also run `ls /usr/local/lib/node_modules/` in bash to verify that any uninstalled packages are removed (additionally, consider `sudo npm cache clean` and `sudo npm -g update`).
+You should also run `ls /usr/local/lib/node_modules/` in bash to verify that any uninstalled packages are removed (additionally, consider `sudo npm cache clean` and `sudo npm -g update`). One last bit, when you run `npm list -g --depth=0` and all you see is this:
+
+```plaintext
+/usr/lib
+└── npm@3.10.10
+```
+
+try `npm list -g --depth=1` (this implies you have node >= 6.x installed).
 
 ## node (>= 6.x)
 
