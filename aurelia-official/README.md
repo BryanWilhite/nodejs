@@ -77,3 +77,6 @@ This tutorial does an excellent job at introducing these concepts:
 * “additional life-cycle methods for _routed components_” (e.g. `activate()` and `canDeactivate()`)
 * route parameters
 * `click.delegate()`, `value.bind` and `disabled.bind`.
+* the [Typings CLI](https://github.com/typings/typings)
+* the `noView()` decorator
+* globalized view resources ([global resources](http://aurelia.io/hub.html#/doc/article/aurelia/templating/latest/templating-html-behaviors-introduction/5)) in `resources/index.ts`

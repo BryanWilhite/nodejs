@@ -12,6 +12,8 @@
     </div>
   </nav>
 
+  <loading-indicator loading.bind="router.isNavigating || api.isRequesting"></loading-indicator>
+
   <div class="container">
     <div class="row">
       <contact-list class="col-md-4"></contact-list>
