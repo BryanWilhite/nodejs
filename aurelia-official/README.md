@@ -47,6 +47,14 @@ sudo npm install jshint -g
 
 ```
 
+And, to run the site, use the Aurelia CLI:
+
+```bash
+
+au run --watch
+
+```
+
 This tutorial does an excellent job at introducing these concepts:
 
 * the [Aurelia CLI](https://github.com/aurelia/cli)
