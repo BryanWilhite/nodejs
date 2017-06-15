@@ -37,9 +37,15 @@ wget http://aurelia.io/downloads/contact-manager-assets.zip --content-dispositio
 
 ```
 
-We then “Copy all of these files to the `src` folder of your project. TypeScript users should also rename the file extensions from `.js` to `.ts`.”
+We then “Copy all of these files to the `src` folder of your project. TypeScript users should also rename the file extensions from `.js` to `.ts`.” This tutorial (from a TypeScript-biased point of view) will recommend that [the Typings CLI utility](https://github.com/typings/typings) be available:
 
-Additionally, you may need to install `[jshint](https://github.com/jshint/jshint)`:
+```bash
+
+sudo npm install typings --g
+
+```
+
+Additionally, you may need to install `[jshint](https://github.com/jshint/jshint)` (in case Visual Studio complains):
 
 ```bash
 
