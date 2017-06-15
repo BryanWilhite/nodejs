@@ -17,7 +17,114 @@ define('app',["require", "exports"], function (require, exports) {
     exports.App = App;
 });
 
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7SUFFQTtRQUFBO1FBWUEsQ0FBQztRQVRDLDZCQUFlLEdBQWYsVUFBZ0IsTUFBMkIsRUFBRSxNQUFjO1lBQ3pELE1BQU0sQ0FBQyxLQUFLLEdBQUcsVUFBVSxDQUFDO1lBQzFCLE1BQU0sQ0FBQyxHQUFHLENBQUM7Z0JBQ1QsRUFBRSxLQUFLLEVBQUUsRUFBRSxFQUFlLFFBQVEsRUFBRSxjQUFjLEVBQUksS0FBSyxFQUFFLFFBQVEsRUFBQztnQkFDdEUsRUFBRSxLQUFLLEVBQUUsY0FBYyxFQUFHLFFBQVEsRUFBRSxnQkFBZ0IsRUFBRSxJQUFJLEVBQUMsVUFBVSxFQUFFO2FBQ3hFLENBQUMsQ0FBQztZQUVILElBQUksQ0FBQyxNQUFNLEdBQUcsTUFBTSxDQUFDO1FBQ3ZCLENBQUM7UUFDSCxVQUFDO0lBQUQsQ0FaQSxBQVlDLElBQUE7SUFaWSxrQkFBRyIsImZpbGUiOiJhcHAuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge1JvdXRlciwgUm91dGVyQ29uZmlndXJhdGlvbn0gZnJvbSAnYXVyZWxpYS1yb3V0ZXInO1xuXG5leHBvcnQgY2xhc3MgQXBwIHtcbiAgcm91dGVyOiBSb3V0ZXI7XG5cbiAgY29uZmlndXJlUm91dGVyKGNvbmZpZzogUm91dGVyQ29uZmlndXJhdGlvbiwgcm91dGVyOiBSb3V0ZXIpe1xuICAgIGNvbmZpZy50aXRsZSA9ICdDb250YWN0cyc7XG4gICAgY29uZmlnLm1hcChbXG4gICAgICB7IHJvdXRlOiAnJywgICAgICAgICAgICAgIG1vZHVsZUlkOiAnbm8tc2VsZWN0aW9uJywgICB0aXRsZTogJ1NlbGVjdCd9LFxuICAgICAgeyByb3V0ZTogJ2NvbnRhY3RzLzppZCcsICBtb2R1bGVJZDogJ2NvbnRhY3QtZGV0YWlsJywgbmFtZTonY29udGFjdHMnIH1cbiAgICBdKTtcblxuICAgIHRoaXMucm91dGVyID0gcm91dGVyO1xuICB9XG59Il0sInNvdXJjZVJvb3QiOiJzcmMifQ==
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7SUFFQTtRQUFBO1FBWUEsQ0FBQztRQVRDLDZCQUFlLEdBQWYsVUFBZ0IsTUFBMkIsRUFBRSxNQUFjO1lBQ3pELE1BQU0sQ0FBQyxLQUFLLEdBQUcsVUFBVSxDQUFDO1lBQzFCLE1BQU0sQ0FBQyxHQUFHLENBQUM7Z0JBQ1QsRUFBRSxLQUFLLEVBQUUsRUFBRSxFQUFFLFFBQVEsRUFBRSxjQUFjLEVBQUUsS0FBSyxFQUFFLFFBQVEsRUFBRTtnQkFDeEQsRUFBRSxLQUFLLEVBQUUsY0FBYyxFQUFFLFFBQVEsRUFBRSxnQkFBZ0IsRUFBRSxJQUFJLEVBQUUsVUFBVSxFQUFFO2FBQ3hFLENBQUMsQ0FBQztZQUVILElBQUksQ0FBQyxNQUFNLEdBQUcsTUFBTSxDQUFDO1FBQ3ZCLENBQUM7UUFDSCxVQUFDO0lBQUQsQ0FaQSxBQVlDLElBQUE7SUFaWSxrQkFBRyIsImZpbGUiOiJhcHAuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBSb3V0ZXIsIFJvdXRlckNvbmZpZ3VyYXRpb24gfSBmcm9tICdhdXJlbGlhLXJvdXRlcic7XG5cbmV4cG9ydCBjbGFzcyBBcHAge1xuICByb3V0ZXI6IFJvdXRlcjtcblxuICBjb25maWd1cmVSb3V0ZXIoY29uZmlnOiBSb3V0ZXJDb25maWd1cmF0aW9uLCByb3V0ZXI6IFJvdXRlcikge1xuICAgIGNvbmZpZy50aXRsZSA9ICdDb250YWN0cyc7XG4gICAgY29uZmlnLm1hcChbXG4gICAgICB7IHJvdXRlOiAnJywgbW9kdWxlSWQ6ICduby1zZWxlY3Rpb24nLCB0aXRsZTogJ1NlbGVjdCcgfSxcbiAgICAgIHsgcm91dGU6ICdjb250YWN0cy86aWQnLCBtb2R1bGVJZDogJ2NvbnRhY3QtZGV0YWlsJywgbmFtZTogJ2NvbnRhY3RzJyB9XG4gICAgXSk7XG5cbiAgICB0aGlzLnJvdXRlciA9IHJvdXRlcjtcbiAgfVxufSJdLCJzb3VyY2VSb290Ijoic3JjIn0=
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+define('contact-detail',["require", "exports", "aurelia-framework", "aurelia-event-aggregator", "./web-api", "./messages", "./utility"], function (require, exports, aurelia_framework_1, aurelia_event_aggregator_1, web_api_1, messages_1, utility_1) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    var ContactDetail = (function () {
+        function ContactDetail(api, ea) {
+            this.api = api;
+            this.ea = ea;
+        }
+        ContactDetail.prototype.activate = function (params, routeConfig) {
+            var _this = this;
+            this.routeConfig = routeConfig;
+            return this.api.getContactDetails(params.id).then(function (contact) {
+                _this.contact = contact;
+                _this.routeConfig.navModel.setTitle(_this.contact.firstName);
+                _this.originalContact = JSON.parse(JSON.stringify(_this.contact));
+                _this.ea.publish(new messages_1.ContactViewed(_this.contact));
+            });
+        };
+        Object.defineProperty(ContactDetail.prototype, "canSave", {
+            get: function () {
+                return this.contact.firstName && this.contact.lastName && !this.api.isRequesting;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        ContactDetail.prototype.save = function () {
+            var _this = this;
+            this.api.saveContact(this.contact).then(function (contact) {
+                _this.contact = contact;
+                _this.routeConfig.navModel.setTitle(_this.contact.firstName);
+                _this.originalContact = JSON.parse(JSON.stringify(_this.contact));
+                _this.ea.publish(new messages_1.ContactUpdated(_this.contact));
+            });
+        };
+        ContactDetail.prototype.canDeactivate = function () {
+            if (!utility_1.areEqual(this.originalContact, this.contact)) {
+                var result = confirm('You have unsaved changes. Are you sure you wish to leave?');
+                if (!result) {
+                    this.ea.publish(new messages_1.ContactViewed(this.contact));
+                }
+                return result;
+            }
+            return true;
+        };
+        return ContactDetail;
+    }());
+    ContactDetail = __decorate([
+        aurelia_framework_1.inject(web_api_1.WebAPI, aurelia_event_aggregator_1.EventAggregator),
+        __metadata("design:paramtypes", [web_api_1.WebAPI, aurelia_event_aggregator_1.EventAggregator])
+    ], ContactDetail);
+    exports.ContactDetail = ContactDetail;
+});
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,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dGFjdC1kZXRhaWwuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBpbmplY3QgfSBmcm9tICdhdXJlbGlhLWZyYW1ld29yayc7XG5pbXBvcnQgeyBFdmVudEFnZ3JlZ2F0b3IgfSBmcm9tICdhdXJlbGlhLWV2ZW50LWFnZ3JlZ2F0b3InO1xuaW1wb3J0IHsgV2ViQVBJIH0gZnJvbSAnLi93ZWItYXBpJztcbmltcG9ydCB7IENvbnRhY3RVcGRhdGVkLCBDb250YWN0Vmlld2VkIH0gZnJvbSAnLi9tZXNzYWdlcyc7XG5pbXBvcnQgeyBhcmVFcXVhbCB9IGZyb20gJy4vdXRpbGl0eSc7XG5cbmludGVyZmFjZSBDb250YWN0IHtcbiAgICBmaXJzdE5hbWU6IHN0cmluZztcbiAgICBsYXN0TmFtZTogc3RyaW5nO1xuICAgIGVtYWlsOiBzdHJpbmc7XG59XG5cbkBpbmplY3QoV2ViQVBJLCBFdmVudEFnZ3JlZ2F0b3IpXG5leHBvcnQgY2xhc3MgQ29udGFjdERldGFpbCB7XG4gICAgcm91dGVDb25maWc7XG4gICAgY29udGFjdDogQ29udGFjdDtcbiAgICBvcmlnaW5hbENvbnRhY3Q6IENvbnRhY3Q7XG5cbiAgICBjb25zdHJ1Y3Rvcihwcml2YXRlIGFwaTogV2ViQVBJLCBwcml2YXRlIGVhOiBFdmVudEFnZ3JlZ2F0b3IpIHsgfVxuXG4gICAgYWN0aXZhdGUocGFyYW1zLCByb3V0ZUNvbmZpZykge1xuICAgICAgICB0aGlzLnJvdXRlQ29uZmlnID0gcm91dGVDb25maWc7XG5cbiAgICAgICAgcmV0dXJuIHRoaXMuYXBpLmdldENvbnRhY3REZXRhaWxzKHBhcmFtcy5pZCkudGhlbihjb250YWN0ID0+IHtcbiAgICAgICAgICAgIHRoaXMuY29udGFjdCA9IDxDb250YWN0PmNvbnRhY3Q7XG4gICAgICAgICAgICB0aGlzLnJvdXRlQ29uZmlnLm5hdk1vZGVsLnNldFRpdGxlKHRoaXMuY29udGFjdC5maXJzdE5hbWUpO1xuICAgICAgICAgICAgdGhpcy5vcmlnaW5hbENvbnRhY3QgPSBKU09OLnBhcnNlKEpTT04uc3RyaW5naWZ5KHRoaXMuY29udGFjdCkpO1xuICAgICAgICAgICAgdGhpcy5lYS5wdWJsaXNoKG5ldyBDb250YWN0Vmlld2VkKHRoaXMuY29udGFjdCkpO1xuICAgICAgICB9KTtcbiAgICB9XG5cbiAgICBnZXQgY2FuU2F2ZSgpIHtcbiAgICAgICAgcmV0dXJuIHRoaXMuY29udGFjdC5maXJzdE5hbWUgJiYgdGhpcy5jb250YWN0Lmxhc3ROYW1lICYmICF0aGlzLmFwaS5pc1JlcXVlc3Rpbmc7XG4gICAgfVxuXG4gICAgc2F2ZSgpIHtcbiAgICAgICAgdGhpcy5hcGkuc2F2ZUNvbnRhY3QodGhpcy5jb250YWN0KS50aGVuKGNvbnRhY3QgPT4ge1xuICAgICAgICAgICAgdGhpcy5jb250YWN0ID0gPENvbnRhY3Q+Y29udGFjdDtcbiAgICAgICAgICAgIHRoaXMucm91dGVDb25maWcubmF2TW9kZWwuc2V0VGl0bGUodGhpcy5jb250YWN0LmZpcnN0TmFtZSk7XG4gICAgICAgICAgICB0aGlzLm9yaWdpbmFsQ29udGFjdCA9IEpTT04ucGFyc2UoSlNPTi5zdHJpbmdpZnkodGhpcy5jb250YWN0KSk7XG4gICAgICAgICAgICB0aGlzLmVhLnB1Ymxpc2gobmV3IENvbnRhY3RVcGRhdGVkKHRoaXMuY29udGFjdCkpO1xuICAgICAgICB9KTtcbiAgICB9XG5cbiAgICBjYW5EZWFjdGl2YXRlKCkge1xuICAgICAgICBpZiAoIWFyZUVxdWFsKHRoaXMub3JpZ2luYWxDb250YWN0LCB0aGlzLmNvbnRhY3QpKSB7XG4gICAgICAgICAgICBsZXQgcmVzdWx0ID0gY29uZmlybSgnWW91IGhhdmUgdW5zYXZlZCBjaGFuZ2VzLiBBcmUgeW91IHN1cmUgeW91IHdpc2ggdG8gbGVhdmU/Jyk7XG5cbiAgICAgICAgICAgIGlmICghcmVzdWx0KSB7XG4gICAgICAgICAgICAgICAgdGhpcy5lYS5wdWJsaXNoKG5ldyBDb250YWN0Vmlld2VkKHRoaXMuY29udGFjdCkpO1xuICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICByZXR1cm4gcmVzdWx0O1xuICAgICAgICB9XG5cbiAgICAgICAgcmV0dXJuIHRydWU7XG4gICAgfVxufSJdLCJzb3VyY2VSb290Ijoic3JjIn0=
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+define('contact-list',["require", "exports", "aurelia-event-aggregator", "./web-api", "./messages", "aurelia-framework"], function (require, exports, aurelia_event_aggregator_1, web_api_1, messages_1, aurelia_framework_1) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    var ContactList = (function () {
+        function ContactList(api, ea) {
+            var _this = this;
+            this.api = api;
+            this.selectedId = 0;
+            ea.subscribe(messages_1.ContactViewed, function (msg) { return _this.select(msg.contact); });
+            ea.subscribe(messages_1.ContactUpdated, function (msg) {
+                var id = msg.contact.id;
+                var found = _this.contacts.find(function (x) { return x.id == id; });
+                Object.assign(found, msg.contact);
+            });
+        }
+        ContactList.prototype.created = function () {
+            var _this = this;
+            this.api.getContactList().then(function (contacts) { return _this.contacts = contacts; });
+        };
+        ContactList.prototype.select = function (contact) {
+            this.selectedId = contact.id;
+            return true;
+        };
+        return ContactList;
+    }());
+    ContactList = __decorate([
+        aurelia_framework_1.inject(web_api_1.WebAPI, aurelia_event_aggregator_1.EventAggregator),
+        __metadata("design:paramtypes", [web_api_1.WebAPI, aurelia_event_aggregator_1.EventAggregator])
+    ], ContactList);
+    exports.ContactList = ContactList;
+});
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbnRhY3QtbGlzdC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7SUFNQSxJQUFhLFdBQVc7UUFJcEIscUJBQW9CLEdBQVcsRUFBRSxFQUFtQjtZQUFwRCxpQkFPQztZQVBtQixRQUFHLEdBQUgsR0FBRyxDQUFRO1lBRi9CLGVBQVUsR0FBRyxDQUFDLENBQUM7WUFHWCxFQUFFLENBQUMsU0FBUyxDQUFDLHdCQUFhLEVBQUUsVUFBQSxHQUFHLElBQUksT0FBQSxLQUFJLENBQUMsTUFBTSxDQUFDLEdBQUcsQ0FBQyxPQUFPLENBQUMsRUFBeEIsQ0FBd0IsQ0FBQyxDQUFDO1lBQzdELEVBQUUsQ0FBQyxTQUFTLENBQUMseUJBQWMsRUFBRSxVQUFBLEdBQUc7Z0JBQzVCLElBQUksRUFBRSxHQUFHLEdBQUcsQ0FBQyxPQUFPLENBQUMsRUFBRSxDQUFDO2dCQUN4QixJQUFJLEtBQUssR0FBRyxLQUFJLENBQUMsUUFBUSxDQUFDLElBQUksQ0FBQyxVQUFBLENBQUMsSUFBSSxPQUFBLENBQUMsQ0FBQyxFQUFFLElBQUksRUFBRSxFQUFWLENBQVUsQ0FBQyxDQUFDO2dCQUNoRCxNQUFNLENBQUMsTUFBTSxDQUFDLEtBQUssRUFBRSxHQUFHLENBQUMsT0FBTyxDQUFDLENBQUM7WUFDdEMsQ0FBQyxDQUFDLENBQUM7UUFDUCxDQUFDO1FBRUQsNkJBQU8sR0FBUDtZQUFBLGlCQUVDO1lBREcsSUFBSSxDQUFDLEdBQUcsQ0FBQyxjQUFjLEVBQUUsQ0FBQyxJQUFJLENBQUMsVUFBQSxRQUFRLElBQUksT0FBQSxLQUFJLENBQUMsUUFBUSxHQUFHLFFBQVEsRUFBeEIsQ0FBd0IsQ0FBQyxDQUFDO1FBQ3pFLENBQUM7UUFFRCw0QkFBTSxHQUFOLFVBQU8sT0FBTztZQUNWLElBQUksQ0FBQyxVQUFVLEdBQUcsT0FBTyxDQUFDLEVBQUUsQ0FBQztZQUM3QixNQUFNLENBQUMsSUFBSSxDQUFDO1FBQ2hCLENBQUM7UUFDTCxrQkFBQztJQUFELENBckJBLEFBcUJDLElBQUE7SUFyQlksV0FBVztRQUR2QiwwQkFBTSxDQUFDLGdCQUFNLEVBQUUsMENBQWUsQ0FBQzt5Q0FLSCxnQkFBTSxFQUFNLDBDQUFlO09BSjNDLFdBQVcsQ0FxQnZCO0lBckJZLGtDQUFXIiwiZmlsZSI6ImNvbnRhY3QtbGlzdC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEV2ZW50QWdncmVnYXRvciB9IGZyb20gJ2F1cmVsaWEtZXZlbnQtYWdncmVnYXRvcic7XG5pbXBvcnQgeyBXZWJBUEkgfSBmcm9tICcuL3dlYi1hcGknO1xuaW1wb3J0IHsgQ29udGFjdFVwZGF0ZWQsIENvbnRhY3RWaWV3ZWQgfSBmcm9tICcuL21lc3NhZ2VzJztcbmltcG9ydCB7IGluamVjdCB9IGZyb20gJ2F1cmVsaWEtZnJhbWV3b3JrJztcblxuQGluamVjdChXZWJBUEksIEV2ZW50QWdncmVnYXRvcilcbmV4cG9ydCBjbGFzcyBDb250YWN0TGlzdCB7XG4gICAgY29udGFjdHM7XG4gICAgc2VsZWN0ZWRJZCA9IDA7XG5cbiAgICBjb25zdHJ1Y3Rvcihwcml2YXRlIGFwaTogV2ViQVBJLCBlYTogRXZlbnRBZ2dyZWdhdG9yKSB7XG4gICAgICAgIGVhLnN1YnNjcmliZShDb250YWN0Vmlld2VkLCBtc2cgPT4gdGhpcy5zZWxlY3QobXNnLmNvbnRhY3QpKTtcbiAgICAgICAgZWEuc3Vic2NyaWJlKENvbnRhY3RVcGRhdGVkLCBtc2cgPT4ge1xuICAgICAgICAgICAgbGV0IGlkID0gbXNnLmNvbnRhY3QuaWQ7XG4gICAgICAgICAgICBsZXQgZm91bmQgPSB0aGlzLmNvbnRhY3RzLmZpbmQoeCA9PiB4LmlkID09IGlkKTtcbiAgICAgICAgICAgIE9iamVjdC5hc3NpZ24oZm91bmQsIG1zZy5jb250YWN0KTtcbiAgICAgICAgfSk7XG4gICAgfVxuXG4gICAgY3JlYXRlZCgpIHtcbiAgICAgICAgdGhpcy5hcGkuZ2V0Q29udGFjdExpc3QoKS50aGVuKGNvbnRhY3RzID0+IHRoaXMuY29udGFjdHMgPSBjb250YWN0cyk7XG4gICAgfVxuXG4gICAgc2VsZWN0KGNvbnRhY3QpIHtcbiAgICAgICAgdGhpcy5zZWxlY3RlZElkID0gY29udGFjdC5pZDtcbiAgICAgICAgcmV0dXJuIHRydWU7XG4gICAgfVxufSJdLCJzb3VyY2VSb290Ijoic3JjIn0=
 
 define('environment',["require", "exports"], function (require, exports) {
     "use strict";
@@ -49,6 +156,27 @@ define('main',["require", "exports", "./environment"], function (require, export
 });
 
 //# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0lBR0EsbUJBQTBCLE9BQWdCO1FBQ3hDLE9BQU8sQ0FBQyxHQUFHO2FBQ1IscUJBQXFCLEVBQUU7YUFDdkIsT0FBTyxDQUFDLFdBQVcsQ0FBQyxDQUFDO1FBRXhCLEVBQUUsQ0FBQyxDQUFDLHFCQUFXLENBQUMsS0FBSyxDQUFDLENBQUMsQ0FBQztZQUN0QixPQUFPLENBQUMsR0FBRyxDQUFDLGtCQUFrQixFQUFFLENBQUM7UUFDbkMsQ0FBQztRQUVELEVBQUUsQ0FBQyxDQUFDLHFCQUFXLENBQUMsT0FBTyxDQUFDLENBQUMsQ0FBQztZQUN4QixPQUFPLENBQUMsR0FBRyxDQUFDLE1BQU0sQ0FBQyxpQkFBaUIsQ0FBQyxDQUFDO1FBQ3hDLENBQUM7UUFFRCxPQUFPLENBQUMsS0FBSyxFQUFFLENBQUMsSUFBSSxDQUFDLGNBQU0sT0FBQSxPQUFPLENBQUMsT0FBTyxFQUFFLEVBQWpCLENBQWlCLENBQUMsQ0FBQztJQUNoRCxDQUFDO0lBZEQsOEJBY0MiLCJmaWxlIjoibWFpbi5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7QXVyZWxpYX0gZnJvbSAnYXVyZWxpYS1mcmFtZXdvcmsnXG5pbXBvcnQgZW52aXJvbm1lbnQgZnJvbSAnLi9lbnZpcm9ubWVudCc7XG5cbmV4cG9ydCBmdW5jdGlvbiBjb25maWd1cmUoYXVyZWxpYTogQXVyZWxpYSkge1xuICBhdXJlbGlhLnVzZVxuICAgIC5zdGFuZGFyZENvbmZpZ3VyYXRpb24oKVxuICAgIC5mZWF0dXJlKCdyZXNvdXJjZXMnKTtcblxuICBpZiAoZW52aXJvbm1lbnQuZGVidWcpIHtcbiAgICBhdXJlbGlhLnVzZS5kZXZlbG9wbWVudExvZ2dpbmcoKTtcbiAgfVxuXG4gIGlmIChlbnZpcm9ubWVudC50ZXN0aW5nKSB7XG4gICAgYXVyZWxpYS51c2UucGx1Z2luKCdhdXJlbGlhLXRlc3RpbmcnKTtcbiAgfVxuXG4gIGF1cmVsaWEuc3RhcnQoKS50aGVuKCgpID0+IGF1cmVsaWEuc2V0Um9vdCgpKTtcbn1cbiJdLCJzb3VyY2VSb290Ijoic3JjIn0=
+
+define('messages',["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    var ContactUpdated = (function () {
+        function ContactUpdated(contact) {
+            this.contact = contact;
+        }
+        return ContactUpdated;
+    }());
+    exports.ContactUpdated = ContactUpdated;
+    var ContactViewed = (function () {
+        function ContactViewed(contact) {
+            this.contact = contact;
+        }
+        return ContactViewed;
+    }());
+    exports.ContactViewed = ContactViewed;
+});
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1lc3NhZ2VzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztJQUFBO1FBQ0ksd0JBQW1CLE9BQU87WUFBUCxZQUFPLEdBQVAsT0FBTyxDQUFBO1FBQUksQ0FBQztRQUNuQyxxQkFBQztJQUFELENBRkEsQUFFQyxJQUFBO0lBRlksd0NBQWM7SUFJM0I7UUFDSSx1QkFBbUIsT0FBTztZQUFQLFlBQU8sR0FBUCxPQUFPLENBQUE7UUFBSSxDQUFDO1FBQ25DLG9CQUFDO0lBQUQsQ0FGQSxBQUVDLElBQUE7SUFGWSxzQ0FBYSIsImZpbGUiOiJtZXNzYWdlcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjbGFzcyBDb250YWN0VXBkYXRlZCB7XG4gICAgY29uc3RydWN0b3IocHVibGljIGNvbnRhY3QpIHsgfVxufVxuXG5leHBvcnQgY2xhc3MgQ29udGFjdFZpZXdlZCB7XG4gICAgY29uc3RydWN0b3IocHVibGljIGNvbnRhY3QpIHsgfVxufSJdLCJzb3VyY2VSb290Ijoic3JjIn0=
 
 define('no-selection',["require", "exports"], function (require, exports) {
     "use strict";
@@ -191,102 +319,9 @@ define('resources/index',["require", "exports"], function (require, exports) {
 
 //# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJlc291cmNlcy9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7SUFFQSxtQkFBMEIsTUFBOEI7SUFFeEQsQ0FBQztJQUZELDhCQUVDIiwiZmlsZSI6InJlc291cmNlcy9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7RnJhbWV3b3JrQ29uZmlndXJhdGlvbn0gZnJvbSAnYXVyZWxpYS1mcmFtZXdvcmsnO1xuXG5leHBvcnQgZnVuY3Rpb24gY29uZmlndXJlKGNvbmZpZzogRnJhbWV3b3JrQ29uZmlndXJhdGlvbikge1xuICAvL2NvbmZpZy5nbG9iYWxSZXNvdXJjZXMoW10pO1xufVxuIl0sInNvdXJjZVJvb3QiOiJzcmMifQ==
 
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-define('contact-list',["require", "exports", "./web-api", "aurelia-framework"], function (require, exports, web_api_1, aurelia_framework_1) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    var ContactList = (function () {
-        function ContactList(api) {
-            this.api = api;
-            this.selectedId = 0;
-        }
-        ContactList.prototype.created = function () {
-            var _this = this;
-            this.api.getContactList().then(function (contacts) { return _this.contacts = contacts; });
-        };
-        ContactList.prototype.select = function (contact) {
-            this.selectedId = contact.id;
-            return true;
-        };
-        return ContactList;
-    }());
-    ContactList = __decorate([
-        aurelia_framework_1.inject(web_api_1.WebAPI),
-        __metadata("design:paramtypes", [web_api_1.WebAPI])
-    ], ContactList);
-    exports.ContactList = ContactList;
-});
-
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbnRhY3QtbGlzdC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7SUFJQSxJQUFhLFdBQVc7UUFJdEIscUJBQW9CLEdBQVc7WUFBWCxRQUFHLEdBQUgsR0FBRyxDQUFRO1lBRi9CLGVBQVUsR0FBRyxDQUFDLENBQUM7UUFFb0IsQ0FBQztRQUVwQyw2QkFBTyxHQUFQO1lBQUEsaUJBRUM7WUFEQyxJQUFJLENBQUMsR0FBRyxDQUFDLGNBQWMsRUFBRSxDQUFDLElBQUksQ0FBQyxVQUFBLFFBQVEsSUFBSSxPQUFBLEtBQUksQ0FBQyxRQUFRLEdBQUcsUUFBUSxFQUF4QixDQUF3QixDQUFDLENBQUM7UUFDdkUsQ0FBQztRQUVELDRCQUFNLEdBQU4sVUFBTyxPQUFPO1lBQ1osSUFBSSxDQUFDLFVBQVUsR0FBRyxPQUFPLENBQUMsRUFBRSxDQUFDO1lBQzdCLE1BQU0sQ0FBQyxJQUFJLENBQUM7UUFDZCxDQUFDO1FBQ0gsa0JBQUM7SUFBRCxDQWRBLEFBY0MsSUFBQTtJQWRZLFdBQVc7UUFEdkIsMEJBQU0sQ0FBQyxnQkFBTSxDQUFDO3lDQUtZLGdCQUFNO09BSnBCLFdBQVcsQ0FjdkI7SUFkWSxrQ0FBVyIsImZpbGUiOiJjb250YWN0LWxpc3QuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge1dlYkFQSX0gZnJvbSAnLi93ZWItYXBpJztcbmltcG9ydCB7aW5qZWN0fSBmcm9tICdhdXJlbGlhLWZyYW1ld29yayc7XG5cbkBpbmplY3QoV2ViQVBJKVxuZXhwb3J0IGNsYXNzIENvbnRhY3RMaXN0IHtcbiAgY29udGFjdHM7XG4gIHNlbGVjdGVkSWQgPSAwO1xuXG4gIGNvbnN0cnVjdG9yKHByaXZhdGUgYXBpOiBXZWJBUEkpIHsgfVxuXG4gIGNyZWF0ZWQoKSB7XG4gICAgdGhpcy5hcGkuZ2V0Q29udGFjdExpc3QoKS50aGVuKGNvbnRhY3RzID0+IHRoaXMuY29udGFjdHMgPSBjb250YWN0cyk7XG4gIH1cblxuICBzZWxlY3QoY29udGFjdCkge1xuICAgIHRoaXMuc2VsZWN0ZWRJZCA9IGNvbnRhY3QuaWQ7XG4gICAgcmV0dXJuIHRydWU7XG4gIH1cbn0iXSwic291cmNlUm9vdCI6InNyYyJ9
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-define('contact-detail',["require", "exports", "aurelia-framework", "./web-api", "./utility"], function (require, exports, aurelia_framework_1, web_api_1, utility_1) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: true });
-    var ContactDetail = (function () {
-        function ContactDetail(api) {
-            this.api = api;
-        }
-        ContactDetail.prototype.activate = function (params, routeConfig) {
-            var _this = this;
-            this.routeConfig = routeConfig;
-            return this.api.getContactDetails(params.id).then(function (contact) {
-                _this.contact = contact;
-                _this.routeConfig.navModel.setTitle(_this.contact.firstName);
-                _this.originalContact = JSON.parse(JSON.stringify(_this.contact));
-            });
-        };
-        Object.defineProperty(ContactDetail.prototype, "canSave", {
-            get: function () {
-                return this.contact.firstName && this.contact.lastName && !this.api.isRequesting;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        ContactDetail.prototype.save = function () {
-            var _this = this;
-            this.api.saveContact(this.contact).then(function (contact) {
-                _this.contact = contact;
-                _this.routeConfig.navModel.setTitle(_this.contact.firstName);
-                _this.originalContact = JSON.parse(JSON.stringify(_this.contact));
-            });
-        };
-        ContactDetail.prototype.canDeactivate = function () {
-            if (!utility_1.areEqual(this.originalContact, this.contact)) {
-                return confirm('You have unsaved changes. Are you sure you wish to leave?');
-            }
-            return true;
-        };
-        return ContactDetail;
-    }());
-    ContactDetail = __decorate([
-        aurelia_framework_1.inject(web_api_1.WebAPI),
-        __metadata("design:paramtypes", [web_api_1.WebAPI])
-    ], ContactDetail);
-    exports.ContactDetail = ContactDetail;
-});
-
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbnRhY3QtZGV0YWlsLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7OztJQVdBLElBQWEsYUFBYTtRQUt4Qix1QkFBb0IsR0FBVztZQUFYLFFBQUcsR0FBSCxHQUFHLENBQVE7UUFBSSxDQUFDO1FBRXBDLGdDQUFRLEdBQVIsVUFBUyxNQUFNLEVBQUUsV0FBVztZQUE1QixpQkFRQztZQVBDLElBQUksQ0FBQyxXQUFXLEdBQUcsV0FBVyxDQUFDO1lBRS9CLE1BQU0sQ0FBQyxJQUFJLENBQUMsR0FBRyxDQUFDLGlCQUFpQixDQUFDLE1BQU0sQ0FBQyxFQUFFLENBQUMsQ0FBQyxJQUFJLENBQUMsVUFBQSxPQUFPO2dCQUN2RCxLQUFJLENBQUMsT0FBTyxHQUFZLE9BQU8sQ0FBQztnQkFDaEMsS0FBSSxDQUFDLFdBQVcsQ0FBQyxRQUFRLENBQUMsUUFBUSxDQUFDLEtBQUksQ0FBQyxPQUFPLENBQUMsU0FBUyxDQUFDLENBQUM7Z0JBQzNELEtBQUksQ0FBQyxlQUFlLEdBQUcsSUFBSSxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQUMsU0FBUyxDQUFDLEtBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDO1lBQ2xFLENBQUMsQ0FBQyxDQUFDO1FBQ0wsQ0FBQztRQUVELHNCQUFJLGtDQUFPO2lCQUFYO2dCQUNFLE1BQU0sQ0FBQyxJQUFJLENBQUMsT0FBTyxDQUFDLFNBQVMsSUFBSSxJQUFJLENBQUMsT0FBTyxDQUFDLFFBQVEsSUFBSSxDQUFDLElBQUksQ0FBQyxHQUFHLENBQUMsWUFBWSxDQUFDO1lBQ25GLENBQUM7OztXQUFBO1FBRUQsNEJBQUksR0FBSjtZQUFBLGlCQU1DO1lBTEMsSUFBSSxDQUFDLEdBQUcsQ0FBQyxXQUFXLENBQUMsSUFBSSxDQUFDLE9BQU8sQ0FBQyxDQUFDLElBQUksQ0FBQyxVQUFBLE9BQU87Z0JBQzdDLEtBQUksQ0FBQyxPQUFPLEdBQVksT0FBTyxDQUFDO2dCQUNoQyxLQUFJLENBQUMsV0FBVyxDQUFDLFFBQVEsQ0FBQyxRQUFRLENBQUMsS0FBSSxDQUFDLE9BQU8sQ0FBQyxTQUFTLENBQUMsQ0FBQztnQkFDM0QsS0FBSSxDQUFDLGVBQWUsR0FBRyxJQUFJLENBQUMsS0FBSyxDQUFDLElBQUksQ0FBQyxTQUFTLENBQUMsS0FBSSxDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUM7WUFDbEUsQ0FBQyxDQUFDLENBQUM7UUFDTCxDQUFDO1FBRUQscUNBQWEsR0FBYjtZQUNFLEVBQUUsQ0FBQyxDQUFDLENBQUMsa0JBQVEsQ0FBQyxJQUFJLENBQUMsZUFBZSxFQUFFLElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDLENBQUM7Z0JBQ2xELE1BQU0sQ0FBQyxPQUFPLENBQUMsMkRBQTJELENBQUMsQ0FBQztZQUM5RSxDQUFDO1lBRUQsTUFBTSxDQUFDLElBQUksQ0FBQztRQUNkLENBQUM7UUFDSCxvQkFBQztJQUFELENBcENBLEFBb0NDLElBQUE7SUFwQ1ksYUFBYTtRQUR6QiwwQkFBTSxDQUFDLGdCQUFNLENBQUM7eUNBTVksZ0JBQU07T0FMcEIsYUFBYSxDQW9DekI7SUFwQ1ksc0NBQWEiLCJmaWxlIjoiY29udGFjdC1kZXRhaWwuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge2luamVjdH0gZnJvbSAnYXVyZWxpYS1mcmFtZXdvcmsnO1xuaW1wb3J0IHtXZWJBUEl9IGZyb20gJy4vd2ViLWFwaSc7XG5pbXBvcnQge2FyZUVxdWFsfSBmcm9tICcuL3V0aWxpdHknO1xuXG5pbnRlcmZhY2UgQ29udGFjdCB7XG4gIGZpcnN0TmFtZTogc3RyaW5nO1xuICBsYXN0TmFtZTogc3RyaW5nO1xuICBlbWFpbDogc3RyaW5nO1xufVxuXG5AaW5qZWN0KFdlYkFQSSlcbmV4cG9ydCBjbGFzcyBDb250YWN0RGV0YWlsIHtcbiAgcm91dGVDb25maWc7XG4gIGNvbnRhY3Q6IENvbnRhY3Q7XG4gIG9yaWdpbmFsQ29udGFjdDogQ29udGFjdDtcblxuICBjb25zdHJ1Y3Rvcihwcml2YXRlIGFwaTogV2ViQVBJKSB7IH1cblxuICBhY3RpdmF0ZShwYXJhbXMsIHJvdXRlQ29uZmlnKSB7XG4gICAgdGhpcy5yb3V0ZUNvbmZpZyA9IHJvdXRlQ29uZmlnO1xuXG4gICAgcmV0dXJuIHRoaXMuYXBpLmdldENvbnRhY3REZXRhaWxzKHBhcmFtcy5pZCkudGhlbihjb250YWN0ID0+IHtcbiAgICAgIHRoaXMuY29udGFjdCA9IDxDb250YWN0PmNvbnRhY3Q7XG4gICAgICB0aGlzLnJvdXRlQ29uZmlnLm5hdk1vZGVsLnNldFRpdGxlKHRoaXMuY29udGFjdC5maXJzdE5hbWUpO1xuICAgICAgdGhpcy5vcmlnaW5hbENvbnRhY3QgPSBKU09OLnBhcnNlKEpTT04uc3RyaW5naWZ5KHRoaXMuY29udGFjdCkpO1xuICAgIH0pO1xuICB9XG5cbiAgZ2V0IGNhblNhdmUoKSB7XG4gICAgcmV0dXJuIHRoaXMuY29udGFjdC5maXJzdE5hbWUgJiYgdGhpcy5jb250YWN0Lmxhc3ROYW1lICYmICF0aGlzLmFwaS5pc1JlcXVlc3Rpbmc7XG4gIH1cblxuICBzYXZlKCkge1xuICAgIHRoaXMuYXBpLnNhdmVDb250YWN0KHRoaXMuY29udGFjdCkudGhlbihjb250YWN0ID0+IHtcbiAgICAgIHRoaXMuY29udGFjdCA9IDxDb250YWN0PmNvbnRhY3Q7XG4gICAgICB0aGlzLnJvdXRlQ29uZmlnLm5hdk1vZGVsLnNldFRpdGxlKHRoaXMuY29udGFjdC5maXJzdE5hbWUpO1xuICAgICAgdGhpcy5vcmlnaW5hbENvbnRhY3QgPSBKU09OLnBhcnNlKEpTT04uc3RyaW5naWZ5KHRoaXMuY29udGFjdCkpO1xuICAgIH0pO1xuICB9XG5cbiAgY2FuRGVhY3RpdmF0ZSgpIHtcbiAgICBpZiAoIWFyZUVxdWFsKHRoaXMub3JpZ2luYWxDb250YWN0LCB0aGlzLmNvbnRhY3QpKSB7XG4gICAgICByZXR1cm4gY29uZmlybSgnWW91IGhhdmUgdW5zYXZlZCBjaGFuZ2VzLiBBcmUgeW91IHN1cmUgeW91IHdpc2ggdG8gbGVhdmU/Jyk7XG4gICAgfVxuXG4gICAgcmV0dXJuIHRydWU7XG4gIH1cbn0iXSwic291cmNlUm9vdCI6InNyYyJ9
-
 define('text!app.html', ['module'], function(module) { module.exports = "<template><require from=\"bootstrap/css/bootstrap.css\"></require><require from=\"./styles.css\"></require><require from=\"./contact-list\"></require><nav class=\"navbar navbar-default navbar-fixed-top\" role=\"navigation\"><div class=\"navbar-header\"><a class=\"navbar-brand\" href=\"#\"><i class=\"fa fa-user\"></i> <span>Contacts</span></a></div></nav><div class=\"container\"><div class=\"row\"><contact-list class=\"col-md-4\"></contact-list><router-view class=\"col-md-8\"></router-view></div></div></template>"; });
 define('text!styles.css', ['module'], function(module) { module.exports = "body { padding-top: 70px; }\n\nsection {\n  margin: 0 20px;\n}\n\na:focus {\n  outline: none;\n}\n\n.navbar-nav li.loader {\n    margin: 12px 24px 0 6px;\n}\n\n.no-selection {\n  margin: 20px;\n}\n\n.contact-list {\n  overflow-y: auto;\n  border: 1px solid #ddd;\n  padding: 10px;\n}\n\n.panel {\n  margin: 20px;\n}\n\n.button-bar {\n  right: 0;\n  left: 0;\n  bottom: 0;\n  border-top: 1px solid #ddd;\n  background: white;\n}\n\n.button-bar > button {\n  float: right;\n  margin: 20px;\n}\n\nli.list-group-item {\n  list-style: none;\n}\n\nli.list-group-item > a {\n  text-decoration: none;\n}\n\nli.list-group-item.active > a {\n  color: white;\n}\n"; });
-define('text!no-selection.html', ['module'], function(module) { module.exports = "<template><div class=\"no-selection text-center\"><h2>${message}</h2></div></template>"; });
-define('text!contact-list.html', ['module'], function(module) { module.exports = "<template><div class=\"contact-list\"><ul class=\"list-group\"><li repeat.for=\"contact of contacts\" class=\"list-group-item ${contact.id === $parent.selectedId ? 'active' : ''}\"><a route-href=\"route: contacts; params.bind: {id:contact.id}\" click.delegate=\"$parent.select(contact)\"><h4 class=\"list-group-item-heading\">${contact.firstName} ${contact.lastName}</h4><p class=\"list-group-item-text\">${contact.email}</p></a></li></ul></div></template>"; });
 define('text!contact-detail.html', ['module'], function(module) { module.exports = "<template><div class=\"panel panel-primary\"><div class=\"panel-heading\"><h3 class=\"panel-title\">Profile</h3></div><div class=\"panel-body\"><form role=\"form\" class=\"form-horizontal\"><div class=\"form-group\"><label class=\"col-sm-2 control-label\">First Name</label><div class=\"col-sm-10\"><input type=\"text\" placeholder=\"first name\" class=\"form-control\" value.bind=\"contact.firstName\"></div></div><div class=\"form-group\"><label class=\"col-sm-2 control-label\">Last Name</label><div class=\"col-sm-10\"><input type=\"text\" placeholder=\"last name\" class=\"form-control\" value.bind=\"contact.lastName\"></div></div><div class=\"form-group\"><label class=\"col-sm-2 control-label\">Email</label><div class=\"col-sm-10\"><input type=\"text\" placeholder=\"email\" class=\"form-control\" value.bind=\"contact.email\"></div></div><div class=\"form-group\"><label class=\"col-sm-2 control-label\">Phone Number</label><div class=\"col-sm-10\"><input type=\"text\" placeholder=\"phone number\" class=\"form-control\" value.bind=\"contact.phoneNumber\"></div></div></form></div></div><div class=\"button-bar\"><button class=\"btn btn-success\" click.delegate=\"save()\" disabled.bind=\"!canSave\">Save</button></div></template>"; });
+define('text!contact-list.html', ['module'], function(module) { module.exports = "<template><div class=\"contact-list\"><ul class=\"list-group\"><li repeat.for=\"contact of contacts\" class=\"list-group-item ${contact.id === $parent.selectedId ? 'active' : ''}\"><a route-href=\"route: contacts; params.bind: {id:contact.id}\" click.delegate=\"$parent.select(contact)\"><h4 class=\"list-group-item-heading\">${contact.firstName} ${contact.lastName}</h4><p class=\"list-group-item-text\">${contact.email}</p></a></li></ul></div></template>"; });
+define('text!no-selection.html', ['module'], function(module) { module.exports = "<template><div class=\"no-selection text-center\"><h2>${message}</h2></div></template>"; });
 //# sourceMappingURL=app-bundle.js.map
