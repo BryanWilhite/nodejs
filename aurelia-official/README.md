@@ -19,6 +19,8 @@ The tutorial tells us that we need the [Aurelia CLI](https://github.com/aurelia/
 sudo npm install aurelia-cli -g
 ```
 
+In Powershell:
+
 ```powershell
 npm install aurelia-cli -g
 ```
@@ -45,6 +47,8 @@ We then “Copy all of these files to the `src` folder of your project. TypeScri
 sudo npm install typings --g
 ```
 
+In Powershell:
+
 ```powershell
 npm install typings --g
 ```
@@ -54,6 +58,8 @@ Additionally, you may need to install `[jshint](https://github.com/jshint/jshint
 ```bash
 sudo npm install jshint -g
 ```
+
+In Powershell:
 
 ```powershell
 npm install jshint -g
