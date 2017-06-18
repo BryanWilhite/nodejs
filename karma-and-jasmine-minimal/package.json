@@ -1,0 +1,24 @@
+{
+  "name": "karma-and-jasmine-minimal",
+  "version": "1.0.0",
+  "description": "“[Continuous Testing of TypeScript Code](http://www.damirscorner.com/blog/posts/20160116-ContinuousTestingOfTypeScriptCode.html)”",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryanWilhite/nodejs.git"
+  },
+  "author": "Bryan D. Wilhite",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BryanWilhite/nodejs/issues"
+  },
+  "homepage": "https://github.com/BryanWilhite/nodejs#readme",
+  "devDependencies": {
+    "@types/jasmine": "^2.5.52",
+    "karma-typescript-preprocessor": "^0.3.1",
+    "typescript": "^2.3.4"
+  }
+}
