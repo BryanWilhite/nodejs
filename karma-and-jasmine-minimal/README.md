@@ -17,3 +17,21 @@ npm install --save-dev typescript
 ```
 
 Note that we have replaced `typings install dt~jasmine --SG` with `npm install @types/jasmine --save-dev` based on the information in “[Typings changes](https://scotch.io/lounge/angular/typings-changes).” This ‘minimal’ installation should be upwards of 50MB, over 5000 files.
+
+When tests are placed, the first line should be changed from:
+
+```js
+///<reference path="../typings/index.d.ts"/>
+```
+
+to:
+
+```js
+///<reference path="../node_modules/@types/jasmine/index.d.ts"/>
+```
+
+and this will be the command to run:
+
+```powershell
+node node_modules/karma/bin/karma start .\karma.conf.js
+```
