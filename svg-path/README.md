@@ -8,7 +8,7 @@ Note that this introduction stays laser-focused on the `<path>` element so all `
 
 ## using SVG and `<img>`
 
-The external SVG files are loaded with `<img>` elements. In terms of falling back to a bitmap away from SVG, Sara Soueidan talks about [the limitations of using `<img>`](https://www.sarasoueidan.com/blog/svg-picture/). However, her general rule stands:
+The external SVG files are loaded with `<img>` elements. In terms of falling back to a bitmap away from SVG, Sara Soueidan talks about [the limitations of using `<img>`](https://www.sarasoueidan.com/blog/svg-picture/). However, her general rule stands for SVG without concern for fallbacks:
 
 >Unless you’re in need of interactivity or external styling, `<img>` is the standard way for loading an SVG image…
 
@@ -18,3 +18,4 @@ The CSS in this sample is confined to styling the `<img>` container. The ‘styl
 
 * “[SVG `<path>`](https://www.w3schools.com/graphics/svg_path.asp)”
 * “[Better SVG Fallback and Art Direction with The `<picture>` Element](https://www.sarasoueidan.com/blog/svg-picture/)”
+* 2015: “[A Complete Guide to SVG Fallbacks](https://css-tricks.com/a-complete-guide-to-svg-fallbacks/)”
