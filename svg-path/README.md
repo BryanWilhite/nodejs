@@ -14,6 +14,14 @@ The external SVG files are loaded with `<img>` elements. In terms of falling bac
 
 The CSS in this sample is confined to styling the `<img>` container. The ‘styling’ of the SVG is done in the most primitive way: the use of `fill`, `stroke` and `stroke-width` attributes directly on `path`.
 
+## “simple shapes” and `<path>`
+
+Sara Soueidan, her number one tip in “[Tips for Creating and Exporting Better SVGs for the Web](http://www.sarasoueidan.com/blog/svg-tips-for-designers/)” is this:
+
+> Create Simple Shapes Using Simple Shape Elements, Not `<path>`s.
+
+Even though the `<path>` element does ‘everything,’ this tip reminds us why we have: `<line>`, `<circle>`, `<rect>`, `<ellipse>`, `<polygon>` and `<polyline>`.
+
 ## resources
 
 * “[SVG `<path>`](https://www.w3schools.com/graphics/svg_path.asp)”
