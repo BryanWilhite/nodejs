@@ -1,7 +1,9 @@
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
     <path d="
         M 25,75
         Q 50,150 75,100
         T 150,150
-    "/>
+    "
+    fill="none" stroke="red" stroke-width="2"
+    />
 </svg>

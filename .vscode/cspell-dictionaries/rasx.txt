@@ -6,6 +6,7 @@ eisenberg
 gitignore
 rasx
 songhay
+soueidan
 superset
 transpiler
 wilhite
