@@ -1,0 +1,7 @@
+.svg {
+    border: dashed #0f0 2px;
+    fill: none;
+    stroke-width: 2px;
+    width: 100px;
+    height: 100px;
+}
