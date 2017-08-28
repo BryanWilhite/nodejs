@@ -4,7 +4,7 @@ One effective way to learn SVG is to start with the `<path>` element. In “[The
 
 >It can draw anything! I’ve heard that under the hood all the other drawing elements ultimately use path anyway.
 
-Note that this introduction stays laser-focused on the `<path>` element so all `viewBox` attributes declare `150px` squares (the use of `100px` in the Guide is an error because it crops out what we see in the images).
+Note that, with the exception of the [Chis Nager](http://chrisnager.com/) icon, this introduction stays laser-focused on the `<path>` element so all `viewBox` attributes declare `150px` squares (the use of `100px` in the Guide is an error because it crops out what we see in the images).
 
 ## using SVG and `<img>`
 

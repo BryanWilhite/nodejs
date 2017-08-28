@@ -4,7 +4,10 @@ cors
 coyier
 eisenberg
 gitignore
+polyline
+nager
 rasx
+rect
 songhay
 soueidan
 superset
