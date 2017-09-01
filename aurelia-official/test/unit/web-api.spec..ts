@@ -12,7 +12,6 @@ describe("the Web API", () => {
   it("promises to load a list of contacts", (done) => {
     api.getContactList().then((result) => {
       expect(result).not.toBe(null);
-      console.log(result);
       //expect(result.length).toBeGreaterThan(0);
     });
   });
