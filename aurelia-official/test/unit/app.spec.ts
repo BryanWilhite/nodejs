@@ -1,5 +1,5 @@
-import {App} from "../../src/app";
-import {WebAPI} from "../../src/web-api"
+import { App } from "../../src/app";
+import { WebAPI } from "../../src/web-api"
 
 describe("the app", () => {
   it("can construct", () => {
