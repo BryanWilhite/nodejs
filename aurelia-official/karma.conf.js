@@ -1,10 +1,9 @@
-'use strict';
-
 const path = require('path');
 const project = require('./aurelia_project/aurelia.json');
 const tsconfig = require('./tsconfig.json');
 
-let testSrc = [{
+let testSrc = [
+    {
         pattern: project.unitTestRunner.source,
         included: false
     },
