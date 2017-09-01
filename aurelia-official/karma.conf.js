@@ -1,14 +1,14 @@
-"use strict";
+'use strict';
 
-const path = require("path");
-const project = require("./aurelia_project/aurelia.json");
-const tsconfig = require("./tsconfig.json");
+const path = require('path');
+const project = require('./aurelia_project/aurelia.json');
+const tsconfig = require('./tsconfig.json');
 
 let testSrc = [{
         pattern: project.unitTestRunner.source,
         included: false
     },
-    "test/aurelia-karma.js"
+    'test/aurelia-karma.js'
 ];
 
 let output = project.platform.output;
@@ -19,7 +19,7 @@ let files = [entryBundle].concat(testSrc).concat(appSrc);
 
 module.exports = function(config) {
     config.set({
-        basePath: "",
+        basePath: '',
         frameworks: [project.testFramework.id],
         files: files,
         exclude: [],
@@ -27,21 +27,21 @@ module.exports = function(config) {
             [project.unitTestRunner.source]: [project.transpiler.id]
         },
         typescriptPreprocessor: {
-            typescript: require("typescript"),
+            typescript: require('typescript'),
             options: tsconfig.compilerOptions
         },
-        reporters: ["progress"],
+        reporters: ['progress'],
         port: 9876,
         colors: true,
         logLevel: config.LOG_INFO,
         autoWatch: true,
-        browsers: ["Chrome"],
+        browsers: ['Chrome'],
         singleRun: false,
         // client.args must be a array of string.
-        // Leave "aurelia-root", project.paths.root in this order so we can find
+        // Leave 'aurelia-root', project.paths.root in this order so we can find
         // the root of the aurelia project.
         client: {
-            args: ["aurelia-root", project.paths.root]
+            args: ['aurelia-root', project.paths.root]
         }
     });
 };
