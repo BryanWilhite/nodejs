@@ -7,7 +7,7 @@ beforeAll(function () { api = new WebAPI(); });
 
 describe("the Web API", () => {
   it("can construct", () => {
-    expect(api).not.toBe(null);
+    expect(api).toBe(null);
   });
   it("promises to load a list of contacts", (done) => {
     api.getContactList().then((result) => {
