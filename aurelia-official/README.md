@@ -53,18 +53,6 @@ In Powershell:
 npm install typings -g
 ```
 
-Additionally, you may need to install `[jshint](https://github.com/jshint/jshint)` (in case Visual Studio complains):
-
-```bash
-sudo npm install jshint -g
-```
-
-In Powershell:
-
-```powershell
-npm install jshint -g
-```
-
 And, to run the site, use the Aurelia CLI:
 
 ```bash
@@ -90,3 +78,7 @@ This tutorial does an excellent job at introducing these concepts:
 * the [Typings CLI](https://github.com/typings/typings)
 * the `noView()` decorator
 * globalized view resources ([global resources](http://aurelia.io/hub.html#/doc/article/aurelia/templating/latest/templating-html-behaviors-introduction/5)) in `resources/index.ts`
+
+## Jasmine and Karma Test Runner
+
+This tutorial is not a [Jasmine](https://jasmine.github.io/) or [Karma](http://karma-runner.github.io) tutorial. However, I did use the Aurelia tutorial to introduce myself to Jasmine (mostly) so the `./test` [folder](./test) goes off the rails and into the weeds. I have more detail in [my karma and jasmine folder](../karma-and-jasmine-minimal).
