@@ -43,7 +43,7 @@ let contacts = [
   }
 ];
 
-export class WebAPI {
+class WebAPI {
   isRequesting = false;
 
   getContactList() {
