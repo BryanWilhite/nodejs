@@ -5,7 +5,7 @@ function getId() {
   return ++id;
 }
 
-let contacts = [
+let contacts: Array<Contact> = [
   {
     id: getId(),
     firstName: 'John',
@@ -95,4 +95,12 @@ class WebAPI {
       }, latency);
     });
   }
+}
+
+class Contact {
+  id: number;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phoneNumber: string;
 }
