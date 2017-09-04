@@ -1,5 +1,5 @@
 {
-  "globalDependencies": {
-    "nprogress": "registry:dt/nprogress#0.0.0+20161119044246"
-  }
+    "globalDependencies": {
+        "nprogress": "registry:dt/nprogress#0.0.0+20161119044246"
+    }
 }
