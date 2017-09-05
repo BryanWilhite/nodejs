@@ -1,10 +1,10 @@
 {
     "version": "1.0.0",
     "summary": "helpful summary of your project, less than 80 characters",
-    "repository": "https://github.com/user/project.git",
+    "repository": "https://github.com/BryanWilhite/nodejs.git",
     "license": "BSD3",
     "source-directories": [
-        "elm-minimal/src"
+        "src"
     ],
     "exposed-modules": [],
     "dependencies": {

@@ -1,0 +1,16 @@
+{
+    "name": "http",
+    "version": "1.0.0",
+    "description": "see README.md",
+    "main": "http.js",
+    "scripts": {
+        "start": "node http.js"
+    },
+    "author": "Bryan D. Wilhite",
+    "license": "ISC",
+    "dependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BryanWilhite/nodejs.git"
+    }
+}

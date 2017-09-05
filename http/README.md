@@ -10,6 +10,8 @@ node .\http\http.js
 
 ```
 
+(or from the subdirectory of this sample run `npm start`).
+
 And then navigate to [localhost:8080](http://localhost:8080) from the Run dialog.
 
 ## related links
