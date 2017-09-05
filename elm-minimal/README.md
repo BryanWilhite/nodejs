@@ -1,6 +1,8 @@
 # elm minimal
 
-This minimal sample worked best (for me) on Linux (Ubuntu). From bash, we start with:
+This minimal sample is based on the [simple counter](http://elm-lang.org/examples/buttons) from “[An Introduction to Elm](https://www.gitbook.com/book/evancz/an-introduction-to-elm/details).”
+
+From bash, we start with:
 
 ```bash
 
@@ -9,25 +11,26 @@ sudo npm install -g elm-format
 
 ```
 
-Then from the root folder of this repository we run `elm-make`:
+From PowerShell (as Admin):
 
 ```bash
 
-elm-make elm-minimal/src/Counter.elm --output=elm-minimal/Counter.html
+npm install -g elm
+npm install -g elm-format
 
 ```
 
-In the root folder of this repository there is an `elm-package.json` file with this `source-directories` setting:
+Then from [./elm-minimal](../elm-minimal) we run `elm-make`:
 
-```js
+```bash
 
-"source-directories": [
-    "elm-minimal/src"
-],
+elm-make ./src/Counter.elm --output=./Counter.html
+
+npm start
 
 ```
 
-Also, the conventional `\elm-stuff` folder has been added to `.gitignore`.
+The conventional `\elm-stuff` folder has been added to `.gitignore`.
 
 ## related resources
 
