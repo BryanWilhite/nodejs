@@ -6,7 +6,7 @@ This repository is based on the assumption that Node.js®-related technology is 
 
 Every CSS, JavaScript and (X)HTML sample that is relevant to the state of the art and my current legacy load _will_ be in this repository. Most of my Web Client/App samples have been on [codepen.io](https://codepen.io/rasx). This repository will attempt to be a superset of my CodePen presence (with the exception of my Angular JS pens).
 
-Each folder of this repository represents a subject matter of self study. To start working with this repository, take a look at the [`http-server`](./http-server) sample.
+Each folder of this repository represents a subject matter of self study. To start working with this repository, take a look at the [`http-server`](./http-server) sample. The ideal is to approach each of these samples from their respective folder through `npm` (with a valid `project.json` file), using `npm start` or `npm test`.
 
 ## the CDN behind my ‘legacy load’ samples
 
