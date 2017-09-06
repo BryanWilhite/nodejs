@@ -1,8 +1,10 @@
 # TypeScript minimal
 
-This sample is based on the “[Editing TypeScript](https://code.visualstudio.com/Docs/languages/typescript)” article from Microsoft.
+This sample is based on the “[Editing TypeScript](https://code.visualstudio.com/Docs/languages/typescript)” article from Microsoft. This article shows that the minimum required for a TypeScript folder/project is the [tsconfig.json](./tsconfig.json) file.
 
-This is a sketch of the PowerShell commands run from the root of this repository:
+All TypeScript projects require an `npm` installation.
+
+PowerShell:
 
 ```PowerShell
 
@@ -10,7 +12,7 @@ npm install -g typescript
 
 ```
 
-and/or in bash:
+bash:
 
 ```bash
 
@@ -18,28 +20,25 @@ sudo npm install -g typescript
 
 ```
 
-After `Ctrl+Shift+B` invokes the Build Task and completes we can run:
+To build the source files, we call `tsc` from [./typescript_minimal](../typescript_minimal).
 
-```PowerShell
-
-node .\typescript_minimal\src\HelloWorld.js
-
-```
-
-and/or in bash:
+PowerShell/bash:
 
 ```bash
 
-node ./typescript_minimal/src/HelloWorld.js
+tsc -p tsconfig.json
 
 ```
 
-The minimal configuration around `src\HelloWorld.ts` are these two files:
+Alternatively, in Visual Studio Code `Ctrl+Shift+B` invokes the **Tasks: Run Build Task** command.
 
-```plaintext
+After a successful build we can run:
 
-.vscode\tasks.json
-tsconfig.json
+PowerShell/bash:
+
+```bash
+
+npm start
 
 ```
 
