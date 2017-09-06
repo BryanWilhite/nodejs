@@ -20,7 +20,7 @@ sudo npm install -g typescript
 
 ```
 
-To build the source files, we call `tsc` from [./typescript_minimal](../typescript_minimal).
+To build the source files, we call `tsc` from `[./typescript_minimal](../typescript_minimal)`.
 
 PowerShell/bash:
 
