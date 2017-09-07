@@ -1,0 +1,39 @@
+html {
+    font-family: sans-serif;
+    margin: 2em;
+}
+
+.empty.group.tile {
+    color: #ccc;
+    cursor: default;
+}
+
+.group.flow {
+    max-height: 0;
+    overflow-y: hidden;
+    /* Set our transitions up. */
+    -webkit-transition: max-height 0.8s;
+    -moz-transition: max-height 0.8s;
+    transition: max-height 0.8s;
+}
+
+.group.flow.expanded {
+    max-height: 14em;
+    overflow-y: auto;
+}
+
+.group.tile {
+    border-bottom: solid 2px #ccc;
+    border-top: solid 1px #ccc;
+    cursor: pointer;
+    font-size: 4.8em;
+    font-weight: bold;
+}
+
+.group>.tile {
+    border: solid 2px #ccc;
+    display: inline-block;
+    font-size: 1.8em;
+    margin: 1em;
+    padding: 1em;
+}

@@ -14,6 +14,17 @@ My ‘legacy load’ samples (mostly JQuery and Bootstrap) should be organized b
 
 My first CDN of choice is “[Microsoft Ajax Content Delivery Network](https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview)” as it is deliberately limited to the most ridiculously popular JavaScript/CSS libraries.
 
+## emulating the CSS normalize feature of codepen.io
+
+The popular `normalize.css` [[repository](https://github.com/necolas/normalize.css/blob/master/normalize.css)] is available [via CDN](https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css). Additionally, this CSS standardizes:
+
+```css
+html {
+    font-family: sans-serif;
+    margin: 2em;
+}
+```
+
 ## my samples road map
 
 Currently my “road map” around these samples is to [invest in Aurelia](./aurelia-official) as a replacement for my Angular 1.x legacy. I would also like to play around with [elm](./elm-minimal) and attempt to bring [Aurelia and elm together](https://www.npmjs.com/package/aurelia-elm) as functional alternative to TypeScript.
