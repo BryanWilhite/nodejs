@@ -1,3 +1,4 @@
+/// <reference path="../typings-jquery/node_modules/@types/jquery/index.d.ts" />
 /*jslint browser: true, this: true, white: true */
 /*global jQuery */
 (function ($) {

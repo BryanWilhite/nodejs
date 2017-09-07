@@ -1,10 +1,11 @@
+/// <reference path="../typings-jquery/node_modules/@types/jquery/index.d.ts" />
 /*jslint this, white, browser */
 /*global jQuery */
-(function ($) {
+(function($) {
     "use strict";
 
-    $(function () {
-        $("table").data("trIndex", -1).delegate("td", "click", function () {
+    $(function() {
+        $("table").data("trIndex", -1).delegate("td", "click", function() {
             var td = $(this);
             var tr = td.closest("tr");
             var table = td.closest("table");
@@ -26,7 +27,7 @@
             if ((lastColumnIndex > 0) && (lastRowIndex > 0)) {
                 $("tbody tr:nth-child(" + lastRowIndex + ") " +
                     "td:nth-child(" + lastColumnIndex + ")",
-                    table).removeClass("SelectedCell");
+                table).removeClass("SelectedCell");
             }
 
             $("tbody tr td:nth-child(" + currentColumnIndex + ")", table).addClass("SelectedColumn");
