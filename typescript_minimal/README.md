@@ -30,9 +30,17 @@ tsc -p tsconfig.json
 
 ```
 
+Or you can use the non-life-cycle script:
+
+```bash
+
+npm run tsc
+
+```
+
 Alternatively, in Visual Studio Code `Ctrl+Shift+B` invokes the **Tasks: Run Build Task** command.
 
-After a successful build we can run:
+After a successful build we can run the conventional, life-cycle script:
 
 PowerShell/bash:
 

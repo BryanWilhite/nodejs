@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "description": "see README.md",
     "scripts": {
-        "start": "node ./src/HelloWorld.js"
+        "start": "node ./src/HelloWorld.js",
+        "tsc": "tsc -p tsconfig.json"
     },
     "author": "Bryan D. Wilhite",
     "license": "ISC",
