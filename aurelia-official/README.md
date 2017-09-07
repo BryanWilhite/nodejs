@@ -59,6 +59,8 @@ And, to run the site, use the Aurelia CLI:
 au run --watch
 ```
 
+The CLI is surely meant to replace `npm run` but for consistency there is `npm start` support.
+
 This tutorial does an excellent job at introducing these concepts:
 
 * the [Aurelia CLI](https://github.com/aurelia/cli)
