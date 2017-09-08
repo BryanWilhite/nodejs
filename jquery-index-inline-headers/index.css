@@ -1,0 +1,56 @@
+html {
+    font-family: sans-serif;
+    margin: 2em;
+}
+
+body>div {
+    height: 15em;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.empty.group.tile {
+    color: #ccc;
+    cursor: default;
+}
+
+.group.tile {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.group.flow {
+    background-color: #FCFB97;
+    border-bottom: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+    display: inline-block;
+    margin-right: 1.5em;
+    max-height: 16px;
+    overflow: hidden;
+    vertical-align: top;
+    white-space: normal;
+    width: 16px;
+    -webkit-transition: max-height 0.8s, width 0.8s;
+    -moz-transition: max-height 0.8s, width 0.8s;
+    transition: max-height 0.8s, width 0.8s;
+}
+
+.group.flow.expanded {
+    max-height: 14em;
+    overflow-y: auto;
+    width: 320px;
+}
+
+.group.tile {
+    cursor: pointer;
+    font-size: 4.8em;
+    font-weight: bold;
+}
+
+.group>.tile {
+    border: solid 2px #ccc;
+    display: inline-block;
+    font-size: 1.8em;
+    margin: 1em;
+    padding: 1em;
+}

@@ -1,0 +1,14 @@
+{
+    "name": "jquery-index-inline-headers",
+    "version": "1.0.0",
+    "description": "see README.md",
+    "scripts": {
+        "start": "http-server . -o -c-1"
+    },
+    "author": "Bryan D. Wilhite",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BryanWilhite/nodejs.git"
+    }
+}
