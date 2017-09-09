@@ -20,11 +20,14 @@ module.exports = function(config) {
         // list of files to exclude
         exclude: [
         ],
-
+        plugins:  [
+            'karma-typescript-plugin',
+            'karma-coverage'
+        ],
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            '**/*.ts': ['typescript']
+            '**/*.ts': ['typescript', 'coverage']
         },
         typescriptPreprocessor: {
             options: {
@@ -39,7 +42,11 @@ module.exports = function(config) {
         // test results reporter to use
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-        reporters: ['progress'],
+        reporters: [
+            'progress',
+            'coverage',
+            'typescript'
+        ],
 
         // web server port
         port: 9876,

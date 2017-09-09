@@ -17,12 +17,16 @@
     },
     "devDependencies": {
         "@types/jasmine": "^2.5.52",
+        "istanbul": "^0.4.5",
         "jasmine": "^2.8.0",
         "karma": "^1.7.1",
         "karma-chrome-launcher": "^2.2.0",
+        "karma-coverage": "^1.1.1",
         "karma-jasmine": "^1.1.0",
         "karma-requirejs": "^1.1.0",
+        "karma-typescript-plugin": "^0.1.2",
         "karma-typescript-preprocessor": "^0.3.1",
-        "typescript": "^2.3.4"
+        "remap-istanbul": "^0.9.5",
+        "typescript": "^2.5.2"
     }
 }
