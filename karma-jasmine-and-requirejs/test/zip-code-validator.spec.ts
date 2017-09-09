@@ -6,6 +6,7 @@ var zipCode = "90045";
 
 describe("the StringValidator", () => {
     it(`shows ${zipCode} is not acceptable`, () => {
+        console.log("foo");
         var test = validator.isAcceptable(zipCode);
         expect(test).toBe(true);
     });
