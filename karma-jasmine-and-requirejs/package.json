@@ -1,0 +1,27 @@
+{
+    "name": "karma-and-jasmine-minimal",
+    "version": "1.0.0",
+    "description": "This ‘minimal’ tutorial is based on “[Continuous Testing of TypeScript Code](http://www.damirscorner.com/blog/posts/20160116-ContinuousTestingOfTypeScriptCode.html).”",
+    "main": "index.js",
+    "scripts": {
+        "test": "node node_modules/karma/bin/karma start ./karma.conf.js"
+    },
+    "author": "Bryan D. Wilhite",
+    "license": "ISC",
+    "dependencies": {
+        "requirejs": "^2.3.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BryanWilhite/nodejs.git"
+    },
+    "devDependencies": {
+        "@types/jasmine": "^2.5.52",
+        "jasmine": "^2.8.0",
+        "karma": "^1.7.1",
+        "karma-chrome-launcher": "^2.2.0",
+        "karma-jasmine": "^1.1.0",
+        "karma-typescript-preprocessor": "^0.3.1",
+        "typescript": "^2.3.4"
+    }
+}
