@@ -20,5 +20,10 @@
         "gulp-minify-css": "^1.2.4",
         "map-stream": "0.0.7",
         "vinyl-fs": "^2.4.4"
+    },
+    "eslintConfig": {
+        "env": {
+            "node": true
+        }
     }
 }
