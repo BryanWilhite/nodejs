@@ -27,7 +27,7 @@ gulp.task("dev", function() {
 
     vinyl_fs.src(cssFiles)
         .pipe(map(log))
-        .pipe(concat(cssFileName + ".css"))
+        .pipe(concat(`${cssFileName}.css`))
         .pipe(gulp.dest(stylesPath));
 });
 
@@ -37,6 +37,6 @@ gulp.task("prod", function() {
     vinyl_fs.src(cssFiles)
         .pipe(map(log))
         .pipe(minify_css())
-        .pipe(concat(cssFileName + ".min.css"))
+        .pipe(concat(`${cssFileName}.min.css`))
         .pipe(gulp.dest(stylesPath));
 });
