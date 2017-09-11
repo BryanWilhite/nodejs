@@ -1,8 +1,9 @@
 {
     "compilerOptions": {
-        "target": "es5",
-        "module": "Amd",
-        "sourceMap": true
+        "module": "amd",
+        "outDir": "./js",
+        "sourceMap": true,
+        "target": "es5"
     },
     "exclude": [
         "jspm_packages",
