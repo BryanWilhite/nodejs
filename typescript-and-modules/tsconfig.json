@@ -2,7 +2,7 @@
     "compilerOptions": {
         "module": "amd",
         "outDir": "./js",
-        "sourceMap": true,
+        "sourceMap": false,
         "target": "es5"
     },
     "exclude": [

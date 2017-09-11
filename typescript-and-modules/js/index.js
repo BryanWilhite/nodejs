@@ -6,4 +6,3 @@ define(["require", "exports", "./zip-code-validator"], function (require, export
     var test = validator.isAcceptable(zip);
     console.log("zip " + zip + ": " + test);
 });
-//# sourceMappingURL=index.js.map
