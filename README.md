@@ -25,6 +25,8 @@ html {
 }
 ```
 
+For detail, see [gulp and CSS handling](./gulp-and-css-handling).
+
 ## my samples road map
 
 Currently my “road map” around these samples is to [invest in Aurelia](./aurelia-official) as a replacement for my Angular 1.x legacy. I would also like to play around with [elm](./elm-minimal) and attempt to bring [Aurelia and elm together](https://www.npmjs.com/package/aurelia-elm) as functional alternative to TypeScript.
