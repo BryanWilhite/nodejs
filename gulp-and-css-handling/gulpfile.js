@@ -1,4 +1,3 @@
-/// <reference path="../typings-gulp/node_modules/@types/gulp/index.d.ts" />
 var gulp = require("gulp"),
     concat = require("gulp-concat"),
     map = require("map-stream"),

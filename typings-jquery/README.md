@@ -4,5 +4,5 @@ This folder is used by the other folders in this repository to provide code-comp
 
 ## Related Links
 
-* “[Intellisense with Visual Studio Code](https://johnpapa.net/intellisense-witha-visual-studio-code/)”
+* “[Intellisense with Visual Studio Code](https://johnpapa.net/intellisense-witha-visual-studio-code/)” [`tsd` is deprecated in favor of the ([archived](https://github.com/typings/typings)) `typings` command]
 * [TypeSearch](https://microsoft.github.io/TypeSearch/)
