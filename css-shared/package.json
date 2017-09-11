@@ -1,0 +1,14 @@
+{
+    "name": "css-shared",
+    "version": "1.0.0",
+    "description": "see README.md",
+    "author": "Bryan D. Wilhite",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BryanWilhite/nodejs.git"
+    },
+    "devDependencies": {
+        "normalize.css": "^7.0.0"
+    }
+}
