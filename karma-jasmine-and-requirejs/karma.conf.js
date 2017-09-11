@@ -20,14 +20,10 @@ module.exports = function(config) {
         // list of files to exclude
         exclude: [
         ],
-        plugins:  [
-            'karma-typescript-plugin',
-            'karma-coverage'
-        ],
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            '**/*.ts': ['typescript', 'coverage']
+            '**/*.ts': ['typescript']
         },
         typescriptPreprocessor: {
             options: {
@@ -44,7 +40,6 @@ module.exports = function(config) {
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
         reporters: [
             'progress',
-            'coverage',
             'typescript'
         ],
 
