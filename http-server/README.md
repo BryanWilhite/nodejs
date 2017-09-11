@@ -38,4 +38,8 @@ sudo ln -s /usr/bin/nodejs /usr/bin/node
 
 ## Using package.json to call `http-server`
 
-I currently intend to run `http-server` through `npm start` from the root subdirectory of each sample which means there must be a `package.json` file, declaring `scripts.start`.
+I currently intend to run `http-server` through `npm start` from the root subdirectory of each sample which means there must be a `package.json` file, declaring `scripts.start`. There is a [package.json](../package.json) file in the root of this repository so this command will call http-server and open a browser:
+
+```bash
+npm run server
+```
