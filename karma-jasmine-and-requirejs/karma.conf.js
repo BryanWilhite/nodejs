@@ -9,7 +9,7 @@ module.exports = function(config) {
 
         // frameworks to use
         // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-        frameworks: ['jasmine', 'requirejs'],
+        frameworks: ['jasmine'],
 
         // list of files / patterns to load in the browser
         files: [
@@ -23,11 +23,17 @@ module.exports = function(config) {
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            '**/*.ts': ['typescript']
+            '**/*.ts': ['typescript'],
+            './requirejs.config.js': ['requirejs']
+        },
+        requirejsPreprocessor:{
+            testRegexp: '(spec|test)\.js$'
         },
         typescriptPreprocessor: {
             options: {
-                sourceMap: true, // generate source maps
+                target: "es5",
+                module: "amd",
+                sourceMap: false, // generate source maps
                 noResolve: false // enforce type resolution
             },
             transformPath: function(path) {
@@ -39,8 +45,7 @@ module.exports = function(config) {
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
         reporters: [
-            'progress',
-            'typescript'
+            'progress'
         ],
 
         // web server port
