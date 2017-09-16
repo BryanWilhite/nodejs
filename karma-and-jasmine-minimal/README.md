@@ -37,3 +37,8 @@ node node_modules/karma/bin/karma start .\karma.conf.js
 ```
 
 Optionally, this command can be added to `scripts.test` of `package.json` for the conventional `npm test` command.
+
+## Related Links
+
+* [Historical Google Tech Talk from Vojta Jina of the original Angular JS team](https://www.youtube.com/watch?v=YG5DEzaQBIc)
+* [Karma files](http://karma-runner.github.io/1.0/config/files.html)
