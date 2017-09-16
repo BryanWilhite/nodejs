@@ -60,6 +60,22 @@ proxies: {
 
 With the configuration above (with `singleRun: true`), the `files` array shows that `/base/served/karma.png` can be entered into the browser and serve the PNG. But the Karma-conventional `/base/` prefix can be eliminated with the `proxies` dictionary. See the “proxies” section in [Configuration File](http://karma-runner.github.io/1.0/config/configuration-file.html).
 
+## `karma-htmlfile-reporter`
+
+The plugin [`karma-htmlfile-reporter`](https://github.com/matthias-schuetz/karma-htmlfile-reporter) provides what should come by default: the ability to see a report of the tests in the browser in addition to the terminal output. This sample is configured to render the report at `base/test/report.html`, with the help of `files` served:
+
+```js
+{
+    pattern: 'test/report.html',
+    included: false,
+    served: true,
+    watched: false,
+    nocache: true
+}
+```
+
+I assume that the default test-runner page is not used by `karma-htmlfile-reporter` (and many, many other reports) is because this area is reserved for test output of DOM elements.
+
 ## Related Links
 
 * [Historical Google Tech Talk from Vojta Jina of the original Angular JS team](https://www.youtube.com/watch?v=YG5DEzaQBIc)
