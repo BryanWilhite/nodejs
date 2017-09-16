@@ -24,6 +24,10 @@ module.exports = function(config) {
             }
         ],
 
+        proxies: {
+            '/served/': '/base/served/'
+        },
+
         // list of files to exclude
         exclude: [],
 

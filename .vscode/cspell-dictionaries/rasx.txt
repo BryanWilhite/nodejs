@@ -7,6 +7,7 @@ coyier
 eisenberg
 gitignore
 hejlsberg
+jina
 polyline
 nager
 rasx
@@ -15,5 +16,6 @@ songhay
 soueidan
 superset
 transpiler
+vojta
 wilhite
 xhtml

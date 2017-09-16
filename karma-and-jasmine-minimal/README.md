@@ -42,3 +42,4 @@ Optionally, this command can be added to `scripts.test` of `package.json` for th
 
 * [Historical Google Tech Talk from Vojta Jina of the original Angular JS team](https://www.youtube.com/watch?v=YG5DEzaQBIc)
 * [Karma files](http://karma-runner.github.io/1.0/config/files.html)
+* [“Quick Karma” (demonstrates the use of `debug.html`)](https://www.youtube.com/watch?v=AoMoL2UAC-A)
