@@ -64,8 +64,8 @@ module.exports = function(config) {
             pageTitle: 'Unit Tests',
             subPageTitle: 'A sample project description',
             groupSuites: true,
-            useCompactStyle: true,
-            useLegacyStyle: true
+            useCompactStyle: false,
+            useLegacyStyle: false
         },
 
         // web server port
