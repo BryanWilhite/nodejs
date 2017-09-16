@@ -38,6 +38,28 @@ node node_modules/karma/bin/karma start .\karma.conf.js
 
 Optionally, this command can be added to `scripts.test` of `package.json` for the conventional `npm test` command.
 
+## `files` served and `proxies` in `karma.conf.js`
+
+It is possible to configure karma to serve files (using relative paths) once this is configured in `karma.conf.js`:
+
+```js
+files: [
+    {
+        pattern: 'served/*.*',
+        included: false,
+        served: true,
+        watched: false,
+        nocache: true
+    }
+],
+
+proxies: {
+    '/served/': '/base/served/'
+},
+```
+
+With the configuration above (with `singleRun: true`), the `files` array shows that `/base/served/karma.png` can be entered into the browser and serve the PNG. But the Karma-conventional `/base/` prefix can be eliminated with the `proxies` dictionary. See the “proxies” section in [Configuration File](http://karma-runner.github.io/1.0/config/configuration-file.html).
+
 ## Related Links
 
 * [Historical Google Tech Talk from Vojta Jina of the original Angular JS team](https://www.youtube.com/watch?v=YG5DEzaQBIc)
