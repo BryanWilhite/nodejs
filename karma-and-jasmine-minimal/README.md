@@ -74,8 +74,6 @@ The plugin [`karma-htmlfile-reporter`](https://github.com/matthias-schuetz/karma
 }
 ```
 
-I assume that the default test-runner page is not used by `karma-htmlfile-reporter` (and many, many other reports) is because this area is reserved for test output of DOM elements.
-
 ## Related Links
 
 * [Historical Google Tech Talk from Vojta Jina of the original Angular JS team](https://www.youtube.com/watch?v=YG5DEzaQBIc)
