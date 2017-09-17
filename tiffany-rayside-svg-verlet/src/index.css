@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+/*
+
+FUNKYKB: today I assume that @use is from postcss-use exclusively used in the browser
+[https://github.com/postcss/postcss-use]
 @use postcss-simple-vars;
 @use postcss-nested;
+
+*/
+
 $track-height: 6px;
 $knob-size: 16px;
 html,

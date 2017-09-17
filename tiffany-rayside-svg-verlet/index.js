@@ -1,6 +1,5 @@
 var ss = 465; //svg size
-var p = document.getElementById('p'),
-    poly, $;
+var p = document.getElementById('p'), poly, $;
 
 function Pt(x, y) {
     this.x = x || 0;

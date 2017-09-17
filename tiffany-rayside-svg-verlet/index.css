@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+/*
+
+FUNKYKB: today I assume that @use is from postcss-use exclusively used in the browser
+[https://github.com/postcss/postcss-use]
 @use postcss-simple-vars;
 @use postcss-nested;
-$track-height: 6px;
-$knob-size: 16px;
+
+*/
 html,
 body {
     height: 100%;
@@ -29,72 +33,81 @@ body {
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
-    & .input {
+}
+
+body .input {
         -ms-flex-item-align: center;
             align-self: center;
         padding-top: 0.25rem;
-        & label,
-        output {
+    }
+
+body .input label,
+        body .input output {
             vertical-align: top;
             padding-right: 1rem;
         }
-        & input[type="range"] {
+
+body .input input[type="range"] {
             -webkit-appearance: none;
             width: 10rem;
             padding: 2px 0;
             background: transparent;
             outline: none;
         }
-        & input[type="range"]::-webkit-slider-runnable-track {
+
+body .input input[type="range"]::-webkit-slider-runnable-track {
             position: relative;
-            height: $track-height;
+            height: 6px;
             border-radius: 5px;
             background: #3B3740;
         }
-        & input[type="range"]::-moz-range-track {
+
+body .input input[type="range"]::-moz-range-track {
             position: relative;
-            height: $track-height;
+            height: 6px;
             border-radius: 5px;
             background: #3B3740;
         }
-        & input[type="range"]::-webkit-slider-thumb {
+
+body .input input[type="range"]::-webkit-slider-thumb {
             -webkit-appearance: none;
-            height: $knob-size;
-            width: $knob-size;
-            margin-top: calc(-$knob-size / 2 + $track-height / 2);
+            height: 16px;
+            width: 16px;
+            margin-top: calc(-16px / 2 + 6px / 2);
             background: #F9F2E7;
             color: red;
             border: none;
             border-radius: 50%;
         }
-        & input[type="range"]::-moz-range-thumb {
+
+body .input input[type="range"]::-moz-range-thumb {
             -webkit-appearance: none;
-            height: $knob-size;
-            width: $knob-size;
-            margin-top: calc(-$knob-size / 2 + $track-height / 2);
+            height: 16px;
+            width: 16px;
+            margin-top: calc(-16px / 2 + 6px / 2);
             background: #F9F2E7;
             color: red;
             border: none;
             border-radius: 50%;
         }
-    }
-    & #note {
+
+body #note {
         -ms-flex-item-align: center;
             align-self: center;
         margin-top: .2rem;
         font-size: .7rem;
     }
-}
 
 .svg {
     text-align: center;
-    & svg {
+}
+
+.svg svg {
         background: #3B3740;
         -webkit-box-shadow: inset 4px 4px 16px 12px hsla(0, 0%, 05%, .15);
                 box-shadow: inset 4px 4px 16px 12px hsla(0, 0%, 05%, .15);
         border-radius: 5px;
     }
-}
 
 /*** 
     Kudos: 
