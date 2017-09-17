@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@use postcss-simple-vars;
+@use postcss-nested;
+$track-height: 6px;
+$knob-size: 16px;
+html,
+body {
+    height: 100%;
+    font: bold .9rem 'Josefin Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background: #A2A1D0;
+    cursor: move;
+    user-select: none;
+    & .input {
+        align-self: center;
+        padding-top: 0.25rem;
+        & label,
+        output {
+            vertical-align: top;
+            padding-right: 1rem;
+        }
+        & input[type="range"] {
+            -webkit-appearance: none;
+            width: 10rem;
+            padding: 2px 0;
+            background: transparent;
+            outline: none;
+        }
+        & input[type="range"]::-webkit-slider-runnable-track {
+            position: relative;
+            height: $track-height;
+            border-radius: 5px;
+            background: #3B3740;
+        }
+        & input[type="range"]::-moz-range-track {
+            position: relative;
+            height: $track-height;
+            border-radius: 5px;
+            background: #3B3740;
+        }
+        & input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: $knob-size;
+            width: $knob-size;
+            margin-top: calc(-$knob-size / 2 + $track-height / 2);
+            background: #F9F2E7;
+            color: red;
+            border: none;
+            border-radius: 50%;
+        }
+        & input[type="range"]::-moz-range-thumb {
+            -webkit-appearance: none;
+            height: $knob-size;
+            width: $knob-size;
+            margin-top: calc(-$knob-size / 2 + $track-height / 2);
+            background: #F9F2E7;
+            color: red;
+            border: none;
+            border-radius: 50%;
+        }
+    }
+    & #note {
+        align-self: center;
+        margin-top: .2rem;
+        font-size: .7rem;
+    }
+}
+
+.svg {
+    text-align: center;
+    & svg {
+        background: #3B3740;
+        box-shadow: inset 4px 4px 16px 12px hsla(0, 0%, 05%, .15);
+        border-radius: 5px;
+    }
+}
+
+/*** 
+    Kudos: 
+    Range Slider design / CSS lifted from @everdimension's Css Box Model Pen: https://codepen.io/everdimension/pen/NrNvGj?editors=0110 
+    Thanks! =)
+***/

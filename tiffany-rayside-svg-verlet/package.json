@@ -1,0 +1,21 @@
+{
+    "name": "tiffany-rayside-svg-verlet",
+    "version": "1.0.0",
+    "description": "see README.md",
+    "scripts": {
+        "start": "cd .. && http-server . -o -c-1"
+    },
+    "author": "Tiffany Rayside",
+    "license": "ISC",
+    "dependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BryanWilhite/nodejs.git"
+    },
+    "devDependencies": {
+        "autoprefixer": "^7.1.4",
+        "gulp": "^3.9.1",
+        "gulp-postcss": "^7.0.0",
+        "gulp-sourcemaps": "^2.6.1"
+    }
+}

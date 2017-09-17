@@ -13,11 +13,13 @@ polyline
 preprocessors
 nager
 rasx
+rayside
 rect
 songhay
 soueidan
 superset
 transpiler
+verlet
 vojta
 wilhite
 xhtml

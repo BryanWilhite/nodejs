@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="This is a sample for my self-education." />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="../css-shared/shared.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+
+    <script src="./index.js"></script>
+
+    <title>Tiffany Rayside: SVG: Verlet</title>
+</head>
+
+<body>
+    <h1>Tiffany Rayside: SVG: <em>Verlet</em></h1>
+    <div class='svg'>
+        <svg version="1.1" width="465" height="465" viewBox='0 0 465 465'>
+            <path id="p" d="M 100 350 L 200 50 300 350 Z" stroke="#F9F2E7"stroke-width="1" fill="none" />
+        </svg></div>
+    <div class='input'>
+        <form oninput="val.value=ptrng.value">
+            <label>No. of Points:&nbsp;<output name="val" for="ptrng">9</output></label><input id="ptrng" type="range" min="3" max="20" step="1" value="9" />
+        </form>
+    </div>
+    <p id='note'>*Note: Container has boundary issues; object may get lost when it hits certain points. Adjust the slider && it will return into view.</p>
+</body>
+
+</html>
