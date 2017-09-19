@@ -1,6 +1,6 @@
-# karma and jasmine: minimal
+# Karma and Jasmine: minimal
 
-This ‘minimal’ tutorial for [karma](https://karma-runner.github.io) and [jasmine](https://jasmine.github.io) is based on “[Continuous Testing of TypeScript Code](http://www.damirscorner.com/blog/posts/20160116-ContinuousTestingOfTypeScriptCode.html).” Recall that to start this work in an empty folder we have to run `npm init`—without this there will warnings about `package.json` being missing as packages are installed. These are the packages to install (with `karma init`):
+This ‘minimal’ tutorial for [Karma](https://karma-runner.github.io) and [Jasmine](https://jasmine.github.io) is based on “[Continuous Testing of TypeScript Code](http://www.damirscorner.com/blog/posts/20160116-ContinuousTestingOfTypeScriptCode.html).” Recall that to start this work in an empty folder we have to run `npm init`—without this there will warnings about `package.json` being missing as packages are installed. These are the packages to install (with `karma init`):
 
 ```powershell
 npm install jasmine --save-dev
@@ -40,7 +40,7 @@ Optionally, this command can be added to `scripts.test` of `package.json` for th
 
 ## `files` served and `proxies` in `karma.conf.js`
 
-It is possible to configure karma to serve files (using relative paths) once this is configured in `karma.conf.js`:
+It is possible to configure Karma to serve files (using relative paths) once this is configured in `karma.conf.js`:
 
 ```js
 files: [
@@ -62,7 +62,7 @@ With the configuration above (with `singleRun: true`), the `files` array shows t
 
 ## `karma-htmlfile-reporter`
 
-The plugin [`karma-htmlfile-reporter`](https://github.com/matthias-schuetz/karma-htmlfile-reporter) provides what should come by default: the ability to see a report of the tests in the browser in addition to the terminal output. This sample is configured to render the report at `base/test/report.html`, with the help of `files` served:
+The Karma plugin [`karma-htmlfile-reporter`](https://github.com/matthias-schuetz/karma-htmlfile-reporter) provides what should come by default: the ability to see a report of the tests in the browser in addition to the terminal output. This sample is configured to render the report at `base/test/report.html`, with the help of `files` served:
 
 ```js
 {
@@ -73,6 +73,20 @@ The plugin [`karma-htmlfile-reporter`](https://github.com/matthias-schuetz/karma
     nocache: true
 }
 ```
+
+## `karma-jasmine-jquery`
+
+The final piece in this ‘minimal’ setup is the Karma framework, `karma-jasmine-jquery` [[GitHub](https://github.com/bessdsv/karma-jasmine-jquery)]. This makes testing UI components with the power of JQuery possible:
+
+```bash
+npm install --save-dev karma-jasmine-jquery
+
+npm install --save-dev @types/jasmine-jquery
+npm install --save-dev @types/karma-jasmine
+```
+
+`karma-jasmine-jquery` is just an adapter for `jasmine-jquery` so much of the documentation detail is at its [GitHub](https://github.com/velesin/jasmine-jquery) repository. The `jasmine-jquery-intro.spec.ts` [file](./jasmine-jquery-intro.spec.ts) shows this Karma framework in action.
+
 
 ## Related Links
 

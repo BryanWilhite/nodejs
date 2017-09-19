@@ -13,6 +13,9 @@ describe("karma-jasmine-jquery framework", () => {
         expect(p.length).toEqual(1);
         expect(p.text()).toEqual("p");
 
+        // or use karma-jasmine-jquery:
+        expect(p).toContainText("p");
+
         let a: JQuery<Element> = <JQuery<Element>>jQuery(".test1");
         expect(a).not.toBeNull();
         expect(a.length).toEqual(1);
