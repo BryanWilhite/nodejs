@@ -5,7 +5,6 @@
 
 describe("karma-jasmine-jquery framework", () => {
     jasmine.getFixtures().fixturesPath = "base/served";
-
     it("has an HTML file", () => {
         loadFixtures("test1.html");
 
@@ -23,6 +22,13 @@ describe("karma-jasmine-jquery framework", () => {
         expect(span).not.toBeNull();
         expect(span.length).toEqual(1);
         expect(span.text()).toEqual("content of inline element");
+    });
+
+    jasmine.getJSONFixtures().fixturesPath = "base/served";
+    it("has a JSON file", () => {
+        let data: any = getJSONFixture("test1.json");
+        expect(data.test).toBeDefined();
+        expect(data.test).toBe(true);
     });
 
 });
