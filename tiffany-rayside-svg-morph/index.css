@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: hsla(255, 255%, 255%, 1);
+    font: 40px sans-serif;
+    font-family: 'Indie Flower', cursive;
+}
+
+h1, h3 {
+    text-align: center;
+    line-height: 1.5em;
+}
+
+div {
+    background: hsla(0, 0%, 0%, 1);
+    padding: 1%;
+    margin-top: 1%;
+}
+
+g {
+    stroke: hsla(255, 255%, 255%, 1);
+    fill: hsla(255, 255%, 255%, 1);
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+text {
+    text-anchor: middle;
+    text-rendering: geometricPrecision;
+    dominant-baseline: mathematical;
+}
+
+g {
+    transition-property: stroke-width, font-size;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    font-size: 0px;
+    stroke-width: 100px;
+}
+
+svg:hover>g {
+    font-size: 100px;
+    stroke-width: 0px;
+}
