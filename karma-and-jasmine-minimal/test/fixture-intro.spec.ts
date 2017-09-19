@@ -4,7 +4,7 @@
 describe("some test that needs a fixture", () => {
     beforeAll(() => {
         // if base path is different from the default `spec/fixtures`:
-        fixture.setBase("served");
+        fixture.setBase("base/served");
     });
 
     beforeEach(() => {

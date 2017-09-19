@@ -11,13 +11,13 @@
     <section>
       <header class="overview">
         <div class="browser">Browser: Chrome 61.0.3163 (Windows 10 0.0.0)</div>
-        <div class="timestamp">Timestamp: 2017-9-19 12:26:38</div>
+        <div class="timestamp">Timestamp: 2017-9-19 12:35:38</div>
         <p class="results">
           5 tests / 
           0 errors / 
           2 failures / 
           0 skipped / 
-          runtime: 0.425s
+          runtime: 0.411s
         </p>
       </header>
       <div class="spec spec--group">
@@ -27,18 +27,9 @@
         <h3 class="spec__header">
           <div class="spec__title">
             <p class="spec__suite hidden">the Web API</p>
-            <em class="spec__descrip">promises to load a list of contacts</em>
-          </div>
-          <div class="spec__status">Passed in 0.203s</div>
-        </h3>
-      </div>
-      <div class="spec spec--pass" style="margin-left:0px;">
-        <h3 class="spec__header">
-          <div class="spec__title">
-            <p class="spec__suite hidden">the Web API</p>
             <em class="spec__descrip">promises to load contact detail</em>
           </div>
-          <div class="spec__status">Passed in 0.211s</div>
+          <div class="spec__status">Passed in 0.201s</div>
         </h3>
       </div>
       <div class="spec spec--group">
@@ -53,7 +44,7 @@
           <div class="spec__status">Failed</div>
         </h3>
         <p class="spec__log">
-          ReferenceError: Cannot find fixture 'served/test1.json'<br />    at Fixture._throwNoFixture (node_modules/karma-fixture/lib/fixture.js:141:13)<br />    at Fixture.load (node_modules/karma-fixture/lib/fixture.js:65:18)<br />    at UserContext.&lt;anonymous&gt; (test/fixture-intro.spec.js:10:32)<br />
+          ReferenceError: Cannot find fixture 'served/test1.html'<br />    at Fixture._throwNoFixture (node_modules/karma-fixture/lib/fixture.js:141:13)<br />    at Fixture.load (node_modules/karma-fixture/lib/fixture.js:78:18)<br />    at UserContext.&lt;anonymous&gt; (test/fixture-intro.spec.js:10:32)<br />
           <br />TypeError: Cannot read property '0' of undefined<br />    at UserContext.&lt;anonymous&gt; (test/fixture-intro.spec.js:17:59)<br />
         </p>
       </div>
@@ -82,10 +73,19 @@
           <div class="spec__status">Passed in 0.001s</div>
         </h3>
       </div>
+      <div class="spec spec--pass" style="margin-left:0px;">
+        <h3 class="spec__header">
+          <div class="spec__title">
+            <p class="spec__suite hidden">the Web API</p>
+            <em class="spec__descrip">promises to load a list of contacts</em>
+          </div>
+          <div class="spec__status">Passed in 0.201s</div>
+        </h3>
+      </div>
       <div class="system-out"><strong>System output:</strong><br />Chrome 61.0.3163 (Windows 10 0.0.0) LOG: 'fixture.el.firstChild:', 'null'
 <br />Chrome 61.0.3163 (Windows 10 0.0.0) LOG: 'contact list: [{"id":1,"firstName":"John","lastName":"Tolkien","email":"tolkien@inklings.com"},{"id":2,"firstName":"Clive","lastName":"Lewis","email":"lewis@inklings.com"},{"id":3,"firstName":"Owen","lastName":"Barfield","email":"barfield@inklings.com"},{"id":4,"firstName":"Charles","lastName":"Williams","email":"williams@inklings.com"},{"id":5,"firstName":"Roger","lastName":"Green","email":"green@inklings.com"}]'
-<br />Chrome 61.0.3163 (Windows 10 0.0.0) LOG: 'random index: 4'
-<br />Chrome 61.0.3163 (Windows 10 0.0.0) LOG: 'contact detail: {"id":4,"firstName":"Charles","lastName":"Williams","email":"williams@inklings.com","phoneNumber":"867-5309"}'
+<br />Chrome 61.0.3163 (Windows 10 0.0.0) LOG: 'random index: 1'
+<br />Chrome 61.0.3163 (Windows 10 0.0.0) LOG: 'contact detail: {"id":1,"firstName":"John","lastName":"Tolkien","email":"tolkien@inklings.com","phoneNumber":"867-5309"}'
 </div>
     </section>
   </body>
