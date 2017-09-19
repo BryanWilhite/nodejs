@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Chango);
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    cursor: move;
+    height: 100%;
+    overflow: hidden;
+    background: hsla(166, 95%, 25%, 1);
+    background-position: 50% 50%;
+    font-family: 'Chango', cursive;
+}
+
+svg text::selection {
+    background: none;
+}
