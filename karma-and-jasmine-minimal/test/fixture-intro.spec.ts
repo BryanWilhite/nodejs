@@ -4,11 +4,11 @@
 describe("some test that needs a fixture", () => {
     beforeAll(() => {
         // if base path is different from the default `spec/fixtures`:
-        fixture.setBase("");
+        fixture.setBase("served");
     });
 
     beforeEach(() => {
-        this.result = fixture.load("base/served/test1.html", "base/served/test1.json");
+        this.result = fixture.load("test1.html", "test1.json");
     });
 
     afterEach(() => {
