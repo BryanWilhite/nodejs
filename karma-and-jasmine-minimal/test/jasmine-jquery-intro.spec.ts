@@ -18,6 +18,11 @@ describe("karma-jasmine-jquery framework", () => {
         expect(a).not.toBeNull();
         expect(a.length).toEqual(1);
         expect(a.attr("href")).toEqual("#");
+
+        let span: JQuery<Element> = <JQuery<Element>>jQuery("span", a);
+        expect(span).not.toBeNull();
+        expect(span.length).toEqual(1);
+        expect(span.text()).toEqual("content of inline element");
     });
 
 });
