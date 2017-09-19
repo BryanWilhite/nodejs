@@ -16,6 +16,7 @@
   "devDependencies": {
     "@types/jasmine": "^2.5.52",
     "@types/jasmine-jquery": "^1.5.32",
+    "@types/karma-jasmine": "0.0.29",
     "jasmine": "^2.8.0",
     "karma": "^1.7.1",
     "karma-chrome-launcher": "^2.2.0",
