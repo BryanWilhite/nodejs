@@ -20,6 +20,7 @@ songhay
 soueidan
 superset
 transpiler
+vash
 verlet
 vojta
 wilhite
