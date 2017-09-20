@@ -7,7 +7,9 @@
     },
     "author": "Bryan D. Wilhite",
     "license": "ISC",
-    "dependencies": {},
+    "dependencies": {
+        "jquery-validation": "^1.17.0"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/BryanWilhite/nodejs.git"
