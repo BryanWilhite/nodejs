@@ -1,7 +1,7 @@
 ///<reference path="../node_modules/@types/jasmine/index.d.ts"/>
 ///<reference path="../node_modules/@types/jasmine-jquery/index.d.ts"/>
 ///<reference path="../node_modules/@types/karma-jasmine/index.d.ts"/>
-/// <reference path="../../typings-jquery/node_modules/@types/jquery/index.d.ts" />
+/// <reference path="../../jquery-shared/node_modules/@types/jquery/index.d.ts" />
 
 describe("karma-jasmine-jquery framework", () => {
     jasmine.getFixtures().fixturesPath = "base/served";

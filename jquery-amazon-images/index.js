@@ -1,4 +1,4 @@
-/// <reference path="../typings-jquery/node_modules/@types/jquery/index.d.ts" />
+/// <reference path="../jquery-shared/node_modules/@types/jquery/index.d.ts" />
 /// <reference path="./node_modules/@types/mustache/index.d.ts" />
 /*jslint this, white, browser */
 /*global window, jQuery */
