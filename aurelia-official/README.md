@@ -84,3 +84,13 @@ This tutorial does an excellent job at introducing these concepts:
 ## Jasmine and Karma Test Runner
 
 This tutorial is not a [Jasmine](https://jasmine.github.io/) or [Karma](http://karma-runner.github.io) tutorial. However, I did use the Aurelia tutorial to introduce myself to Jasmine (mostly) so the `./test` [folder](./test) goes off the rails and into the weeds. I have more detail in [my karma and jasmine folder](../karma-and-jasmine-minimal).
+
+## Adding Bootstrap to Aurelia
+
+Using the guidance from “[Getting Started with Aurelia CLI and [Bootstrap]](http://davismj.me/blog/aurelia-cli-bootstrap/)” by Aurelia core team member [Matthew James Davis](https://twitter.com/matthewjames), Bootstrap 3.x was added to this official sample:
+
+```bash
+npm install --save bootstrap@3 jquery@2
+```
+
+The Matthew James Davis article, by the way, reminds us that Bootstrap has its own [accordion experience](http://getbootstrap.com/javascript/#collapse-example-accordion), eliminating the need to find a third-party UI library.
