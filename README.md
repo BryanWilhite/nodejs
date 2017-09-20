@@ -8,12 +8,6 @@ Every CSS, JavaScript and (X)HTML sample that is relevant to the state of the ar
 
 Each folder of this repository represents a subject matter of self study. To start working with this repository, take a look at the [`http-server`](./http-server) sample. The ideal is to approach each of these samples from their respective folder through `npm` (with a valid `project.json` file), using `npm install` then `npm start` and/or `npm test`. This install-start/test cycle is intended to exist _after_ `package.json` is generated with dependencies (there may also be the need to use [`npm run`](https://docs.npmjs.com/cli/run-script)). It implies that the initial installs (described in the `README.md` in each folder) have been completed—so the npm install command here is actually an update (which further implies that these samples will not be started frequently).
 
-## the CDN behind my ‘legacy load’ samples
-
-My ‘legacy load’ samples (mostly JQuery and Bootstrap) should be organized behind one (or maybe two [free/open-source CDN sources](https://www.maxcdn.com/blog/free-open-source-cdns/)) for the sake of simplicity and clarity.
-
-My first CDN of choice is “[Microsoft Ajax Content Delivery Network](https://docs.microsoft.com/en-us/aspnet/ajax/cdn/overview)” as it is deliberately limited to the most ridiculously popular JavaScript/CSS libraries.
-
 ## emulating the CSS normalize feature of codepen.io
 
 The popular `normalize.css` [[repository](https://github.com/necolas/normalize.css/blob/master/normalize.css)] is available [via CDN](https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css). Additionally, this CSS standardizes:
