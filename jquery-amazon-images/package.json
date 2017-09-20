@@ -10,5 +10,11 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/BryanWilhite/nodejs.git"
+    },
+    "dependencies": {
+        "mustache": "^2.3.0"
+    },
+    "devDependencies": {
+        "@types/mustache": "^0.8.30"
     }
 }

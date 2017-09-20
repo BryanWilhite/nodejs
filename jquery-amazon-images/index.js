@@ -1,4 +1,5 @@
 /// <reference path="../typings-jquery/node_modules/@types/jquery/index.d.ts" />
+/// <reference path="./node_modules/@types/mustache/index.d.ts" />
 /*jslint this, white, browser */
 /*global window, jQuery */
 
@@ -6,14 +7,21 @@
     "use strict";
 
     $(function() {
-        var data = [
-            {"asin":"B004QRKWKQ"},
-            {"asin":"B005LKB0IU"},
-            {"asin":"B005M02VJG"}
-        ];
+        var data = {
+            "products": [
+                {
+                    "asin": "B004QRKWKQ"
+                },
+                {
+                    "asin": "B005LKB0IU"
+                },
+                {
+                    "asin": "B005M02VJG"
+                }
+            ]
+        };
 
-        $('#AmazonTemplate')
-            .tmpl(data)
-            .appendTo('#AmazonFlow');
+        var html = Mustache.render($("#AmazonTemplate").html(), data);
+        $("#AmazonFlow").html(html);
     });
 }(jQuery));
