@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "see README.md",
     "scripts": {
+        "ls": "npm list -g --depth=0",
         "server": "http-server . -o -c-1"
     },
     "author": "Bryan D. Wilhite",
