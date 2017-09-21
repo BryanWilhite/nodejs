@@ -8,10 +8,14 @@
     "author": "Bryan D. Wilhite",
     "license": "ISC",
     "dependencies": {
-        "audio5": "^0.1.10"
+        "audio5": "^0.1.10",
+        "underscore": "^1.8.3"
     },
     "repository": {
         "type": "git",
         "url": "https://github.com/BryanWilhite/nodejs.git"
+    },
+    "devDependencies": {
+        "@types/underscore": "^1.8.3"
     }
 }
