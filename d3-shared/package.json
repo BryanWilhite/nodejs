@@ -11,5 +11,7 @@
     "dependencies": {
         "d3": "^4.10.2"
     },
-    "devDependencies": {}
+    "devDependencies": {
+        "@types/d3": "^4.10.0"
+    }
 }

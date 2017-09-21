@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="This is a sample for my self-education." />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="../css-shared/shared.css" rel="stylesheet" />
+
+    <script src="../d3-shared/node_modules/d3/build/d3.js"></script>
+    <script src="./index.js"></script>
+    <style>
+        .chart div {
+            font: 10px sans-serif;
+            text-align: right;
+            padding: 3px;
+            margin: 1px;
+            color: white;
+        }
+
+        .manual-chart div {
+            background-color: steelblue;
+        }
+
+        .d3-chart div {
+            background-color: orangered;
+        }
+
+    </style>
+    <title>D3: Mike Bostock: “Let’s Make a Bar Chart”</title>
+</head>
+
+<body>
+    <h1>D3: Mike Bostock: “Let’s Make a Bar Chart”</h1>
+    <h2>Manual Chart</h2>
+    <div class="chart manual-chart">
+        <div style="width: 40px;">4</div>
+        <div style="width: 80px;">8</div>
+        <div style="width: 150px;">15</div>
+        <div style="width: 160px;">16</div>
+        <div style="width: 230px;">23</div>
+        <div style="width: 420px;">42</div>
+    </div>
+    <h2>D3 Chart</h2>
+    <div class="chart d3-chart"></div>
+</body>
+
+</html>
