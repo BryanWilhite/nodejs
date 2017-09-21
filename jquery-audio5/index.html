@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="This is a sample for my self-education." />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="../css-shared/shared.css" rel="stylesheet" />
+    <link href="../css-shared/node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+
+    <script src="./node_modules/audio5/audio5.js"></script>
+    <script src="../jquery-shared/node_modules/jquery/dist/jquery.js"></script>
+    <script src="../css-shared/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./index.js"></script>
+
+    <title>jQuery: Audio5JS with multiple tracks</title>
+</head>
+
+<body>
+    <h1>jQuery: Audio5JS with multiple tracks</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+                <button type="button" class="btn btn-link" data-index="0">Play Track #1</button>
+                <button type="button" class="btn btn-link" data-index="1">Play Track #2</button>
+                <button type="button" class="btn btn-link" data-index="2">Play Track #3</button>
+            </div>
+            <div class="col-xs-3">
+                <pre id="console-progress"></pre>
+            </div>
+            <div class="col-xs-3">
+                <pre id="console-load-progress"></pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6">
+                <pre id="console-general"></pre>
+            </div>
+            <div class="col-xs-6">
+                <pre id="console-player"></pre>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
