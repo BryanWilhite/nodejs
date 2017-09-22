@@ -10,7 +10,7 @@ This `script` tag is the key to getting RequireJS working:
 
 Run `npm run` to see the custom commands for this demonstration.
 
-## Related Links
+## related links
 
 * [TypeScript modules](http://www.typescriptlang.org/docs/handbook/modules.html)
 * [TypeScript Modules Demystified](https://www.youtube.com/watch?v=KDrWLMUY0R0)

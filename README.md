@@ -46,9 +46,9 @@ My SVG gurus are (currently) [Sara Soueidan](https://www.sarasoueidan.com/), [Ti
 
 My CSS gurus are [Rachel Andrew](https://www.rachelandrew.co.uk/) and [Chris Coyier](https://chriscoyier.net/) (of [CSS-Tricks](https://css-tricks.com/)). My CSS samples should be categorized by “level.” Focus should be placed on [Bootstrap](http://getbootstrap.com/), CSS Grids, “infinite” scrolling and the responsive “hero” image.
 
-### JQuery road map
+### jQuery road map
 
-I expect that my investment in JQuery is historical. I am using JQuery 2.x in Bootstrap 3.x. I assume that my indirect use of JQuery will be phased out by the 3rd-parties that depend on it.
+I expect that my investment in jQuery is historical. I am using jQuery 2.x in Bootstrap 3.x. I assume that my indirect use of jQuery will be phased out by the 3rd-parties that depend on it.
 
 ## global dependencies
 

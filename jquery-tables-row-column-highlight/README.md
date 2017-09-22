@@ -1,3 +1,3 @@
-# jQuery: Tables: Row/Column Highlight
+# jQuery: tables: row/column highlight
 
 This sample is on [CodePen.io](https://codepen.io/rasx/pen/BpohL).

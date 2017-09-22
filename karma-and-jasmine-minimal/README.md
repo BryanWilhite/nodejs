@@ -88,7 +88,7 @@ npm install --save-dev @types/karma-jasmine
 `karma-jasmine-jquery` is just an adapter for `jasmine-jquery` so much of the documentation detail is at its [GitHub](https://github.com/velesin/jasmine-jquery) repository. The `jasmine-jquery-intro.spec.ts` [file](./jasmine-jquery-intro.spec.ts) shows this Karma framework in action.
 
 
-## Related Links
+## related Links
 
 * [Historical Google Tech Talk from Vojta Jina of the original Angular JS team](https://www.youtube.com/watch?v=YG5DEzaQBIc)
 * [Karma files](http://karma-runner.github.io/1.0/config/files.html)

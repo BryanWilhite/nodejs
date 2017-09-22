@@ -65,11 +65,11 @@ This tutorial does an excellent job at introducing these concepts:
 * the `noView()` decorator
 * globalized view resources ([global resources](http://aurelia.io/hub.html#/doc/article/aurelia/templating/latest/templating-html-behaviors-introduction/5)) in `resources/index.ts`
 
-## Jasmine and Karma Test Runner
+## Jasmine and Karma test runner
 
 This tutorial is not a [Jasmine](https://jasmine.github.io/) or [Karma](http://karma-runner.github.io) tutorial. However, I did use the Aurelia tutorial to introduce myself to Jasmine (mostly) so the `./test` [folder](./test) goes off the rails and into the weeds. I have more detail in [my karma and jasmine folder](../karma-and-jasmine-minimal).
 
-## Adding Bootstrap to Aurelia
+## adding Bootstrap to Aurelia
 
 Using the guidance from “[Getting Started with Aurelia CLI and [Bootstrap]](http://davismj.me/blog/aurelia-cli-bootstrap/)” by Aurelia core team member [Matthew James Davis](https://twitter.com/matthewjames), Bootstrap 3.x was added to this official sample:
 

@@ -1,4 +1,4 @@
-# Tiffany Rayside ([@tmrDevelops](https://twitter.com/tmrDevelops)): SVG: Verlet
+# Tiffany Rayside ([@tmrDevelops](https://twitter.com/tmrDevelops)): SVG: verlet
 
 This sample is a study of a popular [Tiffany Rayside CodePen](https://codepen.io/tmrDevelops/pen/MYVzMe), featuring SVG animation. To get this sample to work outside of the awesome CodePen environment, we have to introduce the [PostCSS](https://www.smashingmagazine.com/2015/12/introduction-to-postcss/) world to our Node.js® culture (with gulp bias):
 
@@ -16,11 +16,11 @@ This gulp setup allows us to generate Tiffany’s CSS manually with:
 gulp autoprefixer
 ```
 
-## Notes for Tiffany
+## notes for Tiffany
 
 I wrapped [your JavaScript](./index.js) in the `window.onload` event handler. I do plan to add a TypeScript-based version of this sample that will run side-by-side next to your code. My intent is to preserve your original intent while studying your techniques in the context of Node.js.
 
-## Related Links
+## related links
 
 * Tiffany Rayside on Twitter ([@tmrDevelops](https://twitter.com/tmrDevelops))
 * “[PostCSS – A Comprehensive Introduction](https://www.smashingmagazine.com/2015/12/introduction-to-postcss/)”
