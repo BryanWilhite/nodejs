@@ -66,7 +66,6 @@ sudo npm install -g \
     typings \
     elm \
     elm-format \
-    elm-make \
     @angular/cli
 ```
 
