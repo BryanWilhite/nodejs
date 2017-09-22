@@ -101,7 +101,7 @@ For detail, see “[Installing Node.js via package manager](https://nodejs.org/e
 Finally (seriously), this command comes in handy:
 
 ```bash
-npm install npm@latest -g
+sudo npm install npm@latest -g
 ```
 
 According to [the official docs](https://docs.npmjs.com/getting-started/installing-node#updating-npm), “npm gets updated more frequently than Node does.”
