@@ -22,8 +22,7 @@ window.onload = function(e) {
         .attr("width", width)
         .attr("height", barHeight * data.length);
 
-    var bar = chart.selectAll("g")
-        .data(data)
+    var bar = chart.selectAll("g").data(data) //data join to selection data
         .enter().append("g")
         .attr("transform", function(d, i) {
             return "translate(0," + i * barHeight + ")";
