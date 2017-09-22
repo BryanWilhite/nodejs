@@ -53,7 +53,7 @@ I expect that my investment in jQuery is historical. I am using jQuery 2.x in Bo
 ## global dependencies
 
 ```bash
-npm install -g \
+sudo npm install -g \
     http-server \
     gulp \
     vinyl-fs \
