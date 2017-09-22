@@ -10,6 +10,37 @@ Each folder of this repository represents a subject matter of self study. This s
 
 The intent is to approach each of these samples from their respective folder through `npm` (with a valid `project.json` file), using `npm install` then `npm start` and/or `npm test`. This install-start/test cycle is intended to exist _after_ `package.json` is generated with dependencies (there may also be the need to use [`npm run`](https://docs.npmjs.com/cli/run-script)). It implies that the initial installs (described in the `README.md` in each folder) have been completed—so the npm install command here is actually an update (which further implies that these samples will not be started frequently).
 
+## more detail around working with Windows Subsystem for Linux
+
+[Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/about) is fine and dandy for the non-graphical work needed here. But bash on Windows will show limitation when, say, the `-o` option is used with `http-server`: it will _not_ open a browser by default.
+
+This command might be useful in bash for Windows:
+
+```bash
+sudo apt-get install chromium-browser
+```
+
+I did not get the expected result and I assumed that I needed to investigate Running Graphical Programs on “[Windows Subsystem on Linux](https://virtualizationreview.com/articles/2017/02/08/graphical-programs-on-windows-subsystem-on-linux.aspx)” which leads us to, say, [Xming](http://www.straightrunning.com/XmingNotes/). In case you get frustrated, then you can fall back to PowerShell by installing Node.js ([Chocolatey](https://chocolatey.org/packages/nodejs)) and running this as administrator:
+
+```powershell
+npm install -g `
+    http-server `
+    gulp `
+    vinyl-fs `
+    eslint `
+    babel-eslint `
+    aurelia-cli `
+    karma `
+    jasmine `
+    typescript `
+    typings `
+    elm `
+    elm-format `
+    @angular/cli
+```
+
+_Visual Studio Code users_: install the [PowerShell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell) extension to get the **PowerShell: Show Integrated Console** command to run PowerShell and bash sessions on top of each other in Visual Studio Code.
+
 ## emulating the CSS normalize feature of codepen.io
 
 The popular `normalize.css` [[repository](https://github.com/necolas/normalize.css/blob/master/normalize.css)] is available [via CDN](https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css). Additionally, this CSS standardizes:
