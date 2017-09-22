@@ -4,50 +4,30 @@ This sample is based on the “[Editing TypeScript](https://code.visualstudio.co
 
 All TypeScript projects require an `npm` installation.
 
-PowerShell:
-
-```PowerShell
-
-npm install -g typescript
-
-```
-
 bash:
 
 ```bash
-
 sudo npm install -g typescript
-
 ```
 
-To build the source files, we call `tsc` from `[./typescript-minimal](../typescript-minimal)`.
-
-PowerShell/bash:
+To build the source files, we call `tsc` from `[./typescript-minimal](../typescript-minimal)`:
 
 ```bash
-
 tsc -p tsconfig.json
-
 ```
 
 Or you can use the non-life-cycle script:
 
 ```bash
-
 npm run tsc
-
 ```
 
 Alternatively, in Visual Studio Code `Ctrl+Shift+B` invokes the **Tasks: Run Build Task** command.
 
 After a successful build we can run the conventional, life-cycle script:
 
-PowerShell/bash:
-
 ```bash
-
 npm start
-
 ```
 
 Note that `tsconfig.json` excludes any `jspm_packages` or `node_modules` folders to prevent building 3rd-party TypeScript.

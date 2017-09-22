@@ -11,15 +11,6 @@ sudo npm install -g elm-format
 
 ```
 
-From PowerShell (as Admin):
-
-```powershell
-
-npm install -g elm
-npm install -g elm-format
-
-```
-
 Then from [./elm-minimal](../elm-minimal) we run `elm-make`:
 
 ```bash

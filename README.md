@@ -64,6 +64,8 @@ npm install -g \
     jasmine \
     typescript \
     typings \
+    elm \
+    elm-format \
     elm-make \
     @angular/cli
 ```
@@ -71,10 +73,8 @@ npm install -g \
 You may already have these globally installed npm packages available to the Node.js runtime. As a reminder (to me), [the commands](https://stackoverflow.com/questions/17937960/how-to-list-npm-user-installed-packages) to check for this are:
 
 ```bash
-
 npm list -g --depth=0
 npm list --depth=0
-
 ```
 
 You should also run `ls /usr/local/lib/node_modules/` in bash to verify that any uninstalled packages are removed (additionally, consider `sudo npm cache clean` and `sudo npm -g update`). One last bit, when you run `npm list -g --depth=0` and all you see is this:
@@ -93,10 +93,8 @@ The [Aurelia CLI](https://github.com/aurelia/cli) (command-line interface) is so
 To install node 6.x on Ubuntu bash (Windows or Linux), run:
 
 ```bash
-
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
-
 ```
 
 For detail, see “[Installing Node.js via package manager](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions).”

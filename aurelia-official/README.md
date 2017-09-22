@@ -19,12 +19,6 @@ The tutorial tells us that we need the [Aurelia CLI](https://github.com/aurelia/
 sudo npm install aurelia-cli -g
 ```
 
-In Powershell:
-
-```powershell
-npm install aurelia-cli -g
-```
-
 After this is installed (and it might take _many_ minutes), we run the following from the root folder of this repository:
 
 ```bash
@@ -45,12 +39,6 @@ We then “Copy all of these files to the `src` folder of your project. TypeScri
 
 ```bash
 sudo npm install typings -g
-```
-
-In Powershell:
-
-```powershell
-npm install typings -g
 ```
 
 And, to run the site, use the Aurelia CLI:

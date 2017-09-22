@@ -2,12 +2,10 @@
 
 This minimalist introduction takes my years of experience with client-side JavaScript and applies it to node.js.
 
-From this repository root folder, in Powershell, run
+From this repository root folder, in bash, run:
 
-```PowerShell
-
+```bash
 node .\http\http.js
-
 ```
 
 (or from the subdirectory of this sample run `npm start`).

@@ -2,7 +2,7 @@
 
 The [angular.io QuickStart](https://angular.io/guide/quickstart).
 
-In bash (with `sudo` for `npm`) or PowerShell (from the root folder of this project):
+Initial setup (from the root folder of this repository):
 
 ```bash
 npm install -g @angular/cli
