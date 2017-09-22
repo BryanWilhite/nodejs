@@ -5,10 +5,8 @@ Rob Eisenberg’s “[Contact Manager Tutorial](http://aurelia.io/hub.html#/doc/
 As of this writing, this tutorial runs with [the latest Chocolatey Node.js® package](https://chocolatey.org/packages/nodejs) or on bash it requires node versions >= 6.x (run `node --version`):
 
 ```bash
-
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
-
 ```
 
 Note that Ubuntu bash on Windows may not run this tutorial correctly (it has an Aurelia CLI issue similar to [the one for Angular](https://github.com/Microsoft/BashOnWindows/issues/1522)).
@@ -30,9 +28,7 @@ All of the prompts are answered with the defaults with the exception that the ta
 Following the official tutorial, we need to download some “Required Assets” to the root folder of this repository:
 
 ```bash
-
 wget http://aurelia.io/downloads/contact-manager-assets.zip --content-disposition --no-check-certificate -O ./aurelia-official/src/tmp.zip
-
 ```
 
 We then “Copy all of these files to the `src` folder of your project. TypeScript users should also rename the file extensions from `.js` to `.ts`.” This tutorial (from a TypeScript-biased point of view) will recommend that [the Typings CLI utility](https://github.com/typings/typings) be available:
