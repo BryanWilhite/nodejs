@@ -63,7 +63,6 @@ sudo npm install -g \
     karma \
     jasmine \
     typescript \
-    typings \
     elm \
     elm-format \
     @angular/cli
@@ -129,7 +128,6 @@ npm install -g `
     karma `
     jasmine `
     typescript `
-    typings `
     elm `
     elm-format `
     @angular/cli
