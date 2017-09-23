@@ -6,18 +6,20 @@ window.onload = function(e) {
     var getScale = d3.scaleLinear()
         .range([0, width]);
 
+    // accessor function for d3.max that tells it how to evaluate each data point:
     function type(d) {
-        d.value = +d.value; // coerce to number
+        d.value = +d.value; // coerce to number, “d3.tsv isn’t smart enough to detect and convert types”
         return d;
     }
 
     d3.tsv("./data/data.tsv", type, function(error, data) {
 
+        // we can’t define the domain until the data is loaded:
         getScale.domain([0, d3.max(data, function(d) {
-            return d.value;
+            return d.value; //each data point is an object rather than a number
         })]);
 
-        var chart = d3.select(".d3-svg-chart")
+        var chart = d3.select(".d3-svg-chart.tsv")
             .attr("width", width);
 
         chart.attr("height", barHeight * data.length);
