@@ -1,3 +1,4 @@
+ananke
 anders
 bootstrapper
 bostock
@@ -5,6 +6,7 @@ chocolatey
 codepen
 cors
 coyier
+eacces
 eisenberg
 eperm
 gitignore
@@ -15,12 +17,15 @@ nocache
 polyline
 preprocessors
 nager
+netlify
 rasx
 rayside
 rect
 songhay
 soueidan
+submodule
 superset
+toml
 transpiler
 vash
 verlet
