@@ -39,3 +39,4 @@ Continue from [Step 4 of the Quick Start](https://gohugo.io/getting-started/quic
 ## related links
 
 * “[Quick Start](https://gohugo.io/getting-started/quick-start/)”
+* “[Git Submodules: Adding, Using, Removing, Updating](https://chrisjean.com/git-submodules-adding-using-removing-and-updating/)”
