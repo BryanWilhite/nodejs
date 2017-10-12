@@ -60,6 +60,7 @@ sudo npm install -g \
     eslint \
     babel-eslint \
     aurelia-cli \
+    hugo-cli \
     karma \
     jasmine \
     typescript \
@@ -125,6 +126,7 @@ npm install -g `
     eslint `
     babel-eslint `
     aurelia-cli `
+    hugo-cli `
     karma `
     jasmine `
     typescript `
