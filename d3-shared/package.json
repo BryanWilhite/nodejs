@@ -13,5 +13,8 @@
     },
     "devDependencies": {
         "@types/d3": "^4.10.0"
+    },
+    "scripts": {
+        "cp": "cp -f ./node_modules/d3/build/d3.js d3.js"
     }
 }
