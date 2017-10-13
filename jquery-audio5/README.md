@@ -3,7 +3,12 @@
 ```bash
 npm install --save audio5
 npm install --save underscore
-npm install --save-dev @types/underscore
+npm install --save-dev \
+    @types/underscore \
+    gulp \
+    gulp-concat \
+    map-stream \
+    vinyl-fs
 ```
 
 ## related Links
