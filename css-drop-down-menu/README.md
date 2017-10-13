@@ -1,3 +1,6 @@
 # CSS: drop-down menu
 
-This sample is on [CodePen.io](https://codepen.io/rasx/pen/CGbio).
+## related links
+
+* [View Sample Live on Netlify](https://rasx-node-js.netlify.com/css-drop-down-menu/)
+* [CodePen.io historical sample](https://codepen.io/rasx/pen/CGbio).

@@ -1,3 +1,6 @@
 # button with SVG icon
 
-This sample is on [CodePen.io](https://codepen.io/rasx/pen/VeQNgv).
+## related Links
+
+* [View Sample Live on Netlify](https://rasx-node-js.netlify.com/svg-button/)
+* [CodePen.io historical sample](https://codepen.io/rasx/pen/VeQNgv).

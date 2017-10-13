@@ -8,4 +8,5 @@ I wrapped [your JavaScript](./index.js) in the `window.onload` event handler. I 
 
 ## related links
 
+* [View Sample Live on Netlify](https://rasx-node-js.netlify.com/tiffany-rayside-canvas-topiary/)
 * Tiffany Rayside on Twitter ([@tmrDevelops](https://twitter.com/tmrDevelops))

@@ -24,6 +24,7 @@ Even though the `<path>` element does ‘everything,’ this tip reminds us why 
 
 ## resources
 
+* [View Sample Live on Netlify](https://rasx-node-js.netlify.com/svg-path/)
 * “[SVG `<path>`](https://www.w3schools.com/graphics/svg_path.asp)”
 * “[Better SVG Fallback and Art Direction with The `<picture>` Element](https://www.sarasoueidan.com/blog/svg-picture/)”
 * 2015: “[A Complete Guide to SVG Fallbacks](https://css-tricks.com/a-complete-guide-to-svg-fallbacks/)”

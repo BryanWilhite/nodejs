@@ -1,3 +1,6 @@
 # CSS3: background-clip
 
-This sample is on [CodePen.io](https://codepen.io/rasx/pen/Jkevd).
+## related Links
+
+* [View Sample Live on Netlify](https://rasx-node-js.netlify.com/css3-background-clip/)
+* [CodePen.io historical sample](https://codepen.io/rasx/pen/Jkevd).

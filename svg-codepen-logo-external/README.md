@@ -1,3 +1,6 @@
 # SVG: CodePen logo: external
 
-This sample is on [CodePen.io](https://codepen.io/rasx/pen/GNVZvO).
+## related Links
+
+* [View Sample Live on Netlify](https://rasx-node-js.netlify.com/svg-codepen-logo-external/)
+* [CodePen.io historical sample](https://codepen.io/rasx/pen/GNVZvO).

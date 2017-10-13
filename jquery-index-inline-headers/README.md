@@ -1,3 +1,6 @@
 # jQuery: index: inline headers
 
-This sample is on [CodePen.io](https://codepen.io/rasx/pen/zxqxMv).
+## related Links
+
+* [View Sample Live on Netlify](https://rasx-node-js.netlify.com/jquery-index-inline-headers/)
+* [CodePen.io historical sample](https://codepen.io/rasx/pen/zxqxMv).

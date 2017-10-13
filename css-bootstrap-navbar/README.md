@@ -1,3 +1,6 @@
 # CSS: bootstrap: Navbar example
 
-This sample is on [CodePen.io](https://codepen.io/rasx/pen/ZGGWVE).
+## related links
+
+* [View Sample Live on Netlify](https://rasx-node-js.netlify.com/css-bootstrap-navbar/)
+* [CodePen.io historical sample](https://codepen.io/rasx/pen/ZGGWVE).
