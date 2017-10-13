@@ -1,7 +1,5 @@
 # jQuery: Amazon images
 
-This sample is on [CodePen.io](https://codepen.io/rasx/pen/EqlCF).
-
 ## mustache.js
 
 This sample is now using mustache.js [[GitHub]](https://github.com/janl/mustache.js):
@@ -16,3 +14,4 @@ It must be mentioned that the use of mustache.js is considered a “gateway drug
 ## related Links
 
 * [View Sample Live on Netlify](https://rasx-node-js.netlify.com/jquery-amazon-images/)
+* [CodePen.io historical sample](https://codepen.io/rasx/pen/EqlCF).
