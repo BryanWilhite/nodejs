@@ -6,6 +6,7 @@ This local folder is used as an alternative to a CDN. It shares jQuery 2.x among
 npm install --save ^
     jquery@2 ^
     @types/jquery
+npm run cp
 ```
 
 ## `@types/jquery`
