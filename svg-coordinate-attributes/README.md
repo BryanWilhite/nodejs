@@ -27,4 +27,5 @@ I also see from the [demo](https://www.sarasoueidan.com/demos/interactive-svg-co
 
 ## related links
 
+* [View Sample Live on Netlify](https://rasx-node-js.netlify.com/svg-coordinate-attributes/)
 * [SVG Tutorial](https://www.w3schools.com/graphics/svg_intro.asp)
