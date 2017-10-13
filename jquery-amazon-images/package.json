@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "see README.md",
     "scripts": {
+        "cp": "cp -f ./node_modules/mustache/mustache.js mustache.js",
         "start": "cd .. && http-server . -o -c-1"
     },
     "author": "Bryan D. Wilhite",
