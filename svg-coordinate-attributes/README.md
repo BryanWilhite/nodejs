@@ -24,3 +24,7 @@ viewBox = <min-x> <min-y> <width> <height>
 ```
 
 I also see from the [demo](https://www.sarasoueidan.com/demos/interactive-svg-coordinate-system/) that the `min-x` and `min-y` parameters can be used like CSS `padding-left` and `padding-top` respectively by default when negative values are used.
+
+## related links
+
+* [SVG Tutorial](https://www.w3schools.com/graphics/svg_intro.asp)

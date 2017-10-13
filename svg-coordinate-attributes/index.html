@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="This is a sample for my self-education." />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="../css-shared/shared.css" rel="stylesheet" />
+
+    <style>
+        svg {
+            background-color: pink;
+        }
+    </style>
+
+    <title>SVG coordinate attributes</title>
+</head>
+
+<body>
+    <h1>SVG coordinate attributes</h1>
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100">
+            <circle cx="50" cy="50" r="50" fill="red" />
+        </svg>
+        <span>default.</span>
+    </div>
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 50 50">
+            <circle cx="50" cy="50" r="50" fill="red" />
+        </svg>
+        <span>push in and crop: <code>viewBox="0 0 50 50"</code></span>
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="-5 -5 50 50">
+            <circle cx="50" cy="50" r="50" fill="red" />
+        </svg>
+        <span>push in and crop with padding: <code>viewBox="-5 -5 50 50"</code></span>
+    </div>
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 200 200">
+            <circle cx="50" cy="50" r="50" fill="red" />
+        </svg>
+        <span>pull out: <code>viewBox="0 0 200 200"</code></span>
+    </div>
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="-10 -10 200 200">
+            <circle cx="50" cy="50" r="50" fill="red" />
+        </svg>
+        <span>pull out: <code>viewBox="-10 -10 200 200"</code></span>
+    </div>
+</body>
+
+</html>
