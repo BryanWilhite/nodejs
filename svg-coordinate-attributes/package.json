@@ -1,0 +1,15 @@
+{
+    "name": "svg-coordinate-attributes",
+    "version": "1.0.0",
+    "description": "see README.md",
+    "scripts": {
+        "start": "cd .. && http-server . -o -c-1"
+    },
+    "author": "Bryan D. Wilhite",
+    "license": "ISC",
+    "dependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BryanWilhite/nodejs.git"
+    }
+}

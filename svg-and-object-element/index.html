@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="This is a sample for my self-education." />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="../css-shared/shared.css" rel="stylesheet" />
+    <style>
+        .circle-fallback {
+            background-image: url(./circle.png);
+            display: inline-block;
+            min-width: 100px;
+            min-height: 100px;
+        }
+    </style>
+    <title>SVG and the object Element</title>
+</head>
+
+<body>
+    <h1>SVG and the object Element</h1>
+    <div>
+        <object data="./circle.svg" type="image/svg+xml">
+            <div class="circle-fallback"></div>
+        </object>
+        <span>default.</span>
+    </div>
+    <div>
+        <object data="./circle.svg.fail" type="image/svg+xml">
+            <div class="circle-fallback"></div>
+        </object>
+        <span>fallback!</span>
+    </div>
+</body>
+
+</html>
