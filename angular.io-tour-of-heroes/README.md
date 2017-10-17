@@ -12,8 +12,37 @@ npm install
 npm start
 ```
 
-From here, we follow [the tutorial](https://angular.io/tutorial).
+From here, we follow [the tutorial](https://angular.io/tutorial). This tutorial introduces the following:
+
+* [The Component Decorator](https://angular.io/api/core/Component)
+* “[Showing component properties with interpolation](https://angular.io/guide/displaying-data#showing-component-properties-with-interpolation)”
+* “[Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)”
+* “[Two-way data binding with ngModel](https://angular.io/guide/forms#ngModel)”
+* “[`NgModel`—Two-way binding to form elements with `[(ngModel)]`](https://angular.io/guide/template-syntax#ngModel)”
+* “[Showing an array property with `*ngFor`](https://angular.io/guide/displaying-data#ngFor)”
+* “The `styles` property on the `@Component` decorator”
+* “[User Input](https://angular.io/guide/user-input)”
+* “[Event binding ( `(event)` )](https://angular.io/guide/template-syntax#event-binding)”
+* [Structural Directives](https://angular.io/guide/structural-directives)
+* [Built-in Directives](https://angular.io/guide/template-syntax#directives)
+* [NgClass](https://angular.io/guide/template-syntax#ngClass)
+* [Naming](https://angular.io/guide/styleguide#naming) (Angular Style Guide)
+* [Attribute Directives](https://angular.io/guide/attribute-directives#why-input)
+* [NgModules](https://angular.io/guide/ngmodule)
+* “[dash-case](https://angular.io/guide/glossary#dash-case)”
+* [Dependency Injection](https://angular.io/guide/dependency-injection)
+* “[Lifecycle Hooks](https://angular.io/guide/lifecycle-hooks)”
+* “[Promises for asynchronous programming](http://exploringjs.com/es6/ch_promises.html)” <sup>*</sup>
+* [Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+* “[Routing & Navigation](https://angular.io/guide/router)”
+* [Angular in-memory-web-api](https://github.com/angular/in-memory-web-api)
+* [the `switchMap` operator](https://www.learnrxjs.io/operators/transformation/switchmap.html)
+* “[Architecture Overview](https://angular.io/guide/architecture)”
+
+<sup>*</sup> Note that [RxJS](https://github.com/Reactive-Extensions/RxJS) Observables can be thought of as a replacement for Promises. A 2016 Rangle.io video by Michael Bennet and Varun Vachhar [delves into this topic](https://youtu.be/ucUy0CoN57Q?t=1327).
 
 ## diversions from the tutorial
 
-We took learnings from [Angular QuickStart](https://angular.io/guide/quickstart) and switched components from using `template` and `styles` to using `templateUrl` and `styleUrls`. This move encouraged us to separate components into folders, making a feature-ish-based `src/app` [folder](./quickstart/src/app) arrangement.
+I took learnings from [Angular QuickStart](https://angular.io/guide/quickstart) and switched components from using `template` and `styles` to using `templateUrl` and `styleUrls`. This move encouraged me to separate components into folders, making a feature-ish-based `src/app` [folder](./quickstart/src/app) arrangement.
+
+@[BryanWilhite](https://twitter.com/bryanwilhite)
