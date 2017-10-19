@@ -34,7 +34,9 @@ From here, we follow [the tutorial](https://angular.io/tutorial). This tutorial 
 * “[Lifecycle Hooks](https://angular.io/guide/lifecycle-hooks)”
 * “[Promises for asynchronous programming](http://exploringjs.com/es6/ch_promises.html)” <sup>*</sup>
 * [Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
-* “[Routing & Navigation](https://angular.io/guide/router)”
+* “[Routing & Navigation](https://angular.io/guide/router)” (“BASE HREF IS ESSENTIAL”)
+* “The `forRoot()` method supplies the Router service providers and directives needed for routing, and performs the initial navigation based on the current browser URL.”
+* The `<router-outlet>` [Directive](https://angular.io/api/router/RouterOutlet) and The `routerLink` [Directive](https://angular.io/api/router/RouterLink).
 * [Angular in-memory-web-api](https://github.com/angular/in-memory-web-api)
 * [the `switchMap` operator](https://www.learnrxjs.io/operators/transformation/switchmap.html)
 * “[Architecture Overview](https://angular.io/guide/architecture)”
