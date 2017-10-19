@@ -44,7 +44,7 @@ From here, we follow [the tutorial](https://angular.io/tutorial). This tutorial 
 * [Angular in-memory-web-api](https://github.com/angular/in-memory-web-api)
 * “[Architecture Overview](https://angular.io/guide/architecture)”
 
-<sup>*</sup> Note that [RxJS](https://github.com/Reactive-Extensions/RxJS) Observables can be thought of as a replacement for Promises. A 2016 [Rangle.io](https://rangle.io/) video by [Michael Bennet](https://github.com/bennett000) and [Varun Vachhar](https://github.com/winkerVSbecks) [delves into this topic](https://youtu.be/ucUy0CoN57Q?t=1327).
+<sup>*</sup> Note that [RxJS](https://github.com/Reactive-Extensions/RxJS) Observables can be thought of as a replacement for Promises. A 2016 [Rangle.io](https://rangle.io/) video by [Michael Bennet](https://github.com/bennett000) and [Varun Vachhar](https://github.com/winkerVSbecks) delves into [this topic](https://youtu.be/ucUy0CoN57Q?t=1327).
 
 ## slight diversions from the tutorial
 
