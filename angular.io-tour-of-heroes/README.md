@@ -46,7 +46,7 @@ From here, we follow [the tutorial](https://angular.io/tutorial). This tutorial 
 
 <sup>*</sup> Note that [RxJS](https://github.com/Reactive-Extensions/RxJS) Observables can be thought of as a replacement for Promises. A 2016 Rangle.io video by Michael Bennet and Varun Vachhar [delves into this topic](https://youtu.be/ucUy0CoN57Q?t=1327).
 
-## diversions from the tutorial
+## slight diversions from the tutorial
 
 I took learnings from [Angular QuickStart](https://angular.io/guide/quickstart) and switched components from using `template` and `styles` to using `templateUrl` and `styleUrls`. This move encouraged me to separate components into folders, making a feature-ish-based `src/app` [folder](./quickstart/src/app) arrangement.
 
