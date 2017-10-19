@@ -37,10 +37,10 @@ From here, we follow [the tutorial](https://angular.io/tutorial). This tutorial 
 * “[Routing & Navigation](https://angular.io/guide/router)” (“BASE HREF IS ESSENTIAL”)
 * “The `forRoot()` method supplies the Router service providers and directives needed for routing, and performs the initial navigation based on the current browser URL.”
 * The `<router-outlet>` [Directive](https://angular.io/api/router/RouterOutlet) and The `routerLink` [Directive](https://angular.io/api/router/RouterLink).
-* “[ActivatedRoute: the one-stop-shop for route information](https://angular.io/guide/router#activated-route)”
-* the [CanDeactivate](https://angular.io/api/router/CanDeactivate) guard
-* [Angular in-memory-web-api](https://github.com/angular/in-memory-web-api)
 * [the `switchMap` operator](https://www.learnrxjs.io/operators/transformation/switchmap.html)
+* “[ActivatedRoute: the one-stop-shop for route information](https://angular.io/guide/router#activated-route)”
+* the [CanDeactivate](https://angular.io/api/router/CanDeactivate) guard and the Routing Module (not be confused with `RouterModule`)
+* [Angular in-memory-web-api](https://github.com/angular/in-memory-web-api)
 * “[Architecture Overview](https://angular.io/guide/architecture)”
 
 <sup>*</sup> Note that [RxJS](https://github.com/Reactive-Extensions/RxJS) Observables can be thought of as a replacement for Promises. A 2016 Rangle.io video by Michael Bennet and Varun Vachhar [delves into this topic](https://youtu.be/ucUy0CoN57Q?t=1327).
