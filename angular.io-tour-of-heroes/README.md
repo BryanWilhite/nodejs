@@ -40,6 +40,7 @@ From here, we follow [the tutorial](https://angular.io/tutorial). This tutorial 
 * [the `switchMap` operator](https://www.learnrxjs.io/operators/transformation/switchmap.html)
 * “[ActivatedRoute: the one-stop-shop for route information](https://angular.io/guide/router#activated-route)”
 * the [CanDeactivate](https://angular.io/api/router/CanDeactivate) guard and the Routing Module (not be confused with `RouterModule`)
+* interpolation binding with the `uppercase` [pipe](https://angular.io/api/common/UpperCasePipe) and the pipe operator (`|`).
 * [Angular in-memory-web-api](https://github.com/angular/in-memory-web-api)
 * “[Architecture Overview](https://angular.io/guide/architecture)”
 
