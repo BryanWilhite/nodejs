@@ -37,12 +37,13 @@ From here, we follow [the tutorial](https://angular.io/tutorial). This tutorial 
 * “[Routing & Navigation](https://angular.io/guide/router)” (“BASE HREF IS ESSENTIAL”)
 * “The `forRoot()` method supplies the Router service providers and directives needed for routing, and performs the initial navigation based on the current browser URL.”
 * The `<router-outlet>` [Directive](https://angular.io/api/router/RouterOutlet) and The `routerLink` [Directive](https://angular.io/api/router/RouterLink).
-* [the `switchMap` operator](https://www.learnrxjs.io/operators/transformation/switchmap.html)
 * “[ActivatedRoute: the one-stop-shop for route information](https://angular.io/guide/router#activated-route)”
 * the [CanDeactivate](https://angular.io/api/router/CanDeactivate) guard and the Routing Module (not be confused with `RouterModule`)
 * interpolation binding with the `uppercase` [pipe](https://angular.io/api/common/UpperCasePipe) and the pipe operator (`|`).
 * [Angular in-memory-web-api](https://github.com/angular/in-memory-web-api)
-* Using `$event.stopPropagation()` in click events to prevent parent-element click event from firing.
+* Using `$event.stopPropagation()` in click events to prevent a parent-element click event from firing.
+* “The `*ngFor` can’t do anything with an `Observable` until you route it through the `async` pipe (`AsyncPipe` [[docs](https://angular.io/api/common/AsyncPipe)])…”
+* [the `switchMap` operator](https://www.learnrxjs.io/operators/transformation/switchmap.html)
 * “[Architecture Overview](https://angular.io/guide/architecture)”
 
 <sup>*</sup> Note that [RxJS](https://github.com/Reactive-Extensions/RxJS) Observables can be thought of as a replacement for Promises. A 2016 [Rangle.io](https://rangle.io/) video by [Michael Bennet](https://github.com/bennett000) and [Varun Vachhar](https://github.com/winkerVSbecks) delves into [this topic](https://youtu.be/ucUy0CoN57Q?t=1327).
