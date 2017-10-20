@@ -42,6 +42,7 @@ From here, we follow [the tutorial](https://angular.io/tutorial). This tutorial 
 * the [CanDeactivate](https://angular.io/api/router/CanDeactivate) guard and the Routing Module (not be confused with `RouterModule`)
 * interpolation binding with the `uppercase` [pipe](https://angular.io/api/common/UpperCasePipe) and the pipe operator (`|`).
 * [Angular in-memory-web-api](https://github.com/angular/in-memory-web-api)
+* Using `$event.stopPropagation()` in click events to prevent parent-element click event from firing.
 * “[Architecture Overview](https://angular.io/guide/architecture)”
 
 <sup>*</sup> Note that [RxJS](https://github.com/Reactive-Extensions/RxJS) Observables can be thought of as a replacement for Promises. A 2016 [Rangle.io](https://rangle.io/) video by [Michael Bennet](https://github.com/bennett000) and [Varun Vachhar](https://github.com/winkerVSbecks) delves into [this topic](https://youtu.be/ucUy0CoN57Q?t=1327).

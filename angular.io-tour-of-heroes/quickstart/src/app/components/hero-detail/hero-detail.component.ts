@@ -20,10 +20,6 @@ export class HeroDetailComponent implements OnInit {
         private location: Location
     ) {}
 
-    goBack(): void {
-        this.location.back();
-    }
-
     ngOnInit(): void {
         /*
             “The switchMap operator maps the id in the Observable route parameters
@@ -36,5 +32,13 @@ export class HeroDetailComponent implements OnInit {
                 // “the route parameter value is converted to a number with the JavaScript (+) operator”
             )
             .subscribe(hero => (this.hero = hero));
+    }
+
+    goBack(): void {
+        this.location.back();
+    }
+
+    save(): void {
+        this.heroService.update(this.hero).then(() => this.goBack());
     }
 }
