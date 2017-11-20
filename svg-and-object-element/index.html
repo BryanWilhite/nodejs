@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <h1>SVG and the object Element</h1>
+    <h1>SVG and the <code>object</code> Element</h1>
     <div>
         <object data="./circle.svg" type="image/svg+xml">
             <div class="circle-fallback"></div>
@@ -32,6 +32,21 @@
             <div class="circle-fallback"></div>
         </object>
         <span>fallback!</span>
+    </div>
+    <h2>SVG with the <code>anchor</code> and <code>object</code> elements</h2>
+    <div>
+        <a href="https://stackoverflow.com/a/17133804/22944" style="display: inline-block;" target="_blank">
+            <object data="./circle.svg" style="pointer-events: none;" type="image/svg+xml">
+                <div class="circle-fallback"></div>
+            </object>
+        </a>
+        <span>default wrapped in anchor with <code>pointer-events: none;</code>.</span>
+    </div>
+    <div>
+        <object data="./circle-clickable.svg" type="image/svg+xml">
+            <div class="circle-fallback"></div>
+        </object>
+        <span>clickable SVG.</span>
     </div>
 </body>
 
