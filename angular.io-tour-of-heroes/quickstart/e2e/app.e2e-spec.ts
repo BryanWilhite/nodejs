@@ -1,15 +1,14 @@
-import { browser, element, by } from 'protractor';
+import { AppPage } from './app.po';
 
-describe('QuickStart E2E Tests', function () {
+describe('QuickStart E2E Tests', function() {
+    let page: AppPage;
 
-  let expectedMsg = 'Hello Angular';
+    beforeEach(() => {
+        page = new AppPage();
+    });
 
-  beforeEach(function () {
-    browser.get('');
-  });
-
-  it('should display: ' + expectedMsg, function () {
-    expect(element(by.css('h1')).getText()).toEqual(expectedMsg);
-  });
-
+    it('should display welcome message', () => {
+        page.navigateTo();
+        expect(page.getParagraphText()).toEqual('Hello Angular');
+    });
 });
