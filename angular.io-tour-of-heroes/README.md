@@ -52,4 +52,15 @@ From here, we follow [the tutorial](https://angular.io/tutorial). This tutorial 
 
 I took learnings from [Angular QuickStart](https://angular.io/guide/quickstart) and switched components from using `template` and `styles` to using `templateUrl` and `styleUrls`. This move encouraged me to separate components into folders, making a feature-ish-based `src/app` [folder](./quickstart/src/app) arrangement.
 
+Also, note that running `ng e2e` should throw an error:
+
+```plaintext
+Cannot read property 'config' of null
+TypeError: Cannot read property 'config' of null
+    at Class.run (.\nodejs\angular.io-tour-of-heroes\quickstart\node_modules\@angular\cli\commands\e2e.js:79:63)
+    at resolve (.\nodejs\angular.io-tour-of-heroes\quickstart\node_modules\@angular\cli\ember-cli\lib\models\command.js:261:20)
+```
+
+This is [a recognized Angular CLI issue](https://github.com/angular/angular-cli/issues/4736) that seems to be related to lack of “proper” (currently-in-use) CLI configuration _by default_ for this tutorial. In other words, [the Angular 2 QuickStart](https://github.com/angular/quickstart) does not recognize the Angular CLI as of this writing (no `.angular-cli.json` file).
+
 @[BryanWilhite](https://twitter.com/bryanwilhite)
