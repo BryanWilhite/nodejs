@@ -2,7 +2,7 @@ define(["require", "exports"], function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.numberRegexp = /^[0-9]+$/;
-    var ZipCodeValidator = (function () {
+    var ZipCodeValidator = /** @class */ (function () {
         function ZipCodeValidator() {
         }
         ZipCodeValidator.prototype.isAcceptable = function (s) {
