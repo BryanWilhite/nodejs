@@ -13,4 +13,6 @@ mine = {
     one: 'Three',
     two: 'Four'
 } as MyClass;
-console.log(mine.getOneAndTwo());
+if (!mine.getOneAndTwo) {
+    console.log('sorry, mine.getOneAndTwo is not a function');
+}
