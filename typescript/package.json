@@ -1,0 +1,22 @@
+{
+    "name": "typescript",
+    "version": "1.0.0",
+    "description": "see README.md",
+    "author": "Bryan D. Wilhite",
+    "license": "ISC",
+    "dependencies": {},
+    "devDependencies": {
+        "@types/node": "^6.0.46",
+        "lodash": "^4.16.4",
+        "tslint": "^3.15.1",
+        "typescript": "~2.1.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BryanWilhite/nodejs.git"
+    },
+    "scripts": {
+        "minimal": "node ./src/minimal/main.js",
+        "tsc": "tsc -p tsconfig.json"
+    }
+}
