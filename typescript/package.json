@@ -16,7 +16,8 @@
         "url": "https://github.com/BryanWilhite/nodejs.git"
     },
     "scripts": {
-        "minimal": "node ./src/minimal/main.js",
+        "src-minimal": "node ./src/minimal/main.js",
+        "src-modules": "node ./src/modules/main.js",
         "tsc": "tsc -p tsconfig.json"
     }
 }
