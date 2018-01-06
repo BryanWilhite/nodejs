@@ -1,4 +1,4 @@
-# nodejs
+# Node.js®
 
 ## my collection of self-educational samples on the Node.js® stack
 

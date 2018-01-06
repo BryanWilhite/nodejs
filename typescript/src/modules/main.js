@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const my_class_1 = require("./models/my-class");
 let mine = new my_class_1.MyClass();
 console.log(mine.getOneAndTwo());
