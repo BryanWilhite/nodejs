@@ -27,10 +27,10 @@ The `modules/` [sample](./src/modules) (run `npm run src-modules`) introduces th
 
 * [Modules and Export](https://www.typescriptlang.org/docs/handbook/modules.html)
 * [Type Assertions](https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md#416-type-assertions)
- (as of this writing there is no documentation for the `as` operator [[GitHub](https://github.com/Microsoft/TypeScript/pull/3564)])
+  (as of this writing there is no documentation for the `as` operator [[GitHub](https://github.com/Microsoft/TypeScript/pull/3564)])
 
 ### related links
 
-https://stackoverflow.com/questions/14142071/typescript-and-field-initializers
-https://github.com/Microsoft/TypeScript/issues/13326
-https://stackoverflow.com/questions/46026629/shorthand-for-field-initializer-when-class-has-computed-property?noredirect=1&lq=1
+* “[TypeScript and field initializers](https://stackoverflow.com/questions/14142071/typescript-and-field-initializers)”
+* “[Improved syntax to instantiate anonymous classes #13326](https://github.com/Microsoft/TypeScript/issues/13326)”
+* “[Shorthand for field initializer when class has computed property](https://stackoverflow.com/questions/46026629/shorthand-for-field-initializer-when-class-has-computed-property?noredirect=1&lq=1)”
