@@ -1,4 +1,7 @@
+import { IMyInterface } from './i-my-interface';
+
 export class MyClass {
+    document?: IMyInterface;
     one: string;
     two: string;
 
