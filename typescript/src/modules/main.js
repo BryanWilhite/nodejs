@@ -15,3 +15,13 @@ mine = {
 if (!mine.getOneAndTwo) {
     console.log('sorry, mine.getOneAndTwo is not a function');
 }
+mine = new my_class_1.MyClass({
+    document: {
+        id: 42,
+        isActive: true,
+        title: 'Document Title'
+    },
+    one: 'Five',
+    two: 'Six'
+});
+console.log(mine.getOneAndTwo());
