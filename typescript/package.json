@@ -6,6 +6,7 @@
     "license": "ISC",
     "dependencies": {},
     "devDependencies": {
+        "@types/lodash": "^4.14.87",
         "@types/node": "^6.0.46",
         "lodash": "^4.16.4",
         "tslint": "^3.15.1",
@@ -16,6 +17,7 @@
         "url": "https://github.com/BryanWilhite/nodejs.git"
     },
     "scripts": {
+        "src-lodash-template": "node ./src/lodash-template/main.js",
         "src-minimal": "node ./src/minimal/main.js",
         "src-modules": "node ./src/modules/main.js",
         "tsc": "tsc -p tsconfig.json"
