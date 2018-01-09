@@ -4,6 +4,7 @@ This sample focuses on the language features of TypeScript over Node.js®. Initi
 
 ```bash
 npm install --save-dev \
+    @types/lodash \
     @types/node \
     lodash \
     tslint \
