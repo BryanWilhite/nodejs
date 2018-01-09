@@ -28,6 +28,12 @@ The `modules/` [sample](./src/modules) (run `npm run src-modules`) introduces th
 * [Modules and Export](https://www.typescriptlang.org/docs/handbook/modules.html)
 * [Type Assertions](https://github.com/Microsoft/TypeScript/blob/master/doc/spec.md#416-type-assertions)
   (as of this writing there is no documentation for the `as` operator [[GitHub](https://github.com/Microsoft/TypeScript/pull/3564)])
+* [`Partial` Interface](https://netbasal.com/getting-to-know-the-partial-type-in-typescript-ecfcfbc87cb6)
+
+* [Optional Parameters](http://dotnetpattern.com/typescript-optional-parameters)
+* [`Object.assign()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+
+* [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 
 ### related links
 
