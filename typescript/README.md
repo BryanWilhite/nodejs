@@ -13,6 +13,10 @@ npm install --save-dev \
 
 Refer to the scripts in the `package.json` [file](./package.json) for the sub-samples available to run from [the root folder](../typescript).
 
+## lodash-map/
+
+The `lodash-map/` [sample](./src/lodash-map) (run `npm run src-lodash-map`) demonstrates that `_.map` is no longer needed for ES2015 going forward. It can be replaced with `Array.prototype.map()` [[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)].
+
 ## lodash-template/
 
 The `lodash-template/` [sample](./src/lodash-template) (run `npm run src-lodash-template`) is a tiny proof that reminds me that `_.template` can be replaced by ES2015 [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals).

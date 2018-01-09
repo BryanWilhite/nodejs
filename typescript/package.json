@@ -17,6 +17,7 @@
         "url": "https://github.com/BryanWilhite/nodejs.git"
     },
     "scripts": {
+        "src-lodash-map": "node ./src/lodash-map/main.js",
         "src-lodash-template": "node ./src/lodash-template/main.js",
         "src-minimal": "node ./src/minimal/main.js",
         "src-modules": "node ./src/modules/main.js",

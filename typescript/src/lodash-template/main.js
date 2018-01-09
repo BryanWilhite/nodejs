@@ -10,4 +10,5 @@ let uri = _.template('{{ root }}{{ path }}')({
 });
 console.log(`lodash template: ${uri}`);
 uri = `${root}${path}`;
-console.log(`es5 template: ${uri}`);
+console.log(`es2015 template: ${uri}`);
+// conclusion: just use es2015 template literals
