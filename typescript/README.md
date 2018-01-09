@@ -13,6 +13,10 @@ npm install --save-dev \
 
 Refer to the scripts in the `package.json` [file](./package.json) for the sub-samples available to run from [the root folder](../typescript).
 
+## enum/
+
+The `enum/` [sample](./src/enum) (run `npm run src-enum`) shows (me) that [TypeScript enums](https://www.typescriptlang.org/docs/handbook/enums.html) of strings can be directly compared to string literals.
+
 ## lodash-filter/
 
 The `lodash-filter/` [sample](./src/lodash-filter) (run `npm run src-lodash-filter`) demonstrates that `_.filter` is no longer needed for ES2015 going forward. It can be replaced with `Array.prototype.filter()` [[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)].
