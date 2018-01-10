@@ -29,6 +29,12 @@ The `lodash-map/` [sample](./src/lodash-map) (run `npm run src-lodash-map`) demo
 
 The `lodash-template/` [sample](./src/lodash-template) (run `npm run src-lodash-template`) is a tiny proof that reminds me that `_.template` can be replaced by ES2015 [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals).
 
+## map-object/
+
+The `map-object/` [sample](./src/map-object) (run `npm run src-map-object`) introduces the subject of [Keyed collections](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections) in TypeScript from C#-biased point of view by starting with the closest thing to a C# `Dictionary<K, V>`: the `Map<K, V>` interface.
+
+[Json.NET has this same bias](https://www.newtonsoft.com/json/help/html/SerializeDictionary.htm) toward the C# dictionary. So this sample shows how the [TypeScript Index Signature](https://basarat.gitbooks.io/typescript/docs/types/index-signatures.html) can be used to parse JSON into the `Map<K, V>` interface. Anders Hejlsberg, by the way, introduced [index signatures as early as 2012](https://typescript.codeplex.com/discussions/398359).
+
 ## minimal/
 
 The `minimal/` [sample](./src/minimal) (run `npm run src-minimal`) is a one-liner, the bare minimum to run over Node.js®.

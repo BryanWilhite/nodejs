@@ -21,6 +21,7 @@
         "src-lodash-filter": "node ./src/lodash-filter/main.js",
         "src-lodash-map": "node ./src/lodash-map/main.js",
         "src-lodash-template": "node ./src/lodash-template/main.js",
+        "src-map-object": "node ./src/map-object/main.js",
         "src-minimal": "node ./src/minimal/main.js",
         "src-modules": "node ./src/modules/main.js",
         "tsc": "tsc -p tsconfig.json"
