@@ -31,7 +31,7 @@ The `lodash-template/` [sample](./src/lodash-template) (run `npm run src-lodash-
 
 ## map-object/
 
-The `map-object/` [sample](./src/map-object) (run `npm run src-map-object`) introduces the subject of [Keyed collections](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections) in TypeScript from C#-biased point of view by starting with the closest thing to a C# `Dictionary<K, V>`: the `Map<K, V>` interface.
+The `map-object/` [sample](./src/map-object) (run `npm run src-map-object`) introduces the subject of [Keyed collections](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections) in TypeScript from C#-biased point of view by starting with the closest thing to a C# `Dictionary<K, V>`: the `Map<K, V>` interface. (This Mozilla documentation also reminds us to compare `Map` to `Object` itself.)
 
 [Json.NET has this same bias](https://www.newtonsoft.com/json/help/html/SerializeDictionary.htm) toward the C# dictionary. So this sample shows how the [TypeScript Index Signature](https://basarat.gitbooks.io/typescript/docs/types/index-signatures.html) can be used to parse JSON into the `Map<K, V>` interface. Anders Hejlsberg, by the way, introduced [index signatures as early as 2012](https://typescript.codeplex.com/discussions/398359).
 
@@ -63,3 +63,7 @@ The `modules/` [sample](./src/modules) (run `npm run src-modules`) introduces th
 * “[TypeScript and field initializers](https://stackoverflow.com/questions/14142071/typescript-and-field-initializers)”
 * “[Improved syntax to instantiate anonymous classes #13326](https://github.com/Microsoft/TypeScript/issues/13326)”
 * “[Shorthand for field initializer when class has computed property](https://stackoverflow.com/questions/46026629/shorthand-for-field-initializer-when-class-has-computed-property?noredirect=1&lq=1)”
+
+## set-object/
+
+The `set-object/` [sample](./src/set-object) (run `npm run src-set-object`) compares `Set<T>` to `Array<T>` (see “Array and Set compared” under [Keyed collections](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections)).

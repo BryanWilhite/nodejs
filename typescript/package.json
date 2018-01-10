@@ -24,6 +24,7 @@
         "src-map-object": "node ./src/map-object/main.js",
         "src-minimal": "node ./src/minimal/main.js",
         "src-modules": "node ./src/modules/main.js",
+        "src-set-object": "node ./src/set-object/main.js",
         "tsc": "tsc -p tsconfig.json"
     }
 }
