@@ -19,6 +19,7 @@
     "scripts": {
         "src-enum": "node ./src/enum/main.js",
         "src-lodash-filter": "node ./src/lodash-filter/main.js",
+        "src-lodash-group-by": "node ./src/lodash-group-by/main.js",
         "src-lodash-map": "node ./src/lodash-map/main.js",
         "src-lodash-template": "node ./src/lodash-template/main.js",
         "src-map-object": "node ./src/map-object/main.js",
