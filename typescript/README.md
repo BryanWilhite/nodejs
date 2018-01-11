@@ -21,6 +21,10 @@ The `enum/` [sample](./src/enum) (run `npm run src-enum`) shows (me) that [TypeS
 
 The `lodash-filter/` [sample](./src/lodash-filter) (run `npm run src-lodash-filter`) demonstrates that `_.filter` is no longer needed for ES2015 going forward. It can be replaced with `Array.prototype.filter()` [[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)].
 
+## lodash-group-by/
+
+The `lodash-group-by/` [sample](./src/lodash-group-by) (run `npm run src-lodash-group-by`) is a very strong assertion that [lodash](https://lodash.com/) (or even [underscore.js](http://underscorejs.org/)) has a role to play in “modern” JavaScript. I specifically point out the usefulness of `_.groupBy` [[docs](https://lodash.com/docs/#groupBy)], coupled with enums.
+
 ## lodash-map/
 
 The `lodash-map/` [sample](./src/lodash-map) (run `npm run src-lodash-map`) demonstrates that `_.map` is no longer needed for ES2015 going forward. It can be replaced with `Array.prototype.map()` [[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)].
