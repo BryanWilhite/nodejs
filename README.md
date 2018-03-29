@@ -68,6 +68,7 @@ sudo npm install -g \
     typings \
     elm \
     elm-format \
+    vue-cli \
     yo \
     generator-office
 ```
@@ -137,6 +138,7 @@ npm install -g `
     typings `
     elm `
     elm-format `
+    vue-cli `
     yo `
     generator-office
 ```
