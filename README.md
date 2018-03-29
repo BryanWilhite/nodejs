@@ -60,13 +60,16 @@ sudo npm install -g \
     eslint \
     babel-eslint \
     aurelia-cli \
+    @angular/cli \
     hugo-cli \
     karma \
     jasmine \
     typescript \
+    typings \
     elm \
     elm-format \
-    @angular/cli
+    yo \
+    generator-office
 ```
 
 You may already have these globally installed npm packages available to the Node.js runtime. As a reminder (to me), [the commands](https://stackoverflow.com/questions/17937960/how-to-list-npm-user-installed-packages) to check for this are:
@@ -126,13 +129,16 @@ npm install -g `
     eslint `
     babel-eslint `
     aurelia-cli `
+    @angular/cli `
     hugo-cli `
     karma `
     jasmine `
     typescript `
+    typings `
     elm `
     elm-format `
-    @angular/cli
+    yo `
+    generator-office
 ```
 
 _Visual Studio Code users_: install the [PowerShell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell) extension to get the **PowerShell: Show Integrated Console** command to run PowerShell and bash sessions on top of each other in Visual Studio Code.
