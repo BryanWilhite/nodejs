@@ -11,13 +11,13 @@
     },
     "license": "MIT",
     "dependencies": {
-        "aurelia-animator-css": "^1.0.1",
-        "aurelia-bootstrapper": "^2.1.0",
-        "bluebird": "^3.4.1",
+        "aurelia-animator-css": "^1.0.4",
+        "aurelia-bootstrapper": "^2.2.0",
+        "bluebird": "^3.5.1",
         "bootstrap": "^3.3.7",
         "jquery": "^2.2.4",
         "nprogress": "^0.2.0",
-        "requirejs": "^2.3.2",
+        "requirejs": "^2.3.5",
         "text": "github:requirejs/text#latest"
     },
     "peerDependencies": {},
