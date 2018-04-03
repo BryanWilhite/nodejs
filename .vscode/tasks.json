@@ -3,7 +3,7 @@
     "tasks": [
         {
             "command": "npm",
-            "label": "npm: start",
+            "label": "nodejs npm: start",
             "isBackground": false,
             "type": "shell",
             "args": [
@@ -13,6 +13,45 @@
                 "cwd": "${workspaceRoot}"
             },
             "problemMatcher": []
-        }
+        },
+        {
+            "command": "npm",
+            "label": "angular.io-tour-of-heroes npm: install",
+            "isBackground": false,
+            "type": "shell",
+            "args": [
+                "install"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}/angular.io-tour-of-heroes/quickstart"
+            },
+            "problemMatcher": []
+        },
+        {
+            "command": "npm",
+            "label": "angular.io-tour-of-heroes npm: start",
+            "isBackground": false,
+            "type": "shell",
+            "args": [
+                "start"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}/angular.io-tour-of-heroes/quickstart"
+            },
+            "problemMatcher": []
+        },
+        {
+            "command": "npm",
+            "label": "angular.io-tour-of-heroes npm: update",
+            "isBackground": false,
+            "type": "shell",
+            "args": [
+                "update"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}/angular.io-tour-of-heroes/quickstart"
+            },
+            "problemMatcher": []
+        },
     ]
 }
