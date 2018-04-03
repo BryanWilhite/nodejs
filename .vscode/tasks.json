@@ -42,6 +42,19 @@
         },
         {
             "command": "npm",
+            "label": "angular.io-tour-of-heroes npm: test",
+            "isBackground": false,
+            "type": "shell",
+            "args": [
+                "test"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}/angular.io-tour-of-heroes/quickstart"
+            },
+            "problemMatcher": []
+        },
+        {
+            "command": "npm",
             "label": "angular.io-tour-of-heroes npm: update",
             "isBackground": false,
             "type": "shell",
