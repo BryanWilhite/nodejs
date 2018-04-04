@@ -31,14 +31,14 @@ describe('HeroSearchService', () => {
         });
     });
 
-    it('should load search results', (done: DoneFn) => {
-        service = testBed.get(HeroSearchService);
-        expect(service).not.toBeNull();
-        service
-            .search('D')
-            .subscribe(value => {
-                console.log(value);
-                done();
-            });
-    });
+    // it('should load search results', (done: DoneFn) => {
+    //     service = testBed.get(HeroSearchService);
+    //     expect(service).not.toBeNull();
+    //     service
+    //         .search('D')
+    //         .subscribe(value => {
+    //             console.log(value);
+    //             done();
+    //         });
+    // });
 });
