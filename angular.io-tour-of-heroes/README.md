@@ -63,4 +63,6 @@ TypeError: Cannot read property 'config' of null
 
 This is [a recognized Angular CLI issue](https://github.com/angular/angular-cli/issues/4736) that seems to be related to lack of “proper” (currently-in-use) CLI configuration _by default_ for this tutorial. In other words, [the Angular 2 QuickStart](https://github.com/angular/quickstart) does not recognize the Angular CLI as of this writing (no `.angular-cli.json` file).
 
+Karma/Jasmine tests were also added for the tutorial. The [Angular in-memory-web-api](https://github.com/angular/in-memory-web-api) team provides guidance in this area, specifically `hero.service.spec.ts` [[GitHub](https://github.com/angular/in-memory-web-api/blob/master/src/app/hero.service.spec.ts)] is a treasure trove for the novice.
+
 @[BryanWilhite](https://twitter.com/bryanwilhite)
