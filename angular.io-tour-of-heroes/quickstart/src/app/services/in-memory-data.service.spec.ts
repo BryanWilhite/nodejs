@@ -34,7 +34,7 @@ describe('InMemoryDataService', () => {
                 done();
             })
             .then((responseOrVoid: Response | void) => {
-                const response = <Response>responseOrVoid;
+                const response = responseOrVoid as Response;
                 expect(response).not.toBeNull();
                 expect(response.ok).toBe(true);
 
@@ -59,7 +59,7 @@ describe('InMemoryDataService', () => {
                     expect(response).toBeUndefined();
                 })
                 .then((responseOrVoid: Response | void) => {
-                    const response = <Response>responseOrVoid;
+                    const response = responseOrVoid as Response;
                     expect(response).not.toBeNull();
                     expect(response.ok).toBe(true);
 
