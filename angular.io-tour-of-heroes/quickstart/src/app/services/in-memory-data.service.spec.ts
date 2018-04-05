@@ -31,6 +31,10 @@ describe('InMemoryDataService', () => {
             ],
             imports: [HttpModule]
         });
+
+        service = testBed.get(InMemoryDataService);
+        expect(service).not.toBeNull();
+        service.createDb();
     });
 
     it('should get a hero', (done: DoneFn) => {
