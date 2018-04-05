@@ -46,6 +46,18 @@ module.exports = function(config) {
             'node_modules/zone.js/dist/async-test.js',
             'node_modules/zone.js/dist/fake-async-test.js',
 
+            // In Memory Web API
+            {
+                pattern: 'node_modules/angular-in-memory-web-api/**/*.js',
+                included: false,
+                watched: false
+            },
+            {
+                pattern: 'node_modules/angular-in-memory-web-api/**/*.js.map',
+                included: false,
+                watched: false
+            },
+
             // RxJs
             {
                 pattern: 'node_modules/rxjs/**/*.js',
