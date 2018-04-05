@@ -1,3 +1,7 @@
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
+import { DebugElement } from '@angular/core';
+
 import { APP_BASE_HREF } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from '../app-routing.module';
@@ -10,11 +14,7 @@ import { HeroDetailComponent } from '../components/hero-detail/hero-detail.compo
 import { HeroesComponent } from '../components/heroes/heroes.component';
 import { HeroSearchComponent } from '../components/hero-search/hero-search.component';
 
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
-
-describe('AppComponent', function() {
+describe('AppComponent', () => {
     let de: DebugElement;
     let comp: AppComponent;
     let fixture: ComponentFixture<AppComponent>;
