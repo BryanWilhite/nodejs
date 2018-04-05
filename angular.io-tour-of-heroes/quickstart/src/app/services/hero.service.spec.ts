@@ -87,43 +87,55 @@ describe('HeroService', () => {
             service = testBed.get(HeroService);
             expect(service).not.toBeNull();
 
-            let promiseCreateAndRead = service
+            const testCreateOperation = (responseOrVoid: Hero | void) => {
+                crudHero = responseOrVoid as Hero;
+                expect(crudHero).not.toBeNull();
+                expect(crudHero.name).toBe(heroName);
+                console.log(crudHero);
+            };
+
+            const testDeleteOperation = (responseOrVoid: Hero | void) => {
+                const response = responseOrVoid as void;
+                expect(response).toBeNull();
+                console.log('hero deleted.');
+            };
+
+            const testUpdateOperation = (responseOrVoid: Hero | void) => {
+                crudHero = responseOrVoid as Hero;
+                expect(crudHero).not.toBeNull();
+                expect(crudHero.name).toBe(heroName);
+                console.log(crudHero);
+            };
+
+            console.log('generating hero...');
+            service
                 .create(heroName)
                 .catch((response: Response) => {
                     expect(response).toBeUndefined();
                 })
-                .then((responseOrVoid: Hero | void) => {
-                    crudHero = responseOrVoid as Hero;
-                    expect(crudHero).not.toBeNull();
-                    expect(crudHero.name).toBe(heroName);
+                .then((createResponseOrVoid: Hero | void) => {
+                    testCreateOperation(createResponseOrVoid);
+
+                    console.log('updating hero...');
+                    heroName = 'Super Tester Jr.';
+                    crudHero.name = heroName;
+                    service
+                        .update(crudHero)
+                        .catch((response: Response) => {
+                            expect(response).toBeUndefined();
+                        })
+                        .then((updateResponseOrVoid: Hero | void) => {
+                            testUpdateOperation(updateResponseOrVoid);
+
+                            console.log('deleting hero...');
+                            service
+                                .delete(crudHero.id)
+                                .catch((response: Response) => {
+                                    expect(response).toBeUndefined();
+                                })
+                                .then(testDeleteOperation);
+                        });
                 });
-
-            let promiseUpdateAndDelete = promiseCreateAndRead.then(() => {
-                crudHero.name = 'Super Tester Jr.';
-
-                service
-                    .update(crudHero)
-                    .catch((response: Response) => {
-                        expect(response).toBeUndefined();
-                    })
-                    .then((responseOrVoid: Hero | void) => {
-                        crudHero = responseOrVoid as Hero;
-                        expect(crudHero).not.toBeNull();
-                        expect(crudHero.name).toBe(heroName);
-                    });
-            });
-
-            promiseUpdateAndDelete.then(() => {
-                service
-                    .delete(crudHero.id)
-                    .catch((response: Response) => {
-                        expect(response).toBeUndefined();
-                    })
-                    .then((responseOrVoid: void) => {
-                        const response = responseOrVoid as void;
-                        expect(response).not.toBeNull();
-                    });
-            });
         })
     );
 });
