@@ -50,15 +50,15 @@ describe('DashboardComponent', () => {
                     HttpModule,
                     InMemoryWebApiModule.forRoot(InMemoryDataService)
                 ]
-            }).compileComponents();
+            })
+                .compileComponents()
+                .then(() => {
+                    fixture = TestBed.createComponent(DashboardComponent);
+                    comp = fixture.componentInstance;
+                    service = TestBed.get(HeroService);
+                });
         })
     );
-
-    beforeEach(() => {
-        fixture = TestBed.createComponent(DashboardComponent);
-        comp = fixture.componentInstance;
-        service = TestBed.get(HeroService);
-    });
 
     it('should create component', () => expect(comp).toBeDefined());
     it('should have a header', () => {

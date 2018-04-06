@@ -34,14 +34,14 @@ describe('AppComponent', () => {
                     HeroSearchComponent
                 ],
                 imports: [FormsModule, AppRoutingModule]
-            }).compileComponents();
+            })
+                .compileComponents()
+                .then(() => {
+                    fixture = TestBed.createComponent(AppComponent);
+                    comp = fixture.componentInstance;
+                });
         })
     );
-
-    beforeEach(() => {
-        fixture = TestBed.createComponent(AppComponent);
-        comp = fixture.componentInstance;
-    });
 
     it('should create component', () => expect(comp).toBeDefined());
 
