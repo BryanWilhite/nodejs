@@ -41,13 +41,13 @@ describe('AppComponent', () => {
     beforeEach(() => {
         fixture = TestBed.createComponent(AppComponent);
         comp = fixture.componentInstance;
-        de = fixture.debugElement.query(By.css('h1'));
     });
 
     it('should create component', () => expect(comp).toBeDefined());
 
     it('should have expected <h1> text', () => {
         fixture.detectChanges();
+        de = fixture.debugElement.query(By.css('h1'));
         const h1 = de.nativeElement;
         expect(h1.innerText).toContain(fixture.componentInstance.title);
     });
