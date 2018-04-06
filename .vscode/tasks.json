@@ -77,50 +77,6 @@
                 "cwd": "${workspaceRoot}/angular.io-tour-of-heroes/quickstart"
             },
             "problemMatcher": []
-        },
-        {
-            "command": "npm",
-            "label": "Angular Testing npm: build",
-            "isBackground": false,
-            "type": "shell",
-            "args": ["run", "build"],
-            "options": {
-                "cwd": "${workspaceRoot}/angular-testing/specs.testing"
-            },
-            "problemMatcher": []
-        },
-        {
-            "command": "npm",
-            "label": "Angular Testing npm: install",
-            "isBackground": false,
-            "type": "shell",
-            "args": ["install"],
-            "options": {
-                "cwd": "${workspaceRoot}/angular-testing/specs.testing"
-            },
-            "problemMatcher": []
-        },
-        {
-            "command": "npm",
-            "label": "Angular Testing npm: start",
-            "isBackground": false,
-            "type": "shell",
-            "args": ["run", "start"],
-            "options": {
-                "cwd": "${workspaceRoot}/angular-testing/specs.testing"
-            },
-            "problemMatcher": []
-        },
-        {
-            "command": "npm",
-            "label": "Angular Testing npm: test",
-            "isBackground": false,
-            "type": "shell",
-            "args": ["test"],
-            "options": {
-                "cwd": "${workspaceRoot}/angular-testing/specs.testing"
-            },
-            "problemMatcher": []
         }
     ]
 }
