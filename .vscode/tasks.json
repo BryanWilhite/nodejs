@@ -91,6 +91,17 @@
         },
         {
             "command": "npm",
+            "label": "Angular Testing npm: install",
+            "isBackground": false,
+            "type": "shell",
+            "args": ["install"],
+            "options": {
+                "cwd": "${workspaceRoot}/angular-testing/testing"
+            },
+            "problemMatcher": []
+        },
+        {
+            "command": "npm",
             "label": "Angular Testing npm: start",
             "isBackground": false,
             "type": "shell",
