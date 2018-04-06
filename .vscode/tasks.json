@@ -85,7 +85,7 @@
             "type": "shell",
             "args": ["run", "build"],
             "options": {
-                "cwd": "${workspaceRoot}/angular-testing/testing"
+                "cwd": "${workspaceRoot}/angular-testing/specs.testing"
             },
             "problemMatcher": []
         },
@@ -96,7 +96,7 @@
             "type": "shell",
             "args": ["install"],
             "options": {
-                "cwd": "${workspaceRoot}/angular-testing/testing"
+                "cwd": "${workspaceRoot}/angular-testing/specs.testing"
             },
             "problemMatcher": []
         },
@@ -107,7 +107,7 @@
             "type": "shell",
             "args": ["run", "start"],
             "options": {
-                "cwd": "${workspaceRoot}/angular-testing/testing"
+                "cwd": "${workspaceRoot}/angular-testing/specs.testing"
             },
             "problemMatcher": []
         },
@@ -118,7 +118,7 @@
             "type": "shell",
             "args": ["test"],
             "options": {
-                "cwd": "${workspaceRoot}/angular-testing/testing"
+                "cwd": "${workspaceRoot}/angular-testing/specs.testing"
             },
             "problemMatcher": []
         }
