@@ -98,6 +98,7 @@ describe('DashboardComponent', () => {
 
             fixture.detectChanges();
             tick();
+            fixture.detectChanges();
 
             console.log(
                 `${methodName} calls [after fixture.detectChanges() and tick()]: `,
