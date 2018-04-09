@@ -1,3 +1,4 @@
+import { NO_ERRORS_SCHEMA, DebugElement } from '@angular/core';
 import {
     TestBed,
     ComponentFixture,
@@ -6,69 +7,51 @@ import {
     tick
 } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { NO_ERRORS_SCHEMA, DebugElement } from '@angular/core';
-
-import { APP_BASE_HREF } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-
-import { AppRoutingModule } from '../../app-routing.module';
 
 import { HEROES } from '../../mocks/services/heroes-mock';
 import { HeroService } from '../../services/hero.service';
 
+import { RouterLinkMock } from '../../mocks/directives/router-link-mock';
+
 import { DashboardComponent } from './dashboard.component';
-import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
-import { HeroesComponent } from '../heroes/heroes.component';
 
 describe('DashboardComponent', () => {
+    const getHeroesMemberName = 'getHeroes';
+    const service = jasmine.createSpyObj('HeroService', [getHeroesMemberName]);
+
     let de: DebugElement;
     let comp: DashboardComponent;
     let fixture: ComponentFixture<DashboardComponent>;
-    let service: HeroService;
 
     beforeEach(
         async(() => {
             TestBed.configureTestingModule({
-                providers: [
-                    { provide: APP_BASE_HREF, useValue: '/' },
-                    HeroService
-                ],
-                declarations: [
-                    DashboardComponent,
-                    HeroDetailComponent,
-                    HeroesComponent
-                ],
-                imports: [
-                    FormsModule,
-                    AppRoutingModule,
-                    HttpModule
-                ],
+                providers: [{ provide: HeroService, useValue: service }],
+                declarations: [RouterLinkMock, DashboardComponent],
                 schemas: [NO_ERRORS_SCHEMA]
             })
                 .compileComponents()
                 .then(() => {
                     fixture = TestBed.createComponent(DashboardComponent);
                     comp = fixture.componentInstance;
-                    service = TestBed.get(HeroService);
                 });
         })
     );
 
     it('should create component', () => expect(comp).toBeDefined());
     it('should have a header', () => {
-        const methodName = 'ngOnInit';
-        const spy = spyOn(comp, methodName);
+        const ngOnInitMemberName = 'ngOnInit';
+        const spy = spyOn(comp, ngOnInitMemberName);
 
         console.log(
-            `${methodName} calls [before fixture.detectChanges()]: `,
+            `${ngOnInitMemberName} calls [before fixture.detectChanges()]: `,
             spy.calls.count()
         );
 
         fixture.detectChanges();
 
         console.log(
-            `${methodName} calls [after fixture.detectChanges()]: `,
+            `${ngOnInitMemberName} calls [after fixture.detectChanges()]: `,
             spy.calls.count()
         );
 
@@ -80,14 +63,13 @@ describe('DashboardComponent', () => {
     it(
         'should have heroes to bind in a list',
         fakeAsync(() => {
-            const methodName = 'getHeroes';
-            const spy = spyOn(service, methodName).and.returnValue(
+            const spy = service.getHeroes.and.returnValue(
                 Promise.resolve(HEROES)
             );
             expect(comp.heroes.length).toBe(0);
 
             console.log(
-                `${methodName} calls [before fixture.detectChanges() and tick()]: `,
+                `${getHeroesMemberName} calls [before fixture.detectChanges() and tick()]: `,
                 spy.calls.count()
             );
 
@@ -96,7 +78,7 @@ describe('DashboardComponent', () => {
             fixture.detectChanges();
 
             console.log(
-                `${methodName} calls [after fixture.detectChanges() and tick()]: `,
+                `${getHeroesMemberName} calls [after fixture.detectChanges() and tick()]: `,
                 spy.calls.count()
             );
 

@@ -60,6 +60,6 @@ describe('AppComponent', () => {
         linkDebugElement.triggerEventHandler('click', null);
         fixture.detectChanges();
 
-        expect(linkDirective.navigatedTo).toBe(routerLinks[1].linkParams);
+        expect(linkDirective.navigatedTo).toBe(routerLinks[i].linkParams);
     });
 });
