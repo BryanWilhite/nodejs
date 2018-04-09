@@ -12,9 +12,6 @@ import { APP_BASE_HREF } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from '../../services/in-memory-data.service';
-
 import { AppRoutingModule } from '../../app-routing.module';
 
 import { HEROES } from '../../services/mock-heroes';
@@ -47,8 +44,7 @@ describe('DashboardComponent', () => {
                 imports: [
                     FormsModule,
                     AppRoutingModule,
-                    HttpModule,
-                    InMemoryWebApiModule.forRoot(InMemoryDataService)
+                    HttpModule
                 ]
             })
                 .compileComponents()
