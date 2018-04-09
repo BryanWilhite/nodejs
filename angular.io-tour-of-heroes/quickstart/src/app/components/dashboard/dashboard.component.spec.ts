@@ -6,7 +6,7 @@ import {
     tick
 } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
+import { NO_ERRORS_SCHEMA, DebugElement } from '@angular/core';
 
 import { APP_BASE_HREF } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -20,7 +20,6 @@ import { HeroService } from '../../services/hero.service';
 import { DashboardComponent } from './dashboard.component';
 import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 import { HeroesComponent } from '../heroes/heroes.component';
-import { HeroSearchComponent } from '../hero-search/hero-search.component';
 
 describe('DashboardComponent', () => {
     let de: DebugElement;
@@ -38,14 +37,14 @@ describe('DashboardComponent', () => {
                 declarations: [
                     DashboardComponent,
                     HeroDetailComponent,
-                    HeroesComponent,
-                    HeroSearchComponent
+                    HeroesComponent
                 ],
                 imports: [
                     FormsModule,
                     AppRoutingModule,
                     HttpModule
-                ]
+                ],
+                schemas: [NO_ERRORS_SCHEMA]
             })
                 .compileComponents()
                 .then(() => {
