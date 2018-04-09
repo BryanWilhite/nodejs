@@ -1,18 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
+import { NO_ERRORS_SCHEMA, DebugElement } from '@angular/core';
 
-import { APP_BASE_HREF } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { AppRoutingModule } from '../app-routing.module';
-
-import { HeroService } from '../services/hero.service';
-
+import { RouterLinkMock } from '../mocks/directives/router-link-mock';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from '../components/dashboard/dashboard.component';
-import { HeroDetailComponent } from '../components/hero-detail/hero-detail.component';
-import { HeroesComponent } from '../components/heroes/heroes.component';
-import { HeroSearchComponent } from '../components/hero-search/hero-search.component';
 
 describe('AppComponent', () => {
     let de: DebugElement;
@@ -22,18 +13,8 @@ describe('AppComponent', () => {
     beforeEach(
         async(() => {
             TestBed.configureTestingModule({
-                providers: [
-                    { provide: APP_BASE_HREF, useValue: '/' },
-                    HeroService
-                ],
-                declarations: [
-                    AppComponent,
-                    DashboardComponent,
-                    HeroDetailComponent,
-                    HeroesComponent,
-                    HeroSearchComponent
-                ],
-                imports: [FormsModule, AppRoutingModule]
+                declarations: [RouterLinkMock, AppComponent],
+                schemas: [NO_ERRORS_SCHEMA]
             })
                 .compileComponents()
                 .then(() => {

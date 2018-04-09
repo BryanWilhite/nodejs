@@ -14,7 +14,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from '../../app-routing.module';
 
-import { HEROES } from '../../services/mock-heroes';
+import { HEROES } from '../../mocks/services/heroes-mock';
 import { HeroService } from '../../services/hero.service';
 
 import { DashboardComponent } from './dashboard.component';
