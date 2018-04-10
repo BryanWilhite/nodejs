@@ -6,6 +6,7 @@ import { ActivatedRoute } from '@angular/router';
 
 import { ActivatedRouteMock } from '../../mocks/services/activated-route-mock';
 import { HeroService } from '../../services/hero.service';
+import { HeroServiceSpy } from '../../mocks/services/hero-service-spy';
 
 import { HeroDetailComponent } from './hero-detail.component';
 import { ComponentFixtureUtility } from './hero-detail.component.spec-fixture-util';
@@ -16,12 +17,10 @@ describe('HeroDetailComponent', () => {
     const backMemberName = 'back';
     const location = jasmine.createSpyObj('Location', [backMemberName]);
 
-    const getHeroesMemberName = 'getHeroes';
-    const service = jasmine.createSpyObj('HeroService', [getHeroesMemberName]);
-
     let comp: HeroDetailComponent;
     let fixture: ComponentFixture<HeroDetailComponent>;
     let fixtureUtility: ComponentFixtureUtility;
+    let whenStablePromise: Promise<any>;
 
     beforeEach(
         async(() => {
@@ -29,7 +28,7 @@ describe('HeroDetailComponent', () => {
                 providers: [
                     { provide: Location, useValue: location },
                     { provide: ActivatedRoute, useValue: activatedRoute },
-                    { provide: HeroService, useValue: service }
+                    { provide: HeroService, useClass: HeroServiceSpy }
                 ],
                 declarations: [HeroDetailComponent],
                 imports: [FormsModule]
@@ -39,6 +38,12 @@ describe('HeroDetailComponent', () => {
                     fixture = TestBed.createComponent(HeroDetailComponent);
                     fixtureUtility = new ComponentFixtureUtility(fixture);
                     comp = fixture.componentInstance;
+
+                    activatedRoute.setParamMap({ id: 99999 });
+                    fixture.detectChanges(); // triggers ngOnInit which gets a hero
+                    whenStablePromise = fixture
+                        .whenStable()
+                        .then(() => fixture.detectChanges()); // 2nd change detection displays the async-fetched hero
                 });
         })
     );
