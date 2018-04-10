@@ -17,6 +17,8 @@ describe('HeroDetailComponent', () => {
     const backMemberName = 'back';
     const location = jasmine.createSpyObj('Location', [backMemberName]);
 
+    let service: any;
+
     let comp: HeroDetailComponent;
     let fixture: ComponentFixture<HeroDetailComponent>;
     let fixtureUtility: ComponentFixtureUtility;
@@ -28,17 +30,27 @@ describe('HeroDetailComponent', () => {
                 providers: [
                     { provide: Location, useValue: location },
                     { provide: ActivatedRoute, useValue: activatedRoute },
-                    { provide: HeroService, useClass: HeroServiceSpy }
+                    { provide: HeroService, useClass: {} }
                 ],
                 declarations: [HeroDetailComponent],
                 imports: [FormsModule]
             })
+                .overrideComponent(HeroDetailComponent, {
+                    set: {
+                        providers: [
+                            { provide: HeroService, useClass: HeroServiceSpy }
+                        ]
+                    }
+                })
                 .compileComponents()
                 .then(() => {
                     fixture = TestBed.createComponent(HeroDetailComponent);
                     fixtureUtility = new ComponentFixtureUtility(fixture);
                     comp = fixture.componentInstance;
 
+                    service = fixture.debugElement.injector.get(
+                        HeroService
+                    ) as any;
                     activatedRoute.setParamMap({ id: 99999 });
                     fixture.detectChanges(); // triggers ngOnInit which gets a hero
                     whenStablePromise = fixture
