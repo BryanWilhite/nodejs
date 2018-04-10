@@ -30,18 +30,11 @@ describe('HeroDetailComponent', () => {
                 providers: [
                     { provide: Location, useValue: location },
                     { provide: ActivatedRoute, useValue: activatedRoute },
-                    { provide: HeroService, useClass: {} }
+                    { provide: HeroService, useClass: HeroServiceSpy }
                 ],
                 declarations: [HeroDetailComponent],
                 imports: [FormsModule]
             })
-                .overrideComponent(HeroDetailComponent, {
-                    set: {
-                        providers: [
-                            { provide: HeroService, useClass: HeroServiceSpy }
-                        ]
-                    }
-                })
                 .compileComponents()
                 .then(() => {
                     fixture = TestBed.createComponent(HeroDetailComponent);
