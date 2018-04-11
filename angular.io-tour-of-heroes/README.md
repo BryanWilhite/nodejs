@@ -60,6 +60,8 @@ The `app.component.spec.ts` [specification](./quickstart/src/app/components/app.
 
 The `dashboard.component.ts` [specification]( ./quickstart/src/app/components/dashboard/dashboard.component.ts) also uses `NO_ERRORS_SCHEMA` and `RouterLinkMock` but adds the Jasmine ability to mock services with “spies,” `fakeAsync` and `tick` [[guide](https://angular.io/guide/testing#component-with-async-service)].
 
+The `hero-detail.component.spec.ts` [specification](./quickstart/src/app/components/hero-detail/hero-detail.component.spec.ts) rapidly escalates the “fundamentals” of Angular testing. This spec takes a dependency on the `ComponentFixtureUtility` [class](./quickstart/src/app/components/hero-detail/hero-detail.component.spec-fixture-util.ts) which [the official Angular documentation](https://angular.io/guide/testing#use-a-page-object) would call a _page_, representing the members of a component, including the `HTMLElement` instances compiled by the `TestBed` into the fixture. This spec also depends on the most complex Jasmine spy, the `hero-service-spy.ts` [class](./quickstart/src/app/mocks/services/hero-service-spy.ts) which is needed to define multiple spy methods and one domain-model fake.
+
 ## the Angular team is not enthusiastic about end-to-end (E2E) testing
 
 In “[Why not rely on E2E tests of DOM integration?](https://angular.io/guide/testing#why-not-rely-on-e2e-tests-of-dom-integration),” the Angular team give four reasons to discourage E2E testing. For detail, see “[Julie Ralph: End to End Angular Testing with Protractor](https://www.youtube.com/watch?v=aQipuiTcn3U&t=90s).”
