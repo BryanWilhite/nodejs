@@ -27,7 +27,20 @@ describe('HeroDetailComponent', () => {
     let comp: HeroDetailComponent;
     let fixture: ComponentFixture<HeroDetailComponent>;
     let fixtureUtility: ComponentFixtureUtility;
-    let whenStablePromise: Promise<any>;
+
+    const initializeComponentAndDetectChanges = function(): Promise<any> {
+        fixture = TestBed.createComponent(HeroDetailComponent);
+        fixtureUtility = new ComponentFixtureUtility(fixture);
+        comp = fixture.componentInstance;
+
+        service = fixture.debugElement.injector.get(HeroService) as any;
+
+        fixture.detectChanges(); // triggers ngOnInit which gets a hero
+        const whenStablePromise = fixture
+            .whenStable()
+            .then(() => fixture.detectChanges()); // 2nd change detection displays the async-fetched hero
+        return whenStablePromise;
+    };
 
     beforeEach(
         async(() => {
@@ -41,20 +54,7 @@ describe('HeroDetailComponent', () => {
                 imports: [FormsModule]
             })
                 .compileComponents()
-                .then(() => {
-                    fixture = TestBed.createComponent(HeroDetailComponent);
-                    fixtureUtility = new ComponentFixtureUtility(fixture);
-                    comp = fixture.componentInstance;
-
-                    service = fixture.debugElement.injector.get(
-                        HeroService
-                    ) as any;
-
-                    fixture.detectChanges(); // triggers ngOnInit which gets a hero
-                    whenStablePromise = fixture
-                        .whenStable()
-                        .then(() => fixture.detectChanges()); // 2nd change detection displays the async-fetched hero
-                });
+                .then(initializeComponentAndDetectChanges);
         })
     );
 
