@@ -1,4 +1,10 @@
-import { TestBed, ComponentFixture, async } from '@angular/core/testing';
+import {
+    TestBed,
+    ComponentFixture,
+    async,
+    fakeAsync,
+    tick
+} from '@angular/core/testing';
 
 import { Location } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -81,6 +87,24 @@ describe('HeroDetailComponent', () => {
             'Calls to `Location.back()` were not expected.'
         );
     });
+    it(
+        'should navigate when Save button is clicked',
+        fakeAsync(() => {
+            const button = fixtureUtility.buttons.find(
+                i => i.innerText === 'Save'
+            ) as HTMLButtonElement;
+            expect(button).not.toBeNull();
+
+            click(button);
+
+            tick();
+
+            expect(fixtureUtility.locationSpy.back.calls.any()).toBe(
+                true,
+                'Calls to `Location.back()` were expected.'
+            );
+        })
+    );
     it('should navigate when Back button is clicked', () => {
         const button = fixtureUtility.buttons.find(
             i => i.innerText === 'Back'
