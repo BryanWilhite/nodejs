@@ -4,7 +4,7 @@ import { Location } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 
-//import { click } from '../../mocks/click';
+import { click } from '../../mocks/click';
 import { ActivatedRouteMock } from '../../mocks/services/activated-route-mock';
 import { HeroService } from '../../services/hero.service';
 import { HeroServiceSpy } from '../../mocks/services/hero-service-spy';
@@ -64,16 +64,17 @@ describe('HeroDetailComponent', () => {
             service.testHero.name
         );
     });
-    // it('should navigate when click cancel', () => {
-    //     const backButton = fixtureUtility.buttons.find(
-    //         i => i.innerText === 'Back'
-    //     );
-    //     expect(backButton).not.toBeNull();
+    it('should navigate when Back button is clicked', () => {
+        const backButton = fixtureUtility.buttons.find(
+            i => i.innerText === 'Back'
+        ) as HTMLButtonElement;
+        expect(backButton).not.toBeNull();
 
-    //     click(backButton);
-    //     expect(fixtureUtility.locationSpy.back.calls.any()).toBe(
-    //         true,
-    //         'router.navigate called'
-    //     );
-    // });
+        click(backButton);
+
+        expect(fixtureUtility.locationSpy.back.calls.any()).toBe(
+            true,
+            'Calls to `Location.back()` were expected.'
+        );
+    });
 });

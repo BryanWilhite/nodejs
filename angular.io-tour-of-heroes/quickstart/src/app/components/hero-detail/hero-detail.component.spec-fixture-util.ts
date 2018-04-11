@@ -5,15 +5,15 @@ import { Location } from '@angular/common';
 export class ComponentFixtureUtility {
     locationSpy: any;
 
-    get buttons() {
+    get buttons(): HTMLButtonElement[] {
         return this.queryAll<HTMLButtonElement>('button');
     }
 
-    get nameDisplay() {
+    get nameDisplay(): HTMLElement {
         return this.query<HTMLElement>('span');
     }
 
-    get nameInput() {
+    get nameInput(): HTMLInputElement {
         return this.query<HTMLInputElement>('input');
     }
 
@@ -30,6 +30,10 @@ export class ComponentFixtureUtility {
     }
 
     private queryAll<T>(selector: string): T[] {
-        return this.fixture.nativeElement.querySelectorAll(selector);
+        // querySelectorAll() should return a NodeList _not_ an array:
+        return Array.from(
+            this.fixture.nativeElement.querySelectorAll(selector),
+            i => i as T
+        );
     }
 }
