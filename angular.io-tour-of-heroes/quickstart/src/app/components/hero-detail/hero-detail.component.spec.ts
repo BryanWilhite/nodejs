@@ -64,13 +64,30 @@ describe('HeroDetailComponent', () => {
             service.testHero.name
         );
     });
+    it('should update/insert a Hero when Save button is clicked', () => {
+        const button = fixtureUtility.buttons.find(
+            i => i.innerText === 'Save'
+        ) as HTMLButtonElement;
+        expect(button).not.toBeNull();
+
+        click(button);
+
+        expect(service.update.calls.count()).toBe(
+            1,
+            'One `HeroService.update()` call was expected.'
+        );
+        expect(fixtureUtility.locationSpy.back.calls.any()).toBe(
+            false,
+            'Calls to `Location.back()` were not expected.'
+        );
+    });
     it('should navigate when Back button is clicked', () => {
-        const backButton = fixtureUtility.buttons.find(
+        const button = fixtureUtility.buttons.find(
             i => i.innerText === 'Back'
         ) as HTMLButtonElement;
-        expect(backButton).not.toBeNull();
+        expect(button).not.toBeNull();
 
-        click(backButton);
+        click(button);
 
         expect(fixtureUtility.locationSpy.back.calls.any()).toBe(
             true,
