@@ -13,9 +13,7 @@ import { ComponentFixtureUtility } from './hero-detail.component.spec-fixture-ut
 
 describe('HeroDetailComponent', () => {
     const activatedRoute: ActivatedRouteMock = new ActivatedRouteMock();
-
-    const backMemberName = 'back';
-    const location = jasmine.createSpyObj('Location', [backMemberName]);
+    const location = jasmine.createSpyObj('Location', ['back']);
 
     let service: any;
 
@@ -44,7 +42,7 @@ describe('HeroDetailComponent', () => {
                     service = fixture.debugElement.injector.get(
                         HeroService
                     ) as any;
-                    activatedRoute.setParamMap({ id: 99999 });
+
                     fixture.detectChanges(); // triggers ngOnInit which gets a hero
                     whenStablePromise = fixture
                         .whenStable()
@@ -53,5 +51,16 @@ describe('HeroDetailComponent', () => {
         })
     );
 
-    it('should create component', () => expect(comp).toBeDefined());
+    it('should generate component', () => expect(comp).toBeDefined());
+    it('should call `HeroService.getHero()`', () => {
+        expect(service.getHero.calls.count()).toBe(
+            1,
+            'One `HeroService.getHero()` call was expected.'
+        );
+    });
+    it('should display stub hero’s name', () => {
+        expect(fixtureUtility.nameDisplay.textContent).toBe(
+            service.testHero.name
+        );
+    });
 });
