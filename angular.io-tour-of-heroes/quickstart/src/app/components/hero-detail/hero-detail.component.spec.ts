@@ -119,32 +119,23 @@ describe('HeroDetailComponent', () => {
         );
     });
     it(
-        'should get a Hero from `paramMap`',
+        'should get a Hero ID from `paramMap`',
         async(() => {
             const expectedHeroId = 73;
+            let allArgs = Array.from(service.getHero.calls.allArgs());
+            expect(allArgs.length).toBe(
+                1,
+                'One empty service call is expected (after `TestBed` setup).'
+            );
+
             activatedRoute.setParamMap({ id: expectedHeroId });
-            initializeComponentAndDetectChanges().then(() => {
-                console.log(
-                    'service.getHero.calls',
-                    service.getHero.calls.allArgs()
-                ); // why is this showing four sets of args?
 
-                const calls = Array.from(
-                    service.getHero.calls.allArgs()
-                ).filter(i => {
-                    const args = i as Array<number>;
-                    return args.length > 0 && (args[0] === expectedHeroId);
-                });
+            allArgs = Array.from(service.getHero.calls.allArgs());
+            expect(allArgs.length).toBe(2, 'Two service calls are expected.');
 
-                expect(calls.length).toBeGreaterThan(
-                    0,
-                    '`HeroService.getHero()` call arguments were expected.'
-                );
-
-                const call = calls[0];
-                expect((call as Array<number>).length).toBeGreaterThan(0);
-                expect(call[0]).toBe(expectedHeroId);
-            });
+            const lastCall = allArgs[allArgs.length - 1] as Array<number>;
+            expect(lastCall.length).toBeGreaterThan(0);
+            expect(lastCall[0]).toBe(expectedHeroId);
         })
     );
 });
