@@ -118,4 +118,33 @@ describe('HeroDetailComponent', () => {
             'Calls to `Location.back()` were expected.'
         );
     });
+    it(
+        'should get a Hero from `paramMap`',
+        async(() => {
+            const expectedHeroId = 73;
+            activatedRoute.setParamMap({ id: expectedHeroId });
+            initializeComponentAndDetectChanges().then(() => {
+                console.log(
+                    'service.getHero.calls',
+                    service.getHero.calls.allArgs()
+                ); // why is this showing four sets of args?
+
+                const calls = Array.from(
+                    service.getHero.calls.allArgs()
+                ).filter(i => {
+                    const args = i as Array<number>;
+                    return args.length > 0 && (args[0] === expectedHeroId);
+                });
+
+                expect(calls.length).toBeGreaterThan(
+                    0,
+                    '`HeroService.getHero()` call arguments were expected.'
+                );
+
+                const call = calls[0];
+                expect((call as Array<number>).length).toBeGreaterThan(0);
+                expect(call[0]).toBe(expectedHeroId);
+            });
+        })
+    );
 });
