@@ -3,13 +3,19 @@ import { ComponentFixtureUtility } from '../../mocks/component-fixture-utility';
 
 import { HeroesComponent } from './heroes.component';
 
-export class HeroesComponentFixtureUtility extends ComponentFixtureUtility<HeroesComponent> {
+export class HeroesComponentFixtureUtility extends ComponentFixtureUtility<
+    HeroesComponent
+> {
     get buttons(): HTMLButtonElement[] {
         return this.queryAll<HTMLButtonElement>('button');
     }
 
     get heroLineItems(): HTMLLIElement[] {
         return this.queryAll<HTMLLIElement>('li');
+    }
+
+    getButton(li: HTMLLIElement): HTMLButtonElement {
+        return li.querySelector('button') as HTMLButtonElement;
     }
 
     constructor(fixture: ComponentFixture<HeroesComponent>) {

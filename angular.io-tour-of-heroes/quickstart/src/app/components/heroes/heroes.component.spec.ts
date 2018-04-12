@@ -78,6 +78,19 @@ describe('HeroesComponent', () => {
         })
     );
     it(
+        'should call `HeroService.delete()` on click',
+        fakeAsync(() => {
+            const i = 3;
+            const expectedHero = HEROES[i];
+            const li = fixtureUtility.heroLineItems[i];
+            li.dispatchEvent(getCustomEvent('click'));
+
+            tick();
+
+            expect(comp.selectedHero.id).toEqual(expectedHero.id);
+        })
+    );
+    it(
         'should navigate to selected hero detail on click',
         fakeAsync(() => {
             const i = 3;
