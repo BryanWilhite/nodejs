@@ -1,9 +1,11 @@
 import { Hero } from '../../models/hero';
+import { HEROES } from './heroes-mock';
 
 export class HeroServiceSpy {
     testHero: Hero;
 
     getHero: jasmine.Spy;
+    getHeroes: jasmine.Spy;
     update: jasmine.Spy;
 
     constructor() {
@@ -13,6 +15,12 @@ export class HeroServiceSpy {
             .createSpy('getHero')
             .and.callFake(() =>
                 Promise.resolve(Object.assign({}, this.testHero))
+            );
+
+        this.getHeroes = jasmine
+            .createSpy('getHeroes')
+            .and.callFake(() =>
+                Promise.resolve(HEROES)
             );
 
         this.update = jasmine

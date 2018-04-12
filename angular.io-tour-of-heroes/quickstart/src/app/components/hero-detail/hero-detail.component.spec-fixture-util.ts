@@ -4,9 +4,7 @@ import { ComponentFixtureUtility } from '../../mocks/component-fixture-utility';
 
 import { HeroDetailComponent } from './hero-detail.component';
 
-export class HeroDetailComponentFixtureUtility extends ComponentFixtureUtility<
-    HeroDetailComponent
-> {
+export class HeroDetailComponentFixtureUtility extends ComponentFixtureUtility<HeroDetailComponent> {
     locationSpy: any;
 
     get buttons(): HTMLButtonElement[] {

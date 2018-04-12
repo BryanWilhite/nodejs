@@ -95,4 +95,8 @@ The [Angular in-memory-web-api](https://github.com/angular/in-memory-web-api) te
 },
 ```
 
+## @NgModule or @Component when testing
+
+I noticed that I declared `providers: [ HeroService ]` in the `heroes.component.ts` [component](./quickstart/src/app/components/heroes/heroes.component.ts) under `@Component`. This prevented mocking/spying from happening, according to my current `TestBed` setup conventions. This declaration was likely an unexpected outcome from following the Tour of Heroes tutorial. For more detail, see “[@NgModule or @Component?](https://angular.io/guide/dependency-injection#ngmodule-or-component)”
+
 @[BryanWilhite](https://twitter.com/bryanwilhite)
