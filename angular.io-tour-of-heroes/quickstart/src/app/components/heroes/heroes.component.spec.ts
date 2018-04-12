@@ -78,6 +78,40 @@ describe('HeroesComponent', () => {
         })
     );
     it(
+        'should call `HeroService.create()` on click',
+        fakeAsync(() => {
+            const button = fixtureUtility.buttons.find(
+                e => e.innerText === 'Add'
+            ) as HTMLButtonElement;
+            expect(button).toBeDefined();
+            expect(button).not.toBeNull();
+
+            const input = fixtureUtility.inputs.find(
+                e => e.id === 'hero-name'
+            ) as HTMLInputElement;
+            expect(input).toBeDefined();
+            expect(input).not.toBeNull();
+
+            const heroName = 'Funky Man';
+            input.value = heroName;
+
+            click(button);
+
+            tick();
+            fixture.detectChanges();
+
+            expect(service.create.calls.any()).toBe(
+                true,
+                'Calls to `HeroService.create()` were expected.'
+            );
+            const actualHeroName = service.create.calls.first().args[0];
+            expect(actualHeroName).toBe(
+                heroName,
+                'The expected Hero name is not here.'
+            );
+        })
+    );
+    it(
         'should call `HeroService.delete()` on click',
         fakeAsync(() => {
             const i = 3;
@@ -86,8 +120,29 @@ describe('HeroesComponent', () => {
             li.dispatchEvent(getCustomEvent('click'));
 
             tick();
+            fixture.detectChanges();
 
             expect(comp.selectedHero.id).toEqual(expectedHero.id);
+
+            const button = fixtureUtility.getButton(li);
+            expect(button).not.toBeUndefined();
+            expect(button).not.toBeNull();
+            expect(button.attributes['class'].value).toBe('delete');
+
+            click(button);
+
+            tick();
+            fixture.detectChanges();
+
+            expect(service.delete.calls.any()).toBe(
+                true,
+                'Calls to `HeroService.delete()` were expected.'
+            );
+            const actualId = service.delete.calls.first().args[0];
+            expect(actualId).toBe(
+                expectedHero.id,
+                'The expected Hero ID is not here.'
+            );
         })
     );
     it(

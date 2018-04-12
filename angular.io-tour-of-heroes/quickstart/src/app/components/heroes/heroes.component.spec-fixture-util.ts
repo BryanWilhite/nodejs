@@ -14,6 +14,10 @@ export class HeroesComponentFixtureUtility extends ComponentFixtureUtility<
         return this.queryAll<HTMLLIElement>('li');
     }
 
+    get inputs(): HTMLInputElement[] {
+        return this.queryAll<HTMLInputElement>('input');
+    }
+
     getButton(li: HTMLLIElement): HTMLButtonElement {
         return li.querySelector('button') as HTMLButtonElement;
     }

@@ -4,6 +4,7 @@ import { HEROES } from './heroes-mock';
 export class HeroServiceSpy {
     testHero: Hero;
 
+    create: jasmine.Spy;
     delete: jasmine.Spy;
     getHero: jasmine.Spy;
     getHeroes: jasmine.Spy;
@@ -12,7 +13,13 @@ export class HeroServiceSpy {
     constructor() {
         this.testHero = { id: 42, name: 'Test Hero' };
 
-        this.getHero = jasmine
+        this.create = jasmine
+            .createSpy('create')
+            .and.callFake(() =>
+                Promise.resolve(Object.assign({}, this.testHero))
+            );
+
+        this.delete = jasmine
             .createSpy('delete')
             .and.callFake(() => Promise.resolve());
 
