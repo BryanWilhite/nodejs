@@ -8,6 +8,7 @@ import {
 
 import { Router } from '@angular/router';
 
+import { click } from '../../mocks/click';
 import { getCustomEvent } from '../../mocks/get-custom-event';
 import { HEROES } from '../../mocks/services/heroes-mock';
 
@@ -74,6 +75,47 @@ describe('HeroesComponent', () => {
             tick();
 
             expect(comp.selectedHero.id).toEqual(expectedHero.id);
+        })
+    );
+    it(
+        'should navigate to selected hero detail on click',
+        fakeAsync(() => {
+            const i = 3;
+            const expectedHero = HEROES[i];
+            const li = fixtureUtility.heroLineItems[i];
+            li.dispatchEvent(getCustomEvent('click'));
+
+            tick();
+            fixture.detectChanges();
+
+            expect(comp.selectedHero).not.toBeNull();
+
+            const button = fixtureUtility.buttons.find(
+                b => b.innerText === 'View Details'
+            ) as HTMLButtonElement;
+            expect(button).toBeDefined();
+            expect(button).not.toBeNull();
+            expect(button.hidden).toBe(
+                false,
+                'Expected Details button to be visible.'
+            );
+
+            click(button);
+            tick();
+
+            expect(router.navigate.calls.any()).toBe(
+                true,
+                'Calls to `Router.navigate()` were expected.'
+            );
+            const args = router.navigate.calls.first().args[0];
+            expect(args[0]).toContain(
+                '/detail',
+                'The expected location of the navigation arg is not here.'
+            );
+            expect(args[1]).toBe(
+                expectedHero.id,
+                'The expected ID of the navigation arg is not here.'
+            );
         })
     );
 });

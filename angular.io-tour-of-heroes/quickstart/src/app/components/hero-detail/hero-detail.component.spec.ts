@@ -74,6 +74,7 @@ describe('HeroDetailComponent', () => {
         const button = fixtureUtility.buttons.find(
             i => i.innerText === 'Save'
         ) as HTMLButtonElement;
+        expect(button).toBeDefined();
         expect(button).not.toBeNull();
 
         click(button);
@@ -93,6 +94,7 @@ describe('HeroDetailComponent', () => {
             const button = fixtureUtility.buttons.find(
                 i => i.innerText === 'Save'
             ) as HTMLButtonElement;
+            expect(button).toBeDefined();
             expect(button).not.toBeNull();
 
             click(button);
@@ -109,6 +111,7 @@ describe('HeroDetailComponent', () => {
         const button = fixtureUtility.buttons.find(
             i => i.innerText === 'Back'
         ) as HTMLButtonElement;
+        expect(button).toBeDefined();
         expect(button).not.toBeNull();
 
         click(button);
