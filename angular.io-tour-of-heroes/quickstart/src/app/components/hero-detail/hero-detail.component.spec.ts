@@ -16,7 +16,7 @@ import { HeroService } from '../../services/hero.service';
 import { HeroServiceSpy } from '../../mocks/services/hero-service-spy';
 
 import { HeroDetailComponent } from './hero-detail.component';
-import { ComponentFixtureUtility } from './hero-detail.component.spec-fixture-util';
+import { HeroDetailComponentFixtureUtility } from './hero-detail.component.spec-fixture-util';
 
 describe('HeroDetailComponent', () => {
     const activatedRoute: ActivatedRouteMock = new ActivatedRouteMock();
@@ -26,11 +26,11 @@ describe('HeroDetailComponent', () => {
 
     let comp: HeroDetailComponent;
     let fixture: ComponentFixture<HeroDetailComponent>;
-    let fixtureUtility: ComponentFixtureUtility;
+    let fixtureUtility: HeroDetailComponentFixtureUtility;
 
     const initializeComponentAndDetectChanges = function(): Promise<any> {
         fixture = TestBed.createComponent(HeroDetailComponent);
-        fixtureUtility = new ComponentFixtureUtility(fixture);
+        fixtureUtility = new HeroDetailComponentFixtureUtility(fixture);
         comp = fixture.componentInstance;
 
         service = fixture.debugElement.injector.get(HeroService) as any;

@@ -1,8 +1,12 @@
-import { ComponentFixture } from '@angular/core/testing';
-import { HeroDetailComponent } from './hero-detail.component';
 import { Location } from '@angular/common';
+import { ComponentFixture } from '@angular/core/testing';
+import { ComponentFixtureUtility } from '../../mocks/component-fixture-utility';
 
-export class ComponentFixtureUtility {
+import { HeroDetailComponent } from './hero-detail.component';
+
+export class HeroDetailComponentFixtureUtility extends ComponentFixtureUtility<
+    HeroDetailComponent
+> {
     locationSpy: any;
 
     get buttons(): HTMLButtonElement[] {
@@ -17,23 +21,12 @@ export class ComponentFixtureUtility {
         return this.query<HTMLInputElement>('input');
     }
 
-    constructor(private fixture: ComponentFixture<HeroDetailComponent>) {
-        console.log('constructing ComponentFixtureUtility...');
+    constructor(fixture: ComponentFixture<HeroDetailComponent>) {
+        super(fixture);
+        console.log('constructing HeroDetailComponentFixtureUtility...');
         const componentLocation = fixture.debugElement.injector.get(Location);
         console.log('componentLocation: ', componentLocation);
         this.locationSpy = componentLocation as any;
         console.log('locationSpy: ', this.locationSpy);
-    }
-
-    private query<T>(selector: string): T {
-        return this.fixture.nativeElement.querySelector(selector);
-    }
-
-    private queryAll<T>(selector: string): T[] {
-        // querySelectorAll() should return a NodeList _not_ an array:
-        return Array.from(
-            this.fixture.nativeElement.querySelectorAll(selector),
-            i => i as T
-        );
     }
 }
