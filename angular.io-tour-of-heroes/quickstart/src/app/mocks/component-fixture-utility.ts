@@ -10,7 +10,7 @@ export class ComponentFixtureUtility<TComponent> {
     }
 
     queryAll<TElement>(selector: string): TElement[] {
-        // querySelectorAll() should return a NodeList _not_ an array:
+        // querySelectorAll() returns NodeList _not_ an array:
         return Array.from(
             this.fixture.nativeElement.querySelectorAll(selector),
             i => i as TElement
