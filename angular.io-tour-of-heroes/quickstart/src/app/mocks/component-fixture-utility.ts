@@ -26,7 +26,7 @@ export class ComponentFixtureUtility<TComponent> {
     }
 
     queryByCssToElement<TElement>(selector: string): TElement {
-        const de = this.fixture.debugElement.query(By.css(selector));
+        const de = this.queryByCss(selector);
         return de.nativeElement as TElement;
     }
 }

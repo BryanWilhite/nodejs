@@ -54,6 +54,10 @@ describe('HeroesComponent', () => {
                 .then(initializeComponentAndDetectChanges);
         })
     );
+    it('should have expected <h1> text', () => {
+        const h1 = fixtureUtility.queryByCssToElement<HTMLHeadingElement>('h1');
+        expect(h1.innerText).toContain(fixture.componentInstance.title);
+    });
     it('should display heroes', () => {
         expect(fixtureUtility.heroLineItems.length).toBeGreaterThan(0);
     });
