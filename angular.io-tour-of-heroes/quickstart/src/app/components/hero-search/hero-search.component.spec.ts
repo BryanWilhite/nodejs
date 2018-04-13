@@ -24,20 +24,41 @@ describe('HeroSearchComponent', () => {
         fixtureUtility = new ComponentFixtureUtility(fixture);
         comp = fixture.componentInstance;
 
+        const serviceOfComponent = fixture.debugElement.injector.get(
+            HeroSearchService
+        );
+        console.log('serviceOfComponent: ', serviceOfComponent);
+
         fixture.detectChanges(); // triggers ngOnInit which assigns the observable subject
     };
 
     beforeEach(
         async(() => {
             TestBed.configureTestingModule({
-                providers: [
-                    { provide: Router, useValue: router },
-                    { provide: HeroSearchService, useValue: service }
-                ],
+                providers: [{ provide: Router, useValue: router }],
                 declarations: [HeroSearchComponent]
             })
+                .overrideComponent(HeroSearchComponent, {
+                    set: {
+                        providers: [
+                            { provide: HeroSearchService, useValue: service }
+                        ]
+                    }
+                })
                 .compileComponents()
                 .then(initializeComponentAndDetectChanges);
+        })
+    );
+    it(
+        'should call `HeroSearchService.search()`',
+        async(() => {
+            const input = fixtureUtility.queryByCssToElement('#search-box');
+            expect(input).toBeDefined(
+                'The expected HTML Element is not defined.'
+            );
+            expect(input).not.toBeNull(
+                'The expected HTML Element is not here.'
+            );
         })
     );
 });
