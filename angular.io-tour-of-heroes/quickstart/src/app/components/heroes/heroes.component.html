@@ -13,7 +13,7 @@
     </li>
 </ul>
 <div *ngIf="selectedHero">
-    <h2>
+    <h2 class="hero selected">
         <span>{{selectedHero.name | uppercase}}</span> is my hero
     </h2>
     <button (click)="gotoDetail()">View Details</button>

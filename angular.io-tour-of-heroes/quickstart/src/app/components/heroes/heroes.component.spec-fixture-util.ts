@@ -10,6 +10,10 @@ export class HeroesComponentFixtureUtility extends ComponentFixtureUtility<
         return this.queryAll<HTMLButtonElement>('button');
     }
 
+    get headers(): HTMLHeadingElement[] {
+        return this.queryAll<HTMLHeadingElement>('h2');
+    }
+
     get heroLineItems(): HTMLLIElement[] {
         return this.queryAll<HTMLLIElement>('li');
     }

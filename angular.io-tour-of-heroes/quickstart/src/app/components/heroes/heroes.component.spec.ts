@@ -65,7 +65,7 @@ describe('HeroesComponent', () => {
         expect(actualHero).toContain(expectedHero.name, 'hero.name');
     });
     it(
-        'should select expected mock hero on click',
+        'should select expected mock hero on click and display name in upper case',
         fakeAsync(() => {
             const i = 3;
             const expectedHero = HEROES[i];
@@ -73,8 +73,21 @@ describe('HeroesComponent', () => {
             li.dispatchEvent(getCustomEvent('click'));
 
             tick();
+            fixture.detectChanges();
 
             expect(comp.selectedHero.id).toEqual(expectedHero.id);
+
+            const h2 = fixtureUtility.headers.find(e => {
+                const attr = e.attributes['class'];
+                return attr && attr.value === 'hero selected';
+            });
+            expect(h2).not.toBeUndefined();
+            expect(h2).not.toBeNull();
+
+            const span = Array.from(h2.getElementsByTagName('span'))[0];
+            expect(span).not.toBeUndefined();
+            expect(span).not.toBeNull();
+            expect(span.innerText).toBe(expectedHero.name.toUpperCase());
         })
     );
     it(
