@@ -3,9 +3,7 @@ import { ComponentFixtureUtility } from '../../mocks/component-fixture-utility';
 
 import { HeroesComponent } from './heroes.component';
 
-export class HeroesComponentFixtureUtility extends ComponentFixtureUtility<
-    HeroesComponent
-> {
+export class HeroesComponentFixtureUtility extends ComponentFixtureUtility<HeroesComponent> {
     get buttons(): HTMLButtonElement[] {
         return this.queryAll<HTMLButtonElement>('button');
     }
