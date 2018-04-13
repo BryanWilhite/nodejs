@@ -77,10 +77,7 @@ describe('HeroesComponent', () => {
 
             expect(comp.selectedHero.id).toEqual(expectedHero.id);
 
-            const h2 = fixtureUtility.headers.find(e => {
-                const attr = e.attributes['class'];
-                return attr && attr.value === 'hero selected';
-            });
+            const h2 = fixtureUtility.queryByCssToElement<HTMLHeadingElement>('.hero.selected');
             expect(h2).not.toBeUndefined();
             expect(h2).not.toBeNull();
 
