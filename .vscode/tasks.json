@@ -3,14 +3,78 @@
     "tasks": [
         {
             "command": "npm",
-            "label": "npm: start",
+            "label": "nodejs npm: start",
             "isBackground": false,
             "type": "shell",
-            "args": [
-                "start"
-            ],
+            "args": ["start"],
             "options": {
                 "cwd": "${workspaceRoot}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "command": "npm",
+            "label": "angular.io-tour-of-heroes npm: build",
+            "isBackground": false,
+            "type": "shell",
+            "args": ["run", "build"],
+            "options": {
+                "cwd": "${workspaceRoot}/angular.io-tour-of-heroes/quickstart"
+            },
+            "problemMatcher": []
+        },
+        {
+            "command": "npm",
+            "label": "angular.io-tour-of-heroes npm: install",
+            "isBackground": false,
+            "type": "shell",
+            "args": ["install"],
+            "options": {
+                "cwd": "${workspaceRoot}/angular.io-tour-of-heroes/quickstart"
+            },
+            "problemMatcher": []
+        },
+        {
+            "command": "npm",
+            "label": "angular.io-tour-of-heroes npm: serve",
+            "isBackground": false,
+            "type": "shell",
+            "args": ["run", "serve"],
+            "options": {
+                "cwd": "${workspaceRoot}/angular.io-tour-of-heroes/quickstart"
+            },
+            "problemMatcher": []
+        },
+        {
+            "command": "npm",
+            "label": "angular.io-tour-of-heroes npm: start",
+            "isBackground": false,
+            "type": "shell",
+            "args": ["start"],
+            "options": {
+                "cwd": "${workspaceRoot}/angular.io-tour-of-heroes/quickstart"
+            },
+            "problemMatcher": []
+        },
+        {
+            "command": "npm",
+            "label": "angular.io-tour-of-heroes npm: test",
+            "isBackground": false,
+            "type": "shell",
+            "args": ["test"],
+            "options": {
+                "cwd": "${workspaceRoot}/angular.io-tour-of-heroes/quickstart"
+            },
+            "problemMatcher": []
+        },
+        {
+            "command": "npm",
+            "label": "angular.io-tour-of-heroes npm: update",
+            "isBackground": false,
+            "type": "shell",
+            "args": ["update"],
+            "options": {
+                "cwd": "${workspaceRoot}/angular.io-tour-of-heroes/quickstart"
             },
             "problemMatcher": []
         }

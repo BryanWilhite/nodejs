@@ -1,11 +1,8 @@
-import { TestBed, getTestBed } from '@angular/core/testing';
-import {
-    BaseRequestOptions,
-    Http,
-    HttpModule,
-    Response,
-    XHRBackend
-} from '@angular/http';
+import { async, TestBed, getTestBed } from '@angular/core/testing';
+import { HttpModule } from '@angular/http';
+
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
 
 import { HeroSearchService } from './hero-search.service';
 
@@ -15,30 +12,27 @@ describe('HeroSearchService', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            providers: [
-                BaseRequestOptions,
-                HeroSearchService,
-                {
-                    deps: [XHRBackend, BaseRequestOptions],
-                    provide: Http,
-                    useFactory: (
-                        backend: XHRBackend,
-                        defaultOptions: BaseRequestOptions
-                    ) => new Http(backend, defaultOptions)
-                }
-            ],
-            imports: [HttpModule]
+            providers: [HeroSearchService],
+            imports: [
+                HttpModule,
+                InMemoryWebApiModule.forRoot(InMemoryDataService, {
+                    apiBase: 'api',
+                    delay: 1
+                })
+            ]
         });
     });
 
-    it('should load search results', (done: DoneFn) => {
-        service = testBed.get(HeroSearchService);
-        expect(service).not.toBeNull();
-        service
-            .search('D')
-            .subscribe(value => {
-                console.log(value);
-                done();
+    it(
+        'should load search results',
+        async(() => {
+            service = testBed.get(HeroSearchService);
+            expect(service).not.toBeNull();
+            service.search('D').subscribe(value => {
+                expect(value).not.toBeUndefined();
+                expect(value).not.toBeNull();
+                expect(value.length).toBeGreaterThan(1);
             });
-    });
+        })
+    );
 });

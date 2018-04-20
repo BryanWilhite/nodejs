@@ -52,6 +52,22 @@ From here, we follow [the tutorial](https://angular.io/tutorial). This tutorial 
 
 I took learnings from [Angular QuickStart](https://angular.io/guide/quickstart) and switched components from using `template` and `styles` to using `templateUrl` and `styleUrls`. This move encouraged me to separate components into folders, making a feature-ish-based `src/app` [folder](./quickstart/src/app) arrangement.
 
+## including testing “fundamentals”
+
+The official documentation, “[Testing](https://angular.io/guide/testing#testing)”, under Fundamentals builds upon the Tour of Heroes source code while introducing the Angular `TestBed` [[guide](https://angular.io/guide/testing#testing-services-with-the-testbed)] for the [Jasmine test framework](http://jasmine.github.io/2.4/introduction.html).
+
+The `app.component.spec.ts` [specification](./quickstart/src/app/components/app.component.spec.ts) shows that dependent components can be ignored with `NO_ERRORS_SCHEMA` [[guide](https://angular.io/guide/testing#no_errors_schema)] and the `RouterLinkMock` [directive](./quickstart/src/app/mocks/directives/router-link-mock.ts) eliminates the need to reference every component indirectly referenced by a `routerLink` directive declared in a template [[guide](https://angular.io/guide/testing#routing-component)].
+
+The `dashboard.component.ts` [specification]( ./quickstart/src/app/components/dashboard/dashboard.component.ts) also uses `NO_ERRORS_SCHEMA` and `RouterLinkMock` but adds the Jasmine ability to mock services with “spies,” `fakeAsync` and `tick` [[guide](https://angular.io/guide/testing#component-with-async-service)].
+
+The `hero-detail.component.spec.ts` [specification](./quickstart/src/app/components/hero-detail/hero-detail.component.spec.ts) rapidly escalates the “fundamentals” of Angular testing. This spec takes a dependency on the `HeroDetailComponentFixtureUtility` [class](./quickstart/src/app/components/hero-detail/hero-detail.component.spec-fixture-util.ts) which [the official Angular documentation](https://angular.io/guide/testing#use-a-page-object) would call a _page_, representing the members of a component, including the `HTMLElement` instances compiled by the `TestBed` into the fixture. This spec also depends on the most complex Jasmine spy, the `hero-service-spy.ts` [class](./quickstart/src/app/mocks/services/hero-service-spy.ts) which is needed to define multiple spy methods and one domain-model fake `Hero`.
+
+This `hero-search.component.spec.ts` [specification](./quickstart/src/app/components/hero-search/hero-search.component.spec.ts) introduces the use of the `TestBed.overrideComponent()` [method](https://angular-2-training-book.rangle.io/handout/testing/components/overriding.html) as an alternative to `TestBed.configureTestingModule()` because the `HeroSearchService` is not imported at the `@NgModule` level; it is [declared](./quickstart/src/app/components/hero-search/hero-search.component.ts#L22) at the `@Component` level. This spec also introduces my testing technique for dealing with reactive observables (featuring the use of the `getCustomEvent('keyup')` [mock](./quickstart/src/app/mocks/get-custom-event.ts)). I was unable to find this sort of testing in Google’s documentation at the time of this writing.
+
+## the Angular team is not enthusiastic about end-to-end (E2E) testing
+
+In “[Why not rely on E2E tests of DOM integration?](https://angular.io/guide/testing#why-not-rely-on-e2e-tests-of-dom-integration),” the Angular team give four reasons to discourage E2E testing. For detail, see “[Julie Ralph: End to End Angular Testing with Protractor](https://www.youtube.com/watch?v=aQipuiTcn3U&t=90s).”
+
 Also, note that running `ng e2e` should throw an error:
 
 ```plaintext
@@ -62,5 +78,27 @@ TypeError: Cannot read property 'config' of null
 ```
 
 This is [a recognized Angular CLI issue](https://github.com/angular/angular-cli/issues/4736) that seems to be related to lack of “proper” (currently-in-use) CLI configuration _by default_ for this tutorial. In other words, [the Angular 2 QuickStart](https://github.com/angular/quickstart) does not recognize the Angular CLI as of this writing (no `.angular-cli.json` file).
+
+## the Angular in-memory-web-api
+
+The [Angular in-memory-web-api](https://github.com/angular/in-memory-web-api) team provides guidance in this area, specifically `hero.service.spec.ts` [[GitHub](https://github.com/angular/in-memory-web-api/blob/master/src/app/hero.service.spec.ts)] is a treasure trove for the novice. It paved the way toward my [spec](./quickstart/src/app/services/in-memory-data.service.spec.ts), `in-memory-data.service.spec.ts`, working because of changes to the `karma.conf.js` [file](./quickstart/karma.conf.js#L49):
+
+```js
+// In Memory Web API
+{
+    pattern: 'node_modules/angular-in-memory-web-api/**/*.js',
+    included: false,
+    watched: false
+},
+{
+    pattern: 'node_modules/angular-in-memory-web-api/**/*.js.map',
+    included: false,
+    watched: false
+},
+```
+
+## @NgModule or @Component when testing
+
+I noticed that I declared `providers: [ HeroService ]` in the `heroes.component.ts` [component](./quickstart/src/app/components/heroes/heroes.component.ts) under `@Component`. Because `HeroService` is also [imported](https://github.com/BryanWilhite/nodejs/blob/master/angular.io-tour-of-heroes/quickstart/src/app/app.module.ts#L16) at the `@NgModule` level, this prevented mocking/spying from happening, according to my current `TestBed` setup conventions. This duplicate declaration was likely an unexpected outcome from following the Tour of Heroes tutorial. For more detail, see “[@NgModule or @Component?](https://angular.io/guide/dependency-injection#ngmodule-or-component)”
 
 @[BryanWilhite](https://twitter.com/bryanwilhite)
