@@ -6,7 +6,6 @@
         "backend",
         "bootstrapper",
         "bostock",
-        "chocolatey",
         "codepen",
         "cors",
         "coyier",
@@ -23,10 +22,8 @@
         "nocache",
         "polyline",
         "preprocessors",
-        "rasx",
         "rayside",
         "rect",
-        "songhay",
         "soueidan",
         "submodule",
         "superset",
@@ -35,8 +32,6 @@
         "vash",
         "verlet",
         "vojta",
-        "wilhite",
-        "xhtml",
         "zaefferer"
     ]
 }
