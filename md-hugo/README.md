@@ -40,3 +40,4 @@ Continue from [Step 4 of the Quick Start](https://gohugo.io/getting-started/quic
 
 * “[Quick Start](https://gohugo.io/getting-started/quick-start/)”
 * “[Git Submodules: Adding, Using, Removing, Updating](https://chrisjean.com/git-submodules-adding-using-removing-and-updating/)”
+* “[Git Pull with Submodule](http://openmetric.org/til/programming/git-pull-with-submodule/)”
