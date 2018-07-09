@@ -23,7 +23,7 @@ export class RouteComponent implements OnInit {
             const path = segments[0].path;
             switch (path) {
                 case 'static':
-                    this.location.go('./assets/static.html');
+                    this.location.go('./app/assets/static.html');
                     break;
 
                 default:
