@@ -67,4 +67,8 @@ create-react-app hello-world-ts --scripts-version=react-scripts-ts
 
 This project format is immediately compatible with my Visual Studio Code environment.
 
+## where is RxJS?
+
+I am seeing that React culture prefers to use `rx-lite` instead of the full version of [RxJS](https://rxjs-dev.firebaseapp.com/).
+
 @[BryanWilhite](https://twitter.com/BryanWilhite)
