@@ -54,3 +54,17 @@ Options:
     If you have any problems, do not hesitate to file an issue:
       https://github.com/facebookincubator/create-react-app/issues/new
 ```
+
+## building Hello World with Typescript
+
+The `--scripts-version` command line option shown above supports `react-scripts-ts`, covered in “[TypeScript and React using create-react-app: A step-by-step guide to setting up your first app](https://levelup.gitconnected.com/typescript-and-react-using-create-react-app-a-step-by-step-guide-to-setting-up-your-first-app-6deda70843a4).”
+
+Generation of Typescript App [[folder](../react-hello-world)]:
+
+```console
+create-react-app hello-world-ts --scripts-version=react-scripts-ts
+```
+
+This project format is immediately compatible with my Visual Studio Code environment.
+
+@[BryanWilhite](https://twitter.com/BryanWilhite)
