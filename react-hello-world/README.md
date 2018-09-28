@@ -28,3 +28,29 @@ There are quite a few packages designed for older browsers (pre-ES6). A feature 
 > We take care of updating Babel, ESLint, and webpack to stable compatible versions so you can update a single dependency to get them all.
 
 So over a quarter gig of packages are not meant to be maintained individually by the developer.
+
+## `create-react-app --help`
+
+```console
+Usage: create-react-app <project-directory> [options]
+
+Options:
+
+  -V, --version                            output the version number
+  --verbose                                print additional logs
+  --info                                   print environment debug info
+  --scripts-version <alternative-package>  use a non-standard version of react-scripts
+  --use-npm
+  -h, --help                               output usage information
+    Only <project-directory> is required.
+
+    A custom --scripts-version can be one of:
+      - a specific npm version: 0.8.2
+      - a custom fork published on npm: my-react-scripts
+      - a .tgz archive: https://mysite.com/my-react-scripts-0.8.2.tgz
+      - a .tar.gz archive: https://mysite.com/my-react-scripts-0.8.2.tar.gz
+    It is not needed unless you specifically want to use a fork.
+
+    If you have any problems, do not hesitate to file an issue:
+      https://github.com/facebookincubator/create-react-app/issues/new
+```
