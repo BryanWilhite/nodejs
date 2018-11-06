@@ -2,21 +2,27 @@
 /*jslint this, white, browser */
 /*global window, jQuery */
 
-(function ($) {
-    "use strict";
+(function($) {
+    'use strict';
 
-    $(function () {
+    $(function() {
         var watermarkText = 'Search Product Catalog';
-        $('#SearchForm input[type="text"]').addClass('Watermark')
+        $('#SearchForm input[type="text"]')
+            .addClass('Watermark')
             .val(watermarkText)
-            .focus(function () {
+            .focus(function() {
                 if ($(this).val() === watermarkText) {
-                    $(this).removeClass('Watermark').val('');
+                    $(this)
+                        .removeClass('Watermark')
+                        .val('');
                 }
-            }).blur(function () {
+            })
+            .blur(function() {
                 if ($(this).val() === watermarkText) {
-                    $(this).val(watermarkText).addClass('Watermark');
+                    $(this)
+                        .val(watermarkText)
+                        .addClass('Watermark');
                 }
             });
     });
-}(jQuery));
+})(jQuery);

@@ -4,24 +4,24 @@
 /*global window, jQuery */
 
 (function($) {
-    "use strict";
+    'use strict';
 
     $(function() {
         var data = {
-            "products": [
+            products: [
                 {
-                    "asin": "B004QRKWKQ"
+                    asin: 'B004QRKWKQ'
                 },
                 {
-                    "asin": "B005LKB0IU"
+                    asin: 'B005LKB0IU'
                 },
                 {
-                    "asin": "B005M02VJG"
+                    asin: 'B005M02VJG'
                 }
             ]
         };
 
-        var html = Mustache.render($("#AmazonTemplate").html(), data);
-        $("#AmazonFlow").html(html);
+        var html = Mustache.render($('#AmazonTemplate').html(), data);
+        $('#AmazonFlow').html(html);
     });
-}(jQuery));
+})(jQuery);
