@@ -17,6 +17,7 @@
         "url": "https://github.com/BryanWilhite/nodejs.git"
     },
     "scripts": {
+        "src-array-from": "node ./src/array-from/main.js",
         "src-enum": "node ./src/enum/main.js",
         "src-lodash-filter": "node ./src/lodash-filter/main.js",
         "src-lodash-group-by": "node ./src/lodash-group-by/main.js",

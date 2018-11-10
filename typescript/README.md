@@ -13,6 +13,18 @@ npm install --save-dev \
 
 Refer to the scripts in the `package.json` [file](./package.json) for the sub-samples available to run from [the root folder](../typescript).
 
+## array-from/
+
+The `array-from/` [sample](./src/array-from) (run `npm run src-array-from`) demonstrates how to generate an array in a manner similar to how it is done with `Enumerable.Range()` in C# [[docs](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.range?view=netcore-2.1)].
+
+### related links
+
+* `Array.from()` [[docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from)]
+* `Array.prototype.keys()` [[docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys)]
+* `Array.prototype.map()` [[docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)]
+* `Array.prototype.forEach()` [[docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)]
+* “[tsc error TS2339: Property 'from' does not exist on type](https://github.com/BryanWilhite/nodejs/issues/12)”
+
 ## enum/
 
 The `enum/` [sample](./src/enum) (run `npm run src-enum`) shows (me) that [TypeScript enums](https://www.typescriptlang.org/docs/handbook/enums.html) of strings can be directly compared to string literals.
@@ -71,3 +83,5 @@ The `modules/` [sample](./src/modules) (run `npm run src-modules`) introduces th
 ## set-object/
 
 The `set-object/` [sample](./src/set-object) (run `npm run src-set-object`) compares `Set<T>` to `Array<T>` (see “Array and Set compared” under [Keyed collections](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections)).
+
+@[BryanWilhite](https://twitter.com/BryanWilhite)
