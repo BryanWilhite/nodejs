@@ -24,6 +24,7 @@ The `array-from/` [sample](./src/array-from) (run `npm run src-array-from`) demo
 * `Array.prototype.map()` [[docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)]
 * `Array.prototype.forEach()` [[docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)]
 * “[tsc error TS2339: Property 'from' does not exist on type](https://github.com/BryanWilhite/nodejs/issues/12)”
+* “[Does JavaScript have a method like "range()" to generate a range within the supplied bounds?](https://stackoverflow.com/questions/3895478/does-javascript-have-a-method-like-range-to-generate-a-range-within-the-supp)”
 
 ## enum/
 
