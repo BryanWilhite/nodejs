@@ -1,0 +1,11 @@
+{
+  "name": "my-minimal-package",
+  "version": "1.0.0",
+  "description": "the most tiny NPM package a big guy can make",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bryan Wilhite",
+  "license": "ISC"
+}
