@@ -1,0 +1,14 @@
+{
+  "name": "my-minimal-consumer",
+  "version": "1.0.0",
+  "description": "the most tiny NPM package a big guy can make",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bryan Wilhite",
+  "license": "ISC",
+  "dependencies": {
+    "my-minimal-package": "file:../../package-source/my-minimal-package"
+  }
+}
