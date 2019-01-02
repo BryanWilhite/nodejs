@@ -55,4 +55,13 @@ Is this OK? (yes)
 
 This initialization has no concern for the [scope concept](https://docs.npmjs.com/about-scopes).
 
+## my minimal package consumer
+
+A copy of the `/my-minimal-package/package.json` [file](./package-source/my-minimal-package/package.json) can be used for the consumer, installing `my-minimal-package`. Line 2 and line 12 of the [copy](./package-consumers/minimal/package.json) defines the consumer. From the `\minimal` [folder](./package-consumers/minimal) we can run:
+
+```console
+npm i ..\..\package-source\my-minimal-package\
+node .\main.js
+```
+
 @[BryanWilhite](https://twitter.com/BryanWilhite)
