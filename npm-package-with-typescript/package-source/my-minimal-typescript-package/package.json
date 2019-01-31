@@ -1,0 +1,16 @@
+{
+  "name": "my-minimal-typescript-package",
+  "version": "1.0.0",
+  "description": "the most tiny NPM package with Typescript a big guy can make",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build" : "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bryan Wilhite",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.2.4"
+  }
+}

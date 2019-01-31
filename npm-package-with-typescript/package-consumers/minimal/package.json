@@ -1,0 +1,16 @@
+{
+  "name": "my-minimal-typescript-consumer",
+  "version": "1.0.0",
+  "description": "the most tiny NPM package with Typescript a big guy can make",
+  "main": "src/main.ts",
+  "scripts": {
+    "build" : "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bryan Wilhite",
+  "license": "ISC",
+  "dependencies": {
+    "my-minimal-package": "file:../../package-source/my-minimal-package",
+    "my-minimal-typescript-package": "file:../../package-source/my-minimal-typescript-package"
+  }
+}
