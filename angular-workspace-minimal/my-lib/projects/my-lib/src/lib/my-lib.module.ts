@@ -3,8 +3,7 @@ import { MyLibComponent } from './my-lib.component';
 
 @NgModule({
   declarations: [MyLibComponent],
-  imports: [
-  ],
+  imports: [],
   exports: [MyLibComponent]
 })
-export class MyLibModule { }
+export class MyLibModule {}

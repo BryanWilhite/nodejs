@@ -7,7 +7,7 @@ A minimal Workspace in Angular is one where:
 * there is one or no Angular app
 
 ```console
->ng new my-lib --create-application=false --routing=true --style=scss --verbose=true
+PS > ng new my-lib --create-application=false --routing=true --style=scss --verbose=true
 
 CREATE my-lib/angular.json (135 bytes)
 CREATE my-lib/package.json (1257 bytes)
@@ -25,7 +25,7 @@ found 0 vulnerabilities
 
     Directory is already under version control. Skipping initialization of git.
 
->ng generate library my-lib --prefix=my
+PS > ng generate library my-lib --prefix=my
 
 CREATE projects/my-lib/karma.conf.js (968 bytes)
 CREATE projects/my-lib/ng-package.json (155 bytes)
@@ -80,7 +80,7 @@ npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@
 added 570 packages from 501 contributors and audited 47685 packages in 57.345s
 found 0 **vulnerabilities**
 
->ng generate application rx-app --routing=true --style=scss
+PS > ng generate application rx-app --routing=true --style=scss
 
 CREATE projects/rx-app/src/favicon.ico (5430 bytes)
 CREATE projects/rx-app/src/index.html (292 bytes)
@@ -128,3 +128,5 @@ Running `ng test` from the `my-lib/` [folder](./my-lib) should start Karma-Jasmi
 
 * “[The Angular Library Series—Creating a Library with Angular CLI](https://blog.angularindepth.com/creating-a-library-in-angular-6-87799552e7e5)”
 * “[Angular Workspace: No Application for You!](https://blog.angularindepth.com/angular-workspace-no-application-for-you-4b451afcc2ba)”
+
+@[BryanWilhite](https://twitter.com/BryanWilhite)
