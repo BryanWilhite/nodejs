@@ -1,0 +1,174 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "@songhay/core": {
+      "root": "projects/songhay/core",
+      "sourceRoot": "projects/songhay/core/src",
+      "projectType": "library",
+      "prefix": "rx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/songhay/core/tsconfig.lib.json",
+            "project": "projects/songhay/core/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/songhay/core/src/test.ts",
+            "tsConfig": "projects/songhay/core/tsconfig.spec.json",
+            "karmaConfig": "projects/songhay/core/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/songhay/core/tsconfig.lib.json",
+              "projects/songhay/core/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "studio-floor": {
+      "root": "projects/studio-floor/",
+      "sourceRoot": "projects/studio-floor/src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/studio-floor",
+            "index": "projects/studio-floor/src/index.html",
+            "main": "projects/studio-floor/src/main.ts",
+            "polyfills": "projects/studio-floor/src/polyfills.ts",
+            "tsConfig": "projects/studio-floor/tsconfig.app.json",
+            "assets": [
+              "projects/studio-floor/src/favicon.ico",
+              "projects/studio-floor/src/assets"
+            ],
+            "styles": [
+              "projects/studio-floor/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/studio-floor/src/environments/environment.ts",
+                  "with": "projects/studio-floor/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "studio-floor:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "studio-floor:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "studio-floor:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/studio-floor/src/test.ts",
+            "polyfills": "projects/studio-floor/src/polyfills.ts",
+            "tsConfig": "projects/studio-floor/tsconfig.spec.json",
+            "karmaConfig": "projects/studio-floor/karma.conf.js",
+            "styles": [
+              "projects/studio-floor/src/styles.scss"
+            ],
+            "scripts": [],
+            "assets": [
+              "projects/studio-floor/src/favicon.ico",
+              "projects/studio-floor/src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/studio-floor/tsconfig.app.json",
+              "projects/studio-floor/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "studio-floor-e2e": {
+      "root": "projects/studio-floor-e2e/",
+      "projectType": "application",
+      "prefix": "",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/studio-floor-e2e/protractor.conf.js",
+            "devServerTarget": "studio-floor:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "studio-floor:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "projects/studio-floor-e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "@songhay/core"
+}
