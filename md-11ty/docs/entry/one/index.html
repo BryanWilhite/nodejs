@@ -26,7 +26,33 @@
 <section class="entry">
 
     <p>This is a test of the markdown features available when <code>markdownTemplateEngine: &quot;liquid&quot;</code> in <code>.eleventy.js</code>.</p>
-<p>This should be the second paragraph in a second set of <code>p</code> elements.</p>
+<p>This <em>should</em> be the <strong>second</strong> paragraph in a second set of <code>p</code> elements.</p>
+<h3>tables</h3>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cell 1</td>
+<td>cell 2</td>
+</tr>
+</tbody>
+</table>
+<h3>images</h3>
+<p><img src="http://placekitten.com/200/300" alt="kitten"></p>
+<h3>code block: console</h3>
+<pre><code class="language-console">Hello world.
+</code></pre>
+<h3>code block: c#</h3>
+<pre><code class="language-c#">var x = 10;
+</code></pre>
+<h3>code block: SQL</h3>
+<pre><code class="language-sql">SET @x INT = 10;
+</code></pre>
 
 
 </section>

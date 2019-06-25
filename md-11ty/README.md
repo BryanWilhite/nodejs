@@ -17,7 +17,8 @@ npm i --save-dev eleventy
 
 ## related links
 
-- “[Making A Simple Web Site With The Simplest Static Site Generator, Level 1](https://www.zachleat.com/web/eleventy-tutorial-level-1/)” by @zachleat 
+- “[Making A Simple Web Site With The Simplest Static Site Generator, Level 1](https://www.zachleat.com/web/eleventy-tutorial-level-1/)” by @zachleat
+- <https://github.com/11ty/eleventy-base-blog>
 - “[Introducing npx: an npm package runner](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b)”
 
 @[BryanWilhite](https://twitter.com/BryanWilhite)
