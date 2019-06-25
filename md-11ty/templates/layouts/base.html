@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="description" content="{{ settings.description }}" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <base href="{{ settings.url }}" />
+
+        <link rel="canonical" href="{{ settings.url }}" />
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+
+        <title>{% if title %}{{ title }} - {% endif %}{{ settings.siteName }}</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>{{ settings.siteName }}</h1>
+            <h2>{{ settings.description }}</h2>
+        </header>
+        <main>
+            {{ content }}
+        </main>
+        <footer>
+            <span class="home"><a href="{{ settings.url }}">[home]</a></span>
+            <span class="index"><a href="./entries/">[index]</a></span>
+            <span class="copyright">&copy; {{ "now" | date: "%Y" }} {{ settings.author.name }}</span>
+            <span class="twitter"><a href="https://twitter.com/{{ settings.author.twitter }}">@{{ settings.author.twitter }}</a></span>
+        </footer>
+    </body>
+
+</html>

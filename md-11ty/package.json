@@ -1,0 +1,15 @@
+{
+    "name": "songhay-11ty",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BryanWilhite/nodejs/md-11ty"
+    },
+    "version": "0.0.1",
+    "scripts": {
+        "build": "npx eleventy",
+        "start": "npx eleventy --serve"
+    },
+    "devDependencies": {
+        "@11ty/eleventy": "^0.8.3"
+    }
+}

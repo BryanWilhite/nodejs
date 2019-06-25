@@ -1,0 +1,9 @@
+{
+    "siteName": "my 11ty site",
+    "url": "./",
+    "description": "my 11ty sample",
+    "author": {
+        "name": "Bryan D. Wilhite",
+        "twitter": "BryanWilhite"
+    }
+}
