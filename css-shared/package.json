@@ -12,7 +12,7 @@
         "normalize.css": "^7.0.0"
     },
     "dependencies": {
-        "bootstrap": "^3.3.7"
+        "bootstrap": "^3.4.1"
     },
     "scripts": {
         "cp": "cp -rf ./node_modules/bootstrap/dist/* ./bs"
