@@ -9,10 +9,10 @@
         "url": "https://github.com/BryanWilhite/nodejs.git"
     },
     "devDependencies": {
-        "normalize.css": "^7.0.0"
+        "normalize.css": "^8.0.1"
     },
     "dependencies": {
-        "bootstrap": "^3.3.7"
+        "bootstrap": "^4.4.1"
     },
     "scripts": {
         "cp": "cp -rf ./node_modules/bootstrap/dist/* ./bs"
