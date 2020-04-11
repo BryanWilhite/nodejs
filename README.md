@@ -45,6 +45,10 @@ My CSS gurus are [Jen Simmons](https://labs.jensimmons.com/), [Rachel Andrew](ht
 
 I expect that my investment in jQuery is historical. I am using jQuery 2.x in Bootstrap 3.x. I assume that my indirect use of jQuery will be phased out by the 3rd-parties that depend on it.
 
+### Web Components commentary
+
+I have not taken the relatively recently-available option to approach [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) [[GitHub](https://github.com/mdn/web-components-examples)] as a standard completely independent of Angular, Vue, React etc. I look forward to exploring that here and elsewhere.
+
 ## global dependencies
 
 Since I have discovered the wonders of `npx` [[GitHub](https://github.com/npm/npx)], I no longer recommend installing tons of global, npm-based executables. My list, therefore, is markedly reduced:
@@ -52,7 +56,8 @@ Since I have discovered the wonders of `npx` [[GitHub](https://github.com/npm/np
 ```bash
 sudo npm install -g \
     http-server \
-    npx
+    npx \
+    @angular/cli
 ```
 
 You may already have these globally installed npm packages available to the Node.js runtime on your machine(s). As a reminder (to me), [the commands](https://stackoverflow.com/questions/17937960/how-to-list-npm-user-installed-packages) to check for this are:
