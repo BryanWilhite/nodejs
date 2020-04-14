@@ -47,7 +47,9 @@ I expect that my investment in jQuery is historical. I am using jQuery 2.x in Bo
 
 ### Web Components commentary
 
-I have not taken the relatively recently-available option to approach [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) [[GitHub](https://github.com/mdn/web-components-examples)] as a standard completely independent of Angular, Vue, React etc. I look forward to exploring that here and elsewhere.
+I have not taken the relatively recently-available option to approach [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) [[GitHub](https://github.com/mdn/web-components-examples)] as a standard completely independent of Angular, Vue, React etc.
+
+I suppose my Angular/Google influence has led me to the Polymer project in general and [the LitElement project](https://lit-element.polymer-project.org/) in particular. My “[LitElement—Getting Started](./web-components-lit-element)” sample is a step in what I think is the ‘right’ direction.
 
 ## global dependencies
 

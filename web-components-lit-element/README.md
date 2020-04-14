@@ -1,4 +1,4 @@
-# LitElement - Getting Started
+# LitElement—Getting Started
 
 This sample starts with `@customElement('my-element')` defined in “[Getting Started](https://lit-element.polymer-project.org/guide/start)” from polymer-project.org and “[LitElement TypeScript starter](https://github.com/PolymerLabs/lit-element-starter-ts).”
 
@@ -10,7 +10,7 @@ npm i lit-element typescript
 npm i -D rollup rollup-plugin-filesize rollup-plugin-node-resolve rollup-plugin-terser @rollup/plugin-replace
 ```
 
-This sample marks the first time I am using `rollup` directly. The `rollup.config.js` [file](./rollup.config.js) is basically lifted verbatim from [Justin Fagnani](https://github.com/justinfagnani) apart from my specification of I/O:
+This sample marks the first time I am using `rollup` [[GitHub](https://github.com/rollup/rollup)] directly. The `rollup.config.js` [file](./rollup.config.js) is basically lifted verbatim from [Justin Fagnani](https://github.com/justinfagnani) apart from my specification of I/O:
 
 ```javascript
 export default {
