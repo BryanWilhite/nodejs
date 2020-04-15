@@ -51,7 +51,7 @@ import { CoreComponent } from '@songhay/core';
 
 > Everything comes from the main library name… Only `ng-packagr` sub-packages use deeper imports… —Ed Pelc
 
-In the example here, we should import `CoreComponent` in the main routing module to navigate to this library component. However, `import` will not work at design time until the library is built.
+In the example here, we should import `CoreComponent` in the `studio-floor` [routing module](./workspace/songhay/projects/studio-floor/src/app/app-routing.module.ts) to navigate to this library component. However, `import` will not work at design time until the library is built.
 
 From the `workspace/songhay/` [folder](./workspace/songhay), run:
 
@@ -59,7 +59,11 @@ From the `workspace/songhay/` [folder](./workspace/songhay), run:
 ng build @songhay/core
 ```
 
-Running `ng serve` should show the new link, leading to the library component.
+Running `ng serve` should show the new link (in [`app.component.html`](./workspace/songhay/projects/studio-floor/src/app/app.component.html)), leading to the library component:
+
+```html
+<h2><a [routerLink]="['songhay/core/component']">Songhay Core Component</a></h2>
+```
 
 We can now route to the core component as shown in [`app-routing.module.ts`](./workspace/songhay/projects/studio-floor/src/app/app-routing.module.ts), back the routing reference to `CoreComponent` in [`app.module.ts`](./workspace/songhay/projects/studio-floor/src/app/app.module.ts), add a `[routerLink]` to [`app.component.html`](./workspace/songhay/projects/studio-floor/src/app/app.component.html) and build the local app:
 

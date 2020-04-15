@@ -3,12 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CoreComponent } from '@songhay/core';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CoreComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,

@@ -7,13 +7,14 @@ import { Component, OnInit } from '@angular/core';
       core works!
     </p>
   `,
-  styles: []
+  styles: [
+  ]
 })
 export class CoreComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

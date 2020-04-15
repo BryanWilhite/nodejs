@@ -4,9 +4,9 @@
   "newProjectRoot": "projects",
   "projects": {
     "@songhay/core": {
+      "projectType": "library",
       "root": "projects/songhay/core",
       "sourceRoot": "projects/songhay/core/src",
-      "projectType": "library",
       "prefix": "rx",
       "architect": {
         "build": {
@@ -14,6 +14,11 @@
           "options": {
             "tsConfig": "projects/songhay/core/tsconfig.lib.json",
             "project": "projects/songhay/core/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/songhay/core/tsconfig.lib.prod.json"
+            }
           }
         },
         "test": {
@@ -39,15 +44,15 @@
       }
     },
     "studio-floor": {
-      "root": "projects/studio-floor/",
-      "sourceRoot": "projects/studio-floor/src",
       "projectType": "application",
-      "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
         }
       },
+      "root": "projects/studio-floor",
+      "sourceRoot": "projects/studio-floor/src",
+      "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -57,6 +62,7 @@
             "main": "projects/studio-floor/src/main.ts",
             "polyfills": "projects/studio-floor/src/polyfills.ts",
             "tsConfig": "projects/studio-floor/tsconfig.app.json",
+            "aot": true,
             "assets": [
               "projects/studio-floor/src/favicon.ico",
               "projects/studio-floor/src/assets"
@@ -79,7 +85,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -88,6 +93,11 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
                 }
               ]
             }
@@ -117,14 +127,14 @@
             "polyfills": "projects/studio-floor/src/polyfills.ts",
             "tsConfig": "projects/studio-floor/tsconfig.spec.json",
             "karmaConfig": "projects/studio-floor/karma.conf.js",
-            "styles": [
-              "projects/studio-floor/src/styles.scss"
-            ],
-            "scripts": [],
             "assets": [
               "projects/studio-floor/src/favicon.ico",
               "projects/studio-floor/src/assets"
-            ]
+            ],
+            "styles": [
+              "projects/studio-floor/src/styles.scss"
+            ],
+            "scripts": []
           }
         },
         "lint": {
@@ -132,24 +142,18 @@
           "options": {
             "tsConfig": [
               "projects/studio-floor/tsconfig.app.json",
-              "projects/studio-floor/tsconfig.spec.json"
+              "projects/studio-floor/tsconfig.spec.json",
+              "projects/studio-floor/e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
             ]
           }
-        }
-      }
-    },
-    "studio-floor-e2e": {
-      "root": "projects/studio-floor-e2e/",
-      "projectType": "application",
-      "prefix": "",
-      "architect": {
+        },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "projects/studio-floor-e2e/protractor.conf.js",
+            "protractorConfig": "projects/studio-floor/e2e/protractor.conf.js",
             "devServerTarget": "studio-floor:serve"
           },
           "configurations": {
@@ -157,18 +161,11 @@
               "devServerTarget": "studio-floor:serve:production"
             }
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": "projects/studio-floor-e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
         }
       }
-    }
+    }},
+  "cli": {
+    "analytics": "6334a12e-d5ac-424c-acd0-95d96bdeb45e"
   },
   "defaultProject": "@songhay/core"
 }
