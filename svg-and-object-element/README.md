@@ -24,5 +24,5 @@ sudo apt-get install libfontconfig
 
 ## related links
 
-* [View Sample Live on Netlify](https://rasx-node-js.netlify.com/svg-and-object-element/)
+* [View Sample Live on Netlify](https://rasx-node-js.netlify.app/svg-and-object-element/)
 * StackOverflow.com: “[make an html svg object also a clickable link](https://stackoverflow.com/questions/11374059/make-an-html-svg-object-also-a-clickable-link)”

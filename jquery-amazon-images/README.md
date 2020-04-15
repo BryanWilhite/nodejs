@@ -14,5 +14,5 @@ It must be mentioned that the use of mustache.js is considered a “gateway drug
 
 ## related Links
 
-* [View Sample Live on Netlify](https://rasx-node-js.netlify.com/jquery-amazon-images/)
+* [View Sample Live on Netlify](https://rasx-node-js.netlify.app/jquery-amazon-images/)
 * [CodePen.io historical sample](https://codepen.io/rasx/pen/EqlCF).

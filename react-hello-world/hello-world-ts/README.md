@@ -2280,7 +2280,7 @@ Choose `build` as the path to deploy.
 
 With this setup Netlify will build and deploy when you push to git or open a pull request:
 
-1. [Start a new netlify project](https://app.netlify.com/signup)
+1. [Start a new netlify project](https://app.netlify.app/signup)
 2. Pick your Git hosting service and select your repository
 3. Set `yarn build` as the build command and `build` as the publish directory
 4. Click `Deploy site`

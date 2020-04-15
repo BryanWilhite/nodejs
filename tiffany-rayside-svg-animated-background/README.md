@@ -8,5 +8,5 @@ I wrapped [your JavaScript](./index.js) in the `window.onload` event handler. I 
 
 ## related links
 
-* [View Sample Live on Netlify](https://rasx-node-js.netlify.com/tiffany-rayside-svg-animated-background/)
+* [View Sample Live on Netlify](https://rasx-node-js.netlify.app/tiffany-rayside-svg-animated-background/)
 * Tiffany Rayside on Twitter ([@tmrDevelops](https://twitter.com/tmrDevelops))

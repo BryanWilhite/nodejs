@@ -4,4 +4,4 @@ This sample follows “[Let’s Make a Bar Chart](https://bost.ocks.org/mike/bar
 
 ## related Links
 
-* [View Sample Live on Netlify](https://rasx-node-js.netlify.com/d3-bostock-bar-charts/)
+* [View Sample Live on Netlify](https://rasx-node-js.netlify.app/d3-bostock-bar-charts/)

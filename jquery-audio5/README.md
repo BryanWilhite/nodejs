@@ -27,5 +27,5 @@ We see the `shouldChangeTrack` state demands that `initAudio()` be called _again
 
 ## related Links
 
-* [View Sample Live on Netlify](https://rasx-node-js.netlify.com/jquery-audio5/)
+* [View Sample Live on Netlify](https://rasx-node-js.netlify.app/jquery-audio5/)
 * [CodePen.io historical sample](https://codepen.io/rasx/pen/obBLge).

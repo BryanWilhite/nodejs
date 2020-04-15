@@ -10,5 +10,5 @@ This will install Jörn Zaefferer’s [package](https://github.com/jquery-valida
 
 ## related Links
 
-* [View Sample Live on Netlify](https://rasx-node-js.netlify.com/jquery-jz-validation-plugin/)
+* [View Sample Live on Netlify](https://rasx-node-js.netlify.app/jquery-jz-validation-plugin/)
 * [CodePen.io historical sample](https://codepen.io/rasx/pen/lIyFn)
