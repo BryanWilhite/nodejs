@@ -31,7 +31,9 @@ My relatively new commitment to [eleventy](https://www.11ty.dev/) represents my 
 
 ### Angular commentary
 
-I remain committed to Angular as a source of HTML components for a “modern” Web Client. The current assumption here is that [Angular Ivy](https://angular.io/guide/ivy) will make adding dynamic interactivity to a static Web site as easy as declaring an Ivy element in HTML and auto-magically Ivy (and Web standards) will do the rest. This assumption comes from the desire to make Angular-based experiences _supplemental_ to a static-generated presentation.
+I remain committed to Angular as a generator of [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements). [Angular Elements](https://angular.io/guide/elements) “extends HTML by allowing you to define a tag whose content is created and controlled by JavaScript code. The browser maintains a `CustomElementRegistry` of defined custom elements, which maps an instantiable JavaScript class to an HTML tag.” This commitment comes from the strategic desire to make Angular-based experiences _supplemental_ to a static-generated presentation.
+
+My `angular-workspace-minimal` [sample](./angular-workspace-minimal) allows me to declare my Studio preference for [Angular workspaces](https://angular.io/guide/glossary#workspace) which, again, is biased toward Web Component generation.
 
 ### SVG commentary
 
