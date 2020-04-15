@@ -1,0 +1,1 @@
+{"version":3,"file":"zip-code-validator.js","sourceRoot":"","sources":["../src/zip-code-validator.ts"],"names":[],"mappings":"AAEA,MAAM,CAAC,MAAM,YAAY,GAAG,UAAU,CAAC;AAEvC,MAAM,OAAO,gBAAgB;IACzB,YAAY,CAAC,CAAS;QAClB,OAAO,CAAC,CAAC,MAAM,KAAK,CAAC,IAAI,YAAY,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC;IAClD,CAAC;CACJ"}

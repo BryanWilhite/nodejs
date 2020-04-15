@@ -1,0 +1,1 @@
+{"version":3,"file":"zip-code-validator.d.ts","sourceRoot":"","sources":["../src/zip-code-validator.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,eAAe,EAAE,MAAM,oBAAoB,CAAC;AAErD,eAAO,MAAM,YAAY,QAAa,CAAC;AAEvC,qBAAa,gBAAiB,YAAW,eAAe;IACpD,YAAY,CAAC,CAAC,EAAE,MAAM;CAGzB"}
