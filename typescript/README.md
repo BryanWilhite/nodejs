@@ -1,6 +1,6 @@
 # Node.js® under TypeScript
 
-This sample focuses on the language features of TypeScript over Node.js®. Initial installation on bash looks like this:
+This sample focuses on the language features of TypeScript over Node.js®. Initial installation looks like this:
 
 ```console
 npm i -D @types/lodash@latest @types/node@latest lodash@latest tslint@latest typescript@latest
