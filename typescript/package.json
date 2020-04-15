@@ -1,16 +1,16 @@
 {
-    "name": "typescript",
+    "name": "typescript-exploration",
     "version": "1.0.0",
     "description": "see README.md",
     "author": "Bryan D. Wilhite",
     "license": "ISC",
     "dependencies": {},
     "devDependencies": {
-        "@types/lodash": "^4.14.87",
-        "@types/node": "^6.0.46",
-        "lodash": "^4.16.4",
-        "tslint": "^3.15.1",
-        "typescript": "^2.6.2"
+        "@types/lodash": "^4.14.149",
+        "@types/node": "^13.11.1",
+        "lodash": "^4.17.15",
+        "tslint": "^6.1.1",
+        "typescript": "^3.8.3"
     },
     "repository": {
         "type": "git",
@@ -27,6 +27,6 @@
         "src-minimal": "node ./src/minimal/main.js",
         "src-modules": "node ./src/modules/main.js",
         "src-set-object": "node ./src/set-object/main.js",
-        "tsc": "tsc -p tsconfig.json"
+        "tsc": "npx tsc -p tsconfig.json"
     }
 }

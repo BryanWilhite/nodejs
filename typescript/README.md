@@ -2,13 +2,8 @@
 
 This sample focuses on the language features of TypeScript over Node.js®. Initial installation on bash looks like this:
 
-```bash
-npm install --save-dev \
-    @types/lodash \
-    @types/node \
-    lodash \
-    tslint \
-    typescript
+```console
+npm i -D @types/lodash@latest @types/node@latest lodash@latest tslint@latest typescript@latest
 ```
 
 Refer to the scripts in the `package.json` [file](./package.json) for the sub-samples available to run from [the root folder](../typescript).
