@@ -4,11 +4,13 @@
     "description": "see README.md",
     "scripts": {
         "start": "node ./src/HelloWorld.js",
-        "tsc": "tsc -p tsconfig.json"
+        "tsc": "npx tsc -p tsconfig.json"
     },
     "author": "Bryan D. Wilhite",
     "license": "ISC",
-    "dependencies": {},
+    "dependencies": {
+        "typescript": "^3.8.3"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/BryanWilhite/nodejs.git"

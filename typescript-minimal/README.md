@@ -2,18 +2,17 @@
 
 This sample is based on the “[Editing TypeScript](https://code.visualstudio.com/Docs/languages/typescript)” article from Microsoft. This article shows that the minimum required for a TypeScript folder/project is the [tsconfig.json](./tsconfig.json) file.
 
-All TypeScript projects require an `npm` installation.
+When the `typescript-minimal/` [folder](../typescript-minimal) was empty, these were the setup steps:
 
-bash:
-
-```bash
-sudo npm install -g typescript
+```console
+npm init -y
+npm i typescript
 ```
 
 To build the source files, we call `tsc` from `[./typescript-minimal](../typescript-minimal)`:
 
 ```bash
-tsc -p tsconfig.json
+npx tsc -p tsconfig.json
 ```
 
 Or you can use the non-life-cycle script:
