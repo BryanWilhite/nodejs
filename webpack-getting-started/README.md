@@ -47,6 +47,20 @@ touch index.ts
 
 > Note that you’ll also need to check your `tsconfig.json` file. If the module in `compilerOptions` in `tsconfig.json` is `commonjs`, the setting is complete, else webpack will fail with an error. This occurs because `ts-node` does not support any module syntax other than `commonjs`.
 
+This constraint, by the way, forces Typescript `import` statements to look like this:
+
+```typescript
+import * as _ from 'lodash';
+```
+
+Instead of this:
+
+```typescript
+import _ from 'lodash';
+```
+
+This situation is ultimately hostile to modern module support in Web browsers as the server-side, `ts-node` version of Typescript is holding back the client-side, ECMAScript version of Typescript.
+
 ### `html-webpack-plugin` is used to generate `dist/index.html`
 
 `html-webpack-plugin` [[GitHub](https://github.com/jantimon/html-webpack-plugin)] uses the `index-template.html` [template](./webpack-demo-typescript/index-template.html) to generate `dist/index.html`.
