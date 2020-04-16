@@ -90,11 +90,11 @@
 /*!*********************!*\
   !*** ./js/index.js ***!
   \*********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar _ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\nfunction component() {\n    var element = document.createElement('div');\n    // Lodash, currently included via a script, is required for this line to work\n    element.innerHTML = _.join(['Hello', 'webpack'], ' ');\n    return element;\n}\ndocument.body.appendChild(component());\n//# sourceMappingURL=index.js.map\n\n//# sourceURL=webpack:///./js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction component() {\n    const element = document.createElement('div');\n    // Lodash, currently included via a script, is required for this line to work\n    element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join(['Hello', 'webpack'], ' ');\n    return element;\n}\ndocument.body.appendChild(component());\n//# sourceMappingURL=index.js.map\n\n//# sourceURL=webpack:///./js/index.js?");
 
 /***/ }),
 

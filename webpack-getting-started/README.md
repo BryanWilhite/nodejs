@@ -59,7 +59,14 @@ Instead of this:
 import _ from 'lodash';
 ```
 
-This situation is ultimately hostile to modern module support in Web browsers as the server-side, `ts-node` version of Typescript is holding back the client-side, ECMAScript version of Typescript.
+Using this simpler syntax might cause an error of the form `TypeError: *_1.default is not a constructor` [[GitHub issue](https://github.com/TypeStrong/ts-node/issues/520)].
+
+This situation is ultimately hostile to modern module support in Web browsers as the server-side, `ts-node` [[GitHub](https://github.com/TypeStrong/ts-node)] version of Typescript is holding back the client-side, ECMAScript version of Typescript.
+
+One way to address this mismatch is to define two different `tsconfig*.json` files:
+
+- the `tsconfig.json` [file](./webpack-demo-typescript/tsconfig.json) is for `webpack.config.ts` [[docs](https://www.bennadel.com/blog/3268-experimenting-with-ts-node-and-using-typescript-in-node-js-on-the-server.htm)]
+- the `tsconfig.client.json` [file](./webpack-demo-typescript/tsconfig.client.json) is for the client side
 
 ### `html-webpack-plugin` is used to generate `dist/index.html`
 

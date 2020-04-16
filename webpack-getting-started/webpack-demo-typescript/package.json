@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "bundle": "npx webpack",
-    "tsc": "npx tsc -p tsconfig.json"
+    "tsc": "npx tsc -p tsconfig.client.json"
   },
   "keywords": [],
   "author": "",
