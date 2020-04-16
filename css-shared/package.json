@@ -9,12 +9,23 @@
         "url": "https://github.com/BryanWilhite/nodejs.git"
     },
     "devDependencies": {
-        "normalize.css": "^8.0.1"
+        "@types/clean-webpack-plugin": "^0.1.3",
+        "@types/mini-css-extract-plugin": "^0.9.1",
+        "@types/node": "^13.11.1",
+        "@types/webpack": "^4.41.11",
+        "clean-webpack-plugin": "^3.0.0",
+        "css-loader": "^3.5.2",
+        "mini-css-extract-plugin": "^0.9.0",
+        "normalize.css": "^8.0.1",
+        "ts-node": "^8.8.2",
+        "typescript": "^3.8.3",
+        "webpack": "^4.42.1",
+        "webpack-cli": "^3.3.11"
     },
     "dependencies": {
         "bootstrap": "^4.4.1"
     },
     "scripts": {
-        "cp": "cp -rf ./node_modules/bootstrap/dist/* ./bs"
+        "bundle": "npx webpack"
     }
 }
