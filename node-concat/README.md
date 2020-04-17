@@ -2,7 +2,7 @@
 
 A simple demonstration of `concat` [[GitHub](https://github.com/gko/concat)] running locally with or without `npx` (explicitly).
 
-From an empty `npm-concat` [folder](../npm-concat):
+From an empty `node-concat` [folder](../node-concat):
 
 ```bash
 npm init -y
