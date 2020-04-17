@@ -1,0 +1,16 @@
+{
+    "name": "npm-concat",
+    "version": "1.0.0",
+    "description": "see README",
+    "main": "index.js",
+    "scripts": {
+        "build": "concat -o c.txt a.txt b.txt",
+        "build:npx": "npx concat -o c.txt a.txt b.txt"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "concat": "^1.0.3"
+    }
+}
