@@ -37,6 +37,10 @@ My `angular-workspace-minimal` [sample](./angular-workspace-minimal) allows me t
 
 My CSS gurus are [Jen Simmons](https://labs.jensimmons.com/), [Rachel Andrew](https://www.rachelandrew.co.uk/) and [Chris Coyier](https://chriscoyier.net/) (of [CSS-Tricks](https://css-tricks.com/)). My future CSS samples _should_ focus on [CSS Modules](https://css-tricks.com/css-modules-part-1-need/), the ‘native’ [CSS grid](https://hacks.mozilla.org/2018/07/9-biggest-mistakes-with-css-grid/) system, [“infinite” scrolling](https://www.awwwards.com/websites/infinite-scroll/), the [responsive “hero” image](https://madronaweb.com/web-design-blog/web-design-blog-entry-a-responsive-hero.html), etc.
 
+### D3 commentary
+
+My `d3-bostock-bar-charts` [sample](./d3-bostock-bar-charts) is what I have for [D3.js](https://d3js.org/) so far. I am walking (very slowly) through [the tutorials](https://github.com/d3/d3/wiki/Tutorials) with a bias for its SVG support.
+
 ### eleventy commentary
 
 My relatively new commitment to [eleventy](https://www.11ty.dev/) represents my relatively new, static-generation-first approach to Web site design. As of this writing, eleventy is literally filed under the `md-11ty/` [folder](./md-11ty), where the `md` prefix stands for [Markdown](https://en.wikipedia.org/wiki/Markdown). This pigeon-holing of eleventy into the Markdown silo is done to indicate that Markdown is the (relatively new) fundamental document format of my Studio and eleventy is its premiere publishing platform.
@@ -51,6 +55,16 @@ BTW: I am going to allow my interest in eleventy completely replace my previous 
 
 I expect that my investment in jQuery is historical. I am using jQuery 3.x in [Bootstrap](http://getbootstrap.com/) 3.x. I assume that my indirect use of jQuery will be phased out by the 3rd-parties that depend on it. A challenge for me would be adding [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) samples that are equivalents to the jQuery stuff to explicitly reach myself that jQuery is done—_brilliantly_ done but _done_.
 
+### karma-jasmine commentary
+
+Influence of the Angular team led me directly to the karma-jasmine combo. My `karma-and-jasmine-minimal` [sample](./karma-and-jasmine-minimal) is my way of stepping back from Angular and looking at these in isolation.
+
+I would also like to mention my work with [Jest](https://jestjs.io/) here (since no samples as of this writing are in this repo). I started that work directly in my `songhay-core` [repo](https://github.com/BryanWilhite/songhay-core).
+
+### Office Add-ins platform commentary
+
+I have removed my `office-addin-excel` [sample](https://github.com/BryanWilhite/nodejs/tree/0b2f54b45cfa480ee3986618cb2d2344c27fba1a/office-addin-excel) because it represents another failed attempt of mine to get the simplest Add-in working in Office. I will look into this later, taking note of this relatively new term, “[Office Add-ins platform](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins).”
+
 ### React commentary
 
 My hello-world React [sample](./react-hello-world) is proof that I have “played around” with [React](https://reactjs.org/). The Web developer market is currently in love with React so I had to take a look. Respectfully, React ingeniously addresses problems in the world that no longer exists: the Web Components standard and [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) were not released/implemented in browsers.
@@ -64,6 +78,16 @@ My [SVG](https://www.w3.org/TR/SVG/) gurus are (currently) [Sara Soueidan](https
 I have not taken the relatively recently-available option to approach [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) [[GitHub](https://github.com/mdn/web-components-examples)] as a standard completely independent of Angular, Vue, React etc.
 
 I suppose my Angular/Google influence has led me to the Polymer project in general and [the LitElement project](https://lit-element.polymer-project.org/) in particular. My “[LitElement—Getting Started](./web-components-lit-element)” sample is a step in what I think is the ‘right’ direction.
+
+### webpack and rollup commentary
+
+My webpack and rollup experience is long overdue. My `webpack-getting-started` [sample](./webpack-getting-started) is a strong start. At this moment in documenting time, I see three levels of escalation for bundling:
+
+1) `npx cp` (et al.) in an `npm` script
+2) rollup
+3) webpack
+
+This pontification of mine implies that my `gulp-and-css-handling` [sample](./gulp-and-css-handling) is there for historical purposes.
 
 ## global dependencies
 
