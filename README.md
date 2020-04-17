@@ -43,6 +43,10 @@ My relatively new commitment to [eleventy](https://www.11ty.dev/) represents my 
 
 BTW: I am going to allow my interest in eleventy completely replace my previous interest in [Hugo](https://gohugo.io/).
 
+### Elm commentary
+
+[Jessica Kerr](https://jessitron.com/) piqued my interest in [Elm](https://elm-lang.org/) with her 2016 talk “[Adventures in Elm](https://www.youtube.com/watch?v=cgXhMc8M4X4).” My [little Elm thingy](./elm-minimal), along with my experiments with [Giraffe](https://github.com/BryanWilhite/dotnet-core/tree/master/dotnet-giraffe-template), indicates my ongoing interest in the relationship functional programming has with building maintainable UI.
+
 ### jQuery commentary
 
 I expect that my investment in jQuery is historical. I am using jQuery 3.x in [Bootstrap](http://getbootstrap.com/) 3.x. I assume that my indirect use of jQuery will be phased out by the 3rd-parties that depend on it. A challenge for me would be adding [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) samples that are equivalents to the jQuery stuff to explicitly reach myself that jQuery is done—_brilliantly_ done but _done_.
