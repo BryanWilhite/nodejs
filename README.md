@@ -73,6 +73,10 @@ My hello-world React [sample](./react-hello-world) is proof that I have “playe
 
 My [SVG](https://www.w3.org/TR/SVG/) gurus are (currently) [Sara Soueidan](https://www.sarasoueidan.com/), [Tiffany Rayside](https://codepen.io/tmrDevelops/) and [Chris Coyier](https://chriscoyier.net/). With help from these two (and, of course, others), I need to get comfortable with the basics of SVG (`viewBox`, `preserveAspectRatio`, etc.). Then I need to looking to SVG fall back with the `picture` element. Next would the robust topic of SVG icons.
 
+### Typescript commentary
+
+My `typescript` [sample](./typescript) represents my relationship with [Typescript](https://www.typescriptlang.org/), intended to be deep and complex. In addition to the work here, my `songhay-core` [repo](https://github.com/BryanWilhite/songhay-core) literally implements the _core_ commitment of this Studio to Typescript.
+
 ### Web Components commentary
 
 I have not taken the relatively recently-available option to approach [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) [[GitHub](https://github.com/mdn/web-components-examples)] as a standard completely independent of Angular, Vue, React etc.
