@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "see README.md",
     "scripts": {
-        "cp": "cp -f ./node_modules/mustache/mustache.js mustache.js",
+        "cp": "npx cp -f ./node_modules/mustache/mustache.js mustache.js",
         "start": "cd .. && http-server . -o -c-1"
     },
     "author": "Bryan D. Wilhite",
@@ -16,6 +16,7 @@
         "mustache": "^2.3.0"
     },
     "devDependencies": {
-        "@types/mustache": "^0.8.30"
+        "@types/mustache": "^0.8.30",
+        "cp": "^0.2.0"
     }
 }

@@ -12,9 +12,10 @@
         "d3": "^4.10.2"
     },
     "devDependencies": {
-        "@types/d3": "^4.10.0"
+        "@types/d3": "^4.10.0",
+        "cp": "^0.2.0"
     },
     "scripts": {
-        "cp": "cp -f ./node_modules/d3/build/d3.js d3.js"
+        "cp": "npx cp -f ./node_modules/d3/build/d3.js d3.js"
     }
 }
