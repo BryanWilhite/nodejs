@@ -25,9 +25,7 @@ For detail, see [gulp and CSS handling](./gulp-and-css-handling).
 
 ## my samples: a bit of commentary
 
-### eleventy commentary
-
-My relatively new commitment to [eleventy](https://www.11ty.dev/) represents my relatively new, static-generation-first approach to Web site design. As of this writing, eleventy is literally filed under the `md-11ty/` [folder](./md-11ty), where the `md` prefix stands for [Markdown](https://en.wikipedia.org/wiki/Markdown). This pigeon-holing to is done to indicate that Markdown is the (relatively new) fundamental document format of my Studio and eleventy is its premiere publishing platform.
+I would like to document my coverage of Node.js-based technologies in this ‘commentary’ section. Ideally, every sample folder in this repo will be addressed here. When this is not the case, then I am trying something new or I have abandoned something ‘old.’
 
 ### Angular commentary
 
@@ -35,17 +33,27 @@ I remain committed to Angular as a generator of [Web Components](https://develop
 
 My `angular-workspace-minimal` [sample](./angular-workspace-minimal) allows me to declare my Studio preference for [Angular workspaces](https://angular.io/guide/glossary#workspace) which, again, is biased toward Web Component generation.
 
-### SVG commentary
-
-My [SVG](https://www.w3.org/TR/SVG/) gurus are (currently) [Sara Soueidan](https://www.sarasoueidan.com/), [Tiffany Rayside](https://codepen.io/tmrDevelops/) and [Chris Coyier](https://chriscoyier.net/). With help from these two (and, of course, others), I need to get comfortable with the basics of SVG (`viewBox`, `preserveAspectRatio`, etc.). Then I need to looking to SVG fall back with the `picture` element. Next would the robust topic of SVG icons.
-
 ### CSS commentary
 
-My CSS gurus are [Jen Simmons](https://labs.jensimmons.com/), [Rachel Andrew](https://www.rachelandrew.co.uk/) and [Chris Coyier](https://chriscoyier.net/) (of [CSS-Tricks](https://css-tricks.com/)). My CSS samples should be categorized by “level.” Focus should be placed on [Bootstrap](http://getbootstrap.com/), CSS Grids, “infinite” scrolling and the responsive “hero” image.
+My CSS gurus are [Jen Simmons](https://labs.jensimmons.com/), [Rachel Andrew](https://www.rachelandrew.co.uk/) and [Chris Coyier](https://chriscoyier.net/) (of [CSS-Tricks](https://css-tricks.com/)). My future CSS samples _should_ focus on [CSS Modules](https://css-tricks.com/css-modules-part-1-need/), the ‘native’ [CSS grid](https://hacks.mozilla.org/2018/07/9-biggest-mistakes-with-css-grid/) system, [“infinite” scrolling](https://www.awwwards.com/websites/infinite-scroll/), the [responsive “hero” image](https://madronaweb.com/web-design-blog/web-design-blog-entry-a-responsive-hero.html), etc.
+
+### eleventy commentary
+
+My relatively new commitment to [eleventy](https://www.11ty.dev/) represents my relatively new, static-generation-first approach to Web site design. As of this writing, eleventy is literally filed under the `md-11ty/` [folder](./md-11ty), where the `md` prefix stands for [Markdown](https://en.wikipedia.org/wiki/Markdown). This pigeon-holing of eleventy into the Markdown silo is done to indicate that Markdown is the (relatively new) fundamental document format of my Studio and eleventy is its premiere publishing platform.
+
+BTW: I am going to allow my interest in eleventy completely replace my previous interest in [Hugo](https://gohugo.io/).
 
 ### jQuery commentary
 
-I expect that my investment in jQuery is historical. I am using jQuery 2.x in Bootstrap 3.x. I assume that my indirect use of jQuery will be phased out by the 3rd-parties that depend on it.
+I expect that my investment in jQuery is historical. I am using jQuery 3.x in [Bootstrap](http://getbootstrap.com/) 3.x. I assume that my indirect use of jQuery will be phased out by the 3rd-parties that depend on it. A challenge for me would be adding [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) samples that are equivalents to the jQuery stuff to explicitly reach myself that jQuery is done—_brilliantly_ done but _done_.
+
+### React commentary
+
+My hello-world React [sample](./react-hello-world) is proof that I have “played around” with [React](https://reactjs.org/). The Web developer market is currently in love with React so I had to take a look. Respectfully, React ingeniously addresses problems in the world that no longer exists: the Web Components standard and [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) were not released/implemented in browsers.
+
+### SVG commentary
+
+My [SVG](https://www.w3.org/TR/SVG/) gurus are (currently) [Sara Soueidan](https://www.sarasoueidan.com/), [Tiffany Rayside](https://codepen.io/tmrDevelops/) and [Chris Coyier](https://chriscoyier.net/). With help from these two (and, of course, others), I need to get comfortable with the basics of SVG (`viewBox`, `preserveAspectRatio`, etc.). Then I need to looking to SVG fall back with the `picture` element. Next would the robust topic of SVG icons.
 
 ### Web Components commentary
 
