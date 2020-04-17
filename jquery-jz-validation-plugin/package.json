@@ -3,12 +3,16 @@
     "version": "1.0.0",
     "description": "see README.md",
     "scripts": {
-        "start": "cd .. && http-server . -o -c-1"
+        "start": "cd .. && http-server . -o -c-1",
+        "build": "rollup -c"
     },
     "author": "Bryan D. Wilhite",
     "license": "ISC",
     "dependencies": {
-        "jquery-validation": "^1.17.0"
+        "jquery-validation": "^1.19.0"
+    },
+    "devDependencies": {
+        "rollup": "^2.6.1"
     },
     "repository": {
         "type": "git",
