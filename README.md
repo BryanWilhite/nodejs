@@ -91,6 +91,8 @@ My webpack and rollup experience is long overdue. My `webpack-getting-started` [
 2) rollup
 3) webpack
 
+The main reason why `node-cp` [[GitHub](https://github.com/stephenmathieson/node-cp)] (along with `concat` [[GitHub](https://github.com/gko/concat)]) is mentioned here is because rollup and webpack are designed to work with JavaScript modules in particular and, through the use of plugins/add-ins, module systems in other languages in general. This bias to modules _by design_ ignores the rare use of older, non-modular sources.
+
 This pontification of mine implies that my `gulp-and-css-handling` [sample](./gulp-and-css-handling) is there for historical purposes.
 
 ## global dependencies
