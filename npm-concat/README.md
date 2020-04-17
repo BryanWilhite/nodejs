@@ -1,6 +1,6 @@
 # `npx` and `concat`
 
-A simple demonstration of `concat` running locally with or without `npx` (explicitly).
+A simple demonstration of `concat` [[GitHub](https://github.com/gko/concat)] running locally with or without `npx` (explicitly).
 
 From an empty `npm-concat` [folder](../npm-concat):
 
