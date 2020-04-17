@@ -97,25 +97,25 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./node
 
 /***/ }),
 
-/***/ "./styles/html.css":
-/*!*************************!*\
-  !*** ./styles/html.css ***!
-  \*************************/
+/***/ "./styles/document.css":
+/*!*****************************!*\
+  !*** ./styles/document.css ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./styles/html.css?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./styles/document.css?");
 
 /***/ }),
 
 /***/ 0:
-/*!*******************************************************************************!*\
-  !*** multi ./node_modules/bootstrap/dist/css/bootstrap.css ./styles/html.css ***!
-  \*******************************************************************************/
+/*!***********************************************************************************!*\
+  !*** multi ./node_modules/bootstrap/dist/css/bootstrap.css ./styles/document.css ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ./node_modules/bootstrap/dist/css/bootstrap.css */\"./node_modules/bootstrap/dist/css/bootstrap.css\");\nmodule.exports = __webpack_require__(/*! ./styles/html.css */\"./styles/html.css\");\n\n\n//# sourceURL=webpack:///multi_./node_modules/bootstrap/dist/css/bootstrap.css_./styles/html.css?");
+eval("__webpack_require__(/*! ./node_modules/bootstrap/dist/css/bootstrap.css */\"./node_modules/bootstrap/dist/css/bootstrap.css\");\nmodule.exports = __webpack_require__(/*! ./styles/document.css */\"./styles/document.css\");\n\n\n//# sourceURL=webpack:///multi_./node_modules/bootstrap/dist/css/bootstrap.css_./styles/document.css?");
 
 /***/ })
 

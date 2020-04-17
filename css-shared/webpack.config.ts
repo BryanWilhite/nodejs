@@ -7,10 +7,13 @@ const config: webpack.Configuration = {
     mode: 'development',
     target: 'web',
     entry: {
-        html: [
+        styles: [
             './node_modules/bootstrap/dist/css/bootstrap.css',
-            './styles/html.css',
+            './styles/document.css',
         ],
+        scripts: [
+            './node_modules/bootstrap/dist/js/bootstrap.js'
+        ]
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -28,13 +31,17 @@ const config: webpack.Configuration = {
                 test: /\.css$/i,
                 use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
+            {
+                test: /\.(svg|ttf|eot|woff|woff2)$/,
+                use: 'file-loader'
+            }
         ],
     },
     optimization: {
         splitChunks: {
             cacheGroups: {
                 styles: {
-                    name: 'html',
+                    name: 'styles',
                     test: /\.css$/,
                     chunks: 'all',
                     enforce: true,
