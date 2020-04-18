@@ -1,0 +1,18 @@
+{
+  "name": "sass-with-clean-css-cli",
+  "version": "1.0.0",
+  "description": "Finding a [Sass](https://sass-lang.com/) pipeline that is local to an `npm` package was challenging for me. The combination of `sass` [[GitHub](https://github.com/sass/sass)] with `clean-css-cli` [[GitHub](https://github.com/jakubpawlowicz/clean-css-cli)] is working for me at this time.",
+  "main": "index.js",
+  "scripts": {
+    "index:sass": "npx sass ./sass/index.scss ./css/index.css",
+    "index:cleancss": "npx cleancss -o ./dist/index.min.css ./css/index.css",
+    "index:css:build": "npm run index:sass && npm run index:cleancss"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-css-cli": "^4.3.0",
+    "sass": "^1.26.3"
+  }
+}
