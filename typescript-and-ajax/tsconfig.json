@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "outDir": "./js",
+        "rootDir": "./src",
+        "sourceMap": true,
+        "declaration": false,
+        "downlevelIteration": true,
+        "experimentalDecorators": true,
+        "module": "ES2015",
+        "moduleResolution": "Node",
+        "importHelpers": false,
+        "target": "es2017",
+        "lib": [
+            "es2018",
+            "dom"
+        ],
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": []
+}

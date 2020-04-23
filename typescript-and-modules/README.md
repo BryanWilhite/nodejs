@@ -6,8 +6,7 @@ When the `typescript-and-modules/` [folder](../typescript-and-modules) was empty
 
 ```console
 npm init -y
-npm i typescript
-npm i -D rollup rollup-plugin-filesize rollup-plugin-node-resolve rollup-plugin-terser @rollup/plugin-replace
+npm i -D typescript rollup rollup-plugin-filesize rollup-plugin-node-resolve rollup-plugin-terser @rollup/plugin-replace
 ```
 
 ## related links
