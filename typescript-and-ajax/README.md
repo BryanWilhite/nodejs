@@ -6,23 +6,13 @@ This sample means to represent the most minimal set of `npm` packages required f
 npm init -y
 npm i -s rxjs
 npm i -D typescript \
+    @types/node \
     tslint \
-    rollup \
-    rollup-plugin-filesize \
-    rollup-plugin-node-resolve \
-    rollup-plugin-terser \
-    @rollup/plugin-replace
+    ts-node \
+    webpack \
+    webpack-cli
 ```
 
-`rollup.config.js` [file](./rollup.config.js):
-
-```javascript
-export default {
-    input: './js/index.js',
-    output: {
-        file: './js/index.bundled.js',
-        format: 'esm',
-    },
-```
+⚠`ts-node` had to be installed to prevent an error of the form `Property 'observable' does not exist on type 'SymbolConstructor'` [📖 [issue](https://github.com/ReactiveX/rxjs/issues/3674)].
 
 @[BryanWilhite](https://twitter.com/BryanWilhite)
