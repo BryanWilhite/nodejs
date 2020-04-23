@@ -1,7 +1,8 @@
 import { ajax } from 'rxjs/ajax';
+import { display } from './display.function';
 const uri = 'https://songhaystorage.blob.core.windows.net/studio-dash/app.json';
 window.onload = () => {
     const data$ = ajax.getJSON(uri);
-    data$.subscribe(res => console.log(res), err => console.error(err));
+    data$.subscribe(appData => display(appData), err => console.error(err));
 };
 //# sourceMappingURL=index.js.map
