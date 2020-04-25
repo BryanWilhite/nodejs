@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Boycott';
+    src: url('./boycott-webfont.woff') format('woff')
+}
+
+.hello {
+    color: red;
+    font-family: 'Boycott';
+    font-size: x-large;
+}
+
+.kitty {
+    display: block;
+}
