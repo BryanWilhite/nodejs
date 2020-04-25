@@ -16,6 +16,14 @@ This portion of the journey through the documentation requires files and code to
 
 > But what would happen if we changed the name of one of our entry points, or even added a new one? The generated bundles would be renamed on a build, but our `index.html` file would still reference the old names. Let’s fix that with the `HtmlWebpackPlugin` [📖 [docs](https://webpack.js.org/plugins/html-webpack-plugin)]. …you should know that the `HtmlWebpackPlugin` by default will generate its own `index.html` file, even though we already have one…
 
-This sample builds upon the work done in the `webpack-getting-started/webpack-demo` [folder](../webpack-getting-started/webpack-demo).
+## Development
+
+📁 `webpack-development` [folder](./webpack-development)
+
+Today `webpack-dev-server` along with the other packages in all of these samples make a minimal development environment for the modern Web! 👏 Tomorrow, all the cool kids might be talking about [Parcel](https://parceljs.org/). 😇
+
+§
+
+These samples build upon the work done in the `webpack-getting-started/webpack-demo` [folder](../webpack-getting-started/webpack-demo).
 
 @[BryanWilhite](https://twitter.com/BryanWilhite)
