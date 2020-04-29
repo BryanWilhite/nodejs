@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var rxjs_ajax__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rxjs/ajax */ \"./node_modules/rxjs/_esm5/ajax/index.js\");\n/* harmony import */ var _display_function__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./display.function */ \"./js/display.function.js\");\n\n\nconst uri = 'https://songhaystorage.blob.core.windows.net/studio-dash/app.json';\nwindow.onload = () => {\n    const data$ = rxjs_ajax__WEBPACK_IMPORTED_MODULE_0__[\"ajax\"].getJSON(uri);\n    data$.subscribe(appData => Object(_display_function__WEBPACK_IMPORTED_MODULE_1__[\"display\"])(appData), err => console.error(err));\n};\n//# sourceMappingURL=index.js.map\n\n//# sourceURL=webpack:///./js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var rxjs_ajax__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rxjs/ajax */ \"./node_modules/rxjs/_esm5/ajax/index.js\");\n/* harmony import */ var _display_function__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./display.function */ \"./js/display.function.js\");\n\n\nconst uri = 'https://songhaystorage.blob.core.windows.net/studio-dash/app.json';\nwindow.addEventListener('DOMContentLoaded', () => {\n    const data$ = rxjs_ajax__WEBPACK_IMPORTED_MODULE_0__[\"ajax\"].getJSON(uri);\n    data$.subscribe(appData => Object(_display_function__WEBPACK_IMPORTED_MODULE_1__[\"display\"])(appData), err => console.error(err));\n});\n//# sourceMappingURL=index.js.map\n\n//# sourceURL=webpack:///./js/index.js?");
 
 /***/ }),
 
