@@ -17,4 +17,8 @@ npx lerna init
 
 The work here intends to follow [the documentation](https://mochajs.org/#installation) at mochajs.org. And, ideally, the [my C# language study](https://github.com/BryanWilhite/LinqPad) can have Typescript equivalents here.
 
+## Typescript pipeline comments
+
+In a ‘real’ `lerna` repo, there should be at least two different Typescript pipelines: one for the client side and the other for the `node`-based concerns—specifically, the `ts-mocha` concerns. On the `node` side of things `tsconfig` declares `compilerOptions.module: "CommonJS"`.
+
 @[BryanWilhite](https://twitter.com/BryanWilhite)
