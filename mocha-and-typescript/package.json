@@ -1,18 +1,24 @@
 {
-  "name": "mocha-and-typescript",
-  "version": "1.0.0",
-  "description": "The initial spark under this sample folder is to learn and use `mocha` [[GitHub](https://github.com/mochajs/mocha)] while curating/compiling Typescript language samples. This effort would serve as a replacement for my `typescript` samples [folder](https://github.com/BryanWilhite/nodejs/tree/c35ac755fe024bf9b813a3c375a5ec8fdb990623/typescript). There are a few ignorant assumptions of mine here:",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/mocha": "^7.0.2",
-    "lerna": "^3.20.2",
-    "mocha": "^7.1.2",
-    "ts-mocha": "^7.0.0"
-  }
+    "name": "mocha-and-typescript",
+    "version": "1.0.0",
+    "description": "see README",
+    "scripts": {
+        "lerna:build:typescript": "npx lerna exec -- tsc",
+        "lerna:clean": "npx lerna clean --yes",
+        "lerna:install": "npx lerna exec -- npm i",
+        "ts-mocha:test:mocha-getting-started": "npx ts-mocha -p packages/mocha-getting-started/tsconfig.json packages/mocha-getting-started/src/**/*.spec.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/chai": "^4.2.11",
+        "@types/expect": "^24.3.0",
+        "@types/mocha": "^7.0.2",
+        "chai": "^4.2.0",
+        "lerna": "^3.20.2",
+        "mocha": "^7.1.2",
+        "ts-mocha": "^7.0.0",
+        "typescript": "^3.8.3"
+    }
 }
