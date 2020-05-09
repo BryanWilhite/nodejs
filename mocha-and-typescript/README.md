@@ -11,7 +11,7 @@ From an [empty sample folder](../mocha-and-typescript):
 
 ```console
 npm init -y
-npm i -D lerna mocha chai typescript ts-mocha @types/mocha @types/expect @types/chai
+npm i -D lerna mocha chai typescript tslint ts-mocha @types/mocha @types/expect @types/chai
 npx lerna init
 ```
 
