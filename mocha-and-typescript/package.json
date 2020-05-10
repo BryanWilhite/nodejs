@@ -6,7 +6,7 @@
         "lerna:build:typescript": "npx lerna exec -- tsc",
         "lerna:clean": "npx lerna clean --yes",
         "lerna:install": "npx lerna exec -- npm i",
-        "ts-mocha:test:mocha-getting-started": "npx ts-mocha -p packages/mocha-getting-started/tsconfig.json packages/mocha-getting-started/src/**/*.spec.ts"
+        "ts-mocha:test:mocha-getting-started": "npx ts-mocha -p packages/mocha-getting-started/__tests__/tsconfig.json packages/mocha-getting-started/__tests__/**/*.spec.ts"
     },
     "keywords": [],
     "author": "",
