@@ -12,6 +12,10 @@ npx lerna create @songhay/mocha-getting-started --yes
 
 we then set up an extending `tsconfig.json` file in the conventional `/__tests__` folder set up by `lerna`. There was, by the way, an Angular-based motivation to use a `tsconfig.spec.json` file but [this is not really a _general_ thing](https://github.com/BryanWilhite/songhay-web-components/issues/3#issuecomment-626273798)—it’s an Angular thing.
 
+## running the tests here
+
+See the `npm` script, `ts-mocha:test:mocha-getting-started`, in the parent [package file](../../package.json).
+
 ## “Detects Multiple Calls to `done()`” commentary
 
 [📖 [docs](https://mochajs.org/#detects-multiple-calls-to-done)]
