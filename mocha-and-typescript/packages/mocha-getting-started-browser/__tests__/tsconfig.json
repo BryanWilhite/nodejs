@@ -1,8 +1,7 @@
 {
     "extends": "../../../tsconfig.json",
     "references": [
-        {
-            "path": "./step-2/"
-        }
+        { "path": "./step-2/" },
+        { "path": "./step-3/" }
     ]
 }

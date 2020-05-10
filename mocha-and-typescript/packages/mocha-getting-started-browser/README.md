@@ -4,7 +4,7 @@ This sample starts with “[Running Mocha in the Browser](https://mochajs.org/#r
 
 1) setting up the test HTML file manually, writing `getting-started.spec.js` by hand (see `/step-1` [folder](./__tests__/step-1))
 2) overwriting `getting-started.spec.js` with `tsc` output from Typescript source (see `/step-2` [folder](./__tests__/step-2))
-3) replacing all <https://unpkg.com> sources with local `node_modules` equivalents
+3) replacing all <https://unpkg.com> sources with local `node_modules` equivalents (see `/step-3` [folder](./__tests__/step-3))
 
 ## initial setup
 
