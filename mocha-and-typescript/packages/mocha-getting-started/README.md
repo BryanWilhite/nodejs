@@ -1,6 +1,8 @@
 # `mocha` getting started
 
-This sample attempts to walk through `mocha` [getting started](https://mochajs.org/#getting-started) documentation.
+This sample attempts to walk from `mocha` “[Getting Started](https://mochajs.org/#getting-started)” documentation through “[Diffs](https://mochajs.org/#diffs)”.
+
+The `*.spec.ts` file(s) in the `src/` [folder](./src) are defined by the `describe()` function which is regarded as the BDD “Interface” [[docs](https://mochajs.org/#bdd)]. `mocha` supports four other “interfaces” by default.
 
 From the parent `npm` package folder, we started with:
 
