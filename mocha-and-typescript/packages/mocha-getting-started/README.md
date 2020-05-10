@@ -7,7 +7,8 @@ The `*.spec.ts` file(s) in the `src/` [folder](./src) are defined by the `descri
 From the parent `npm` package [folder](../../../mocha-and-typescript), we started with:
 
 ```console
-npx lerna create @songhay/mocha-getting-started --yes
+npx lerna create @songhay/mocha-getting-started --description "see README" --yes
+npx lerna bootstrap
 ```
 
 we then set up an extending `tsconfig.json` file in the conventional `/__tests__` folder set up by `lerna`. There was, by the way, an Angular-based motivation to use a `tsconfig.spec.json` file but [this is not really a _general_ thing](https://github.com/BryanWilhite/songhay-web-components/issues/3#issuecomment-626273798)—it’s an Angular thing.
