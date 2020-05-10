@@ -4,11 +4,13 @@ This sample attempts to walk from `mocha` “[Getting Started](https://mochajs.o
 
 The `*.spec.ts` file(s) in the `src/` [folder](./src) are defined by the `describe()` function which is regarded as the BDD “Interface” [[docs](https://mochajs.org/#bdd)]. `mocha` supports four other “interfaces” by default.
 
-From the parent `npm` package folder, we started with:
+From the parent `npm` package [folder](../../../mocha-and-typescript), we started with:
 
 ```console
 npx lerna create @songhay/mocha-getting-started --yes
 ```
+
+we then set up an extending `tsconfig.json` file in the conventional `/__tests__` folder set up by `lerna`. There was, by the way, an Angular-based motivation to use a `tsconfig.spec.json` file but [this is not really a _general_ thing](https://github.com/BryanWilhite/songhay-web-components/issues/3#issuecomment-626273798)—it’s an Angular thing.
 
 ## “Detects Multiple Calls to `done()`” commentary
 
