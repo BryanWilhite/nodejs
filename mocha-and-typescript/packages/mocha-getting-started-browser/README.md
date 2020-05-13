@@ -30,6 +30,13 @@ The `mocha` folks are implying that this must be case by declaring that the `cha
 <script src="https://unpkg.com/chai/chai.js"></script>
 ```
 
+## escalating toward testing Web components
+
+The escalation continues with:
+
+4) taking guidance from “[Running Mocha Tests as Native ES6 Modules in a Browser](https://medium.com/dailyjs/running-mocha-tests-as-native-es6-modules-in-a-browser-882373f2ecb0)” (see `/step-4` [folder](./__tests__/step-4))
+5) testing a simple Web component (see `/step-5` [folder](./__tests__/step-5))
+
 ## initial setup
 
 From the parent `npm` package [folder](../../../mocha-and-typescript), we started with:
