@@ -1,4 +1,4 @@
-import sum from './sum.js';
+import sum from './sum';
 
 describe('sum', function () {
     it('should return sum of arguments', function () {

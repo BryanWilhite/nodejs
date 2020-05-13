@@ -32,10 +32,24 @@ The `mocha` folks are implying that this must be case by declaring that the `cha
 
 ## escalating toward testing Web components
 
+`mocha` [is recommended](https://open-wc.org/testing/) by Open Web Components. It therefore makes sense to continue our `mocha` testing escalation toward Web components.
+
 The escalation continues with:
 
 4) taking guidance from “[Running Mocha Tests as Native ES6 Modules in a Browser](https://medium.com/dailyjs/running-mocha-tests-as-native-es6-modules-in-a-browser-882373f2ecb0)” (see `/step-4` [folder](./__tests__/step-4))
 5) testing a simple Web component (see `/step-5` [folder](./__tests__/step-5))
+
+The use of `Promise<T>` in Typescript required the parent `npm` package installation of `tslib` as a dependency. Additionally, the following dependencies enhance the Web Component layout, according to current conventions of the Studio (installed from the parent `npm` package [folder](../../../mocha-and-typescript)):
+
+```console
+npm i -s tslib @material/typography @material/layout-grid
+```
+
+### related links
+
+- “[External Helpers Library in TypeScript](https://mariusschulz.com/blog/external-helpers-library-in-typescript)”
+- <https://github.com/material-components/material-components-web/tree/master/packages/mdc-typography>
+- <https://github.com/material-components/material-components-web/tree/master/packages/mdc-layout-grid>
 
 ## initial setup
 

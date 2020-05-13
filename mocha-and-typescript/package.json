@@ -10,11 +10,18 @@
         "ts-mocha:test:mocha-getting-started-browser-1": "http-server packages/mocha-getting-started-browser/__tests__/step-1 -o -c-1",
         "ts-mocha:test:mocha-getting-started-browser-2": "tsc --project packages/mocha-getting-started-browser/__tests__/step-2/tsconfig.json && http-server packages/mocha-getting-started-browser/__tests__/step-2 -o -c-1",
         "ts-mocha:test:mocha-getting-started-browser-3": "tsc --project packages/mocha-getting-started-browser/__tests__/step-3/tsconfig.json && http-server . -o -c-1",
-        "ts-mocha:test:mocha-getting-started-browser-4": "tsc --project packages/mocha-getting-started-browser/__tests__/step-4/tsconfig.json && http-server . -o -c-1"
+        "ts-mocha:test:mocha-getting-started-browser-4": "tsc --project packages/mocha-getting-started-browser/__tests__/step-4/tsconfig.json && http-server . -o -c-1",
+        "ts-mocha:test:mocha-getting-started-browser-5": "tsc --project packages/mocha-getting-started-browser/__tests__/step-5/tsconfig.json && http-server . -o -c-1"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
+    "dependencies": {
+        "@material/typography": "6.0.0",
+        "@material/layout-grid": "6.0.0",
+        "normalize.css": "8.0.1",
+        "tslib": "1.12.0"
+    },
     "devDependencies": {
         "@types/chai": "^4.2.11",
         "@types/expect": "^24.3.0",

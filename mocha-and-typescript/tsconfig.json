@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "ES2015",
-        "module": "ESNext",
+        "module": "ES2015",
         "moduleResolution": "Node",
         "rootDir": "./src",
         "outDir": "./",
@@ -21,7 +21,7 @@
         "downlevelIteration": false,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "importHelpers": true,
+        "importHelpers": false,
         "inlineSources": true,
         "noFallthroughCasesInSwitch": true,
         "noImplicitAny": false,

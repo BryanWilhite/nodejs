@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Mocha Tests</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../../../node_modules/normalize.css/normalize.css" />
+        <link rel="stylesheet" href="../../../../node_modules/mocha/mocha.css" />
+        <link rel="stylesheet" href="../../../../node_modules/@material/typography/dist/mdc.typography.css" />
+        <link rel="stylesheet" href="../../../../node_modules/@material/layout-grid/dist/mdc.layout-grid.css" />
+    </head>
+
+    <body>
+        <div id="mocha"></div>
+        <div class="mdc-typography mdc-layout-grid">
+            <div class="mdc-layout-grid__cell">
+                <div id="web-component-container">
+                    <article>
+                        <h2>These words should be counted!</h2>
+                        <p>Yeah! These too!</p>
+                        <p is="word-count"></p>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <script src="../../../../node_modules/chai/chai.js"></script>
+        <script src="../../../../node_modules/mocha/mocha.js"></script>
+        <script src="../../../../node_modules/tslib/tslib.js"></script>
+
+        <script class="mocha-init">
+            mocha.setup('bdd');
+            mocha.checkLeaks();
+        </script>
+        <script type="module" src="./js/word-count.component.spec.js"></script>
+        <script type="module" class="mocha-exec">
+            mocha.run();
+        </script>
+    </body>
+
+</html>
