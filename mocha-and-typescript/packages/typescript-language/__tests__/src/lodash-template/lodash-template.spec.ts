@@ -6,15 +6,20 @@ describe('lodash _.template()', function () {
     const root = 'http://songhaysystem.com/';
     const path = 'one/two/three';
 
-    let uri: string = _.template('{{ root }}{{ path }}')({
-        'root': root,
-        'path': path
+    it('works with legacy JavaScript', function () {
+        const uri: string = _.template('{{ root }}{{ path }}')({
+            'root': root,
+            'path': path
+        });
+
+        console.log(`lodash template: ${uri}`);
     });
 
-    console.log(`lodash template: ${uri}`);
+    it('is a subset of ECMAScript template literals', function () {
+        const uri = `${root}${path}`;
+        console.log(`es2015 template: ${uri}`);
 
-    uri = `${root}${path}`;
-    console.log(`es2015 template: ${uri}`);
+        // conclusion: just use es2015 template literals
+    });
 
-    // conclusion: just use es2015 template literals
 });

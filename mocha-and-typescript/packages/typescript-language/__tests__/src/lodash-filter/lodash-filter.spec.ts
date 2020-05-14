@@ -4,9 +4,13 @@ describe('lodash _.filter()', function () {
     const data: number[] = [2, 4, 6, 8, 10];
     console.log(`data: ${data}`);
 
-    let filtered = _(data).filter(i => i > 6).value();
-    console.log(`lodash filtered: ${filtered}`);
+    it('works in classical JavaScript', function () {
+        const filtered = _(data).filter(i => i > 6).value();
+        console.log(`lodash filtered: ${filtered}`);
+    });
 
-    filtered = data.filter(i => i > 6);
-    console.log(`ES2015 filtered: ${filtered}`);
+    it('is like ECMAScript 2015 Array.filter()', function () {
+        const filtered = data.filter(i => i > 6);
+        console.log(`ES2015 filtered: ${filtered}`);
+    });
 });

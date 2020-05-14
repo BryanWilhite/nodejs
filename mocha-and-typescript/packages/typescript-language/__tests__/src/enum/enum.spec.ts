@@ -1,9 +1,15 @@
+import * as assert from 'assert';
+
 import { MyEnum } from './models/my-enum';
 
 describe('MyEnum', function () {
     const x: MyEnum = MyEnum.Yours;
 
-    console.log(`is it yours? => ${x === 'yours'}`);
+    it('is equal to itself (of course)', function () {
+        assert.strictEqual(x, MyEnum.Yours);
+    });
 
-    console.log(`is it really yours? => ${x === MyEnum.Yours}`);
+    it('is equal to a magic string', function () {
+        assert.strictEqual(x, 'yours');
+    });
 });

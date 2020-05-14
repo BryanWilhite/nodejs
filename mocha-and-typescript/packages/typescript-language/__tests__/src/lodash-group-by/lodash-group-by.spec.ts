@@ -63,14 +63,16 @@ describe('lodash _.groupBy()', function () {
         }
     ];
 
-    const groups = _(data)
-        .groupBy((i: DisplayItemModel) => i.itemCategories.get(GroupingNames.groupingOne))
-        .toArray()
-        .value();
+    it('currently has no ECMAScript equivalent', function () {
+        const groups = _(data)
+            .groupBy((i: DisplayItemModel) => i.itemCategories.get(GroupingNames.groupingOne))
+            .toArray()
+            .value();
 
-    groups.forEach(i => {
-        const groupName = _(i).first().itemCategories.get(GroupingNames.groupingOne);
-        console.log(`group: ${groupName}`);
-        i.forEach(j => console.log(`    ${j.displayText}`));
+        groups.forEach(i => {
+            const groupName = _(i).first().itemCategories.get(GroupingNames.groupingOne);
+            console.log(`group: ${groupName}`);
+            i.forEach(j => console.log(`    ${j.displayText}`));
+        });
     });
 });
