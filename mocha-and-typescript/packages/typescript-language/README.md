@@ -2,6 +2,12 @@
 
 This sample starts with the work previously done in my `typescript` samples [folder](https://github.com/BryanWilhite/nodejs/tree/c35ac755fe024bf9b813a3c375a5ec8fdb990623/typescript) and places them in a `mocha` test context.
 
+All of the samples can be run at once with the [parent-package npm script](../../../package.json):
+
+```json
+"ts-mocha:test:typescript-language": "npx ts-mocha -p packages/typescript-language/__tests__/tsconfig.json packages/typescript-language/__tests__/**/*.spec.ts",
+```
+
 ## array-from/
 
 The `array-from/` [sample](./src/array-from) (run `npm run src-array-from`) demonstrates how to generate an array in a manner similar to how it is done with `Enumerable.Range()` in C# [[docs](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.range?view=netcore-2.1)].
