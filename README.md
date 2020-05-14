@@ -61,21 +61,29 @@ Influence of the Angular team led me directly to the karma-jasmine combo. My `ka
 
 I would also like to mention my work with [Jest](https://jestjs.io/) here (since no samples as of this writing are in this repo). I started that work directly in my `songhay-core` [repo](https://github.com/BryanWilhite/songhay-core).
 
+### mocha commentary
+
+My study of Web components (at open-wc.org) [led me](https://open-wc.org/testing/#testing-libraries) to [Mocha.js](https://mochajs.org/) which is presented as a newer, smaller iteration over [Jasmine](https://jasmine.github.io/).
+
+My `mocha-and-typescript` [folder](./mocha-and-typescript) represents the start of my journey into the world of testing Web components.
+
 ### Office Add-ins platform commentary
 
 I have removed my `office-addin-excel` [sample](https://github.com/BryanWilhite/nodejs/tree/0b2f54b45cfa480ee3986618cb2d2344c27fba1a/office-addin-excel) because it represents another failed attempt of mine to get the simplest Add-in working in Office. I will look into this later, taking note of this relatively new term, “[Office Add-ins platform](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins).”
 
 ### React commentary
 
-My hello-world React [sample](./react-hello-world) is proof that I have “played around” with [React](https://reactjs.org/). The Web developer market is currently in love with React so I had to take a look. Respectfully, React ingeniously addresses problems in the world that no longer exists: the Web Components standard and [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) were not released/implemented in browsers.
+My hello-world React [sample](./react-hello-world) is proof that I have “played around” with [React](https://reactjs.org/). The Web developer market is currently in love with React so I had to take a look. Respectfully, React ingeniously addresses problems in a world that no longer exists: a world without the Web Components standard and [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals). And it must be said that, years ago, the React `Component` class [[docs](https://reactjs.org/docs/react-component.html)] was my introduction to the Web Component standard.
 
 ### SVG commentary
 
-My [SVG](https://www.w3.org/TR/SVG/) gurus are (currently) [Sara Soueidan](https://www.sarasoueidan.com/), [Tiffany Rayside](https://codepen.io/tmrDevelops/) and [Chris Coyier](https://chriscoyier.net/). With help from these two (and, of course, others), I need to get comfortable with the basics of SVG (`viewBox`, `preserveAspectRatio`, etc.). Then I need to looking to SVG fall back with the `picture` element. Next would the robust topic of SVG icons.
+My [SVG](https://www.w3.org/TR/SVG/) gurus are (currently) [Sara Soueidan](https://www.sarasoueidan.com/), [Tiffany Rayside](https://codepen.io/tmrDevelops/) and [Chris Coyier](https://chriscoyier.net/). With help from these three (and, of course, others), I need to get comfortable with the basics of SVG (`viewBox`, `preserveAspectRatio`, etc.). Then I need to looking to SVG fall back with the `picture` element. Next would the robust topic of SVG icons.
+
+The `/svg-*/` and `/tiffany-rayside-svg-*/` folders in this repo represent the beginnings of my exploration.
 
 ### Typescript commentary
 
-My `typescript` [sample](./typescript) represents my relationship with [Typescript](https://www.typescriptlang.org/), intended to be deep and complex. In addition to the work here, my `songhay-core` [repo](https://github.com/BryanWilhite/songhay-core) literally implements the _core_ commitment of this Studio to Typescript.
+My `typescript-language` [sample](./mocha-and-typescript/packages/typescript-language) represents my relationship with [Typescript](https://www.typescriptlang.org/) (and `mocha` [[GitHub](https://github.com/mochajs/mocha)]), intended to be deep and complex. In addition to the work here, my `songhay-core` [repo](https://github.com/BryanWilhite/songhay-core) literally implements the _core_ commitment of this Studio to Typescript.
 
 ### Web Components commentary
 
