@@ -1,6 +1,7 @@
 import * as _ from 'lodash';
 
 describe('lodash _.filter()', function () {
+
     const data: number[] = [2, 4, 6, 8, 10];
     console.log(`data: ${data}`);
 

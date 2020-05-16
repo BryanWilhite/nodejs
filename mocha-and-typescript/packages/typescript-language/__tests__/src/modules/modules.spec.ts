@@ -1,4 +1,4 @@
-import * as assert from 'assert';
+import * as expect from 'expect';
 
 import { MyClass } from './models/my-class';
 
@@ -22,7 +22,8 @@ describe('Object.assign in a constructor', function () {
             one: 'Three',
             two: 'Four'
         } as MyClass;
-        assert.notStrictEqual(mine, null);
+
+        expect(mine).toBeTruthy();
 
         if (!mine.getOneAndTwo) {
             console.log('sorry, mine.getOneAndTwo is not a function');
