@@ -9,10 +9,10 @@
         "url": "https://github.com/BryanWilhite/nodejs.git"
     },
     "dependencies": {
-        "d3": "^4.10.2"
+        "d3": "^4.13.0"
     },
     "devDependencies": {
-        "@types/d3": "^4.10.0",
+        "@types/d3": "^4.13.12",
         "cp": "^0.2.0"
     },
     "scripts": {
