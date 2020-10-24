@@ -9,11 +9,11 @@
         "url": "https://github.com/BryanWilhite/nodejs.git"
     },
     "dependencies": {
-        "jquery": "^3.4.1"
+        "jquery": "^3.5.1"
     },
     "devDependencies": {
-        "@types/jquery": "^3.3.35",
-        "rollup": "^2.6.1"
+        "@types/jquery": "^3.5.3",
+        "rollup": "^2.32.1"
     },
     "scripts": {
         "build": "rollup -c"
