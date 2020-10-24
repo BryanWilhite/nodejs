@@ -3,6 +3,10 @@ module.exports = function (config) {
         return collection.getFilteredByGlob('entry/*.md');
     });
 
+    config.addCollection('others', collection => {
+        return collection.getFilteredByGlob('other-entry/*.md');
+    });
+
     return {
         dir: {
             input: ".",
