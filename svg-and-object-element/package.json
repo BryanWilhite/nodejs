@@ -13,7 +13,7 @@
     "url": "https://github.com/BryanWilhite/nodejs.git"
   },
   "devDependencies": {
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "svg-to-png": "^3.1.2"
   }
 }
