@@ -167,5 +167,5 @@
   "cli": {
     "analytics": "6334a12e-d5ac-424c-acd0-95d96bdeb45e"
   },
-  "defaultProject": "@songhay/core"
+  "defaultProject": "studio-floor"
 }
