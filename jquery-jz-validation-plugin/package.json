@@ -9,10 +9,10 @@
     "author": "Bryan D. Wilhite",
     "license": "ISC",
     "dependencies": {
-        "jquery-validation": "^1.19.0"
+        "jquery-validation": "^1.19.2"
     },
     "devDependencies": {
-        "rollup": "^2.6.1"
+        "rollup": "^2.32.1"
     },
     "repository": {
         "type": "git",
