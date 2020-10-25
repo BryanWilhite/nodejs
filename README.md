@@ -2,7 +2,9 @@
 
 ## my collection of self-educational samples on the Node.js® stack
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4318bca9-b442-4e07-9584-6580feaf0470/deploy-status)](https://app.netlify.com/sites/rasx-node-js/deploys)
+| | |
+|-|-
+| [![Netlify Status](https://api.netlify.com/api/v1/badges/4318bca9-b442-4e07-9584-6580feaf0470/deploy-status)](https://app.netlify.com/sites/rasx-node-js/deploys) | <https://rasx-node-js.netlify.app/>
 
 This repository is based on the assumption that Node.js®-related technology is sitting at the bottom of every Web Client stack I will be concerned about for years to come.
 
