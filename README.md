@@ -2,6 +2,8 @@
 
 ## my collection of self-educational samples on the Node.js® stack
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4318bca9-b442-4e07-9584-6580feaf0470/deploy-status)](https://app.netlify.com/sites/rasx-node-js/deploys)
+
 This repository is based on the assumption that Node.js®-related technology is sitting at the bottom of every Web Client stack I will be concerned about for years to come.
 
 Every CSS, JavaScript and (X)HTML sample that is relevant to the state of the art and my current legacy load _will_ be in this repository. Most of my Web Client/App samples have been on [codepen.io](https://codepen.io/rasx) and [stackblitz.com](https://stackblitz.com/@BryanWilhite). This repository will attempt to be a superset of my CodePen presence (with the exception of my Angular JS pens).
