@@ -3,7 +3,9 @@
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "lib": [
-            "ES6"
+            "ES6",
+            "DOM",
+            "DOM.Iterable"
         ],
         "module": "commonjs",
         "moduleResolution": "node",
