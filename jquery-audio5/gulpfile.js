@@ -8,7 +8,7 @@ const log = function(file, cb) {
     cb(null, file);
 };
 
-gulp.task("default", function() {
+gulp.task("default", async function() {
     console.log("concatenating to lib.js...");
     const javascriptFiles = [
         "./node_modules/underscore/underscore.js",
