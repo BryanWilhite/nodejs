@@ -1,0 +1,113 @@
+@import '@material/typography/mdc-typography';
+
+$mdc-top-app-bar-prominent-row-height: 96px;
+@import '@material/top-app-bar/mdc-top-app-bar';
+
+@import '@material/list/mdc-list';
+@import '@material/icon-button/mdc-icon-button';
+
+@import './themes/akyinkyin/theme';
+
+:root {
+    --input-autocomplete-width: 32em;
+
+    @media screen and (max-width: 680px) {
+        --input-autocomplete-width: 16em;
+    }
+
+    --input-autocomplete-suggestion-border: none;
+    --input-autocomplete-suggestion-selected-background-color: #e2e2e2;
+    --input-autocomplete-suggestion-selected-border: solid $akyinkyin-light-tint;
+    --input-autocomplete-suggestion-selected-font-weight: bold;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    &.svg-sprite {
+        &:active,
+        &:hover,
+        &:link,
+        &:visited {
+            color: $akyinkyin-base;
+            display: inline-block;
+            margin: 1rem;
+            text-decoration: none;
+        }
+    }
+}
+
+svg {
+    &.svg-sprite {
+        fill: currentColor;
+        height: 24px;
+        width: 24px;
+    }
+
+    &.svg-sprite:hover {
+        fill: $akyinkyin-light-tint;
+    }
+}
+
+header {
+    .site.logo {
+        color: $akyinkyin-light-tint;
+        font-size: 4.5rem;
+        line-height: 5rem;
+        white-space: nowrap;
+
+        .prefix {
+            color: $akyinkyin-light-tone;
+            font-size: 3rem;
+            font-weight: 800;
+        }
+
+        @media screen and (max-width: 899px) {
+            .infix {
+                display: none;
+            }
+        }
+
+        .suffix {
+            color: $greys-dark-tone;
+            font-weight: 1000;
+        }
+    }
+
+    .site.links {
+        @media screen and (max-width: 1385px) {
+            & {
+                display: none;
+            }
+        }
+    }
+
+    .site.search {
+        padding-right: 3rem;
+    }
+}
+
+main {
+    section.entries {
+        .entry.extract {
+            h3 {
+                margin-bottom: 0;
+            }
+            p {
+                background-color: $akyinkyin-light-text;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+footer {
+    & > div > div {
+        text-align: center;
+    }
+    p {
+        color: $akyinkyin-light-text;
+    }
+}
