@@ -26,7 +26,7 @@ module.exports = {
     ],
     output: {
         filename: '[name].min.js',
-        path: path.resolve(__dirname, 'app', '_bundles'),
+        path: path.resolve(__dirname, '_bundles'),
     },
     mode: 'production',
     module: {
@@ -60,7 +60,7 @@ module.exports = {
     },
     devServer: {
         compress: false,
-        contentBase: path.join(__dirname, 'app'),
+        contentBase: path.join(__dirname),
         open: true,
         overlay: {
             warnings: true,

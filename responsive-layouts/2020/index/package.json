@@ -2,9 +2,11 @@
   "name": "songhay-index-layout",
   "version": "1.0.0",
   "description": "responsive layouts",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run sass:transpile && npm run webpack:bundle",
+    "sass:transpile": "npx sass ./src/scss/index.scss ./src/css/index.css --load-path ./node_modules",
+    "start": "npx webpack serve --mode=development",
+    "webpack:bundle": "npx webpack --mode=production"
   },
   "author": "rasx@songhaysytem.com",
   "license": "ISC",
