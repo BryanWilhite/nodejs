@@ -1,0 +1,25 @@
+a {
+    &.svg-sprite {
+        &:active,
+        &:hover,
+        &:link,
+        &:visited {
+            color: $akyinkyin-base;
+            display: inline-block;
+            margin: 1rem;
+            text-decoration: none;
+        }
+    }
+}
+
+svg {
+    &.svg-sprite {
+        fill: currentColor;
+        height: 24px;
+        width: 24px;
+    }
+
+    &.svg-sprite:hover {
+        fill: $akyinkyin-light-tint;
+    }
+}
