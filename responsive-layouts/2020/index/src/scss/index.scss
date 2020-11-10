@@ -1,3 +1,5 @@
+@import "../../node_modules/normalize.css/normalize.css";
+
 @import "@material/typography/mdc-typography";
 
 $mdc-top-app-bar-prominent-row-height: 96px;
@@ -16,6 +18,7 @@ body {
     /* 04. Pancake Stack [ http://1linelayouts.glitch.me/ ] */
     display: grid;
     grid-template-rows: auto 1fr auto;
+    height: 100vh;
 
     main {
         /* 07. RAM (Repeat, Auto, Minmax) [ http://1linelayouts.glitch.me/ ] */
@@ -30,6 +33,7 @@ body {
         grid-template-columns: repeat(auto-fit, minmax($footer-grid-item-min-width, 1fr));
 
         section {
+            text-align: center;
             p {
                 color: $akyinkyin-light-text;
             }
