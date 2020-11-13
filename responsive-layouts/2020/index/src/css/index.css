@@ -3712,10 +3712,26 @@ svg.svg-sprite:hover {
 }
 
 body {
+  /* TODO: support mobile-device portrait by default */
+  background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-gallery/gallery-sd.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* 720p => 1280w */
+  /* 1080p => 1920w */
   /* 04. Pancake Stack [ http://1linelayouts.glitch.me/ ] */
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
+}
+@media only screen and (min-width: 640px) and (orientation: landscape) {
+  body {
+    background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-gallery/gallery-720p.png);
+  }
+}
+@media only screen and (min-width: 1280px) and (orientation: landscape) {
+  body {
+    background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-gallery/gallery-1080p.png);
+  }
 }
 body main {
   /* 07. RAM (Repeat, Auto, Minmax) [ http://1linelayouts.glitch.me/ ] */
