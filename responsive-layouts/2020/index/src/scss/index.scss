@@ -14,6 +14,9 @@ $mdc-top-app-bar-prominent-row-height: 96px;
 $main-grid-item-min-width: 150px;
 $footer-grid-item-min-width: 150px;
 
+$width-sd: 640px;
+$width-720p: 1280px;
+
 body {
     /* TODO: support mobile-device portrait by default */
     background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-gallery/gallery-sd.png);
@@ -21,14 +24,14 @@ body {
     background-size: cover;
 
     /* 720p => 1280w */
-    @media only screen and (min-width: 640px) and (orientation: landscape) {
+    @media only screen and (min-width: $width-sd) and (orientation: landscape) {
         & {
             background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-gallery/gallery-720p.png);
         }
     }
 
     /* 1080p => 1920w */
-    @media only screen and (min-width: 1280px) and (orientation: landscape) {
+    @media only screen and (min-width: $width-720p) and (orientation: landscape) {
         & {
             background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-gallery/gallery-1080p.png);
         }
