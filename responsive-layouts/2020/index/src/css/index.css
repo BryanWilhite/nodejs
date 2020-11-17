@@ -3712,25 +3712,33 @@ svg.svg-sprite:hover {
 }
 
 body {
-  /* TODO: support mobile-device portrait by default */
-  background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-gallery/gallery-sd.png);
   background-repeat: no-repeat;
   background-size: cover;
-  /* 720p => 1280w */
+  /* 720x1280 => 1080x1920 */
   /* 1080p => 1920w */
   /* 04. Pancake Stack [ http://1linelayouts.glitch.me/ ] */
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
 }
-@media only screen and (min-width: 640px) and (orientation: landscape) {
+@media only screen and (orientation: portrait) {
   body {
-    background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-gallery/gallery-720p.png);
+    background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-index/index-720x1280.png);
+  }
+}
+@media only screen and (min-width: 720px) and (orientation: portrait) {
+  body {
+    background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-index/index-1080x1920.png);
+  }
+}
+@media only screen and (orientation: landscape) {
+  body {
+    background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-index/index-720p.png);
   }
 }
 @media only screen and (min-width: 1280px) and (orientation: landscape) {
   body {
-    background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-gallery/gallery-1080p.png);
+    background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-index/index-1080p.png);
   }
 }
 body main {
