@@ -11,6 +11,7 @@ $mdc-top-app-bar-prominent-row-height: 96px;
 @import "./themes/akyinkyin/theme";
 @import "./svg";
 
+$header-min-height: 240px;
 $main-grid-item-min-width: 150px;
 $footer-grid-item-min-width: 150px;
 
@@ -45,8 +46,14 @@ body {
 
     /* 04. Pancake Stack [ http://1linelayouts.glitch.me/ ] */
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: minmax($header-min-height, auto) 1fr auto;
     height: 100vh;
+
+    header {
+        & > .mdc-top-app-bar {
+            min-height: $header-min-height;
+        }
+    }
 
     main {
         /* 07. RAM (Repeat, Auto, Minmax) [ http://1linelayouts.glitch.me/ ] */
