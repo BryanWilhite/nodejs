@@ -10,7 +10,7 @@ function display(parentElement: HTMLElement | null, data: MyData[]): void {
         return;
     }
 
-    const template = html`${data?.map((item) => html`<div>${item.title}</div>`)}`;
+    const template = html`${data?.map((item) => html`<div><h1>${item.title}</h1></div>`)}`;
     render(template, parentElement);
 }
 

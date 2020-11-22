@@ -3718,8 +3718,8 @@ body {
   /* 1080p => 1920w */
   /* 04. Pancake Stack [ http://1linelayouts.glitch.me/ ] */
   display: grid;
-  grid-template-rows: minmax(240px, auto) 1fr auto;
-  height: 100vh;
+  grid-template-rows: minmax(128px, auto) 1fr auto;
+  min-height: 100vh;
 }
 @media only screen and (orientation: portrait) {
   body {
@@ -3742,24 +3742,34 @@ body {
   }
 }
 body header > .mdc-top-app-bar {
-  min-height: 240px;
+  min-height: 128px;
 }
 body main {
   /* 07. RAM (Repeat, Auto, Minmax) [ http://1linelayouts.glitch.me/ ] */
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
 }
-body footer {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+body main > div {
+  margin: 1rem;
+  min-height: 128px;
+}
+body main > div h1 {
+  color: #006633;
 }
 body footer section {
   text-align: center;
 }
 body footer section p {
-  color: #e0ede7;
+  color: #003814;
+}
+body footer section p > a:active, body footer section p > a:link, body footer section p > a:visited {
+  color: #003814;
+  text-decoration: none;
+}
+body footer section p > a:hover {
+  text-decoration: underline;
+  text-decoration-color: #006633;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -11,7 +11,7 @@ $mdc-top-app-bar-prominent-row-height: 96px;
 @import "./themes/akyinkyin/theme";
 @import "./svg";
 
-$header-min-height: 240px;
+$header-min-height: 128px;
 $main-grid-item-min-width: 150px;
 $footer-grid-item-min-width: 150px;
 
@@ -47,7 +47,7 @@ body {
     /* 04. Pancake Stack [ http://1linelayouts.glitch.me/ ] */
     display: grid;
     grid-template-rows: minmax($header-min-height, auto) 1fr auto;
-    height: 100vh;
+    min-height: 100vh;
 
     header {
         & > .mdc-top-app-bar {
@@ -60,23 +60,39 @@ body {
         display: grid;
         grid-gap: 1rem;
         grid-template-columns: repeat(
-            auto-fit,
+            3,
             minmax($main-grid-item-min-width, 1fr)
         );
+
+        & > div {
+            margin: 1rem;
+            min-height: $header-min-height;
+
+            h1 {
+                color: $akyinkyin-base;
+            }
+        }
     }
 
     footer {
-        display: grid;
-        grid-gap: 1rem;
-        grid-template-columns: repeat(
-            auto-fit,
-            minmax($footer-grid-item-min-width, 1fr)
-        );
-
         section {
             text-align: center;
+
             p {
-                color: $akyinkyin-light-text;
+                color: $akyinkyin-dark-tone;
+
+                & > a {
+                    &:active,
+                    &:link,
+                    &:visited {
+                        color: $akyinkyin-dark-tone;
+                        text-decoration: none;
+                    }
+                    &:hover {
+                        text-decoration: underline;
+                        text-decoration-color: $akyinkyin-base;
+                    }
+                }
             }
         }
     }
