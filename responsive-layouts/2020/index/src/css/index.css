@@ -3712,14 +3712,8 @@ svg.svg-sprite:hover {
 }
 
 body {
-  background-repeat: no-repeat;
-  background-size: cover;
   /* 720x1280 => 1080x1920 */
   /* 1080p => 1920w */
-  /* 04. Pancake Stack [ http://1linelayouts.glitch.me/ ] */
-  display: grid;
-  grid-template-rows: minmax(128px, auto) 1fr auto;
-  min-height: 100vh;
 }
 @media only screen and (orientation: portrait) {
   body {
@@ -3741,6 +3735,23 @@ body {
     background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-index/index-1080p.png);
   }
 }
+
+main > div {
+  margin: 1rem;
+  min-height: 128px;
+}
+main > div h1 {
+  color: #006633;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* 04. Pancake Stack [ http://1linelayouts.glitch.me/ ] */
+  display: grid;
+  grid-template-rows: minmax(128px, auto) 1fr auto;
+  min-height: 100vh;
+}
 body header > .mdc-top-app-bar {
   min-height: 128px;
 }
@@ -3749,13 +3760,6 @@ body main {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(3, minmax(150px, 1fr));
-}
-body main > div {
-  margin: 1rem;
-  min-height: 128px;
-}
-body main > div h1 {
-  color: #006633;
 }
 body footer section {
   text-align: center;

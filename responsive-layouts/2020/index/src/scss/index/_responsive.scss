@@ -1,0 +1,23 @@
+body {
+    @media only screen and (orientation: portrait) {
+        background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-index/index-720x1280.png);
+    }
+
+    /* 720x1280 => 1080x1920 */
+    @media only screen and (min-width: $width-720x1280) and (orientation: portrait) {
+        & {
+            background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-index/index-1080x1920.png);
+        }
+    }
+
+    @media only screen and (orientation: landscape) {
+        background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-index/index-720p.png);
+    }
+
+    /* 1080p => 1920w */
+    @media only screen and (min-width: $width-720p) and (orientation: landscape) {
+        & {
+            background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-index/index-1080p.png);
+        }
+    }
+}
