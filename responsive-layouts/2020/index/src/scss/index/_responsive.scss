@@ -1,13 +1,12 @@
 body {
+    /* background-image */
     @media only screen and (orientation: portrait) {
         background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-index/index-720x1280.png);
     }
 
     /* 720x1280 => 1080x1920 */
     @media only screen and (min-width: $width-720x1280) and (orientation: portrait) {
-        & {
-            background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-index/index-1080x1920.png);
-        }
+        background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-index/index-1080x1920.png);
     }
 
     @media only screen and (orientation: landscape) {
@@ -16,8 +15,37 @@ body {
 
     /* 1080p => 1920w */
     @media only screen and (min-width: $width-720p) and (orientation: landscape) {
-        & {
-            background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-index/index-1080p.png);
+        background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-index/index-1080p.png);
+    }
+
+    /* grid-template-columns */
+    @media only screen and (min-width: $width-720x1280) {
+        & > main {
+            grid-template-columns: $thumb-size 0.75fr;
+
+            & > div {
+                min-height: $thumb-size;
+            }
+            & > .even.thumb { display: block; }
+            & > .even.title { display: none; }
+
+            & > .odd > .thumb { display: none; }
+            & > .odd > h2 { display: block; }
+        }
+    }
+
+    @media only screen and (max-width: $width-720x1280) {
+        & > main {
+            grid-template-columns: minmax(min-content, 1fr);
+
+            & > div {
+                min-height: min-content;
+            }
+            & > .even.thumb { display: none; }
+            & > .even.title { display: block; }
+
+            & > .odd > .thumb { display: inline-block; }
+            & > .odd > h2 { display: none; }
         }
     }
 }

@@ -3712,8 +3712,10 @@ svg.svg-sprite:hover {
 }
 
 body {
+  /* background-image */
   /* 720x1280 => 1080x1920 */
   /* 1080p => 1920w */
+  /* grid-template-columns */
 }
 @media only screen and (orientation: portrait) {
   body {
@@ -3735,10 +3737,49 @@ body {
     background-image: url(https://songhaystorage.blob.core.windows.net/songhay-player/stills/responsive-test-index/index-1080p.png);
   }
 }
+@media only screen and (min-width: 720px) {
+  body > main {
+    grid-template-columns: 128px 0.75fr;
+  }
+  body > main > div {
+    min-height: 128px;
+  }
+  body > main > .even.thumb {
+    display: block;
+  }
+  body > main > .even.title {
+    display: none;
+  }
+  body > main > .odd > .thumb {
+    display: none;
+  }
+  body > main > .odd > h2 {
+    display: block;
+  }
+}
+@media only screen and (max-width: 720px) {
+  body > main {
+    grid-template-columns: minmax(min-content, 1fr);
+  }
+  body > main > div {
+    min-height: min-content;
+  }
+  body > main > .even.thumb {
+    display: none;
+  }
+  body > main > .even.title {
+    display: block;
+  }
+  body > main > .odd > .thumb {
+    display: inline-block;
+  }
+  body > main > .odd > h2 {
+    display: none;
+  }
+}
 
 main > div {
   margin: 1rem;
-  min-height: 128px;
 }
 main > div h1 {
   color: #006633;
@@ -3752,26 +3793,24 @@ body {
   grid-template-rows: minmax(128px, auto) 1fr auto;
   min-height: 100vh;
 }
-body header > .mdc-top-app-bar {
+body > header > .mdc-top-app-bar {
   min-height: 128px;
 }
-body main {
-  /* 07. RAM (Repeat, Auto, Minmax) [ http://1linelayouts.glitch.me/ ] */
+body > main {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(3, minmax(150px, 1fr));
 }
-body footer section {
+body > footer > section {
   text-align: center;
 }
-body footer section p {
+body > footer > section > p {
   color: #003814;
 }
-body footer section p > a:active, body footer section p > a:link, body footer section p > a:visited {
+body > footer > section > p > a:active, body > footer > section > p > a:link, body > footer > section > p > a:visited {
   color: #003814;
   text-decoration: none;
 }
-body footer section p > a:hover {
+body > footer > section > p > a:hover {
   text-decoration: underline;
   text-decoration-color: #006633;
 }
