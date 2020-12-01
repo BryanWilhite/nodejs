@@ -23,14 +23,11 @@ body {
         & > main {
             grid-template-columns: $thumb-size 0.75fr;
 
-            & > div {
-                min-height: $thumb-size;
-            }
-            & > .even.thumb { display: block; }
-            & > .even.title { display: none; }
+            & > div { min-height: $thumb-size; }
+
+            & > .even > .thumb { display: block; }
 
             & > .odd > .thumb { display: none; }
-            & > .odd > h2 { display: block; }
         }
     }
 
@@ -38,14 +35,11 @@ body {
         & > main {
             grid-template-columns: minmax(min-content, 1fr);
 
-            & > div {
-                min-height: min-content;
-            }
-            & > .even.thumb { display: none; }
-            & > .even.title { display: block; }
+            & > div { min-height: min-content; }
+
+            & > .even > .thumb { display: none; }
 
             & > .odd > .thumb { display: inline-block; }
-            & > .odd > h2 { display: none; }
         }
     }
 }

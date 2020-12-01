@@ -3744,17 +3744,11 @@ body {
   body > main > div {
     min-height: 128px;
   }
-  body > main > .even.thumb {
+  body > main > .even > .thumb {
     display: block;
-  }
-  body > main > .even.title {
-    display: none;
   }
   body > main > .odd > .thumb {
     display: none;
-  }
-  body > main > .odd > h2 {
-    display: block;
   }
 }
 @media only screen and (max-width: 720px) {
@@ -3764,17 +3758,11 @@ body {
   body > main > div {
     min-height: min-content;
   }
-  body > main > .even.thumb {
+  body > main > .even > .thumb {
     display: none;
-  }
-  body > main > .even.title {
-    display: block;
   }
   body > main > .odd > .thumb {
     display: inline-block;
-  }
-  body > main > .odd > h2 {
-    display: none;
   }
 }
 

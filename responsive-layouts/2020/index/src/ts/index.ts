@@ -10,11 +10,21 @@ function display(parentElement: HTMLElement | null, data: MyData[]): void {
         return;
     }
 
+    const getThumbTemplate = (item: MyData) =>
+        html`<span class="thumb">${item.thumb}</span>`;
+
+    const getTitleTemplate = (item: MyData) => html`<h2>${item.title}</h2>`;
+    const getBodyTemplate = (item: MyData) => html`<p>${item.body}</p>`;
+
     const template = html`${
         data?.map(item =>
             html`
-<div class="even thumb">${item.thumb}</div><div class="even title"><h2>${item.title}</h2></div>
-<div class="odd"><h2>${item.title}</h2><span class="thumb">${item.thumb}</span><p>${item.body}</p></div>
+<div class="even">${getThumbTemplate(item)}</div>
+<div class="odd">
+    ${getTitleTemplate(item)}
+    ${getThumbTemplate(item)}
+    ${getBodyTemplate(item)}
+</div>
 `
             )
     }`;
