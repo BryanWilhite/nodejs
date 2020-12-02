@@ -1,0 +1,9 @@
+main {
+    & > div {
+        margin: 1rem;
+
+        h1 {
+            color: $akyinkyin-base;
+        }
+    }
+}

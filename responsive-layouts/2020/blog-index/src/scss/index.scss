@@ -1,0 +1,66 @@
+@import "../../node_modules/normalize.css/normalize.css";
+
+@import "@material/typography/mdc-typography";
+
+$mdc-top-app-bar-prominent-row-height: 96px;
+@import "@material/top-app-bar/mdc-top-app-bar";
+
+@import "@material/list/mdc-list";
+@import "@material/icon-button/mdc-icon-button";
+
+@import "./themes/akyinkyin/theme";
+
+$thumb-size: 128px;
+$main-grid-item-min-width: 150px;
+$footer-grid-item-min-width: 150px;
+
+$width-720x1280: 720px;
+$width-720p: 1280px;
+
+@import "./index/svg";
+@import "./index/responsive";
+@import "./index/main";
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* 04. Pancake Stack [ http://1linelayouts.glitch.me/ ] */
+    display: grid;
+    grid-template-rows: minmax($thumb-size, auto) 1fr auto;
+    min-height: 100vh;
+
+    & > header {
+        & > .mdc-top-app-bar {
+            min-height: $thumb-size;
+        }
+    }
+
+    & > main {
+        display: grid;
+        grid-gap: 1rem;
+    }
+
+    & > footer {
+        & > section {
+            text-align: center;
+
+            & > p {
+                color: $akyinkyin-dark-tone;
+
+                & > a {
+                    &:active,
+                    &:link,
+                    &:visited {
+                        color: $akyinkyin-dark-tone;
+                        text-decoration: none;
+                    }
+                    &:hover {
+                        text-decoration: underline;
+                        text-decoration-color: $akyinkyin-base;
+                    }
+                }
+            }
+        }
+    }
+}

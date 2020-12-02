@@ -7,16 +7,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 
-module.exports = {
-    entry: {
-        styles: [
-            './src/css/index.css',
-        ],
-        scripts: [
-            './node_modules/@material/top-app-bar/component.js',
-            './src/ts/index.ts'
-        ]
-    },
+const sharedConfig = {
+    name: 'shared-config',
     plugins: [
         new webpack.ProgressPlugin(),
         new CleanWebpackPlugin(),
@@ -24,10 +16,6 @@ module.exports = {
             filename: '[name].min.css',
         })
     ],
-    output: {
-        filename: '[name].min.js',
-        path: path.resolve(__dirname, '_bundles'),
-    },
     mode: 'production',
     module: {
         rules: [
@@ -73,3 +61,42 @@ module.exports = {
         writeToDisk: true
     }
 };
+
+const blogIndexConfig = year => ({
+    name: 'blog-index-config',
+    entry: {
+        styles: [
+            `./${year}/blog-index/src/css/index.css`,
+        ],
+        scripts: [
+            './node_modules/@material/top-app-bar/component.js',
+            `./${year}/blog-index/src/ts/index.ts`
+        ]
+    },
+    output: {
+        filename: '[name].min.js',
+        path: path.resolve(__dirname, `${year}`, 'blog-index', '_bundles'),
+    },
+});
+
+const indexConfig = year => ({
+    name: 'index-config',
+    entry: {
+        styles: [
+            `./${year}/index/src/css/index.css`,
+        ],
+        scripts: [
+            './node_modules/@material/top-app-bar/component.js',
+            `./${year}/index/src/ts/index.ts`
+        ]
+    },
+    output: {
+        filename: '[name].min.js',
+        path: path.resolve(__dirname, `${year}`, 'index', '_bundles'),
+    },
+});
+
+module.exports = [
+    { ...sharedConfig, ...indexConfig(2020) },
+    { ...sharedConfig, ...blogIndexConfig(2020) },
+];
