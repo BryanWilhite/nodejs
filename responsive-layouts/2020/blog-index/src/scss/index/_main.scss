@@ -1,9 +1,14 @@
 main {
-    & > div {
-        margin: 1rem;
+    & > section.main {
+        display: grid;
+        grid-gap: 1rem;
 
-        h1 {
-            color: $akyinkyin-base;
+        & > div {
+            margin: 1rem;
+
+            h1 {
+                color: $akyinkyin-base;
+            }
         }
     }
 }

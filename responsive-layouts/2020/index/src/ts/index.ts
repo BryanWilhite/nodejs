@@ -5,8 +5,8 @@ const uri = './index.json';
 
 interface MyData { title: string; thumb: string; body: string; }
 
-function display(parentElement: HTMLElement | null, data: MyData[]): void {
-    if (parentElement === null) {
+function display(parentElement: Element | null | undefined, data: MyData[]): void {
+    if (!parentElement) {
         return;
     }
 
@@ -34,10 +34,12 @@ function display(parentElement: HTMLElement | null, data: MyData[]): void {
 window.addEventListener('DOMContentLoaded', () => {
     const data$ = ajax.getJSON<MyData[]>(uri);
 
-    const mainElement = window.document.getElementsByTagName('main')?.item(0);
+    const name = 'main';
+    const mainElement = window.document.getElementsByTagName(name)?.item(0);
+    const mainSectionElement = mainElement?.getElementsByClassName(name)?.item(0);
 
     data$.subscribe(
-        appData => display(mainElement, appData),
+        appData => display(mainSectionElement, appData),
         err => console.error(err)
     );
 });

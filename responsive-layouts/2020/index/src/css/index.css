@@ -3738,38 +3738,42 @@ body {
   }
 }
 @media only screen and (min-width: 720px) {
-  body > main {
+  body > main > section.main {
     grid-template-columns: 128px 0.75fr;
   }
-  body > main > div {
+  body > main > section.main > div {
     min-height: 128px;
   }
-  body > main > .even > .thumb {
+  body > main > section.main > .even > .thumb {
     display: block;
   }
-  body > main > .odd > .thumb {
+  body > main > section.main > .odd > .thumb {
     display: none;
   }
 }
 @media only screen and (max-width: 720px) {
-  body > main {
+  body > main > section.main {
     grid-template-columns: minmax(min-content, 1fr);
   }
-  body > main > div {
+  body > main > section.main > div {
     min-height: min-content;
   }
-  body > main > .even > .thumb {
+  body > main > section.main > .even > .thumb {
     display: none;
   }
-  body > main > .odd > .thumb {
+  body > main > section.main > .odd > .thumb {
     display: inline-block;
   }
 }
 
-main > div {
+main > section.main {
+  display: grid;
+  grid-gap: 1rem;
+}
+main > section.main > div {
   margin: 1rem;
 }
-main > div h1 {
+main > section.main > div h1 {
   color: #006633;
 }
 
