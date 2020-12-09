@@ -48,7 +48,6 @@ const sharedConfig = {
     },
     devServer: {
         compress: false,
-        contentBase: path.join(__dirname),
         open: true,
         overlay: {
             warnings: true,
@@ -64,6 +63,9 @@ const sharedConfig = {
 
 const blogIndexConfig = year => ({
     name: 'blog-index-config',
+    devServer: {
+        contentBase: path.join(__dirname, '2020', 'blog-index'),
+    },
     entry: {
         styles: [
             `./${year}/blog-index/src/css/index.css`,
@@ -81,6 +83,9 @@ const blogIndexConfig = year => ({
 
 const indexConfig = year => ({
     name: 'index-config',
+    devServer: {
+        contentBase: path.join(__dirname, '2020', 'index'),
+    },
     entry: {
         styles: [
             `./${year}/index/src/css/index.css`,

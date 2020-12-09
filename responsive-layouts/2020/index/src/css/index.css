@@ -3738,6 +3738,9 @@ body {
   }
 }
 @media only screen and (min-width: 720px) {
+  body > main {
+    grid-template-columns: 1fr 256px;
+  }
   body > main > section.main {
     grid-template-columns: 128px 0.75fr;
   }
@@ -3750,8 +3753,14 @@ body {
   body > main > section.main > .odd > .thumb {
     display: none;
   }
+  body > main > section.sidebar {
+    display: block;
+  }
 }
 @media only screen and (max-width: 720px) {
+  body > main {
+    grid-template-columns: minmax(min-content, 1fr);
+  }
   body > main > section.main {
     grid-template-columns: minmax(min-content, 1fr);
   }
@@ -3763,6 +3772,9 @@ body {
   }
   body > main > section.main > .odd > .thumb {
     display: inline-block;
+  }
+  body > main > section.sidebar {
+    display: none;
   }
 }
 
