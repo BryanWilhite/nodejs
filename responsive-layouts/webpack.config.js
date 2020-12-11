@@ -53,6 +53,7 @@ const sharedConfig = {
             warnings: true,
             errors: true
         },
+        publicPath: '/',
         quiet: false,
         serveIndex: true,
         stats: 'normal',

@@ -19,12 +19,12 @@ function display(parentElement: Element | null | undefined, data: MyData[]): voi
     const template = html`${
         data?.map(item =>
             html`
-<div class="even">${getThumbTemplate(item)}</div>
-<div class="odd">
+<div>${getThumbTemplate(item)}</div>
+<article>
     ${getTitleTemplate(item)}
     ${getThumbTemplate(item)}
     ${getBodyTemplate(item)}
-</div>
+</article>
 `
             )
     }`;

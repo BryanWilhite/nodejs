@@ -1,9 +1,9 @@
 main {
-    & > section.main {
+    & > section {
         display: grid;
         grid-gap: 1rem;
 
-        & > div {
+        & > article {
             margin: 1rem;
 
             h1 {

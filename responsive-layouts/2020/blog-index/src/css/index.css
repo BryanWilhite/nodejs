@@ -3741,19 +3741,19 @@ body {
   body > main {
     grid-template-columns: 1fr 256px;
   }
-  body > main > section.main {
+  body > main > section {
     grid-template-columns: 128px 0.75fr;
   }
-  body > main > section.main > div {
+  body > main > section > div, body > main > section > article {
     min-height: 128px;
   }
-  body > main > section.main > .even > .thumb {
+  body > main > section > div > .thumb {
     display: block;
   }
-  body > main > section.main > .odd > .thumb {
+  body > main > section > article > .thumb {
     display: none;
   }
-  body > main > section.sidebar {
+  body > main > aside {
     display: block;
   }
 }
@@ -3761,31 +3761,31 @@ body {
   body > main {
     grid-template-columns: minmax(min-content, 1fr);
   }
-  body > main > section.main {
+  body > main > section {
     grid-template-columns: minmax(min-content, 1fr);
   }
-  body > main > section.main > div {
+  body > main > section > div, body > main > section > article {
     min-height: min-content;
   }
-  body > main > section.main > .even > .thumb {
+  body > main > section > div > .thumb {
     display: none;
   }
-  body > main > section.main > .odd > .thumb {
+  body > main > section > article > .thumb {
     display: inline-block;
   }
-  body > main > section.sidebar {
+  body > main > aside {
     display: none;
   }
 }
 
-main > section.main {
+main > section {
   display: grid;
   grid-gap: 1rem;
 }
-main > section.main > div {
+main > section > article {
   margin: 1rem;
 }
-main > section.main > div h1 {
+main > section > article h1 {
   color: #006633;
 }
 

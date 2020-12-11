@@ -23,23 +23,23 @@ body {
         & > main {
             grid-template-columns: 1fr ($thumb-size * 2);
 
-            & > section.main {
+            & > section {
                 grid-template-columns: $thumb-size 0.75fr;
 
-                & > div {
+                & > div, & > article {
                     min-height: $thumb-size;
                 }
 
-                & > .even > .thumb {
+                & > div > .thumb {
                     display: block;
                 }
 
-                & > .odd > .thumb {
+                & > article > .thumb {
                     display: none;
                 }
             }
 
-            & > section.sidebar {
+            & > aside {
                 display: block;
             }
         }
@@ -49,23 +49,23 @@ body {
         & > main {
             grid-template-columns: minmax(min-content, 1fr);
 
-            & > section.main {
+            & > section {
                 grid-template-columns: minmax(min-content, 1fr);
 
-                & > div {
+                & > div, & > article {
                     min-height: min-content;
                 }
 
-                & > .even > .thumb {
+                & > div > .thumb {
                     display: none;
                 }
 
-                & > .odd > .thumb {
+                & > article > .thumb {
                     display: inline-block;
                 }
             }
 
-            & > section.sidebar {
+            & > aside {
                 display: none;
             }
         }
