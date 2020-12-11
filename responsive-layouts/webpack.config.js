@@ -7,6 +7,21 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 
+const sharedDevServerConfig = {
+    compress: false,
+    open: true,
+    overlay: {
+        warnings: true,
+        errors: true
+    },
+    publicPath: '/',
+    quiet: false,
+    serveIndex: true,
+    stats: 'normal',
+    watchContentBase: true,
+    writeToDisk: true
+};
+
 const sharedConfig = {
     name: 'shared-config',
     plugins: [
@@ -16,7 +31,6 @@ const sharedConfig = {
             filename: '[name].min.css',
         })
     ],
-    mode: 'production',
     module: {
         rules: [
             {
@@ -46,25 +60,12 @@ const sharedConfig = {
             },
         },
     },
-    devServer: {
-        compress: false,
-        open: true,
-        overlay: {
-            warnings: true,
-            errors: true
-        },
-        publicPath: '/',
-        quiet: false,
-        serveIndex: true,
-        stats: 'normal',
-        watchContentBase: true,
-        writeToDisk: true
-    }
 };
 
 const blogIndexConfig = year => ({
     name: 'blog-index-config',
     devServer: {
+        ...sharedDevServerConfig,
         contentBase: path.join(__dirname, '2020', 'blog-index'),
     },
     entry: {
@@ -85,6 +86,7 @@ const blogIndexConfig = year => ({
 const indexConfig = year => ({
     name: 'index-config',
     devServer: {
+        ...sharedDevServerConfig,
         contentBase: path.join(__dirname, '2020', 'index'),
     },
     entry: {

@@ -34,9 +34,8 @@ function display(parentElement: Element | null | undefined, data: MyData[]): voi
 window.addEventListener('DOMContentLoaded', () => {
     const data$ = ajax.getJSON<MyData[]>(uri);
 
-    const name = 'main';
-    const mainElement = window.document.getElementsByTagName(name)?.item(0);
-    const mainSectionElement = mainElement?.getElementsByClassName(name)?.item(0);
+    const mainElement = window.document.getElementsByTagName('main')?.item(0);
+    const mainSectionElement = mainElement?.getElementsByTagName('section')?.item(0);
 
     data$.subscribe(
         appData => display(mainSectionElement, appData),
