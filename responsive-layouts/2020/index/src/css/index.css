@@ -3741,19 +3741,7 @@ body {
   body > main {
     grid-template-columns: 1fr 256px;
   }
-  body > main > section.main {
-    grid-template-columns: 128px 0.75fr;
-  }
-  body > main > section.main > div {
-    min-height: 128px;
-  }
-  body > main > section.main > .even > .thumb {
-    display: block;
-  }
-  body > main > section.main > .odd > .thumb {
-    display: none;
-  }
-  body > main > section.sidebar {
+  body > main > aside {
     display: block;
   }
 }
@@ -3761,32 +3749,9 @@ body {
   body > main {
     grid-template-columns: minmax(min-content, 1fr);
   }
-  body > main > section.main {
-    grid-template-columns: minmax(min-content, 1fr);
-  }
-  body > main > section.main > div {
-    min-height: min-content;
-  }
-  body > main > section.main > .even > .thumb {
+  body > main > aside {
     display: none;
   }
-  body > main > section.main > .odd > .thumb {
-    display: inline-block;
-  }
-  body > main > section.sidebar {
-    display: none;
-  }
-}
-
-main > section.main {
-  display: grid;
-  grid-gap: 1rem;
-}
-main > section.main > div {
-  margin: 1rem;
-}
-main > section.main > div h1 {
-  color: #006633;
 }
 
 body {

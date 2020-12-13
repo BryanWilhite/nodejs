@@ -3,40 +3,42 @@ import { html, render } from 'lit-html';
 
 const uri = './index.json';
 
-interface MyData { title: string; thumb: string; body: string; }
+interface MyData { title: string; articles: MyData[]; }
 
 function display(parentElement: Element | null | undefined, data: MyData[]): void {
     if (!parentElement) {
         return;
     }
 
-    const getThumbTemplate = (item: MyData) =>
-        html`<span class="thumb">${item.thumb}</span>`;
+    const getArticleTemplate = (article: MyData) => {
+        return html`<article><h3>${
+            article.title
+        }</h3></article>`;
+    };
 
-    const getTitleTemplate = (item: MyData) => html`<h2>${item.title}</h2>`;
-    const getBodyTemplate = (item: MyData) => html`<p>${item.body}</p>`;
+    const getSectionTemplate = (section: MyData) => {
 
-    const template = html`${
-        data?.map(item =>
-            html`
-<div class="even">${getThumbTemplate(item)}</div>
-<div class="odd">
-    ${getTitleTemplate(item)}
-    ${getThumbTemplate(item)}
-    ${getBodyTemplate(item)}
-</div>
-`
-            )
-    }`;
+        const summaryTemplate = html`<summary><h2>${
+            section.title
+        }</h2></summary>`;
+
+        const sectionTemplate = html`<section>${
+            section?.articles?.map(article => getArticleTemplate(article))
+        }</section>`;
+
+        return html`<details>${summaryTemplate}${sectionTemplate}</details>`;
+    }
+
+    const template = html`${data?.map(section => getSectionTemplate(section))}`;
+
     render(template, parentElement);
 }
 
 window.addEventListener('DOMContentLoaded', () => {
     const data$ = ajax.getJSON<MyData[]>(uri);
 
-    const name = 'main';
-    const mainElement = window.document.getElementsByTagName(name)?.item(0);
-    const mainSectionElement = mainElement?.getElementsByClassName(name)?.item(0);
+    const mainElement = window.document.getElementsByTagName('main')?.item(0);
+    const mainSectionElement = mainElement?.getElementsByTagName('section')?.item(0);
 
     data$.subscribe(
         appData => display(mainSectionElement, appData),
