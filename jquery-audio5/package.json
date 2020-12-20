@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "audio5": "^0.1.10",
-    "underscore": "^1.11.0"
+    "underscore": "^1.12.0"
   },
   "repository": {
     "type": "git",
