@@ -3,6 +3,10 @@ import * as webpack from 'webpack';
 import * as MiniCssExtractPlugin from 'mini-css-extract-plugin';
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
+const handler = (percentage: number, message: string, ...args: any) => {
+    console.info(percentage, message, ...args);
+};
+
 const config: webpack.Configuration = {
     mode: 'development',
     target: 'web',
@@ -19,7 +23,7 @@ const config: webpack.Configuration = {
         path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-        new webpack.ProgressPlugin(),
+        new webpack.ProgressPlugin(handler),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: '[name].css',
