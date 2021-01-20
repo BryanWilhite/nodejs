@@ -16,7 +16,7 @@ function display(parentElement: Element | null | undefined, data: MyData[]): voi
         }</h3></article>`;
     };
 
-    const getSectionTemplate = (section: MyData) => {
+    const getSectionTemplate = (section: MyData, index: number) => {
 
         const summaryTemplate = html`<summary><h2>${
             section.title
@@ -26,10 +26,12 @@ function display(parentElement: Element | null | undefined, data: MyData[]): voi
             section?.articles?.map(article => getArticleTemplate(article))
         }</section>`;
 
-        return html`<details>${summaryTemplate}${sectionTemplate}</details>`;
+        const isOpen = index === 0;
+
+        return html`<details ?open=${isOpen}>${summaryTemplate}${sectionTemplate}</details>`;
     }
 
-    const template = html`${data?.map(section => getSectionTemplate(section))}`;
+    const template = html`${data?.map((section, i) => getSectionTemplate(section, i))}`;
 
     render(template, parentElement);
 }
