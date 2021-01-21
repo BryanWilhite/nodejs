@@ -4103,6 +4103,38 @@ body {
   }
 }
 
+main > section > details {
+  padding: 2rem;
+  background-color: inherit;
+  max-height: initial;
+  transition-property: background-color, max-height;
+  transition-duration: 500ms;
+}
+main > section > details > summary::marker, main > section > details > summary::-webkit-details-marker {
+  color: #003814;
+  font-size: 2rem;
+}
+main > section > details > summary {
+  cursor: pointer;
+  opacity: 1;
+}
+main > section > details > summary > h2 {
+  display: inline-block;
+  margin-left: -0.5rem;
+}
+main > section > details > section {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 500ms;
+}
+main > section > details[open] {
+  background-color: rgba(0, 0, 0, 0.1);
+  max-height: 20rem;
+}
+main > section > details[open] > section {
+  opacity: 1;
+}
+
 body {
   background-repeat: no-repeat;
   background-size: cover;
