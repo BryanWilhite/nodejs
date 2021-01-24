@@ -62,49 +62,49 @@ const sharedConfig = {
     },
 };
 
-const blogIndexConfig = year => ({
+const blogIndexConfig = () => ({
     name: 'blog-index-config',
     devServer: {
         ...sharedDevServerConfig,
-        contentBase: path.join(__dirname, '2020', 'blog-index'),
+        contentBase: path.join(__dirname, 'blog-index'),
     },
     entry: {
         styles: [
-            `./${year}/blog-index/src/css/index.css`,
+            `./blog-index/src/css/index.css`,
         ],
         scripts: [
             './node_modules/@material/top-app-bar/component.js',
-            `./${year}/blog-index/src/ts/index.ts`
+            `./blog-index/src/ts/index.ts`
         ]
     },
     output: {
         filename: '[name].min.js',
-        path: path.resolve(__dirname, `${year}`, 'blog-index', '_bundles'),
+        path: path.resolve(__dirname, 'blog-index', '_bundles'),
     },
 });
 
-const indexConfig = year => ({
+const indexConfig = () => ({
     name: 'index-config',
     devServer: {
         ...sharedDevServerConfig,
-        contentBase: path.join(__dirname, '2020', 'index'),
+        contentBase: path.join(__dirname, 'index'),
     },
     entry: {
         styles: [
-            `./${year}/index/src/css/index.css`,
+            `./index/src/css/index.css`,
         ],
         scripts: [
             './node_modules/@material/top-app-bar/component.js',
-            `./${year}/index/src/ts/index.ts`
+            `./index/src/ts/index.ts`
         ]
     },
     output: {
         filename: '[name].min.js',
-        path: path.resolve(__dirname, `${year}`, 'index', '_bundles'),
+        path: path.resolve(__dirname, 'index', '_bundles'),
     },
 });
 
 module.exports = [
-    { ...sharedConfig, ...indexConfig(2020) },
-    { ...sharedConfig, ...blogIndexConfig(2020) },
+    { ...sharedConfig, ...indexConfig() },
+    { ...sharedConfig, ...blogIndexConfig() },
 ];

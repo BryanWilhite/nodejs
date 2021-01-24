@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "responsive layouts",
   "scripts": {
-    "2020:blog-index:sass:transpile": "npx sass ./2020/blog-index/src/scss/index.scss ./2020/blog-index/src/css/index.css --load-path ./node_modules",
-    "2020:index:sass:transpile": "npx sass ./2020/index/src/scss/index.scss ./2020/index/src/css/index.css --load-path ./node_modules",
+    "blog-index:sass:transpile": "npx sass ./blog-index/src/scss/index.scss ./blog-index/src/css/index.css --load-path ./node_modules",
+    "index:sass:transpile": "npx sass ./index/src/scss/index.scss ./index/src/css/index.css --load-path ./node_modules",
     "start:blog-index": "npx webpack serve --mode=development --config-name=blog-index-config",
     "start:index": "npx webpack serve --mode=development --config-name=index-config",
     "webpack:bundle": "npx webpack --mode=production"

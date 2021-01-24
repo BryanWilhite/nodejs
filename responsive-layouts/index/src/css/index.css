@@ -1,4 +1,4 @@
-@import "../../../../node_modules/normalize.css/normalize.css";
+@import "../../../node_modules/normalize.css/normalize.css";
 .mdc-typography {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -3741,18 +3741,6 @@ body {
   body > main {
     grid-template-columns: 1fr 256px;
   }
-  body > main > section {
-    grid-template-columns: 128px 0.75fr;
-  }
-  body > main > section > div, body > main > section > article {
-    min-height: 128px;
-  }
-  body > main > section > div > .thumb {
-    display: block;
-  }
-  body > main > section > article > .thumb {
-    display: none;
-  }
   body > main > aside {
     display: block;
   }
@@ -3761,32 +3749,41 @@ body {
   body > main {
     grid-template-columns: minmax(min-content, 1fr);
   }
-  body > main > section {
-    grid-template-columns: minmax(min-content, 1fr);
-  }
-  body > main > section > div, body > main > section > article {
-    min-height: min-content;
-  }
-  body > main > section > div > .thumb {
-    display: none;
-  }
-  body > main > section > article > .thumb {
-    display: inline-block;
-  }
   body > main > aside {
     display: none;
   }
 }
 
-main > section {
-  display: grid;
-  grid-gap: 1rem;
+main > section > details {
+  padding: 2rem;
+  background-color: inherit;
+  max-height: initial;
+  transition-property: background-color, max-height;
+  transition-duration: 500ms;
 }
-main > section > article {
-  margin: 1rem;
+main > section > details > summary::marker, main > section > details > summary::-webkit-details-marker {
+  color: #003814;
+  font-size: 2rem;
 }
-main > section > article h1 {
-  color: #006633;
+main > section > details > summary {
+  cursor: pointer;
+  opacity: 1;
+}
+main > section > details > summary > h2 {
+  display: inline-block;
+  margin-left: -0.5rem;
+}
+main > section > details > section {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 500ms;
+}
+main > section > details[open] {
+  background-color: rgba(0, 0, 0, 0.1);
+  max-height: 20rem;
+}
+main > section > details[open] > section {
+  opacity: 1;
 }
 
 body {
