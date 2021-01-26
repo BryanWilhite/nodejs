@@ -24,8 +24,6 @@ npm i --save-dev \
     webpack-dev-server
 
 npm i \
-    @material/icon-button \
-    @material/list \
     @material/top-app-bar \
     @material/typography \
     normalize.css
@@ -57,9 +55,6 @@ npm i --save-dev \
     webpack-dev-server
 
 npm i \
-    @material/card \
-    @material/icon-button \
-    @material/list \
     @material/top-app-bar \
     @material/typography \
     normalize.css \
@@ -88,9 +83,6 @@ npm i --save-dev \
     webpack-dev-server
 
 npm i \
-    @material/card \
-    @material/icon-button \
-    @material/list \
     @material/top-app-bar \
     @material/typography \
     normalize.css \
