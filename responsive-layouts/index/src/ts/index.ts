@@ -3,27 +3,39 @@ import { html, render } from 'lit-html';
 
 const uri = './index.json';
 
-interface MyData { title: string; articles: MyData[]; }
+// TODO: use full Document, Segment and IndexEntry models in `songhay`
+interface Document {
+    title: string;
+}
 
-function display(parentElement: Element | null | undefined, data: MyData[]): void {
+interface Segment {
+    segmentName: string;
+}
+
+interface IndexEntry extends Partial<Segment> {
+    segments?: IndexEntry[];
+    documents?: Partial<Document>[];
+}
+
+function display(parentElement: Element | null | undefined, data: IndexEntry[]): void {
     if (!parentElement) {
         return;
     }
 
-    const getArticleTemplate = (article: MyData) => {
+    const getArticleTemplate = (childSegment: IndexEntry) => {
         return html`<article><h3>${
-            article.title
+            childSegment.segmentName
         }</h3></article>`;
     };
 
-    const getSectionTemplate = (section: MyData, index: number) => {
+    const getSectionTemplate = (segment: IndexEntry, index: number) => {
 
         const summaryTemplate = html`<summary><h2>${
-            section.title
+            segment.segmentName
         }</h2></summary>`;
 
         const sectionTemplate = html`<section>${
-            section?.articles?.map(article => getArticleTemplate(article))
+            segment?.segments?.map(segment => getArticleTemplate(segment))
         }</section>`;
 
         const isOpen = index === 0;
@@ -37,7 +49,7 @@ function display(parentElement: Element | null | undefined, data: MyData[]): voi
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-    const data$ = ajax.getJSON<MyData[]>(uri);
+    const data$ = ajax.getJSON<IndexEntry[]>(uri);
 
     const mainElement = window.document.getElementsByTagName('main')?.item(0);
     const mainSectionElement = mainElement?.getElementsByTagName('section')?.item(0);
