@@ -1,8 +1,8 @@
 import { html, safeHtml } from 'common-tags';
 export function display(data) {
     var _a;
-    const sections = document.getElementsByTagName('section');
-    if (!sections || sections.length === 0) {
+    const section = document.querySelector('section');
+    if (!section) {
         console.error('The expected section is not here.');
         return;
     }
@@ -26,7 +26,6 @@ ${assemblyInfoProperties.map(i => safeHtml `<li><strong>${i}</strong>: ${assembl
 ${feedProperties.map(f => safeHtml `<li>${f}</li>`)}
 </ul>
 `;
-    const section = sections[0];
     section.innerHTML = innerHtml;
 }
 //# sourceMappingURL=display.function.js.map

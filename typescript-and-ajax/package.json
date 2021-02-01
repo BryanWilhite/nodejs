@@ -1,6 +1,6 @@
 {
   "name": "typescript-and-ajax",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This sample means to represent the most minimal set of `npm` packages required for a [SPA](https://en.wikipedia.org/wiki/Single-page_application).",
   "scripts": {
     "bundle": "npx webpack",

@@ -3,8 +3,8 @@ import { html, safeHtml } from 'common-tags';
 import { AppData } from './app-data';
 
 export function display(data: AppData): void {
-    const sections = document.getElementsByTagName('section');
-    if (!sections || sections.length === 0) {
+    const section = document.querySelector('section');
+    if (!section) {
         console.error('The expected section is not here.');
         return;
     }
@@ -32,6 +32,5 @@ ${feedProperties.map(f => safeHtml`<li>${f}</li>`)}
 </ul>
 `;
 
-    const section = sections[0];
     section.innerHTML = innerHtml;
 }
