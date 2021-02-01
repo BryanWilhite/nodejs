@@ -52,8 +52,7 @@ const rx = {
             const indexDataUri = './index.json';
             const data$ = ajax.getJSON<IndexEntry[]>(indexDataUri);
 
-            const mainElement = window.document.getElementsByTagName('main')?.item(0);
-            const mainSectionElement = mainElement?.getElementsByTagName('section')?.item(0);
+            const mainSectionElement = window.document.querySelector('main > section');
 
             data$.subscribe(
                 appData => display(mainSectionElement, appData),

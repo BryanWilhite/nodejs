@@ -34,9 +34,8 @@ const rx = {
 
             const data$ = ajax.getJSON<MyData[]>(uri);
 
-            const mainElement = window.document.getElementsByTagName('main')?.item(0);
-            const mainSectionElement = mainElement?.getElementsByTagName('section')?.item(0);
-        
+            const mainSectionElement = window.document.querySelector('main > section');
+
             data$.subscribe(
                 appData => display(mainSectionElement, appData),
                 err => console.error(err)
