@@ -1,0 +1,20 @@
+{
+    "eleventy": {
+        "version": "0.11.1"
+    },
+    "author": {
+        "email": "bryan.wilhite@gmail.com",
+        "name": "Bryan Wilhite",
+        "github": "BryanWilhite",
+        "twitter": "BryanWilhite",
+        "uriAzureDevOps": "https://songhay.visualstudio.com/",
+        "uriAzurePortal": "https://portal.azure.com/",
+        "uriLinkedIn": "http://www.linkedin.com/in/wilhite",
+        "uriStackOverflow": "http://stackoverflow.com/users/22944/rasx"
+    },
+    "description": "The company dashboard of Songhay System. This site centralizes the professional activities of Bryan D. Wilhite, including feeds from GitHub, StackOverflow, CodePen and blogging activity.",
+    "siteName": "Songhay System",
+    "uri": "http://songhaysystem.com/",
+    "uriCompany": "http://songhaysystem.com/",
+    "uriLogo": "https://songhaystorage.blob.core.windows.net/studio-public/songhay_icon.png"
+}
