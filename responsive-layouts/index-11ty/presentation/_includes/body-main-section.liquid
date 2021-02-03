@@ -1,0 +1,21 @@
+        <section>
+{%- for indexEntry in index -%}
+{%- case forloop.index -%}
+    {%- when 1 -%}
+            <details open>
+    {%- else -%}
+            <details>
+{%- endcase -%}
+                <summary>
+                    <h2>{{ indexEntry.segmentName }}</h2>
+                </summary>
+                <section>
+{%- for segment in indexEntry.segments -%}
+                    <article>
+                        <h3>{{ segment.segmentName }}</h3>
+                    </article>
+{%- endfor -%}
+                </section>
+            </details>
+{%- endfor -%}
+        </section>

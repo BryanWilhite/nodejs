@@ -29,7 +29,7 @@ const rx = {
                     }</h3></article>`;
                 };
 
-                const getSectionTemplate = (segment: IndexEntry, index: number) => {
+                const getDetailsTemplate = (segment: IndexEntry, index: number) => {
 
                     const summaryTemplate = html`<summary><h2>${
                         segment.segmentName
@@ -38,13 +38,13 @@ const rx = {
                     const sectionTemplate = html`<section>${
                         segment?.segments?.map(segment => getArticleTemplate(segment))
                     }</section>`;
-            
+
                     const isOpen = index === 0;
-            
+
                     return html`<details ?open=${isOpen}>${summaryTemplate}${sectionTemplate}</details>`;
                 }
 
-                const template = html`${data?.map((section, i) => getSectionTemplate(section, i))}`;
+                const template = html`${data?.map((section, i) => getDetailsTemplate(section, i))}`;
 
                 render(template, parentElement);
             };
