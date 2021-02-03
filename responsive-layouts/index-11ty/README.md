@@ -32,6 +32,8 @@ touch \
 
 - [eleventy liquid template supported features](https://www.11ty.dev/docs/languages/liquid/#supported-features)
 - “[Tips for Using Snippets in Your Shopify Theme](https://www.shopify.com/partners/blog/88186566-tips-for-using-snippets-in-your-shopify-theme)”
+- “[Create Pages from Data](https://www.11ty.dev/docs/pages-from-data/#create-pages-from-data)”
+- “[Custom Collections](https://www.pborenstein.com/posts/collections/#custom-collections)”
 - [eleventy starter projects](https://www.11ty.dev/docs/starter/)
 
 @[BryanWilhite](https://twitter.com/BryanWilhite)
