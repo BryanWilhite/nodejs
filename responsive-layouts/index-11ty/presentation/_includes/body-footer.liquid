@@ -1,36 +1,36 @@
         <footer class="mdc-typography--caption">
             <section>
-                <a class="svg-sprite" href="https://portal.azure.com/" target="_blank" title="Microsoft Azure Portal">
+                <a class="svg-sprite" href="{{ settings.author.uriAzurePortal }}" target="_blank" title="Microsoft Azure Portal">
                     <svg class="svg-sprite">
                         <use xlink:href="#mdi_azure_24px"></use>
                     </svg>
                 </a>
-                <a class="svg-sprite" href="https://songhay.visualstudio.com/" target="_blank" title="Microsoft Azure DevOps">
+                <a class="svg-sprite" href="{{ settings.author.uriAzureDevOps }}" target="_blank" title="Microsoft Azure DevOps">
                     <svg class="svg-sprite">
                         <use xlink:href="#mdi_visual_studio_24px"></use>
                     </svg>
                 </a>
-                <a class="svg-sprite" href="https://twitter.com/BryanWilhite" target="_blank" title="@BryanWilhite">
+                <a class="svg-sprite" href="https://twitter.com/{{ settings.author.twitter }}" target="_blank" title="@{{ settings.author.twitter }}">
                     <svg class="svg-sprite">
                         <use xlink:href="#mdi_twitter_24px"></use>
                     </svg>
                 </a>
-                <a class="svg-sprite" href="http://www.linkedin.com/in/wilhite" target="_blank" title="@BryanWilhite">
+                <a class="svg-sprite" href="{{ settings.author.uriLinkedIn }}" target="_blank" title="@{{ settings.author.twitter }}">
                     <svg class="svg-sprite">
                         <use xlink:href="#mdi_linkedin_24px"></use>
                     </svg>
                 </a>
-                <a class="svg-sprite" href="http://stackoverflow.com/users/22944/rasx" target="_blank" title="@BryanWilhite">
+                <a class="svg-sprite" href="{{ settings.author.uriStackOverflow }}" target="_blank" title="@{{ settings.author.twitter }}">
                     <svg class="svg-sprite">
                         <use xlink:href="#mdi_stack_overflow_24px"></use>
                     </svg>
                 </a>
-                <a class="svg-sprite" href="https://github.com/BryanWilhite" target="_blank" title="@BryanWilhite">
+                <a class="svg-sprite" href="https://github.com/{{ settings.author.github }}" target="_blank" title="@{{ settings.author.twitter }}">
                     <svg class="svg-sprite">
                         <use xlink:href="#mdi_github_circle_24px"></use>
                     </svg>
                 </a>
-                <a class="svg-sprite" href="http://songhayblog.azurewebsites.net/entry/feed.xml" target="_blank" title="RSS feed">
+                <a class="svg-sprite" href="{{ settings.feed.uri }}" target="_blank" title="RSS feed">
                     <svg class="svg-sprite">
                         <use xlink:href="#mdi_rss_24px"></use>
                     </svg>
@@ -39,7 +39,10 @@
             <section>
                 <p>
                     another stone tribal move by
-                    <a href="http://songhaysystem.com/">Songhay System</a>
+                    <a href="{{ settings.uriCompany }}">Songhay System</a>
+                </p>
+                <p>
+                    powered by <a href="https://www.11ty.dev/">eleventy</a> {{ settings.eleventy.version }}
                 </p>
             </section>
         </footer>

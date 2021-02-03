@@ -13,8 +13,15 @@
         "uriStackOverflow": "http://stackoverflow.com/users/22944/rasx"
     },
     "description": "The company dashboard of Songhay System. This site centralizes the professional activities of Bryan D. Wilhite, including feeds from GitHub, StackOverflow, CodePen and blogging activity.",
-    "siteName": "Songhay System",
+    "feed": {
+        "filename": "feed.xml",
+        "path": "/entry/feed.xml",
+        "uri": "http://songhayblog.azurewebsites.net/entry/feed.xml",
+        "id": "http://songhayblog.azurewebsites.net/"
+    },
+    "siteName": "SonghaySystem(::)",
     "uri": "http://songhaysystem.com/",
     "uriCompany": "http://songhaysystem.com/",
+    "uriIcon": "https://songhaystorage.blob.core.windows.net/studio-public/favicon.ico",
     "uriLogo": "https://songhaystorage.blob.core.windows.net/studio-public/songhay_icon.png"
 }
