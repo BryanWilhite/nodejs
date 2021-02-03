@@ -26,7 +26,12 @@ const sharedConfig = {
     name: 'shared-config',
     plugins: [
         new webpack.ProgressPlugin(),
-        new CleanWebpackPlugin(),
+        new CleanWebpackPlugin({
+            dry: false,
+            verbose: true,
+            cleanStaleWebpackAssets: true,
+            protectWebpackAssets: true,
+        }),
         new MiniCssExtractPlugin({
             filename: '[name].min.css',
         })
@@ -62,7 +67,7 @@ const sharedConfig = {
     },
 };
 
-const blogIndexConfig = () => ({
+const blogIndexConfig = {
     name: 'blog-index-config',
     devServer: {
         ...sharedDevServerConfig,
@@ -81,9 +86,9 @@ const blogIndexConfig = () => ({
         filename: '[name].min.js',
         path: path.resolve(__dirname, 'blog-index', '_bundles'),
     },
-});
+};
 
-const indexConfig = () => ({
+const indexConfig = {
     name: 'index-config',
     devServer: {
         ...sharedDevServerConfig,
@@ -102,9 +107,31 @@ const indexConfig = () => ({
         filename: '[name].min.js',
         path: path.resolve(__dirname, 'index', '_bundles'),
     },
-});
+};
+
+const index11tyConfig = {
+    name: 'index-11ty-config',
+    devServer: {
+        ...sharedDevServerConfig,
+        contentBase: path.join(__dirname, 'index-11ty', 'app'),
+    },
+    entry: {
+        styles: [
+            `./index-11ty/src/css/index.css`,
+        ],
+        scripts: [
+            './node_modules/@material/top-app-bar/component.js',
+            `./index-11ty/src/ts/index.ts`
+        ]
+    },
+    output: {
+        filename: '[name].min.js',
+        path: path.resolve(__dirname, 'index-11ty', 'app', '_bundles'),
+    },
+};
 
 module.exports = [
-    { ...sharedConfig, ...indexConfig() },
-    { ...sharedConfig, ...blogIndexConfig() },
+    { ...sharedConfig, ...blogIndexConfig },
+    { ...sharedConfig, ...indexConfig },
+    { ...sharedConfig, ...index11tyConfig },
 ];

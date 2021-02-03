@@ -3,10 +3,9 @@ module.exports = function (config) {
         dir: {
             input: '.',
             output: '../app',
-            includes: 'templates'
         },
         htmlTemplateEngine: 'liquid',
         markdownTemplateEngine: 'liquid',
-        templateFormats: ['html', 'md', 'liquid', 'png']
+        templateFormats: ['html', 'md', 'liquid', 'png'],
     };
 };

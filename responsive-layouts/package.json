@@ -5,8 +5,11 @@
   "scripts": {
     "blog-index:sass:transpile": "npx sass ./blog-index/src/scss/index.scss ./blog-index/src/css/index.css --load-path ./node_modules",
     "index:sass:transpile": "npx sass ./index/src/scss/index.scss ./index/src/css/index.css --load-path ./node_modules",
+    "index-11ty:sass:transpile": "npx sass ./index-11ty/src/scss/index.scss ./index-11ty/src/css/index.css --load-path ./node_modules",
+    "index-11ty-build": "cd ./index-11ty/presentation && npx eleventy",
     "start:blog-index": "npx webpack serve --mode=development --config-name=blog-index-config",
     "start:index": "npx webpack serve --mode=development --config-name=index-config",
+    "start:index-11ty": "npx webpack serve --mode=development --config-name=index-11ty-config",
     "webpack:bundle": "npx webpack --mode=production"
   },
   "author": "rasx@songhaysytem.com",

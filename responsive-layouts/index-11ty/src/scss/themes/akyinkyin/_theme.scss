@@ -1,0 +1,25 @@
+@import './palette';
+
+$mdc-typography-font-family: unquote(
+    '"Segoe UI", Roboto, "Helvetica Neue", sans-serif'
+);
+
+:root {
+    --mdc-theme-background: #{$greys-background};
+    --mdc-theme-primary: #{$akyinkyin-dark-tone};
+}
+
+a {
+    &.index {
+        &:active,
+        &:link,
+        &:visited {
+            color: $akyinkyin-light-tint;
+            text-decoration: none;
+        }
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: $akyinkyin-base;
+        }
+    }
+}
