@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" type="image/x-icon" href="{{ settings.uriIcon }}" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../../_bundles/styles.min.css" />
+
+        <script src="../../_bundles/styles.min.js"></script>
+        <script src="../../_bundles/scripts.min.js"></script>
+
+        <title>{{ settings.siteName }}</title>
+    </head>
+
+    <body class="mdc-theme--background mdc-typography">
+{% include body-svg %}
+{% include body-header %}
+        <main>
+        <section>
+            <details open>
+                <summary>
+                    <h2>{{ segment.segmentName }}</h2>
+                </summary>
+                <ul>
+{%- for document in segment.documents -%}
+                    <li>{{ document.title }}</li>
+{%- endfor -%}
+                </ul>
+            </details>
+        </section>
+{% include body-main-aside %}
+        </main>
+{% include body-footer %}
+    </body>
+
+</html>

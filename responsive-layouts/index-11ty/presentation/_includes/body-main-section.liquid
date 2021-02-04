@@ -9,13 +9,13 @@
                 <summary>
                     <h2>{{ indexEntry.segmentName }}</h2>
                 </summary>
-                <section>
+                <ul>
 {%- for segment in indexEntry.segments -%}
-                    <article>
-                        <h3>{{ segment.segmentName }}</h3>
-                    </article>
+                    <li>
+                        <a href="./index/{{ segment.segmentName | slug }}/">{{ segment.segmentName }}</a>
+                    </li>
 {%- endfor -%}
-                </section>
+                </ul>
             </details>
 {%- endfor -%}
         </section>
