@@ -1317,16 +1317,29 @@ main > section > details > summary > h2 {
   display: inline-block;
   margin-left: -0.5rem;
 }
-main > section > details > section {
+main > section > details > ul {
+  list-style: none;
   opacity: 0;
   transition-property: opacity;
   transition-duration: 500ms;
+}
+main > section > details > ul > li {
+  display: block;
+  margin-bottom: 1rem;
+}
+main > section > details > ul > li > a:active, main > section > details > ul > li > a:link, main > section > details > ul > li > a:visited {
+  color: #003814;
+  text-decoration: none;
+}
+main > section > details > ul > li > a:hover {
+  text-decoration: underline;
+  text-decoration-color: #006633;
 }
 main > section > details[open] {
   background-color: rgba(0, 0, 0, 0.1);
   max-height: 20rem;
 }
-main > section > details[open] > section {
+main > section > details[open] > ul {
   opacity: 1;
 }
 

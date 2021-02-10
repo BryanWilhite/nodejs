@@ -24,10 +24,29 @@ main {
                 }
             }
 
-            & > section {
+            & > ul {
+                list-style: none;
                 opacity: 0;
                 transition-property: opacity;
                 transition-duration: 500ms;
+
+                & > li {
+                    display: block;
+                    margin-bottom: 1rem;
+
+                    & > a {
+                        &:active,
+                        &:link,
+                        &:visited {
+                            color: $akyinkyin-dark-tone;
+                            text-decoration: none;
+                        }
+                        &:hover {
+                            text-decoration: underline;
+                            text-decoration-color: $akyinkyin-base;
+                        }
+                    }
+                }
             }
         }
 
@@ -35,7 +54,7 @@ main {
             background-color: rgba($color: #000000, $alpha: 0.1);
             max-height: 20rem;
 
-            & > section {
+            & > ul {
                 opacity: 1;
             }
         }

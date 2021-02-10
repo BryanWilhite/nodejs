@@ -22,11 +22,11 @@
         <section>
             <details open>
                 <summary>
-                    <h2>{{ segment.segmentName }}</h2>
+                    <h2 class="mdc-typography--headline2">{{ segment.segmentName }}</h2>
                 </summary>
                 <ul>
 {%- for document in segment.documents -%}
-                    <li>{{ document.title }}</li>
+                    <li class="mdc-typography--headline3">{{ document.title }}</li>
 {%- endfor -%}
                 </ul>
             </details>

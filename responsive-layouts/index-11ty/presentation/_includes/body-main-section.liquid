@@ -7,11 +7,11 @@
             <details>
 {%- endcase -%}
                 <summary>
-                    <h2>{{ indexEntry.segmentName }}</h2>
+                    <h2 class="mdc-typography--headline2">{{ indexEntry.segmentName }}</h2>
                 </summary>
                 <ul>
 {%- for segment in indexEntry.segments -%}
-                    <li>
+                    <li class="mdc-typography--headline3">
                         <a href="./index/{{ segment.segmentName | slug }}/">{{ segment.segmentName }}</a>
                     </li>
 {%- endfor -%}
