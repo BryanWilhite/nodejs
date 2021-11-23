@@ -20,8 +20,8 @@
         "normalize.css": "^8.0.1",
         "ts-node": "^9.1.1",
         "typescript": ">=3.0.0 <3.9.7",
-        "webpack": "^5.11.0",
-        "webpack-cli": "^4.2.0"
+        "webpack": "^5.64.2",
+        "webpack-cli": "^4.9.1"
     },
     "dependencies": {
         "bootstrap": "^3.4.1"
