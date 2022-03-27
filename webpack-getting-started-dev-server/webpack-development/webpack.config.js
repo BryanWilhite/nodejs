@@ -20,8 +20,19 @@ module.exports = {
     mode: 'development',
     devtool: 'inline-source-map',
     devServer: {
-        contentBase: './dist',
-        open: false,
+        client: {
+            overlay: true,
+            progress: true,
+        },
+        compress: false,
+        liveReload: true,
+        open: true,
         port: 3030,
+        server: 'http',
+        static: {
+            directory: path.join(__dirname, 'dist'),
+            serveIndex: true,
+            watch: true,
+        },
     }
 };
