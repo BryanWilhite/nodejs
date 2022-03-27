@@ -15,6 +15,6 @@ export declare class MyElement extends LitElement {
     /**
      * Implement `render` to define a template for your element.
      */
-    render(): import("lit-element").TemplateResult;
+    render(): import("lit-html").TemplateResult<1>;
 }
 //# sourceMappingURL=my-element.d.ts.map
