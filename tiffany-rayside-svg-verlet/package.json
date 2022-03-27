@@ -3,21 +3,21 @@
     "version": "1.0.0",
     "description": "see README.md",
     "scripts": {
+        "build": "npx gulp autoprefixer",
         "start": "cd .. && http-server . -o -c-1"
     },
     "author": "Tiffany Rayside",
     "license": "ISC",
-    "dependencies": {},
     "repository": {
         "type": "git",
         "url": "https://github.com/BryanWilhite/nodejs.git"
     },
     "devDependencies": {
-        "autoprefixer": "^7.1.4",
+        "autoprefixer": "^10.4.4",
         "gulp": "^4.0.0",
-        "gulp-postcss": "^7.0.0",
-        "gulp-sourcemaps": "^2.6.1",
-        "postcss-nested": "^2.1.2",
-        "postcss-simple-vars": "^4.1.0"
+        "gulp-postcss": "^9.0.1",
+        "gulp-sourcemaps": "^3.0.0",
+        "postcss-nested": "^5.0.6",
+        "postcss-simple-vars": "^6.0.3"
     }
 }

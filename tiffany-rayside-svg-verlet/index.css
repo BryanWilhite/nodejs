@@ -14,16 +14,9 @@ body {
 }
 
 body {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
     padding: 0;
     margin: 0;
     overflow: hidden;
@@ -36,8 +29,7 @@ body {
 }
 
 body .input {
-        -ms-flex-item-align: center;
-            align-self: center;
+        align-self: center;
         padding-top: 0.25rem;
     }
 
@@ -92,8 +84,7 @@ body .input input[type="range"]::-moz-range-thumb {
         }
 
 body #note {
-        -ms-flex-item-align: center;
-            align-self: center;
+        align-self: center;
         margin-top: .2rem;
         font-size: .7rem;
     }
@@ -104,8 +95,7 @@ body #note {
 
 .svg svg {
         background: #3B3740;
-        -webkit-box-shadow: inset 4px 4px 16px 12px hsla(0, 0%, 05%, .15);
-                box-shadow: inset 4px 4px 16px 12px hsla(0, 0%, 05%, .15);
+        box-shadow: inset 4px 4px 16px 12px hsla(0, 0%, 05%, .15);
         border-radius: 5px;
     }
 
