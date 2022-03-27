@@ -4,9 +4,13 @@ import { CoreComponent } from './core.component';
 
 
 @NgModule({
-  declarations: [CoreComponent],
+  declarations: [
+    CoreComponent
+  ],
   imports: [
   ],
-  exports: [CoreComponent]
+  exports: [
+    CoreComponent
+  ]
 })
 export class CoreModule { }
