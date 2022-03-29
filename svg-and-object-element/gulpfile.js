@@ -5,7 +5,7 @@ const gulp = require("gulp"),
 gulp.task("default", function() {
     console.log("converting SVG to PNG...");
     let input = path.join(__dirname, "circle.svg");
-    svg_to_png.convert(input, "./").then(function() {
+    return svg_to_png.convert(input, "./").then(function() {
         console.log("...converted SVG to PNG.");
     });
 });

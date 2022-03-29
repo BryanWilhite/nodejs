@@ -14,7 +14,7 @@
     },
     "devDependencies": {
         "autoprefixer": "^10.4.4",
-        "gulp": "^4.0.0",
+        "gulp": "^3.9.1",
         "gulp-postcss": "^9.0.1",
         "gulp-sourcemaps": "^3.0.0",
         "postcss-nested": "^5.0.6",
