@@ -9,7 +9,7 @@
     "author": "Bryan D. Wilhite",
     "license": "ISC",
     "dependencies": {
-        "jquery-validation": "^1.19.2"
+        "jquery-validation": "^1.19.4"
     },
     "devDependencies": {
         "rollup": "^2.32.1"
