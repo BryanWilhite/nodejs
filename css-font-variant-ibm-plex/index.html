@@ -7,13 +7,21 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <style>
             @font-face {
-                font-family: 'Fira Sans';
-                src: url(./FiraSans-Regular.woff2) format('woff2');
+                font-family: 'IBM Plex Sans';
+                src: url(./IBMPlexSerif-Text.woff2) format('woff2');
             }
 
             body {
-                font-family: 'Fira Sans';
+                font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
                 font-size: 1.5rem;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            tbody > tr > th {
+                text-align: right;
             }
 
             td {
@@ -69,12 +77,25 @@
                 font-variant: no-historical-ligatures;
             }
 
-            tbody>tr:nth-child(12)>td>span {
+            tbody>tr:nth-child(12)>td {
                 font-variant: slashed-zero;
             }
 
             tbody>tr:nth-child(13)>td {
+                font-feature-settings: "ordn" on;
                 font-variant: ordinal;
+            }
+
+            tbody>tr:nth-child(14)>td {
+                font-variant: oldstyle-nums;
+            }
+
+            tbody>tr:nth-child(15)>td {
+                font-variant: diagonal-fractions;
+            }
+
+            tbody>tr:nth-child(16)>td {
+                font-variant: stacked-fractions;
             }
         </style>
         <title>the `font-variant` property</title>
@@ -88,6 +109,9 @@
                 </th>
             </thead>
             <tbody>
+                <tr>
+                    <th colspan="2">IBM Plex® typeface [<a href="https://github.com/IBM/plex#readme">GitHub</a>]</th>
+                </tr>
                 <tr>
                     <th><code>normal</code></th>
                     <td>Hello world!</td>
@@ -118,27 +142,39 @@
                 </tr>
                 <tr>
                     <th><code>common-ligatures</code></th>
-                    <td>Manoeuvring to affinity!</td>
+                    <td>Manoeuvring through flaming affinity!</td>
                 </tr>
                 <tr>
                     <th><code>no-common-ligatures</code></th>
-                    <td>Manoeuvring to affinity!</td>
+                    <td>Manoeuvring through flaming affinity!</td>
                 </tr>
                 <tr>
                     <th><code>historical-ligatures</code></th>
-                    <td>Manoeuvring to affinity!</td>
+                    <td>Manoeuvring through flaming affinity!</td>
                 </tr>
                 <tr>
                     <th><code>no-historical-ligatures</code></th>
-                    <td>Manoeuvring to affinity!</td>
+                    <td>Manoeuvring through flaming affinity!</td>
                 </tr>
                 <tr>
                     <th><code>slashed-zero</code></th>
-                    <td>40,<span>000</span> pounds</td>
+                    <td>40,000 pounds</td>
                 </tr>
                 <tr>
                     <th><code>ordinal</code></th>
                     <td>1st, 2nd, 3rd</td>
+                </tr>
+                <tr>
+                    <th><code>oldstyle-nums</code></th>
+                    <td>40,000 pounds</td>
+                </tr>
+                <tr>
+                    <th><code>diagonal-fractions</code></th>
+                    <td>1/2, 2/3, 4/5 or 8/10</td>
+                </tr>
+                <tr>
+                    <th><code>stacked-fractions</code></th>
+                    <td>1/2, 2/3, 4/5 or 8/10</td>
                 </tr>
             </tbody>
         </table>
