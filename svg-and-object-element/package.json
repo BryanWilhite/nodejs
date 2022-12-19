@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "see README.md",
   "scripts": {
-    "build": "npx gulp",
+    "apt": "apt list --installed | grep \"imagemagick\"",
+    "convert": "convert -background transparent circle.svg circle.png",
     "start": "cd .. && http-server . -o -c-1"
   },
   "author": "Bryan D. Wilhite",
@@ -11,9 +12,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/BryanWilhite/nodejs.git"
-  },
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "svg-to-png": "^4.0.0"
   }
 }
