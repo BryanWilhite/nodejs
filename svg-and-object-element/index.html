@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link href="../css-shared/dist/styles.css" rel="stylesheet" />
+    <link href="../css-shared/styles/bulma.css" rel="stylesheet" />
     <style>
         .circle-fallback {
             background-image: url(./circle.png);
@@ -19,8 +19,8 @@
     <title>SVG and the object Element</title>
 </head>
 
-<body>
-    <h1>SVG and the <code>object</code> Element</h1>
+<body class="container p-4">
+    <h1 class="is-size-1">SVG and the <code>object</code> Element</h1>
     <div>
         <object data="./circle.svg" type="image/svg+xml">
             <div class="circle-fallback"></div>
@@ -33,7 +33,7 @@
         </object>
         <span>fallback!</span>
     </div>
-    <h2>SVG with the <code>anchor</code> and <code>object</code> elements</h2>
+    <h2 class="is-size-2 pt-4">SVG with the <code>anchor</code> and <code>object</code> elements</h2>
     <div>
         <a href="https://stackoverflow.com/a/17133804/22944" style="display: inline-block;" target="_blank">
             <object data="./circle.svg" style="pointer-events: none;" type="image/svg+xml">

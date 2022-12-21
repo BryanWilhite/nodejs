@@ -1,9 +1,9 @@
-#BackContainer {
+#back-container {
     margin: 24px auto;
     max-width: 1024px;
 }
 
-#BackFlow {
+#back-flow {
     background: url(http://dummyimage.com/1024x768/ccc/cfc.png) no-repeat center center;
     -webkit-background-size: contain;
     -moz-background-size: contain;

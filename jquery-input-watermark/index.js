@@ -18,7 +18,7 @@
                 }
             })
             .blur(function() {
-                if ($(this).val() === watermarkText) {
+                if ($(this).val() === '') {
                     $(this)
                         .val(watermarkText)
                         .addClass('Watermark');

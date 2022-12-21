@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link href="../css-shared/dist/styles.css" rel="stylesheet" />
+    <link href="../css-shared/styles/bulma.css" rel="stylesheet" />
 
     <script src="../d3-shared/d3.js"></script>
     <script src="./index.js"></script>
@@ -42,9 +42,9 @@
     <title>D3: Mike Bostock: “Let’s Make a Bar Chart”</title>
 </head>
 
-<body>
-    <h1>D3: Mike Bostock: “Let’s Make a Bar Chart”</h1>
-    <h2>Manual Chart</h2>
+<body class="container p-4">
+    <h1 class="is-size-1">D3: Mike Bostock: “Let’s Make a Bar Chart”</h1>
+    <h2 class="is-size-2 pt-4">Manual Chart</h2>
     <div class="chart manual-chart">
         <div style="width: 40px;">4</div>
         <div style="width: 80px;">8</div>
@@ -53,10 +53,10 @@
         <div style="width: 230px;">23</div>
         <div style="width: 420px;">42</div>
     </div>
-    <h2>D3 Chart</h2>
+    <h2 class="is-size-2 pt-4">D3 Chart</h2>
     <div class="chart d3-chart"></div>
 
-    <h2>Manual SVG Chart</h2>
+    <h2 class="is-size-2 pt-4">Manual SVG Chart</h2>
     <svg class="svg-chart manual-svg-chart" width="420" height="120">
         <g transform="translate(0,0)">
             <rect width="40" height="19"></rect>
@@ -83,7 +83,7 @@
             <text x="417" y="9.5" dy=".35em">42</text>
         </g>
       </svg>
-      <h2>D3 SVG Chart</h2>
+      <h2 class="is-size-2 pt-4">D3 SVG Chart</h2>
       <svg class="svg-chart d3-svg-chart"></svg>
       <p><a href="./external-data.html">next: <em>Loading Data</em></a></p>
   </body>

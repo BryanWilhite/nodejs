@@ -10,8 +10,8 @@ div > div {
     text-align: center;
 }
 
-#lorempix {
-    background: url(http://lorempixel.com/720/405/) no-repeat center center;
+#dave-bg {
+    background: url(http://placekitten.com/720/405/) no-repeat center center;
     background-size: cover;
     height: 0;
     padding-bottom: 56.25%;

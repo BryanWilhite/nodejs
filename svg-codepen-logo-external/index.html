@@ -7,18 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link href="../css-shared/dist/styles.css" rel="stylesheet" />
+    <link href="../css-shared/styles/bulma.css" rel="stylesheet" />
     <link href="./index.css" rel="stylesheet" />
 
     <title>CodePen Logo in external SVG</title>
 </head>
 
-<body>
-    <h1>CodePen Logo in external SVG</h1>
+<body class="container p-4">
+    <h1 class="is-size-1">CodePen Logo in external SVG</h1>
     <img class="svg" src="./codepen-logo.svg#path10" />
 
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 763 152">
-        <use xlink:href="./codepen-logo.svg"></use>
+    <svg xmlns="http://www.w3.org/2000/svg" width="763" height="152">
+        <image xlink:href="./codepen-logo.svg" width="763" height="152" />
     </svg>
 
     <span class="svg codepen icon"></span>

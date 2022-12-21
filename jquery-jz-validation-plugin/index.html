@@ -1,93 +1,95 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta name="description" content="This is a sample for my self-education." />
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        <meta name="description" content="This is a sample for my self-education." />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link href="../css-shared/dist/styles.css" rel="stylesheet" />
-    <link href="./index.css" rel="stylesheet" />
+        <link href="../css-shared/styles/bulma.css" rel="stylesheet" />
+        <link href="./index.css" rel="stylesheet" />
 
-    <script src="./index.bundled.js"></script>
+        <script src="./index.bundled.js"></script>
 
-    <title>jQuery: Jörn Zaefferer’s validation plug-in with bootstrap layout</title>
-</head>
+        <title>jQuery: Jörn Zaefferer’s validation plug-in with bootstrap layout</title>
+    </head>
 
-<body>
-    <h1>jQuery: Jörn Zaefferer's validation plug-in with bootstrap layout</h1>
-    <form id="DataFormFlow" class="form-horizontal" method="get" action="#">
-        <div class="form-group">
-            <label class="col-sm-2" for="InputFullName">Full Name:<span class="DataRequired">*</span></label>
-            <div class="col-sm-10">
-                <input class="form-control required" id="InputFullName" name="FullName" type="text" />
+    <body class="container p-4">
+        <h1 class="has-text-centered is-size-2">jQuery: Jörn Zaefferer’s validation plug-in with Bulma layout</h1>
+        <form id="DataFormFlow" method="get" action="#">
+            <div class="field">
+                <label class="label" for="InputFullName">Full Name:<span class="DataRequired">*</span></label>
+                <div class="control">
+                    <input class="input required" id="InputFullName" name="FullName" type="text" />
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <label class="col-sm-2" for="InputEmail">Email:<span class="DataRequired">*</span></label>
-            <div class="col-sm-10">
-                <input class="form-control required email" id="InputEmail" name="Email" type="text" />
+            <div class="field">
+                <label class="label" for="InputEmail">Email:<span class="DataRequired">*</span></label>
+                <div class="control">
+                    <input class="input required email" id="InputEmail" name="Email" type="text" />
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <label class="col-sm-2" for="InputNotes">Notes:<span class="DataRequired">*</span></label>
-            <div class="col-sm-10">
-                <textarea class="form-control required" id="InputNotes" name="Notes" cols="30" rows="4"></textarea>
+            <div class="field">
+                <label class="label" for="InputNotes">Notes:<span class="DataRequired">*</span></label>
+                <div class="control">
+                    <textarea class="textarea required" id="InputNotes" name="Notes" cols="30" rows="4"></textarea>
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <label class="col-sm-2" for="InputOptions">Your Options:<span class="DataRequired">*</span></label>
-            <div class="col-sm-10">
-                <select class="form-control required" id="InputOptions" name="YourOptions">
-                <option value="">Default Option</option>
-                <!--FUNKYKB: use value="" to trigger required -->
-                <optgroup label="Option Group Label">
-                    <option>Option 1</option>
-                    <option>Option 2</option>
-                    <option>Option 3</option>
-                    <option>Option 4</option>
-                </optgroup>
-                <optgroup label="Another Option Group Label">
-                    <option>Option one</option>
-                    <option>Option two</option>
-                    <option>Option three</option>
-                </optgroup>
-            </select>
+            <div class="field">
+                <label class="label" for="InputOptions">Your Options:<span class="DataRequired">*</span></label>
+                <div class="control">
+                    <div class="select">
+                        <select class="required" id="InputOptions" name="YourOptions">
+                            <option value="">Default Option</option>
+                            <!--FUNKYKB: use value="" to trigger required -->
+                            <optgroup label="Option Group Label">
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                                <option>Option 4</option>
+                            </optgroup>
+                            <optgroup label="Another Option Group Label">
+                                <option>Option one</option>
+                                <option>Option two</option>
+                                <option>Option three</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
             </div>
-        </div>
-        <fieldset class="col-sm-12 form-group">
-            <legend>Checkbox Group <span class="GroupDataRequired">*</span></legend>
-            <label for="Check1" class="checkbox-inline">
-            <input id="Check1" class="required" name="CheckGroup[]" type="checkbox" />
-            Check1
-        </label>
-            <label for="Check2" class="checkbox-inline">
-            <input id="Check2" name="CheckGroup[]" type="checkbox" />
-            Check2
-        </label>
-            <label for="Check3" class="checkbox-inline">
-            <input id="Check3" name="CheckGroup[]" type="checkbox" />
-            Check3
-        </label>
-        </fieldset>
-        <fieldset class="col-sm-12 form-group">
-            <legend>Radio Group <span class="GroupDataRequired">*</span></legend>
-            <label for="Radio1" class="radio-inline">
-            <input id="Radio1" class="required" name="RadioGroup" type="radio" />
-            Radio1
-        </label>
-            <label for="Radio2" class="radio-inline">
-            <input id="Radio2" name="RadioGroup" type="radio" />
-            Radio2
-        </label>
-            <label for="Radio3" class="radio-inline">
-            <input id="Radio3" name="RadioGroup" type="radio" />
-            Radio3
-        </label>
-        </fieldset>
-        <button class="btn btn-primary">Submit</button>
-    </form>
-</body>
+            <fieldset class="field">
+                <legend>Checkbox Group <span class="GroupDataRequired">*</span></legend>
+                <label for="Check1" class="checkbox">
+                    <input id="Check1" class="required" name="CheckGroup[]" type="checkbox" />
+                    Check1
+                </label>
+                <label for="Check2" class="checkbox">
+                    <input id="Check2" name="CheckGroup[]" type="checkbox" />
+                    Check2
+                </label>
+                <label for="Check3" class="checkbox">
+                    <input id="Check3" name="CheckGroup[]" type="checkbox" />
+                    Check3
+                </label>
+            </fieldset>
+            <fieldset class="col-sm-12 field">
+                <legend>Radio Group <span class="GroupDataRequired">*</span></legend>
+                <label for="Radio1" class="radio">
+                    <input id="Radio1" class="required" name="RadioGroup" type="radio" />
+                    Radio1
+                </label>
+                <label for="Radio2" class="radio">
+                    <input id="Radio2" name="RadioGroup" type="radio" />
+                    Radio2
+                </label>
+                <label for="Radio3" class="radio">
+                    <input id="Radio3" name="RadioGroup" type="radio" />
+                    Radio3
+                </label>
+            </fieldset>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </body>
 
 </html>

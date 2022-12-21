@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta name="description" content="This is a sample for my self-education." />
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        <meta name="description" content="This is a sample for my self-education." />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link href="../css-shared/dist/styles.css" rel="stylesheet" />
-    <link href="./index.css" rel="stylesheet" />
+        <link href="../css-shared/styles/bulma.css" rel="stylesheet" />
+        <link href="./index.css" rel="stylesheet" />
 
-    <script src="../jquery-shared/dist/scripts.js"></script>
-    <script src="../css-shared/dist/scripts.js"></script>
-    <script src="./index.js"></script>
+        <script src="../jquery-shared/dist/scripts.js"></script>
+        <script src="./index.js"></script>
 
-    <title>responsive strip of fixed inline blocks</title>
-</head>
+        <title>responsive strip of fixed inline blocks</title>
+    </head>
 
-<body>
-    <h1>responsive strip of fixed inline blocks</h1>
-    <div class="block-container header">
-        <div class="col-md-10 col-xs-8">
-            <h2>strip of fixed blocks</h2>
+    <body class="py-4">
+        <h1 class="has-text-centered is-size-1">responsive strip of fixed inline blocks</h1>
+        <div class="block-container header columns">
+            <div class="column is-three-fifths">
+                <h2 class="is-size-3">strip of fixed blocks</h2>
+            </div>
+            <div class="column controls is-two-fifths">
+                <button type="button" class="btn btn-link command left">
+                    <span class="is-size-3" aria-hidden="true">⮜</span>
+                </button>
+                <button type="button" class="btn btn-link command right">
+                    <span class="is-size-3" aria-hidden="true">⮞</span>
+                </button>
+            </div>
         </div>
-        <div class="col-md-2 col-xs-4 controls">
-            <button type="button" class="btn btn-link command left">
-            <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
-        </button>
-            <button type="button" class="btn btn-link command right">
-            <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
-        </button>
+        <div class="block-container wrapper">
+            <div><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span></div>
         </div>
-    </div>
-    <div class="block-container wrapper">
-        <div><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span></div>
-    </div>
-</body>
+    </body>
 
 </html>
