@@ -36,7 +36,7 @@
 
         <div id="audio-player-container">
             <div class="is-flex">
-                <input id="audio-player-volume" name="volume" type="range" value=100 oninput="handleChange(event)" />
+                <input id="audio-player-volume" name="volume" type="range" value=100 />
                 <svg class="svg-sprite" width="80" height="80">
                     <use xlink:href="#speaker"></use>
                     <use id="sound-waves" xlink:href="#sound-waves"></use>
@@ -47,13 +47,14 @@
         <p><small class="is-size-6">This sample is based on <a href="https://codepen.io/JamesManningR/pen/OJPaLNY">a CodePen by James Manning</a></small></p>
 
         <script>
-            function handleChange(event) {
+            const input = window.document.getElementById('audio-player-volume');
+
+            input.addEventListener('input', event => {
                 const inputValue = event.target.value;
-                const svg = event.target.nextElementSibling;
-                const soundWaves = svg.querySelector('#sound-waves');
+                const soundWaves = event.target.nextElementSibling.getElementById('sound-waves');
 
                 soundWaves.style.clipPath = `circle(${inputValue * 0.65 + 45}% at -75% 50%)`;
-            }
+            });
         </script>
     </body>
 
