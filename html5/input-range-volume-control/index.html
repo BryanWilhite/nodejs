@@ -14,8 +14,12 @@
                 border: solid 2px;
                 border-radius: 8px;
                 margin: 1rem auto;
-                padding: 2rem;
-                width: 20rem;
+                width: 25rem;
+            }
+
+            #audio-player-container #volume-output {
+                height: 2rem;
+                width: 3rem;
             }
         </style>
 
@@ -34,9 +38,10 @@
             </symbol>
         </svg>
 
-        <div id="audio-player-container">
-            <div class="is-flex">
-                <input id="audio-player-volume" name="volume" type="range" value=100 />
+        <div id="audio-player-container" class="p-6">
+            <div class="is-flex is-align-items-center">
+                <output id="volume-output" for="volume-range" class="is-size-6">100</output>
+                <input id="volume-range" name="volume" type="range" value=100 />
                 <svg class="svg-sprite" width="80" height="80">
                     <use xlink:href="#speaker"></use>
                     <use id="sound-waves" xlink:href="#sound-waves"></use>
@@ -44,16 +49,19 @@
             </div>
         </div>
 
-        <p><small class="is-size-6">This sample is based on <a href="https://codepen.io/JamesManningR/pen/OJPaLNY">a CodePen by James Manning</a></small></p>
+        <p><small class="is-size-6">This sample is based on <a href="https://codepen.io/JamesManningR/pen/OJPaLNY">a CodePen by James Manning</a></small> and the very excellent article, “<a href="https://css-tricks.com/lets-create-a-custom-audio-player/">Let’s Create a Custom Audio Player</a>,” by Idorenyin Udoh.</p>
 
         <script>
-            const input = window.document.getElementById('audio-player-volume');
+            const input = window.document.getElementById('volume-range');
 
             input.addEventListener('input', event => {
                 const inputValue = event.target.value;
                 const soundWaves = event.target.nextElementSibling.getElementById('sound-waves');
 
                 soundWaves.style.clipPath = `circle(${inputValue * 0.65 + 45}% at -75% 50%)`;
+
+                const output = event.target.previousElementSibling;
+                output.value = parseInt(inputValue);
             });
         </script>
     </body>
