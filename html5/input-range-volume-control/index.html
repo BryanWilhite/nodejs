@@ -21,6 +21,12 @@
                 height: 2rem;
                 width: 3rem;
             }
+
+            #audio-player-container>#volume-block>button {
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
         </style>
 
         <title>the `input[type="range"]` element: volume control</title>
@@ -39,30 +45,74 @@
         </svg>
 
         <div id="audio-player-container" class="p-6">
-            <div class="is-flex is-align-items-center">
+            <div id="volume-block" class="is-flex is-align-items-center">
                 <output id="volume-output" for="volume-range" class="is-size-6">100</output>
                 <input id="volume-range" name="volume" type="range" value=100 />
-                <svg class="svg-sprite" width="80" height="80">
-                    <use xlink:href="#speaker"></use>
-                    <use id="sound-waves" xlink:href="#sound-waves"></use>
-                </svg>
+                <button data-mute="false" data-input-cache="100">
+                    <svg class="svg-sprite" width="80" height="80">
+                        <use xlink:href="#speaker"></use>
+                        <use id="sound-waves" xlink:href="#sound-waves"></use>
+                    </svg>
+                </button>
             </div>
         </div>
 
         <p><small class="is-size-6">This sample is based on <a href="https://codepen.io/JamesManningR/pen/OJPaLNY">a CodePen by James Manning</a></small> and the very excellent article, “<a href="https://css-tricks.com/lets-create-a-custom-audio-player/">Let’s Create a Custom Audio Player</a>,” by Idorenyin Udoh.</p>
 
         <script>
-            const input = window.document.getElementById('volume-range');
+            (() => {
+                const rx = {
+                    progressiveAudio: {
+                        container: window.document.getElementById('audio-player-container'),
+                        handleInputEvent: inputValue => {
+                            const volumeBlock = rx.progressiveAudio.container.querySelector('#volume-block');
+                            const soundWaves = volumeBlock.querySelector('button>svg>#sound-waves');
+                            soundWaves.style.clipPath = `circle(${inputValue * 0.65 + 45}% at -75% 50%)`;
 
-            input.addEventListener('input', event => {
-                const inputValue = event.target.value;
-                const soundWaves = event.target.nextElementSibling.getElementById('sound-waves');
+                            const output = volumeBlock.querySelector('#volume-output');
+                            output.value = parseInt(inputValue);
 
-                soundWaves.style.clipPath = `circle(${inputValue * 0.65 + 45}% at -75% 50%)`;
+                            const volumeRange = volumeBlock.querySelector('#volume-range');
+                            volumeRange.value = parseInt(inputValue);
+                        },
+                        handleMuteEvent: button => {
+                            const dataset = button.dataset;
 
-                const output = event.target.previousElementSibling;
-                output.value = parseInt(inputValue);
-            });
+                            const volumeBlock = rx.progressiveAudio.container.querySelector('#volume-block');
+                            const volumeSprite = volumeBlock.querySelector('button>svg');
+                            const volumeRange = volumeBlock.querySelector('#volume-range');
+
+                            if (button.dataset.mute === 'true') {
+                                volumeRange.disabled = false;
+                                rx.progressiveAudio.handleInputEvent(dataset.inputCache);
+                                volumeSprite.style.opacity = '1';
+
+                                button.dataset.mute = 'false';
+                            } else {
+                                dataset.inputCache = volumeRange.value;
+                                rx.progressiveAudio.handleInputEvent(0);
+                                volumeSprite.style.opacity = '0.5';
+                                volumeRange.disabled = true;
+
+                                button.dataset.mute = 'true';
+                            }
+                        }
+                    }
+                };
+                const inputForVolume = window.document.getElementById('volume-range');
+
+                inputForVolume.addEventListener('input', event => {
+                    const inputValue = event.target.value;
+                    rx.progressiveAudio.handleInputEvent(inputValue);
+                });
+
+                const buttonForMute = window.document.querySelector('#volume-block>button');
+
+                buttonForMute.addEventListener('click', event => {
+                    const button = event.target;
+                    rx.progressiveAudio.handleMuteEvent(button);
+                });
+            })();
         </script>
     </body>
 
