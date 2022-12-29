@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="description" content="This is a sample for my self-education." />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link href="../../css-shared/styles/bulma.css" rel="stylesheet" />
+
+        <style>
+            #audio-player-container {
+                border: solid 2px;
+                border-radius: 8px;
+                margin: 1rem auto;
+                width: 25rem;
+            }
+
+            #audio-player-container>#play-pause-block>button {
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+        </style>
+
+        <title>the `input[type="range"]` element: play/pause control</title>
+    </head>
+
+    <body class="container has-text-centered p-4">
+        <h1 class="is-size-1 mb-4">the <code>input[type="range"] element</code>: play/pause control</h1>
+
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="play">
+                <path xmlns="http://www.w3.org/2000/svg" d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+            </symbol>
+            <symbol id="pause">
+                <path xmlns="http://www.w3.org/2000/svg" d="M14,19H18V5H14M6,19H10V5H6V19Z"></path>
+            </symbol>
+        </svg>
+
+        <div id="audio-player-container" class="p-3">
+            <div id="play-pause-block" class="is-flex is-align-items-center">
+                <button data-playing="false">
+                    <svg class="svg-sprite" width="96" height="96" viewBox="0 0 24 24">
+                        <use id="play" xlink:href="#play"></use>
+                        <use id="pause" xlink:href="#pause"></use>
+                    </svg>
+                </button>
+                <input id="play-pause-range" name="volume" type="range" value=0 />
+                <output id="play-pause-progress-output" for="play-pause-range" class="is-size-5">00:00</output>
+                <output id="play-pause-duration-output" for="play-pause-range" class="is-size-6">/00:00</output>
+            </div>
+        </div>
+
+        <p><small class="is-size-6">This sample is based on the very excellent article, “<a href="https://css-tricks.com/lets-create-a-custom-audio-player/">Let’s Create a Custom Audio Player</a>,” by Idorenyin Udoh.</p>
+    </body>
+
+</html>
