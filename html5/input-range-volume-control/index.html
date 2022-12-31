@@ -99,14 +99,14 @@
                         }
                     }
                 };
-                const inputForVolume = window.document.getElementById('volume-range');
+                const inputForVolume = rx.progressiveAudio.container.querySelector('#volume-range');
 
                 inputForVolume.addEventListener('input', event => {
                     const inputValue = event.target.value;
                     rx.progressiveAudio.handleInputEvent(inputValue);
                 });
 
-                const buttonForMute = window.document.querySelector('#volume-block>button');
+                const buttonForMute = rx.progressiveAudio.container.querySelector('#volume-block>button');
 
                 buttonForMute.addEventListener('click', event => {
                     const button = event.target;

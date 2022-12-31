@@ -22,6 +22,10 @@
                 border: none;
                 cursor: pointer;
             }
+
+            #audio-player-container>#play-pause-block>button>svg>use {
+                opacity: 0;
+            }
         </style>
 
         <title>the `input[type="range"]` element: play/pause control</title>
@@ -44,8 +48,8 @@
             <div id="play-pause-block" class="is-flex is-align-items-center">
                 <button data-playing="false">
                     <svg class="svg-sprite" width="96" height="96">
-                        <use xlink:href="#play"></use>
-                        <use xlink:href="#pause"></use>
+                        <use id="play" xlink:href="#play"></use>
+                        <use id="pause" xlink:href="#pause"></use>
                     </svg>
                 </button>
                 <input id="play-pause-range" name="volume" type="range" value=0 />
@@ -55,6 +59,48 @@
         </div>
 
         <p><small class="is-size-6">This sample is based on the very excellent article, “<a href="https://css-tricks.com/lets-create-a-custom-audio-player/">Let’s Create a Custom Audio Player</a>,” by Idorenyin Udoh.</p>
+        <script>
+            (() => {
+                const rx = {
+                    progressiveAudio: {
+                        container: window.document.getElementById('audio-player-container'),
+                        handlePlayPauseEvent: button => {
+                            const dataset = button.dataset;
+
+                            const playPauseBlock = rx.progressiveAudio.container.querySelector('#play-pause-block');
+                            const playSprite = playPauseBlock.querySelector('button>svg>#play');
+                            const pauseSprite = playPauseBlock.querySelector('button>svg>#pause');
+
+                            if (button.dataset.playing === 'true') {
+                                playSprite.style.opacity = '1';
+                                pauseSprite.style.opacity = '0';
+
+                                button.dataset.playing = 'false';
+                            } else {
+                                playSprite.style.opacity = '0';
+                                pauseSprite.style.opacity = '1';
+
+                                button.dataset.playing = 'true';
+                            }
+                        },
+                        initializePlayPauseBlock: () => {
+                            const playPauseBlock = rx.progressiveAudio.container.querySelector('#play-pause-block');
+                            const playSprite = playPauseBlock.querySelector('button>svg>#play');
+                            playSprite.style.opacity = '1';
+                        }
+                    }
+                };
+
+                const buttonForPlayPause = rx.progressiveAudio.container.querySelector('#play-pause-block>button');
+
+                buttonForPlayPause.addEventListener('click', event => {
+                    const button = event.target;
+                    rx.progressiveAudio.handlePlayPauseEvent(button);
+                });
+
+                rx.progressiveAudio.initializePlayPauseBlock();
+            })();
+        </script>
     </body>
 
 </html>
