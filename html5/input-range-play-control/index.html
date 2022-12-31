@@ -32,19 +32,20 @@
 
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
             <symbol id="play">
-                <path xmlns="http://www.w3.org/2000/svg" d="M8,5.14V19.14L19,12.14L8,5.14Z"></path>
+                <polygon points="24,0 96,48 24,96" />
             </symbol>
             <symbol id="pause">
-                <path xmlns="http://www.w3.org/2000/svg" d="M14,19H18V5H14M6,19H10V5H6V19Z"></path>
+                <polygon points="12,0 36,0 36,96 12,96" />
+                <polygon points="48,0 72,0 72,96 48,96" />
             </symbol>
         </svg>
 
         <div id="audio-player-container" class="p-3">
             <div id="play-pause-block" class="is-flex is-align-items-center">
                 <button data-playing="false">
-                    <svg class="svg-sprite" width="96" height="96" preserveAspectRatio="none slice" viewBox="0 0 24 24">
-                        <use id="play" xlink:href="#play"></use>
-                        <use id="pause" xlink:href="#pause"></use>
+                    <svg class="svg-sprite" width="96" height="96">
+                        <use xlink:href="#play"></use>
+                        <use xlink:href="#pause"></use>
                     </svg>
                 </button>
                 <input id="play-pause-range" name="volume" type="range" value=0 />
