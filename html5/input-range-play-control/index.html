@@ -45,6 +45,7 @@
         </svg>
 
         <div id="audio-player-container" class="p-3">
+            <audio src="../mp3/Mikey Dread - 05.mp3" preload="metadata"></audio>
             <div id="play-pause-block" class="is-flex is-align-items-center">
                 <button data-playing="false">
                     <svg class="svg-sprite" width="96" height="96">
@@ -55,7 +56,8 @@
                 <input id="play-pause-range" name="volume" type="range" value=0 />
                 <span class="is-flex is-flex-wrap-nowrap is-align-content-center pl-2">
                     <output id="play-pause-progress-output" for="play-pause-range" class="is-size-5 is-align-self-center">00:00</output>
-                    <output id="play-pause-duration-output" for="play-pause-range" class="is-size-6 is-align-self-center">/00:00</output>
+                    <span class="is-size-6 is-align-self-center">/</span>
+                    <output id="play-pause-duration-output" for="play-pause-range" class="is-size-6 is-align-self-center">00:00</output>
                 </span>
             </div>
         </div>
@@ -66,6 +68,13 @@
                 const rx = {
                     progressiveAudio: {
                         container: window.document.getElementById('audio-player-container'),
+                        getTimeDisplayText: (secs) => {
+                            const minutes = Math.floor(secs / 60);
+                            const seconds = Math.floor(secs % 60);
+                            const returnedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
+
+                            return `${minutes}:${returnedSeconds}`;
+                        },
                         handlePlayPauseEvent: button => {
                             const dataset = button.dataset;
 
@@ -85,6 +94,29 @@
                                 button.dataset.playing = 'true';
                             }
                         },
+                        initializeAudioElement: () => {
+                            const audio = rx.progressiveAudio.container.querySelector('audio');
+                            const playPauseBlock = rx.progressiveAudio.container.querySelector('#play-pause-block');
+                            const playPauseRange = playPauseBlock.querySelector('#play-pause-range');
+                            const outputForProgress = playPauseBlock.querySelector('span>#play-pause-duration-output');
+
+                            const displayDuration = () => {
+                                outputForProgress.value = rx.progressiveAudio.getTimeDisplayText(audio.duration);
+                            };
+                            const setPlayPauseRangeMax = () => {
+                                playPauseRange.max = Math.floor(audio.duration);
+                            };
+
+                            if (audio.readyState > 0) {
+                                displayDuration();
+                                setPlayPauseRangeMax();
+                            } else {
+                                audio.addEventListener('loadedmetadata', () => {
+                                    displayDuration();
+                                    setPlayPauseRangeMax();
+                                });
+                            }
+                        },
                         initializePlayPauseBlock: () => {
                             const playPauseBlock = rx.progressiveAudio.container.querySelector('#play-pause-block');
                             const playSprite = playPauseBlock.querySelector('button>svg>#play');
@@ -100,6 +132,7 @@
                     rx.progressiveAudio.handlePlayPauseEvent(button);
                 });
 
+                rx.progressiveAudio.initializeAudioElement();
                 rx.progressiveAudio.initializePlayPauseBlock();
             })();
         </script>
