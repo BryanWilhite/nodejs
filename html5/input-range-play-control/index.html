@@ -68,40 +68,57 @@
                 const rx = {
                     progressiveAudio: {
                         container: window.document.getElementById('audio-player-container'),
+                        containerAudioElement: () => rx.progressiveAudio.container.querySelector('audio'),
+                        containerOutputForProgress: () => rx.progressiveAudio.containerPlayPauseBlock().querySelector('#play-pause-progress-output'),
+                        containerPauseSprite: () => rx.progressiveAudio.containerPlayPauseBlock().querySelector('button>svg>#pause'),
+                        containerPlayPauseBlock: () => rx.progressiveAudio.container.querySelector('#play-pause-block'),
+                        containerPlayPauseRange: () => rx.progressiveAudio.container.querySelector('#play-pause-range'),
+                        containerPlaySprite: () => rx.progressiveAudio.containerPlayPauseBlock().querySelector('button>svg>#play'),
+                        displayProgress: () => {
+                            const playPauseRange = rx.progressiveAudio.containerPlayPauseRange();
+                            const outputForProgress = rx.progressiveAudio.containerOutputForProgress();
+                            outputForProgress.value = rx.progressiveAudio.getTimeDisplayText(playPauseRange.value);
+                        },
                         getTimeDisplayText: (secs) => {
                             const minutes = Math.floor(secs / 60);
                             const seconds = Math.floor(secs % 60);
-                            const returnedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
 
-                            return `${minutes}:${returnedSeconds}`;
+                            const display = n => n < 10 ? `0${n}` : `${n}`;
+
+                            return `${display(minutes)}:${display(seconds)}`;
                         },
                         handlePlayPauseEvent: button => {
+                            const audio = rx.progressiveAudio.containerAudioElement();
                             const dataset = button.dataset;
 
-                            const playPauseBlock = rx.progressiveAudio.container.querySelector('#play-pause-block');
-                            const playSprite = playPauseBlock.querySelector('button>svg>#play');
-                            const pauseSprite = playPauseBlock.querySelector('button>svg>#pause');
+                            const playPauseBlock = rx.progressiveAudio.containerPlayPauseBlock();
+                            const playSprite = rx.progressiveAudio.containerPlaySprite();
+                            const pauseSprite = rx.progressiveAudio.containerPauseSprite();
 
                             if (button.dataset.playing === 'true') {
                                 playSprite.style.opacity = '1';
                                 pauseSprite.style.opacity = '0';
 
                                 button.dataset.playing = 'false';
+                                audio.pause();
+                                window.cancelAnimationFrame(rx.progressiveAudio.playAnimationId);
                             } else {
                                 playSprite.style.opacity = '0';
                                 pauseSprite.style.opacity = '1';
-
+                                
                                 button.dataset.playing = 'true';
+                                audio.play();
+                                window.requestAnimationFrame(rx.progressiveAudio.playCallbackForRA);
                             }
                         },
                         initializeAudioElement: () => {
-                            const audio = rx.progressiveAudio.container.querySelector('audio');
-                            const playPauseBlock = rx.progressiveAudio.container.querySelector('#play-pause-block');
-                            const playPauseRange = playPauseBlock.querySelector('#play-pause-range');
-                            const outputForProgress = playPauseBlock.querySelector('span>#play-pause-duration-output');
+                            const audio = rx.progressiveAudio.containerAudioElement();
+                            const playPauseBlock = rx.progressiveAudio.containerPlayPauseBlock();
+                            const playPauseRange = rx.progressiveAudio.containerPlayPauseRange();
+                            const outputForDuration = playPauseBlock.querySelector('span>#play-pause-duration-output');
 
                             const displayDuration = () => {
-                                outputForProgress.value = rx.progressiveAudio.getTimeDisplayText(audio.duration);
+                                outputForDuration.value = rx.progressiveAudio.getTimeDisplayText(audio.duration);
                             };
                             const setPlayPauseRangeMax = () => {
                                 playPauseRange.max = Math.floor(audio.duration);
@@ -118,9 +135,41 @@
                             }
                         },
                         initializePlayPauseBlock: () => {
-                            const playPauseBlock = rx.progressiveAudio.container.querySelector('#play-pause-block');
-                            const playSprite = playPauseBlock.querySelector('button>svg>#play');
+                            const audio = rx.progressiveAudio.containerAudioElement();
+                            const playPauseBlock = rx.progressiveAudio.containerPlayPauseBlock();
+                            const playPauseRange = rx.progressiveAudio.containerPlayPauseRange();
+                            const playSprite = rx.progressiveAudio.containerPlaySprite();
+                            const outputForProgress = rx.progressiveAudio.containerOutputForProgress();
+
+                            const displayCurrentTime = () => {
+                                audio.currentTime = playPauseRange.value;
+                            };
+
+                            playPauseRange.addEventListener('input', () => {
+                                rx.progressiveAudio.displayProgress();
+                                if(!audio.paused) {
+                                    window.cancelAnimationFrame(rx.progressiveAudio.playAnimationId);
+                                }
+                            });
+                            playPauseRange.addEventListener('change', () => {
+                                displayCurrentTime();
+                                if(!audio.paused) {
+                                    window.requestAnimationFrame(rx.progressiveAudio.playCallbackForRA);
+                                }
+                            });
+
                             playSprite.style.opacity = '1';
+                        },
+                        playAnimationId: null,
+                        playCallbackForRA: () => {
+                            const audio = rx.progressiveAudio.containerAudioElement();
+                            const playPauseRange = rx.progressiveAudio.containerPlayPauseRange();
+                            const outputForProgress = rx.progressiveAudio.containerOutputForProgress();
+
+                            playPauseRange.value = Math.floor(audio.currentTime);
+                            rx.progressiveAudio.displayProgress();
+
+                            rx.progressiveAudio.playAnimationId = window.requestAnimationFrame(rx.progressiveAudio.playCallbackForRA);
                         }
                     }
                 };
