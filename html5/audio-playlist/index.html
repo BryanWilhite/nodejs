@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="description" content="This is a sample for my self-education." />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link href="../../css-shared/styles/bulma.css" rel="stylesheet" />
+
+        <style>
+            #audio-player-container {
+                border: solid 2px;
+                border-radius: 8px;
+                margin: 1rem auto;
+                width: 25rem;
+            }
+        </style>
+
+        <title>the `audio` element: MP3 playlist</title>
+    </head>
+
+    <body class="container has-text-centered p-4">
+        <h1 class="is-size-1 mb-4">the <code>audio element</code>: MP3 playlist</h1>
+
+        <div id="audio-player-container" class="p-6">
+            <audio controls src="../mp3/Mikey Dread - 05.mp3"></audio>
+            <ol class="panel">
+                <li class="panel-block is-active"><a data-src="../mp3/Mikey Dread - 05.mp3">Mikey Dread - 05</a></li>
+                <li class="panel-block"><a data-src="../mp3/Mikey Dread - 06.mp3">Mikey Dread - 06</a></li>
+                <li class="panel-block"><a data-src="../mp3/Mikey Dread - 07.mp3">Mikey Dread - 07</a></li>
+            </ol>
+        </div>
+
+        <p><small class="is-size-6">This work is based on <a href="https://github.com/kolber/audiojs/blob/master/demos/test5.html">an audio.js sample</a></small>.</p>
+
+        <script>
+            (() => {
+                const rx = {
+                    progressiveAudio: {
+                    }
+                };
+            })();
+        </script>
+    </body>
+
+</html>
