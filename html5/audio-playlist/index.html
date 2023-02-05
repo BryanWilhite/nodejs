@@ -26,10 +26,10 @@
 
         <div id="audio-player-container" class="p-6">
             <audio controls src="../mp3/Mikey Dread - 05.mp3"></audio>
-            <ol class="panel">
-                <li class="panel-block is-active"><a data-src="../mp3/Mikey Dread - 05.mp3">Mikey Dread - 05</a></li>
-                <li class="panel-block"><a data-src="../mp3/Mikey Dread - 06.mp3">Mikey Dread - 06</a></li>
-                <li class="panel-block"><a data-src="../mp3/Mikey Dread - 07.mp3">Mikey Dread - 07</a></li>
+            <ol id="playlist" class="panel">
+                <li class="panel-block is-active"><span class="panel-icon is-size-3">⬤</span><a data-src="../mp3/Mikey Dread - 05.mp3">Mikey Dread - 05</a></li>
+                <li class="panel-block"><span class="panel-icon is-size-3">⬤</span><a data-src="../mp3/Mikey Dread - 06.mp3">Mikey Dread - 06</a></li>
+                <li class="panel-block"><span class="panel-icon is-size-3">⬤</span><a data-src="../mp3/Mikey Dread - 07.mp3">Mikey Dread - 07</a></li>
             </ol>
         </div>
 
@@ -39,8 +39,35 @@
             (() => {
                 const rx = {
                     progressiveAudio: {
+                        container: window.document.getElementById('audio-player-container'),
+                        containerAudioElement: () => rx.progressiveAudio.container.querySelector('audio'),
+                        containerPlaylist: () => rx.progressiveAudio.container.querySelector('#playlist'),
+                        initializePlaylist: () => {
+                            const playlist = rx.progressiveAudio.containerPlaylist();
+
+                            playlist.querySelectorAll('li>a').forEach(a => {
+                                a.addEventListener('click', event => {
+                                    const cssClassIsActive = 'is-active';
+                                    const audio = rx.progressiveAudio.containerAudioElement();
+                                    const liParent = a.parentElement;
+                                    const src = a.getAttribute('data-src');
+
+                                    audio.setAttribute('src', src);
+                                    audio.load();
+                                    audio.play();
+
+                                    playlist.querySelectorAll('li').forEach(li => {
+                                        li.classList.remove(cssClassIsActive);
+                                    });
+
+                                    liParent.classList.add(cssClassIsActive);
+                                });
+                            });
+                        }
                     }
                 };
+
+                rx.progressiveAudio.initializePlaylist();
             })();
         </script>
     </body>
