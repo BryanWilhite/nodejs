@@ -11,16 +11,24 @@
 
         <style>
             #audio-player-container {
-                border: solid 2px;
-                border-radius: 8px;
                 margin: 1rem auto;
-                width: 25rem;
+                width: 224px; /* width of legacy player */
             }
 
             #audio-player-container>#play-pause-block>button {
-                background: transparent;
+                background: black;
                 border: none;
+                border-radius: 48px;
+                border-width: 0;
+                color: antiquewhite;
                 cursor: pointer;
+                width:48px;
+                height: 48px;
+                padding: 0;
+            }
+
+            #audio-player-container>#play-pause-block>input {
+                width: 90px;
             }
 
             #audio-player-container>#play-pause-block>button>svg>use {
@@ -32,7 +40,7 @@
     </head>
 
     <body class="container has-text-centered p-4">
-        <h1 class="is-size-1 mb-4">the <code>input[type="range"] element</code>: play/pause control</h1>
+        <h1 class="is-size-1 mb-4">the <code>input[type="range"]</code> element: play/pause control</h1>
 
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
             <symbol id="play">
@@ -44,20 +52,20 @@
             </symbol>
         </svg>
 
-        <div id="audio-player-container" class="p-3">
+        <div id="audio-player-container">
             <audio src="../mp3/Mikey Dread - 05.mp3" preload="metadata"></audio>
             <div id="play-pause-block" class="is-flex is-align-items-center">
                 <button>
-                    <svg class="svg-sprite" width="96" height="96">
+                    <svg class="svg-sprite" fill="currentColor" viewbox="-40 -50 180 190">
                         <use id="play" xlink:href="#play"></use>
                         <use id="pause" xlink:href="#pause"></use>
                     </svg>
                 </button>
-                <input id="play-pause-range" name="volume" type="range" value=0 />
-                <span class="is-flex is-flex-wrap-nowrap is-align-content-center pl-2">
-                    <output id="play-pause-progress-output" for="play-pause-range" class="is-size-5 is-align-self-center">00:00</output>
-                    <span class="is-size-6 is-align-self-center">/</span>
-                    <output id="play-pause-duration-output" for="play-pause-range" class="is-size-6 is-align-self-center">00:00</output>
+                <input id="play-pause-range" class="ml-1" type="range" value=0 />
+                <span class="is-flex is-flex-wrap-nowrap is-align-content-center ml-1">
+                    <output id="play-pause-progress-output" for="play-pause-range" class="is-size-6 is-align-self-center">00:00</output>
+                    <span class="is-size-7 is-align-self-center">/</span>
+                    <output id="play-pause-duration-output" for="play-pause-range" class="is-size-7 is-align-self-center">00:00</output>
                 </span>
             </div>
         </div>
