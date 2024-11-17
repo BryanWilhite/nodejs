@@ -1,5 +1,12 @@
 // Create a class for the element
 export default class WordCount extends HTMLParagraphElement {
+    static countWords(node) {
+        const text = node.innerText || node.textContent;
+        if (!text) {
+            return -1;
+        }
+        return text.split(/\s+/g).length;
+    }
     constructor() {
         // Always call super first in constructor
         super();
@@ -20,13 +27,6 @@ export default class WordCount extends HTMLParagraphElement {
         setInterval(function () {
             text.textContent = getCount();
         }, 200);
-    }
-    static countWords(node) {
-        const text = node.innerText || node.textContent;
-        if (!text) {
-            return -1;
-        }
-        return text.split(/\s+/g).length;
     }
 }
 WordCount.elementName = 'word-count';
