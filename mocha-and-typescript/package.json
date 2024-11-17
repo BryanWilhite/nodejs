@@ -2,17 +2,20 @@
     "name": "mocha-and-typescript",
     "version": "1.0.0",
     "description": "see README",
+    "config": {
+        "bt": "packages/mocha-getting-started-browser/__tests__"
+    },
     "scripts": {
         "lerna:build:typescript": "npx lerna exec -- tsc",
         "lerna:clean": "npx lerna clean --yes",
         "lerna:install": "npx lerna exec -- npm i",
         "lerna:test:mocha-getting-started": "npx lerna exec --scope=@songhay/mocha-getting-started -- ts-mocha -p __tests__/tsconfig.json __tests__/**/*.spec.ts",
         "lerna:test:typescript-language": "npx lerna exec --scope=@songhay/typescript-language -- ts-mocha -p __tests__/tsconfig.json __tests__/**/*.spec.ts",
-        "http-server:test:mocha-getting-started-browser-1": "http-server . -o packages/mocha-getting-started-browser/__tests__/step-1 -c-1",
-        "tsc:test:mocha-getting-started-browser-2": "tsc --project packages/mocha-getting-started-browser/__tests__/step-2/tsconfig.json && http-server . -o packages/mocha-getting-started-browser/__tests__/step-2 -c-1",
-        "tsc:test:mocha-getting-started-browser-3": "tsc --project packages/mocha-getting-started-browser/__tests__/step-3/tsconfig.json && http-server . -o packages/mocha-getting-started-browser/__tests__/step-3/ -c-1",
-        "tsc:test:mocha-getting-started-browser-4": "tsc --project packages/mocha-getting-started-browser/__tests__/step-4/tsconfig.json && http-server . -o packages/mocha-getting-started-browser/__tests__/step-4/ -c-1",
-        "tsc:test:mocha-getting-started-browser-5": "tsc --project packages/mocha-getting-started-browser/__tests__/step-5/tsconfig.json && http-server . -o packages/mocha-getting-started-browser/__tests__/step-5/ -c-1"
+        "http-server:test:mocha-getting-started-browser-1": "http-server . -o $npm_package_config_bt/step-1 -c-1",
+        "tsc:test:mocha-getting-started-browser-2": "tsc --project $npm_package_config_bt/step-2/tsconfig.json && http-server . -o $npm_package_config_bt/step-2 -c-1",
+        "tsc:test:mocha-getting-started-browser-3": "tsc --project $npm_package_config_bt/step-3/tsconfig.json && http-server . -o $npm_package_config_bt/step-3/ -c-1",
+        "tsc:test:mocha-getting-started-browser-4": "tsc --project $npm_package_config_bt/step-4/tsconfig.json && http-server . -o $npm_package_config_bt/step-4/ -c-1",
+        "tsc:test:mocha-getting-started-browser-5": "tsc --project $npm_package_config_bt/step-5/tsconfig.json && http-server . -o $npm_package_config_bt/step-5/ -c-1"
     },
     "keywords": [],
     "author": "",
