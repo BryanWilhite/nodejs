@@ -1,13 +1,15 @@
 {
+    "extends": "@tsconfig/strictest/tsconfig.json",
+    "display": "Node 20 over strictest",
     "compilerOptions": {
-        "target": "ES2015",
-        "module": "ES2015",
-        "moduleResolution": "Node",
+        "target": "ES2022",
+        "module": "Node16",
+        "moduleResolution": "node16",
         "rootDir": "./src",
         "outDir": "./",
         "baseUrl": "./packages",
         "lib": [
-            "es2018",
+            "es2023",
             "dom",
             "dom.iterable"
         ],
@@ -16,21 +18,6 @@
                 "./*/src"
             ]
         },
-        "allowSyntheticDefaultImports": true,
-        "declaration": false,
-        "downlevelIteration": false,
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "importHelpers": false,
-        "inlineSources": true,
-        "noFallthroughCasesInSwitch": true,
-        "noImplicitAny": false,
-        "noImplicitReturns": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
-        "skipLibCheck": true,
-        "sourceMap": true,
-        "strict": true,
     },
     "typeRoots": [
         "node_modules/@types"

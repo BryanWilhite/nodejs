@@ -1,19 +1,16 @@
-"use strict";
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-const assert = chai.assert;
+import * as assert from 'assert';
 describe('Array', function () {
     describe('#indexOf()', function () {
         it('should return -1 when the value is not present', function () {
             assert.strictEqual([1, 2, 3].indexOf(4), -1);
         });
+    });
+});
+describe.skip('setImmediate() and done()', function () {
+    it('double done', function (done) {
+        // Calling `done()` twice is an error
+        setImmediate(done);
+        setImmediate(done);
     });
 });
 /**
@@ -38,11 +35,9 @@ describe('asynchronous testing', function () {
         })
             .then(() => done());
     });
-    it('can happen with `async` and `await`', function () {
-        return __awaiter(this, void 0, void 0, function* () {
-            yield delay(oneSecond);
-            assert.ok(true);
-        });
+    it('can happen with `async` and `await`', async function () {
+        await delay(oneSecond);
+        assert.ok(true);
     });
 });
 describe.skip('Mocha and the use of arrow functions', () => {
@@ -71,4 +66,3 @@ describe('hooks', function () {
     it('is test two', function () { assert.ok(true); });
     it('is test three', function () { assert.ok(true); });
 });
-//# sourceMappingURL=getting-started.spec.js.map

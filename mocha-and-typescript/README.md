@@ -11,14 +11,20 @@ From an [empty sample folder](../mocha-and-typescript):
 
 ```console
 npm init -y
-npm i -D lerna mocha chai typescript tslint ts-mocha @types/mocha @types/expect @types/chai
+npm i -D lerna mocha chai typescript tslint @types/mocha @types/expect @types/chai @tsconfig/strictest
 npx lerna init
 ```
 
 The work here intends to follow [the documentation](https://mochajs.org/#installation) at mochajs.org. And, ideally, the [my C# language study](https://github.com/BryanWilhite/LinqPad) can have Typescript equivalents here.
 
-## Typescript pipeline comments
+## the removal of `ts-mocha`
 
-In a ‘real’ `lerna` repo, there should be at least two different Typescript pipelines: one for the client side and the other for the `node`-based concerns—specifically, the `ts-mocha` concerns. On the `node` side of things `tsconfig` declares `compilerOptions.module: "CommonJS"`.
+I have removed `ts-mocha` from this sample.
+
+A glance at the `ts-mocha` [repo](https://github.com/piotrwitek/ts-mocha) can make one feel like `ts-mocha` has been left behind for about two years or completely abandoned.
+
+I have forced to look into this possibility of abandonment after getting a `ERR_UNKNOWN_FILE_EXTENSION` error from `ts-mocha` with `Unknown file extension ".mts"` where the `.mts` extension is actually ‘native’ to modern TypeScript [📖 [docs](https://www.typescriptlang.org/docs/handbook/modules/theory.html#module-format-detection)] My flippant accusation is that `ts-mocha` is not aware of Typescript “modules” with the `.mts` extension.
+
+On the other hand, I could be mistaken by all of this and was just one `tsconfig.json` editing session away from resolving my issue.
 
 @[BryanWilhite](https://twitter.com/BryanWilhite)

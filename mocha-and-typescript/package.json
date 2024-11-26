@@ -6,11 +6,13 @@
         "bt": "packages/mocha-getting-started-browser/__tests__"
     },
     "scripts": {
-        "lerna:build:typescript": "npx lerna exec -- tsc",
+        "lerna:info": "npx lerna info",
+        "lerna:list": "npx lerna list",
         "lerna:clean": "npx lerna clean --yes",
         "lerna:install": "npx lerna exec -- npm i",
-        "lerna:test:mocha-getting-started": "npx lerna exec --scope=@songhay/mocha-getting-started -- ts-mocha -p __tests__/tsconfig.json __tests__/**/*.spec.ts",
-        "lerna:test:typescript-language": "npx lerna exec --scope=@songhay/typescript-language -- ts-mocha -p __tests__/tsconfig.json __tests__/**/*.spec.ts",
+        "lerna:exec:tsc": "npx lerna exec -- tsc --project __tests__/tsconfig.json",
+        "lerna:exec:mocha:mocha-getting-started": "npx lerna exec --scope=@songhay/mocha-getting-started -- mocha __tests__/js/*.spec.js",
+        "lerna:exec:mocha:typescript-language": "npx lerna exec --scope=@songhay/typescript-language -- mocha __tests__/js/**/*.spec.js",
         "http-server:test:mocha-getting-started-browser-1": "http-server . -o $npm_package_config_bt/step-1 -c-1",
         "tsc:test:mocha-getting-started-browser-2": "tsc --project $npm_package_config_bt/step-2/tsconfig.json && http-server . -o $npm_package_config_bt/step-2 -c-1",
         "tsc:test:mocha-getting-started-browser-3": "tsc --project $npm_package_config_bt/step-3/tsconfig.json && http-server . -o $npm_package_config_bt/step-3/ -c-1",
@@ -23,19 +25,19 @@
     "dependencies": {
         "@material/layout-grid": "^14.0.0",
         "@material/typography": "^14.0.0",
-        "chai": "^4.3.7",
+        "chai": "^5.1.2",
         "normalize.css": "8.0.1",
         "tslib": "^2.4.1"
     },
     "devDependencies": {
-        "@types/chai": "^4.3.4",
+        "@tsconfig/strictest": "^2.0.5",
+        "@types/chai": "^5.0.1",
         "@types/expect": "^24.3.0",
         "@types/mocha": "^10.0.1",
-        "lerna": "^6.1.0",
+        "lerna": "^8.1.9",
         "mocha": "^10.2.0",
-        "ts-mocha": "^10.0.0",
-        "ts-node": "^9.1.1",
+        "ts-node": "^10.9.2",
         "tslint": "^6.1.3",
-        "typescript": "^4.9.4"
+        "typescript": "^5.7.2"
     }
 }

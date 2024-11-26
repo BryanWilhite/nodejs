@@ -1,5 +1,6 @@
 {
     "name": "@songhay/mocha-getting-started-browser",
+    "type": "module",
     "version": "0.0.0",
     "description": "see README",
     "keywords": [],
