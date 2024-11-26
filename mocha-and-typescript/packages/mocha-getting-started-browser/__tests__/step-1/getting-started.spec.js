@@ -1,4 +1,4 @@
-const assert = chai.assert;
+import { assert } from '../../../../node_modules/chai/chai.js'
 
 describe('Array', function () {
     describe('#indexOf()', function () {

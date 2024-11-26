@@ -1,6 +1,7 @@
 {
     "extends": "../tsconfig.json",
     "compilerOptions": {
+        "moduleResolution": "classic",
         "module": "None",
         "rootDir": "./src",
         "outDir": "./js"
