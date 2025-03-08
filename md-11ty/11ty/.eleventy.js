@@ -10,7 +10,7 @@ module.exports = function (config) {
     return {
         dir: {
             input: ".",
-            output: "docs",
+            output: "../app-staging",
             includes: "templates"
         },
         htmlTemplateEngine: "liquid",
