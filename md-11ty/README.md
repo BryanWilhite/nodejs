@@ -15,6 +15,37 @@ With respect to the `package.json` [file](./package.json), run:
 npm i --save-dev eleventy
 ```
 
+## conventional file structure
+
+The current convention in this Studio is to store generator templates and configuration in the `11ty` directory that is pointing at the `app-staging` output directory. In this particular sample, we have:
+
+```console
+.
+├── 11ty
+│   ├── _data
+│   ├── entry
+│   ├── other-entry
+│   └── templates
+│       └── layouts
+└── app-staging
+    ├── entry
+    │   └── one
+    └── not_in_a_collection
+```
+
+The `md-11ty/11ty/.eleventy.js` [file](./md-11ty/11ty/.eleventy.js) specifies the `app-staging` directory:
+
+```javascript
+return {
+    dir: {
+        input: ".",
+        output: "../app-staging",
+        …
+    },
+    …
+};
+```
+
 ## related links
 
 - “[Making A Simple Web Site With The Simplest Static Site Generator, Level 1](https://www.zachleat.com/web/eleventy-tutorial-level-1/)” by @zachleat
