@@ -7,9 +7,11 @@
 
 ## installation
 
-The installation depends on `npx` [[npm](https://www.npmjs.com/package/npx)] being installed globally (`npm i -g npx@latest`).
+One way to install 11ty is to begin with `npm` in a directory structure of your choice. Another way to get started with 11ty is to select a starter project [[📖 docs](https://www.11ty.dev/docs/starter/)] such as the [official eleventy starter site](https://github.com/11ty/eleventy-base-blog).
 
-With respect to the `package.json` [file](./package.json), run:
+As of this writing, I recommend starting with a directory structure of your choice and then studying starter sites, picking and choosing features and settings that you like. This recommended installation depends on `npx` [[npm](https://www.npmjs.com/package/npx)] being installed globally (`npm i -g npx@latest`).
+
+With respect to the location of the `package.json` [file](./11ty/package.json), run:
 
 ```console
 npm i --save-dev eleventy
@@ -28,12 +30,15 @@ The current convention in this Studio is to store generator templates and config
 │   └── templates
 │       └── layouts
 └── app-staging
+    ├── data
     ├── entry
     │   └── one
     └── not_in_a_collection
 ```
 
-The `md-11ty/11ty/.eleventy.js` [file](./md-11ty/11ty/.eleventy.js) specifies the `app-staging` directory:
+The `11ty` directory is where the `npm` root should be—where the `md-11ty/11ty/package.json` [file](./11ty/package.json) resides.
+
+The `md-11ty/11ty/.eleventy.js` [file](./11ty/.eleventy.js) specifies the `app-staging` directory:
 
 ```javascript
 return {
@@ -45,6 +50,21 @@ return {
     …
 };
 ```
+
+## the novelty of the `app-staging/data` directory
+
+The `app-staging/data` [directory](./app-staging/data) stores static data files (in JSON format) that can be used on the live site in a SPA scenario _and_ be used by 11ty builds. The `md-11ty/11ty/.eleventy.js` [file](./11ty/.eleventy.js) `import`s a static JSON file from the `app-staging/data` directory:
+
+```javascript
+import staticJson from '../app-staging/data/static.json' with { type: 'json' };
+
+export default function (config) {
+    config.addGlobalData('staticJson', staticJson);
+    //…
+};
+```
+
+Use of the `addGlobalData` method [📖 [docs](https://www.11ty.dev/docs/data-global-custom/)] is essential here.
 
 ## related links
 
