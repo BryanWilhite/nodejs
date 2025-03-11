@@ -64,7 +64,7 @@ export default function (config) {
 };
 ```
 
-Use of the `addGlobalData` method [📖 [docs](https://www.11ty.dev/docs/data-global-custom/)] is essential here.
+Use of the `addGlobalData` method \[📖 [docs](https://www.11ty.dev/docs/data-global-custom/) \] is essential here. Also, note that “import attributes” \[📖 [docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import/with) \] are being used in the `import` statement, characterized by the `with` keyword.
 
 ## related links
 
