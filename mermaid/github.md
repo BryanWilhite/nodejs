@@ -531,3 +531,117 @@ You can then describe dependencies in a very expressive way. Like the one-liner 
 flowchart TB
     A & B--> C & D
 ```
+
+## Attaching an ID to Edges
+
+```mermaid
+flowchart LR
+  A e1@--> B
+  e1@{ animation: fast }
+```
+
+You can also animate edges by assigning a class to them and then defining animation properties in a `classDef` statement. For example:
+
+```mermaid
+flowchart LR
+  A e1@--> B
+  classDef animate stroke-dasharray: 9,5,stroke-dashoffset: 900,animation: dash 25s linear infinite;
+  class e1 animate
+```
+
+In this snippet:
+
+- `e1@-->` creates an edge with ID `e1`.
+- `classDef animate` defines a class named `animate` with styling and animation properties.
+- `class e1 animate` applies the `animate` class to the edge `e1`.
+
+**Note on Escaping Commas:**
+When setting the `stroke-dasharray` property, remember to escape commas as `\,` since commas are used as delimiters in Mermaid’s style definitions.
+
+## New arrow types
+
+There are new types of arrows supported:
+
+- circle edge
+- cross edge
+
+### Circle edge example
+
+```mermaid
+flowchart LR
+    A --o B
+```
+
+### Cross edge example
+
+```mermaid
+flowchart LR
+    A --x B
+```
+
+## Multi directional arrows
+
+There is the possibility to use multidirectional arrows.
+
+```mermaid
+flowchart LR
+    A o--o B
+    B <--> C
+    C x--x D
+```
+
+## Minimum length of a link
+
+Each node in the flowchart is ultimately assigned to a rank in the rendered
+graph, i.e. to a vertical or horizontal level (depending on the flowchart
+orientation), based on the nodes to which it is linked. By default, links
+can span any number of ranks, but you can ask for any link to be longer
+than the others by adding extra dashes in the link definition.
+
+In the following example, two extra dashes are added in the link from node _B_
+to node _E_, so that it spans two more ranks than regular links:
+
+```mermaid
+flowchart TD
+    A[Start] --> B{Is it?}
+    B -->|Yes| C[OK]
+    C --> D[Rethink]
+    D --> B
+    B ---->|No| E[End]
+```
+
+> **Note** Links may still be made longer than the requested number of ranks
+> by the rendering engine to accommodate other requests.
+
+When the link label is written in the middle of the link, the extra dashes must
+be added on the right side of the link. The following example is equivalent to
+the previous one:
+
+```mermaid
+flowchart TD
+    A[Start] --> B{Is it?}
+    B -- Yes --> C[OK]
+    C --> D[Rethink]
+    D --> B
+    B -- No ----> E[End]
+```
+
+## Special characters that break syntax
+
+It is possible to put text within quotes in order to render more troublesome characters. As in the example below:
+
+```mermaid-example
+flowchart LR
+    id1["This is the (text) in the box"]
+```
+
+### Entity codes to escape characters
+
+It is possible to escape characters using the syntax exemplified here.
+
+```mermaid-example
+    flowchart LR
+        A["A double quote:#quot;"] --> B["A dec char:#9829;"]
+```
+
+Numbers given are base 10, so `#` can be encoded as `#35;`. It is also supported to use HTML character names.
