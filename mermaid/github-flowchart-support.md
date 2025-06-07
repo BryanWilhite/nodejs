@@ -1,4 +1,4 @@
-# Mermaid Support in GitHub
+# Mermaid Flowchart Support in GitHub
 
 ## current version
 
