@@ -655,13 +655,3 @@ flowchart TB
     c1-->c2
     end
 ```
-
-You can also set an explicit id for the subgraph.
-
-```mermaid
-flowchart TB
-    c1-->a2
-    subgraph ide1 [one]
-    a1-->a2
-    end
-```
