@@ -421,12 +421,6 @@ flowchart TD
 flowchart TD
     A@{ shape: tag-rect, label: "Tagged process" }
 ```
-### Font Awesome shape
-
-```mermaid
-flowchart TD
-    A@{ icon: "fa:user", form: "square", label: "User Icon", pos: "t", h: 60 }
-```
 
 ## Links between nodes
 
@@ -712,4 +706,31 @@ flowchart LR
   end
   A --> TOP --> B
   B1 --> B2
+```
+
+## Styling line curves
+
+```mermaid
+flowchart LR
+    id1(Start)-->id2(Stop)
+    style id1 fill:#f9f,stroke:#333,stroke-width:4px
+    style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+```
+
+A shorter form of adding a class is to attach the classname to the node using the `:::`operator as per below:
+
+```mermaid
+flowchart LR
+    A:::someclass --> B
+    classDef someclass fill:#f96
+```
+
+This form can be used when declaring multiple links between nodes:
+
+```mermaid
+flowchart LR
+    A:::foo & B:::bar --> C:::foobar
+    classDef foo stroke:#f00
+    classDef bar stroke:#0f0
+    classDef foobar stroke:#00f
 ```
