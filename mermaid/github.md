@@ -432,70 +432,70 @@ flowchart TD
 
 ### A link with arrow head
 
-```mermaid-example
+```mermaid
 flowchart LR
     A-->B
 ```
 
 ### An open link
 
-```mermaid-example
+```mermaid
 flowchart LR
     A --- B
 ```
 
 ### Text on links
 
-```mermaid-example
+```mermaid
 flowchart LR
     A-- This is the text! ---B
 ```
 
 or
 
-```mermaid-example
+```mermaid
 flowchart LR
     A---|This is the text|B
 ```
 
 ### A link with arrow head and text
 
-```mermaid-example
+```mermaid
 flowchart LR
     A-->|text|B
 ```
 
 or
 
-```mermaid-example
+```mermaid
 flowchart LR
     A-- text -->B
 ```
 
 ### Dotted link
 
-```mermaid-example
+```mermaid
 flowchart LR
    A-.->B;
 ```
 
 ### Dotted link with text
 
-```mermaid-example
+```mermaid
 flowchart LR
    A-. text .-> B
 ```
 
 ### Thick link
 
-```mermaid-example
+```mermaid
 flowchart LR
    A ==> B
 ```
 
 ### Thick link with text
 
-```mermaid-example
+```mermaid
 flowchart LR
    A == text ==> B
 ```
@@ -504,7 +504,7 @@ flowchart LR
 
 This can be a useful tool in some instances where you want to alter the default positioning of a node.
 
-```mermaid-example
+```mermaid
 flowchart LR
     A ~~~ B
 ```
@@ -513,21 +513,21 @@ flowchart LR
 
 It is possible declare many links in the same line as per below:
 
-```mermaid-example
+```mermaid
 flowchart LR
    A -- text --> B -- text2 --> C
 ```
 
 It is also possible to declare multiple nodes links in the same line as per below:
 
-```mermaid-example
+```mermaid
 flowchart LR
    a --> b & c--> d
 ```
 
 You can then describe dependencies in a very expressive way. Like the one-liner below:
 
-```mermaid-example
+```mermaid
 flowchart TB
     A & B--> C & D
 ```
