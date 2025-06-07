@@ -630,7 +630,7 @@ flowchart TD
 
 It is possible to put text within quotes in order to render more troublesome characters. As in the example below:
 
-```mermaid-example
+```mermaid
 flowchart LR
     id1["This is the (text) in the box"]
 ```
@@ -639,9 +639,77 @@ flowchart LR
 
 It is possible to escape characters using the syntax exemplified here.
 
-```mermaid-example
+```mermaid
     flowchart LR
         A["A double quote:#quot;"] --> B["A dec char:#9829;"]
 ```
 
 Numbers given are base 10, so `#` can be encoded as `#35;`. It is also supported to use HTML character names.
+
+## Subgraphs
+
+```mermaid
+flowchart TB
+    c1-->a2
+    subgraph one
+    a1-->a2
+    end
+    subgraph two
+    b1-->b2
+    end
+    subgraph three
+    c1-->c2
+    end
+```
+
+You can also set an explicit id for the subgraph.
+
+```mermaid
+flowchart TB
+    c1-->a2
+    subgraph ide1 [one]
+    a1-->a2
+    end
+```
+
+### flowcharts
+
+With the graphtype flowchart it is also possible to set edges to and from subgraphs as in the flowchart below.
+
+```mermaid
+flowchart TB
+    c1-->a2
+    subgraph one
+    a1-->a2
+    end
+    subgraph two
+    b1-->b2
+    end
+    subgraph three
+    c1-->c2
+    end
+    one --> two
+    three --> two
+    two --> c2
+```
+
+### Direction in subgraphs
+
+With the graphtype flowcharts you can use the direction statement to set the direction which the subgraph will render like in this example.
+
+```mermaid
+flowchart LR
+  subgraph TOP
+    direction TB
+    subgraph B1
+        direction RL
+        i1 -->f1
+    end
+    subgraph B2
+        direction BT
+        i2 -->f2
+    end
+  end
+  A --> TOP --> B
+  B1 --> B2
+```
