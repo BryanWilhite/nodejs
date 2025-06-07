@@ -5,6 +5,7 @@
 ```mermaid
   info
 ```
+## basics
 
 Here is a simple flow chart:
 
@@ -39,3 +40,57 @@ flowchart LR
     markdown --> newLines
 ```
 
+```mermaid
+flowchart TD
+    Start --> Stop
+```
+## shapes
+
+### A node (rhombus)
+
+```mermaid
+flowchart LR
+    id1{This is the text in the box}
+```
+
+### A hexagon node
+
+```mermaid
+flowchart LR
+    id1{{This is the text in the box}}
+```
+
+### Parallelogram
+
+```mermaid
+flowchart TD
+    id1[/This is the text in the box/]
+```
+
+### Parallelogram alt
+
+```mermaid
+flowchart TD
+    id1[\This is the text in the box\]
+```
+
+### Trapezoid
+
+```mermaid
+flowchart TD
+    A[/Christmas\]
+```
+
+### Trapezoid alt
+
+```mermaid
+flowchart TD
+    B[\Go shopping/]
+```
+
+### Double circle
+
+```mermaid
+flowchart TD
+    id1(((This is the text in the circle)))
+```
