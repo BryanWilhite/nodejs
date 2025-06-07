@@ -421,3 +421,113 @@ flowchart TD
 flowchart TD
     A@{ shape: tag-rect, label: "Tagged process" }
 ```
+### Font Awesome shape
+
+```mermaid
+flowchart TD
+    A@{ icon: "fa:user", form: "square", label: "User Icon", pos: "t", h: 60 }
+```
+
+## Links between nodes
+
+### A link with arrow head
+
+```mermaid-example
+flowchart LR
+    A-->B
+```
+
+### An open link
+
+```mermaid-example
+flowchart LR
+    A --- B
+```
+
+### Text on links
+
+```mermaid-example
+flowchart LR
+    A-- This is the text! ---B
+```
+
+or
+
+```mermaid-example
+flowchart LR
+    A---|This is the text|B
+```
+
+### A link with arrow head and text
+
+```mermaid-example
+flowchart LR
+    A-->|text|B
+```
+
+or
+
+```mermaid-example
+flowchart LR
+    A-- text -->B
+```
+
+### Dotted link
+
+```mermaid-example
+flowchart LR
+   A-.->B;
+```
+
+### Dotted link with text
+
+```mermaid-example
+flowchart LR
+   A-. text .-> B
+```
+
+### Thick link
+
+```mermaid-example
+flowchart LR
+   A ==> B
+```
+
+### Thick link with text
+
+```mermaid-example
+flowchart LR
+   A == text ==> B
+```
+
+### An invisible link
+
+This can be a useful tool in some instances where you want to alter the default positioning of a node.
+
+```mermaid-example
+flowchart LR
+    A ~~~ B
+```
+
+### Chaining of links
+
+It is possible declare many links in the same line as per below:
+
+```mermaid-example
+flowchart LR
+   A -- text --> B -- text2 --> C
+```
+
+It is also possible to declare multiple nodes links in the same line as per below:
+
+```mermaid-example
+flowchart LR
+   a --> b & c--> d
+```
+
+You can then describe dependencies in a very expressive way. Like the one-liner below:
+
+```mermaid-example
+flowchart TB
+    A & B--> C & D
+```
