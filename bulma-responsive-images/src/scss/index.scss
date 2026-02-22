@@ -1,0 +1,81 @@
+/*
+    SonghaySystem.com, 2011–2025
+    Bryan D. Wilhite
+    rasx@songhaysystem.com
+
+    Base Color:  `ripe dark green base` (#006633); `red compliment [kuler]` (#b21300)
+    Tints:       `white tint [Seashell]` (#fff5ee); `light-green tint [kuler]` (#00ff7e)
+    Tones:       `blue-green compliment` (#066d73); `dark-red compliment [kuler]` (#660b00); Web-safe216 (#000)
+    Neutrals:    #eaeaea, #636363, #363636;
+
+    http://en.wikipedia.org/wiki/Web_colors
+
+    http://color.adobe.com/
+*/
+
+@charset 'utf-8';
+
+$lightGreenLogoTint: #ccff00;
+$lightGreenTint: #00ff7e;
+$whiteTint: #fff5ee;
+
+$blackTone: #000;
+$blueGreenTone: #066d73;
+$darkRedTone: #660b00;
+
+$lightNeutral: #eaeaea;
+$midNeutral: #636363;
+$darkNeutral: #292f33;
+
+// Override global Sass variables from the /utilities folder
+@use 'bulma/sass/utilities' with (
+    $link: $blueGreenTone,
+    $family-secondary: 'Orbitron'
+);
+
+@forward 'bulma/sass/base';
+@forward 'bulma/sass/helpers';
+
+@forward 'bulma/sass/grid';
+@forward 'bulma/sass/layout';
+
+@forward 'bulma/sass/elements/button';
+@forward 'bulma/sass/elements/icon';
+@forward 'bulma/sass/elements/content';
+@forward 'bulma/sass/elements/notification';
+@forward 'bulma/sass/elements/progress';
+@forward 'bulma/sass/elements/tag';
+
+@forward 'bulma/sass/components/card';
+@forward 'bulma/sass/components/dropdown';
+@forward 'bulma/sass/components/modal';
+@forward 'bulma/sass/components/navbar';
+@forward 'bulma/sass/components/panel';
+
+@forward 'bulma/sass/form/shared';
+@forward 'bulma/sass/form/input-textarea';
+@forward 'bulma/sass/form/select';
+@forward 'bulma/sass/form/tools';
+
+// Import the themes so that all CSS variables have a value
+@forward 'bulma/sass/themes';
+
+// Import the Google Font
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700');
+
+.hero-body > h1 {
+    color: $lightGreenLogoTint;
+
+    & span {
+        vertical-align: text-top;
+    }
+}
+
+.hero-background {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}

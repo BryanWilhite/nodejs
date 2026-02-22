@@ -1,0 +1,45 @@
+{
+    "compilerOptions": {
+        "target": "ES2015",
+        "module": "ES2015",
+        "moduleResolution": "node",
+        "rootDir": "./src/ts",
+        "lib": [
+            "ES2019",
+            "dom",
+            "dom.iterable"
+        ],
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "downlevelIteration": false,
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "inlineSources": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": false,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strict": true,
+    },
+    "include": [
+        "src/ts/*.ts"
+    ],
+    "exclude": [
+        "src/js/**",
+        "**/*.spec.*",
+        "**/__tests__/*",
+        "Songhay.Publications.KinteSpace.Audio/**",
+        "Songhay.Publications.KinteSpace.DataAccess/**",
+        "Songhay.Publications.KinteSpace.Tests/**",
+        "Songhay.Publications.KinteSpace.YT/**",
+    ]
+}
