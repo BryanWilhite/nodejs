@@ -28,8 +28,7 @@ $midNeutral: #636363;
 $darkNeutral: #292f33;
 
 // Override global Sass variables from the /utilities folder
-@use 'bulma/sass/utilities' with (
-    $link: $blueGreenTone,
+@use 'bulma/sass/utilities' with ($link: $blueGreenTone,
     $family-secondary: 'Orbitron'
 );
 
@@ -64,42 +63,46 @@ $darkNeutral: #292f33;
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 @import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700');
 
-.hero {
-    & .hero-background {
-        display: flex;
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: -1;
-    }
+.fixed-grid {
+    &>.grid {
 
-    & h1 {
-        color: $lightGreenLogoTint;
+        &>div,
+        &>img {
+            grid-area: 1 / 1;
+            width: 100%;
+        }
+
+        &>div {
+            max-height: 100vh; //keeps items like h1 in view port
+        }
+        &>div>h1 {
+            color: $lightGreenLogoTint;
+        }
     }
 }
 
 section.cards {
-  container-name: cards;
-  container-type: inline-size;
+    container-name: cards;
+    container-type: inline-size;
 }
 
 .card {
-  overflow: hidden;
+    overflow: hidden;
 }
 
-.card > figure {
-  align-self: center;
+.card>figure {
+    align-self: center;
 }
 
 @container cards (width < 700px) {
-  .card > .image {
-    display: none;
-  }
+    .card>.image {
+        display: none;
+    }
 }
 
-@container cards (width >= 700px) {
-  article.card {
-    display: grid;
-    grid-template-columns: 40% 60%;
-  }
+@container cards (width >=700px) {
+    article.card {
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
 }
