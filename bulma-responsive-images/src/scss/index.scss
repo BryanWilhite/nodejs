@@ -63,20 +63,23 @@ $darkNeutral: #292f33;
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 @import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700');
 
-.fixed-grid {
-    &>.grid {
+section.splash {
+    &.fixed-grid {
+        &>.grid {
 
-        &>div,
-        &>img {
-            grid-area: 1 / 1;
-            width: 100%;
-        }
+            &>div,
+            &>img {
+                grid-area: 1 / 1;
+                width: 100%;
+            }
 
-        &>div {
-            max-height: 100vh; //keeps items like h1 in view port
-        }
-        &>div>h1 {
-            color: $lightGreenLogoTint;
+            &>div {
+                max-height: 100vh; //keeps items like h1 in view port
+            }
+
+            &>div>h1 {
+                color: $lightGreenLogoTint;
+            }
         }
     }
 }
@@ -84,25 +87,29 @@ $darkNeutral: #292f33;
 section.cards {
     container-name: cards;
     container-type: inline-size;
-}
 
-.card {
-    overflow: hidden;
-}
+    &.fixed-grid>.grid>.cell {
+        container-name: cards;
+        container-type: inline-size;
 
-.card>figure {
-    align-self: center;
-}
+        &>article.card {
+            overflow: hidden;
 
-@container cards (width < 700px) {
-    .card>.image {
-        display: none;
-    }
-}
+            &>figure {
+                align-self: center;
+            }
 
-@container cards (width >=700px) {
-    article.card {
-        display: grid;
-        grid-template-columns: 40% 60%;
+            @container cards (width < 769px) {
+                &>.image {
+                    display: none;
+                }
+            }
+
+            @container cards (width >= 769px) {
+                display: grid;
+                grid-template-columns: 40% 60%;
+                max-height: 360px;
+            }
+        }
     }
 }
