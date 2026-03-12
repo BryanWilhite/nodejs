@@ -84,31 +84,37 @@ section.splash {
     }
 }
 
-section.cards {
+section.cards.index-list {
     container-name: cards;
     container-type: inline-size;
+    
+    &.fixed-grid>.grid {
+        justify-items: center;
 
-    &.fixed-grid>.grid>.cell {
-        container-name: cards;
-        container-type: inline-size;
+        &>.cell {
+            container-name: cards;
+            container-type: inline-size;
+            max-width: 1360px;
+            width: 90%;
 
-        &>article.card {
-            overflow: hidden;
+            &>article.card {
+                overflow: hidden;
 
-            &>figure {
-                align-self: center;
-            }
-
-            @container cards (width < 769px) {
-                &>.image {
-                    display: none;
+                &>figure {
+                    align-self: center;
                 }
-            }
 
-            @container cards (width >= 769px) {
-                display: grid;
-                grid-template-columns: 40% 60%;
-                max-height: 360px;
+                @container cards (width < 769px) {
+                    &>.image {
+                        display: none;
+                    }
+                }
+
+                @container cards (width >=769px) {
+                    display: grid;
+                    grid-template-columns: 30% 70%;
+                    max-height: 360px;
+                }
             }
         }
     }
