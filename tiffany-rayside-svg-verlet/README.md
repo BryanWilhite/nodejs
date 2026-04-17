@@ -26,4 +26,4 @@ I wrapped [your JavaScript](./index.js) in the `window.onload` event handler. I 
 * Tiffany Rayside on Twitter ([@tmrDevelops](https://twitter.com/tmrDevelops))
 * “[PostCSS – A Comprehensive Introduction](https://www.smashingmagazine.com/2015/12/introduction-to-postcss/)”
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

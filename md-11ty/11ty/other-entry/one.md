@@ -14,4 +14,4 @@ Yes:
 Writing docs/one-from-json.html from ./other-entry/one.md.
 ```
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

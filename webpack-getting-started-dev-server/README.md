@@ -26,4 +26,4 @@ Today `webpack-dev-server` along with the other packages in all of these samples
 
 These samples build upon the work done in the `webpack-getting-started/webpack-demo` [folder](../webpack-getting-started/webpack-demo).
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

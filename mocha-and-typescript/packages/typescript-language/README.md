@@ -80,4 +80,4 @@ The `modules/` [sample](./src/modules) (run `npm run src-modules`) introduces th
 
 The `set-object/` [sample](./src/set-object) (run `npm run src-set-object`) compares `Set<T>` to `Array<T>` (see “Array and Set compared” under [Keyed collections](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Keyed_collections)).
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

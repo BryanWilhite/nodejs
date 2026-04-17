@@ -12,4 +12,4 @@ As of this writing, I ignorantly assume that the standard `readystatechange` eve
 
 * [View Sample Live on Netlify](https://rasx-node-js.netlify.app/mdn-window-and-document-events/)
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

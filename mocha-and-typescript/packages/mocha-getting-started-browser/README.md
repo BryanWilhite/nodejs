@@ -60,4 +60,4 @@ npx lerna create @songhay/mocha-getting-started-browser --description "see READM
 npx lerna bootstrap
 ```
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

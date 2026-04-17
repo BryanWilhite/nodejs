@@ -13,4 +13,4 @@ npm i -D clean-css-cli sass
 
 ⚠ It is very important to not confuse `sass` with `node-sass` [[GitHub](https://github.com/sass/node-sass)] (BTW: `clean-css` [[GitHub](https://github.com/jakubpawlowicz/clean-css)] is for server-side `node` programming, _not_ for `npm` scripting). I have wasted my time before and would like to avoid this in future.
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

@@ -95,4 +95,4 @@ The `mdc-typography--headline1` class (or its equivalent) would be declared in t
 - “[Custom Collections](https://www.pborenstein.com/posts/collections/#custom-collections)”
 - [eleventy starter projects](https://www.11ty.dev/docs/starter/)
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

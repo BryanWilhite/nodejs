@@ -95,4 +95,4 @@ Running `npx ng serve` should show the new link from the `workspace/songhay/` [f
 * “[Angular Workspace: No Application for You!](https://blog.angularindepth.com/angular-workspace-no-application-for-you-4b451afcc2ba)”
 * “[ngHouston—Reusable Angular CLI Libraries w/ Lazy Loaded Routes w/ Ed Pelc](https://www.youtube.com/watch?v=nP7Yodr-WUA)”
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

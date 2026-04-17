@@ -18,4 +18,4 @@ In `package.json` change `main`:
 "main": "app.js"
 ```
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

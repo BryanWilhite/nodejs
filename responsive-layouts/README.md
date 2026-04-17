@@ -93,4 +93,4 @@ npm i \
 - <http://1linelayouts.glitch.me/>
 - <https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids>
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

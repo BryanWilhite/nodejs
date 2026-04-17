@@ -6,4 +6,4 @@ Will `11ty` ignore this file? Here is the answer:
 Writing docs/not_in_a_collection/index.html from ./not_in_a_collection.md.
 ```
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

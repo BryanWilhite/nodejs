@@ -72,4 +72,4 @@ Use of the `addGlobalData` method \[📖 [docs](https://www.11ty.dev/docs/data-g
 - <https://github.com/11ty/eleventy-base-blog>
 - “[Introducing npx: an npm package runner](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b)”
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

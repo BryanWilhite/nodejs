@@ -104,4 +104,4 @@ ___
 - “[HTML5 URLs and the `<base href>`](https://angular.io/guide/router#html5-urls-and-the--base-href)”
 - the [CanDeactivate](https://angular.io/api/router/CanDeactivate) guard and the Routing Module (not to be confused with `RouterModule`)
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

@@ -24,4 +24,4 @@ The `common-tags` package [[GitHub](https://github.com/zspecza/common-tags)] was
 
 ⚠`ts-node` had to be installed to prevent an error of the form `Property 'observable' does not exist on type 'SymbolConstructor'` [📖 [issue](https://github.com/ReactiveX/rxjs/issues/3674)].
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

@@ -14,4 +14,4 @@ Writing docs/not_the_default.html from ./not_in_a_collection_with_permalink.md.
 
 See: <https://www.11ty.dev/docs/permalinks/#remapping-output-(permalink)>
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

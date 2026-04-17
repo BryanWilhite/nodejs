@@ -74,4 +74,4 @@ One way to address this mismatch is to define two different `tsconfig*.json` fil
 
 These template features is what sets `html-webpack-plugin` apart from `file-loader` [[GitHub](https://github.com/webpack-contrib/file-loader)].
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

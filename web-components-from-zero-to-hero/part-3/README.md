@@ -26,4 +26,4 @@ The `reflect: true` declaration addresses the whole “reflecting properties to 
 
 > Additionally, and perhaps most importantly, the static properties getter will react to changes and trigger a rerender when a property has changed. We no longer have to call render functions manually to update, we just need to update a property, and LitElement will do all the work for us. …You can still use custom getters and setters, but you’ll have to manually call `this.requestUpdate()` to trigger a rerender. Custom getters and setters can be useful for computed properties.
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

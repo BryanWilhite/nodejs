@@ -155,4 +155,4 @@ sudo npm install npm@latest -g
 
 According to [the official docs](https://docs.npmjs.com/getting-started/installing-node#updating-npm), “npm gets updated more frequently than Node does.”
 
-@[BryanWilhite](https://twitter.com/bryanwilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

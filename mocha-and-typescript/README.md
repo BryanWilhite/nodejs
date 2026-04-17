@@ -27,4 +27,4 @@ I have forced to look into this possibility of abandonment after getting a `ERR_
 
 On the other hand, I could be mistaken by all of this and was just one `tsconfig.json` editing session away from resolving my issue.
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

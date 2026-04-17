@@ -63,4 +63,4 @@ The leading period in `.index=${index}` addresses the attribute-property mismatc
 
 The leading ampersand in `@onRemove=${this._removeTodo}` eliminates all of the previous `CustomElement` ceremony.
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

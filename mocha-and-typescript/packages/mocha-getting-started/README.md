@@ -47,4 +47,4 @@ See “[Understanding `setImmediate()`](https://nodejs.dev/understanding-setimme
 
 > This feature is the inverse of `.only()`. By appending `.skip()`, you may tell Mocha to simply ignore test case(s). Anything skipped will be marked as [pending](https://mochajs.org/#pending-tests), and reported as such.
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

@@ -25,4 +25,4 @@ This explains why most MDN samples appends the Web Component script _after_ its 
 
 The source code for these samples should all be in the `web-components-examples` [repo](https://github.com/mdn/web-components-examples).
 
-@[BryanWilhite](https://twitter.com/BryanWilhite)
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼
