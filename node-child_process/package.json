@@ -1,0 +1,16 @@
+{
+  "name": "child_process",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "hello-world": "node hello-world.js",
+    "hello-world-with-args": "node hello-world-with-args.js Saturn",
+    "hello-world-with-nuget": "node hello-world-with-nuget.js \"Jupiter with Europa\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
