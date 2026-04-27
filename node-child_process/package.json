@@ -7,6 +7,7 @@
     "start": "node index.js",
     "hello-world": "node hello-world.js",
     "hello-world-with-args": "node hello-world-with-args.js Saturn",
+    "hello-world-with-args-err": "node hello-world-with-args.js do_err",
     "hello-world-with-nuget": "node hello-world-with-nuget.js \"Jupiter with Europa\""
   },
   "keywords": [],
