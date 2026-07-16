@@ -1,8 +1,8 @@
-import '../jquery-shared/dist/scripts';
+import '../_shared/scripts/scripts';
 import '../_shared/node_modules/bootstrap/dist/js/bootstrap';
 import './node_modules/jquery-validation/dist/jquery.validate';
 
-/// <reference path="../jquery-shared/node_modules/@types/jquery/index.d.ts" />
+/// <reference path="../_shared/node_modules/@types/jquery/index.d.ts" />
 /*jslint this, white, browser*/
 /*global jQuery*/
 (function($) {

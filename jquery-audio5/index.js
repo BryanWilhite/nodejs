@@ -1,4 +1,4 @@
-/// <reference path="../jquery-shared/node_modules/@types/jquery/index.d.ts" />
+/// <reference path="../_shared/node_modules/@types/jquery/index.d.ts" />
 /// <reference path="./node_modules/@types/underscore/index.d.ts" />
 /*jslint this, white, browser */
 /*global window, jQuery */

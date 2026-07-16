@@ -41,7 +41,7 @@ const sharedConfig = {
 const defaultConfig = {
     name: 'default-config',
     output: {
-        filename: 'scripts.js',
+        filename: 'jquery-iife.js',
         path: bundlesDirectory,
     },
     optimization: {

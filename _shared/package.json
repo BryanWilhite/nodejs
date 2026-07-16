@@ -1,11 +1,13 @@
 {
     "name": "rx-node-shared",
+    "type": "module",
     "version": "1.0.0",
     "description": "Here we have a dirt-simple shared location for Bulma.",
     "scripts": {
         "copy:css": "cp ./node_modules/bulma/css/bulma.css ./styles/",
         "copy:css-map": "cp ./node_modules/bulma/css/bulma.css.map ./styles/",
         "cp:d3": "cp ./node_modules/d3/dist/d3.js d3.js",
+        "jquery:build": "rollup -c",
         "update:npm": "npm-check -u"
     },
     "author": "Bryan D. Wilhite",
@@ -16,9 +18,12 @@
     },
     "dependencies": {
         "bulma": "^1.0.4",
-        "d3": "^7.7.0"
+        "d3": "^7.7.0",
+        "jquery": "^4.0.0"
     },
     "devDependencies": {
-        "@types/d3": "^7.4.0"
+        "@types/d3": "^7.4.0",
+        "@types/jquery": "^4.0.1",
+        "rollup": "^4.62.2"
     }
 }

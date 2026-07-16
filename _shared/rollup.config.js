@@ -3,7 +3,7 @@ export default {
         './node_modules/jquery/dist/jquery.js'
     ],
     output: {
-        file: './dist/scripts.js',
+        file: './scripts/jquery-iife.js',
         format: 'iife',
     },
     onwarn(warning) {

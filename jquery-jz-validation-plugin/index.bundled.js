@@ -15088,7 +15088,7 @@
 	return $;
 	}));
 
-	/// <reference path="../jquery-shared/node_modules/@types/jquery/index.d.ts" />
+	/// <reference path="../_shared/node_modules/@types/jquery/index.d.ts" />
 	/*jslint this, white, browser*/
 	/*global jQuery*/
 	(function($) {

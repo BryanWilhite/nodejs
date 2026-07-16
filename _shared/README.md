@@ -1,0 +1,24 @@
+# my shared directory
+
+This local folder is used as an alternative to a CDN for educational self-containment purposes.
+
+## jQuery
+
+It shares jQuery 2.x among the `/jquery-*` samples of this repository.Initial installation:
+
+```bash
+npm install --save ^
+    jquery@2 ^
+    @types/jquery
+npm run cp
+```
+
+### `@types/jquery`
+
+This folder is also used by the other folders in this repository to provide code-completion for jQuery JavaScript, using the `reference`, [triple-slash directive](https://www.typescriptlang.org/docs/handbook/triple-slash-directives.html).
+
+#### Related Links
+
+* [TypeSearch](https://microsoft.github.io/TypeSearch/)
+
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼
