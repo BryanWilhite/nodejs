@@ -8,6 +8,7 @@
         "copy:css-map": "cp ./node_modules/bulma/css/bulma.css.map ./styles/",
         "cp:d3": "cp ./node_modules/d3/dist/d3.js d3.js",
         "jquery:build": "rollup -c",
+        "start": "http-server ../ -o -c-1",
         "update:npm": "npm-check -u"
     },
     "author": "Bryan D. Wilhite",
