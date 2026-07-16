@@ -1,10 +1,12 @@
 {
-    "name": "css-shared",
+    "name": "rx-node-shared",
     "version": "1.0.0",
     "description": "Here we have a dirt-simple shared location for Bulma.",
     "scripts": {
         "copy:css": "cp ./node_modules/bulma/css/bulma.css ./styles/",
-        "copy:css-map": "cp ./node_modules/bulma/css/bulma.css.map ./styles/"
+        "copy:css-map": "cp ./node_modules/bulma/css/bulma.css.map ./styles/",
+        "cp:d3": "cp ./node_modules/d3/dist/d3.js d3.js",
+        "update:npm": "npm-check -u"
     },
     "author": "Bryan D. Wilhite",
     "license": "ISC",
@@ -13,6 +15,10 @@
         "url": "https://github.com/BryanWilhite/nodejs.git"
     },
     "dependencies": {
-        "bulma": "^1.0.4"
+        "bulma": "^1.0.4",
+        "d3": "^7.7.0"
+    },
+    "devDependencies": {
+        "@types/d3": "^7.4.0"
     }
 }

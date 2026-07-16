@@ -1,4 +1,4 @@
-/// <reference path="../d3-shared/node_modules/@types/d3/index.d.ts" />
+/// <reference path="../_shared/node_modules/@types/d3/index.d.ts" />
 window.onload = function(e) {
     var width = 420,
         barHeight = 20;

@@ -1,4 +1,4 @@
-/// <reference path="../d3-shared/node_modules/@types/d3/index.d.ts" />
+/// <reference path="../_shared/node_modules/@types/d3/index.d.ts" />
 window.onload = function(e) {
     var data = [4, 8, 15, 16, 23, 42];
     var width = 420,
