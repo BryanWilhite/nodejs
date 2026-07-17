@@ -9,6 +9,16 @@
 
         <link href="../_shared/styles/bulma.css" rel="stylesheet" />
         <style>
+            a:hover {
+                color: var(--bulma-primary-invert) !important;
+                background-color: var(--bulma-code) !important;
+            }
+
+            ul {
+                list-style-type: disc;
+                color: var(--bulma-code);
+            }
+
             .intro.section {
                 top: 0;
                 position: sticky;
@@ -40,9 +50,18 @@
 
                     indexData.segments.forEach(segment => {
                         const detailsClone = detailsTemplate.content.cloneNode(true);
+                        const documentCount = segment.documents.length;
+                        const documentCountEmoji = documentCount === 0 ?
+                            '🙁'
+                            :
+                            documentCount < 5 ?
+                                ''
+                                :
+                                '🤠';
 
                         detailsClone.querySelector('details > summary > code').textContent = segment.clientId;
-                        detailsClone.querySelector('details > .notification').textContent = segment.segmentName;
+                        detailsClone.querySelector('details > summary > span').textContent = `${documentCount} items ${documentCountEmoji}`;
+                        detailsClone.querySelector('details > .notification > p').textContent = segment.segmentName;
 
                         segment.documents.forEach(path => {
                             const safePath = DOMPurify.sanitize(path, { ALLOWED_URI_REGEXP: /^https?:/ });
@@ -52,7 +71,7 @@
                             a.textContent = safePath.replace('index.html', '');
                             a.setAttribute('href', safePath);
 
-                            detailsClone.querySelector('details > ul').appendChild(listItemClone);
+                            detailsClone.querySelector('details > .notification > ul').appendChild(listItemClone);
                         });
 
                         indexSection.appendChild(detailsClone);
@@ -85,15 +104,16 @@
 
         <template id="details-template">
             <details>
-                <summary class="is-size-3"><code></code></summary>
+                <summary class="is-size-3 mt-3"><code></code><span class="is-size-6"></span></summary>
                 <div class="notification mt-1 ml-6">
+                    <p></p>
+                    <ul class="mt-3 ml-3"></ul>
                 </div>
-                <ul class="mb-4 ml-6"></ul>
             </details>
         </template>
 
         <template id="list-item-template">
-            <li><a href=""></a></li>
+            <li class="is-size-4"><a href=""></a></li>
         </template>
     </body>
 
