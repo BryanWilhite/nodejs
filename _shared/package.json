@@ -6,7 +6,8 @@
     "scripts": {
         "copy:css": "cp ./node_modules/bulma/css/bulma.css ./styles/",
         "copy:css-map": "cp ./node_modules/bulma/css/bulma.css.map ./styles/",
-        "cp:d3": "cp ./node_modules/d3/dist/d3.js d3.js",
+        "cp:d3": "cp ./node_modules/d3/dist/scripts/d3.js ./scripts/",
+        "cp:dompurify": "cp ./node_modules/dompurify/dist/purify.js ./scripts/",
         "jquery:build": "rollup -c",
         "start": "http-server ../ -o -c-1",
         "update:npm": "npm-check -u"
@@ -20,6 +21,7 @@
     "dependencies": {
         "bulma": "^1.0.4",
         "d3": "^7.7.0",
+        "dompurify": "^3.4.12",
         "jquery": "^4.0.0"
     },
     "devDependencies": {
