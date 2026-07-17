@@ -1,2 +1,198 @@
 {
+    "inceptDate": "2026-07-16T23:24:45.500963",
+    "segmentName": "Node.js samples and experiments",
+    "documents": [
+        {
+            "clientId": "alpine-js",
+            "segmentName": "Nothing here yet. New material is on the way.",
+            "documents": []
+        },
+        {
+            "clientId": "angular",
+            "segmentName": "The latest official Angular walkthroughs.",
+            "documents": [
+                "angular-tour-of-heroes-2022/angular-tour-of-heroes/dist/angular-tour-of-heroes/index.html"
+            ]
+        },
+        {
+            "clientId": "astro",
+            "segmentName": "Nothing here yet. New material is on the way.",
+            "documents": []
+        },
+        {
+            "clientId": "bulma",
+            "segmentName": "Bulma CSS samples for Studio-wide conventions.",
+            "documents": [
+                "bulma-responsive-images/index.html"
+            ]
+        },
+        {
+            "clientId": "css",
+            "segmentName": "Largely historical CSS experiments and samples.",
+            "documents": [
+                "css-drop-down-menu/index.html",
+                "css-font-variant-ibm-plex/index.html",
+                "css-uncle-dave-ol-padded-box/index.html",
+                "css3-background-clip/index.html",
+                "css3-resizable-background-image/index.html"
+            ]
+        },
+        {
+            "clientId": "d3",
+            "segmentName": "D3.js experiments and walkthroughs.",
+            "documents": [
+                "d3-bostock-bar-charts/index.html"
+            ]
+        },
+        {
+            "clientId": "eleventy",
+            "segmentName": "Eleventy (a.k.a. Build Awesome) experiments and samples.",
+            "documents": [
+                "eleventy/11ty/index.html",
+                "eleventy/app-staging/entry/one/index.html",
+                "eleventy/app-staging/index.html",
+                "eleventy/app-staging/not_in_a_collection/index.html"
+            ]
+        },
+        {
+            "clientId": "elm",
+            "segmentName": "Elm experiments.",
+            "documents": []
+        },
+        {
+            "clientId": "html5",
+            "segmentName": "Experiments and samples for plain vanilla HTML5.",
+            "documents": [
+                "html5/audio-playlist/index.html",
+                "html5/index.html",
+                "html5/input-range-play-control/index.html",
+                "html5/input-range-volume-control/index.html",
+                "html5/video/index.html"
+            ]
+        },
+        {
+            "clientId": "jquery",
+            "segmentName": "Experiments and samples for jQuery.",
+            "documents": [
+                "jquery-amazon-images/index.html",
+                "jquery-audio5/index.html",
+                "jquery-index-block-headers/index.html",
+                "jquery-index-inline-headers/index.html",
+                "jquery-input-watermark/index.html",
+                "jquery-jz-validation-plugin/index.html",
+                "jquery-layout-responsive-strip-of-blocks/index.html",
+                "jquery-simple-slide-show/index.html",
+                "jquery-tables-row-column-highlight/index.html"
+            ]
+        },
+        {
+            "clientId": "karma",
+            "segmentName": "Samples based on tutorial material for Karma.",
+            "documents": []
+        },
+        {
+            "clientId": "mdn",
+            "segmentName": "Experiments and samples based on material from MDN (Mozilla Developer Network).",
+            "documents": [
+                "mdn-window-and-document-events/index.html"
+            ]
+        },
+        {
+            "clientId": "mermaid",
+            "segmentName": "Samples based on tutorial material for Mermaid.",
+            "documents": []
+        },
+        {
+            "clientId": "mocha",
+            "segmentName": "Samples based on researched material for Mocha.",
+            "documents": [
+                "mocha-and-typescript/packages/mocha-getting-started-browser/__tests__/step-1/index.html",
+                "mocha-and-typescript/packages/mocha-getting-started-browser/__tests__/step-2/index.html",
+                "mocha-and-typescript/packages/mocha-getting-started-browser/__tests__/step-3/index.html",
+                "mocha-and-typescript/packages/mocha-getting-started-browser/__tests__/step-4/index.html",
+                "mocha-and-typescript/packages/mocha-getting-started-browser/__tests__/step-5/index.html"
+            ]
+        },
+        {
+            "clientId": "node",
+            "segmentName": "Experiments and samples for Node.js.",
+            "documents": []
+        },
+        {
+            "clientId": "npm",
+            "segmentName": "Experiments and samples for Node Package Manager.",
+            "documents": []
+        },
+        {
+            "clientId": "react",
+            "segmentName": "Samples based on tutorial material for React.",
+            "documents": [
+                "react-hello-world/hello-world-ts/public/index.html",
+                "react-hello-world/hello-world/public/index.html"
+            ]
+        },
+        {
+            "clientId": "svg",
+            "segmentName": "Experiments and samples for SVG.",
+            "documents": [
+                "svg-and-object-element/index.html",
+                "svg-button/index.html",
+                "svg-codepen-logo-external/index.html",
+                "svg-codepen-logo/index.html",
+                "svg-coordinate-attributes/index.html",
+                "svg-path/index.html"
+            ]
+        },
+        {
+            "clientId": "tiffany-rayside",
+            "segmentName": "Samples based on material from Tiffany Rayside.",
+            "documents": [
+                "tiffany-rayside-canvas-topiary/index.html",
+                "tiffany-rayside-svg-animated-typing/index.html",
+                "tiffany-rayside-svg-goo-ey/index.html",
+                "tiffany-rayside-svg-morph/index.html",
+                "tiffany-rayside-svg-verlet/index.html"
+            ]
+        },
+        {
+            "clientId": "typescript",
+            "segmentName": "Experiments and samples based on tutorial material for Typescript.",
+            "documents": [
+                "typescript-and-ajax/index.html",
+                "typescript-and-modules/index.html"
+            ]
+        },
+        {
+            "clientId": "vite",
+            "segmentName": "Nothing here yet. New material is on the way.",
+            "documents": []
+        },
+        {
+            "clientId": "web-components",
+            "segmentName": "Experiments and samples based on tutorial material for Web Components.",
+            "documents": [
+                "web-components-from-zero-to-hero/part-1/index.html",
+                "web-components-from-zero-to-hero/part-2/index.html",
+                "web-components-from-zero-to-hero/part-3/index.html",
+                "web-components-lit-element/index.html",
+                "web-components-mdn/01-word-count-web-component/index.html",
+                "web-components-mdn/02-popup-info-box-web-component/index.html",
+                "web-components-mdn/03-expanding-list-web-component/index.html",
+                "web-components-mdn/04-life-cycle-callbacks/index.html",
+                "web-components-mdn/05-popup-info-box-external-stylesheet/index.html",
+                "web-components-mdn/06-simple-template/index.html",
+                "web-components-mdn/07-element-details/index.html"
+            ]
+        },
+        {
+            "clientId": "webpack",
+            "segmentName": "Samples based on tutorial material for webpack.",
+            "documents": [
+                "webpack-getting-started-dev-server/webpack-asset-management/dist/index.html",
+                "webpack-getting-started-dev-server/webpack-output-management/dist/index.html",
+                "webpack-getting-started/webpack-demo-typescript/dist/index.html",
+                "webpack-getting-started/webpack-demo/dist/index.html"
+            ]
+        }
+    ]
 }
