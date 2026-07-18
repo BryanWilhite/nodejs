@@ -51,7 +51,8 @@
                     indexData.segments.forEach(segment => {
                         const detailsClone = detailsTemplate.content.cloneNode(true);
                         const documentCount = segment.documents.length;
-                        const documentCountEmoji = documentCount === 0 ?
+                        const documentCountEmoji =
+                            documentCount === 0 ?
                             '🙁'
                             :
                             documentCount < 5 ?
