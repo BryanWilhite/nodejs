@@ -17,6 +17,10 @@
 
 ## self-educational road map 🧭🐾
 
-The first exercise is to translate all of the old `webpack*` samples in this repo over to the world of Vite.
+Planned exercises:
+
+- [x] Use `npm create vite@latest` to set up the default `vite-counter` project with vanilla Typescript (see [`vite-counter`](./vite-counter)) 🚜✨
+- [ ] Translate (and update) the old `eleventy` [sample](../eleventy/app-staging/) in this repo over to the world of Vite.
+- [ ] Translate all of the old `webpack*` samples in this repo over to the world of Vite.
 
 [Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼
