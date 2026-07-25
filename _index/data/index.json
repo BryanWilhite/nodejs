@@ -1,5 +1,5 @@
 {
-    "inceptDate": "2026-07-17T12:24:05.770738",
+    "inceptDate": "2026-07-24T18:53:32.749688",
     "segmentName": "Node.js samples and experiments",
     "segments": [
         {
@@ -164,8 +164,10 @@
         },
         {
             "clientId": "vite",
-            "segmentName": "Nothing here yet. New material is on the way.",
-            "documents": []
+            "segmentName": "Samples based on researched material for Vite.",
+            "documents": [
+                "vite-vanilla/vite-counter/index.html"
+            ]
         },
         {
             "clientId": "web-components",
