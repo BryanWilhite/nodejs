@@ -185,6 +185,7 @@
   },
   "active": "9ca2e8f1b7e4e64c",
   "lastOpenFiles": [
+    "eleventy.config.js",
     "index.html",
     "entry/entry.json",
     "_includes/layouts/entry.html",
@@ -201,7 +202,6 @@
     "entry/one.md",
     "entry",
     "attachments/Pasted image 20260725183712.png",
-    "attachments",
     "Pasted image 20260725183340.png",
     "eleventy_read_me.md"
   ]

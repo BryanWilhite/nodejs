@@ -18,6 +18,7 @@ To start building my directory structure, I open Obsidian and set up a new vault
 From the `vite-vanilla/vite-eleventy` [directory](../vite-eleventy/), I generate my eleventy directory structure within the vault [directory](./11ty/):
 
 ```bash
+mkdir _site
 mkdir 11ty \
     && mkdir -p 11ty/_data \
     && touch 11ty/_data/settings.json \
@@ -26,36 +27,44 @@ mkdir 11ty \
     && touch 11ty/_includes/layouts/entry.html \
     && touch 11ty/entry/entry.json \
     && touch 11ty/.eleventyignore \
+    && touch 11ty/.gitignore \
+    && touch 11ty/eleventy.config.js \
     && touch 11ty/index.html
 ```
 
 After which, my structure should look like this:
 
 ```bash
-$ tree 11ty
-11ty
-├── attachments
-│   ├── Pasted image 20260725183712.png
-│   └── Pasted image 20260725184754.png
-├── _data
-│   └── settings.json
-├── eleventy_read_me.md
-├── entry
-│   ├── entry.json
-│   └── one.md
-├── _includes
-│   └── layouts
-│       ├── base.html
-│       └── entry.html
-├── index.html
-├── not_in_a_collection.md
-├── not_in_a_collection_with_permalink.md
-└── other-entry
-    └── one.md
+$ tree .
+.
+├── 11ty
+│   ├── attachments
+│   │   ├── Pasted image 20260725183712.png
+│   │   └── Pasted image 20260725184754.png
+│   ├── _data
+│   │   └── settings.json
+│   ├── eleventy_read_me.md
+│   ├── entry
+│   │   ├── entry.json
+│   │   └── one.md
+│   ├── _includes
+│   │   └── layouts
+│   │       ├── base.html
+│   │       └── entry.html
+│   ├── index.html
+│   ├── not_in_a_collection.md
+│   ├── not_in_a_collection_with_permalink.md
+│   └── other-entry
+│       └── one.md
+├── README.md
+└── _site
 ```
 
-```bash
-mkdir app-staging
-```
+## eleventy file details
+
+| file | details |
+| - | - |
+| `11ty/_data/settings.json` | …a typical eleventy [global data file](https://www.11ty.dev/docs/data-global/) at the top of “the data cascade.” |
+| `11ty/entry/entry.json` | …declares that all Markdown files in the `11ty/entry/` directory use a specified layout HTML file [📖 [docs](https://www.11ty.dev/docs/data-template-dir/#apply-a-default-layout-to-multiple-templates)] |
 
 [Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼
