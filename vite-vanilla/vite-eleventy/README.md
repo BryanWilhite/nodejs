@@ -35,7 +35,7 @@ mkdir 11ty \
 After which, my structure should look like this:
 
 ```bash
-$ tree .
+tree -a .
 .
 ├── 11ty
 │   ├── attachments
@@ -43,10 +43,13 @@ $ tree .
 │   │   └── Pasted image 20260725184754.png
 │   ├── _data
 │   │   └── settings.json
+│   ├── eleventy.config.js
+│   ├── .eleventyignore
 │   ├── eleventy_read_me.md
 │   ├── entry
 │   │   ├── entry.json
 │   │   └── one.md
+│   ├── .gitignore
 │   ├── _includes
 │   │   └── layouts
 │   │       ├── base.html
@@ -54,6 +57,12 @@ $ tree .
 │   ├── index.html
 │   ├── not_in_a_collection.md
 │   ├── not_in_a_collection_with_permalink.md
+│   ├── .obsidian
+│   │   ├── appearance.json
+│   │   ├── app.json
+│   │   ├── core-plugins.json
+│   │   ├── graph.json
+│   │   └── workspace.json
 │   └── other-entry
 │       └── one.md
 ├── README.md
