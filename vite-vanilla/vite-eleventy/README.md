@@ -127,10 +127,11 @@ Selected details of the eleventy-relevant files in this sample:
 
 The `eleventy.config.js` [file](11ty/eleventy.config.js) has these notable additions:
 
-- Line 1 `import`s the static JSON file, `vite-vanilla/vite-eleventy/11ty/client-data/my.json` in order to add it to eleventy global data with the `addGlobalData` [📖 [docs](https://www.11ty.dev/docs/data-global-custom/)] call on line 12.
-- Line 14 targets the `client-data` directory of the Obsidian vault with `addPassthroughCopy` [📖 [docs](https://www.11ty.dev/docs/copy/)].
-- Line 15 targets the `public` directory of the Obsidian vault with `addPassthroughCopy` because this is a Vite convention that is apparently _not_ working through eleventy [📖 [docs](https://vite.dev/guide/assets#the-public-directory)].
-- Line 19 specifies the `output` directory [📖 [docs](https://www.11ty.dev/docs/config/#output-directory)].
+- Line 1 `import`s the `@11ty/eleventy-plugin-vite` plugin [📖 [docs](https://github.com/11ty/eleventy-plugin-vite#esm-eleventyjs-config)] and line 6 calls `addPlugin` to load it
+- Line 3 `import`s the static JSON file, `vite-vanilla/vite-eleventy/11ty/client-data/my.json` in order to add it to eleventy global data with the `addGlobalData` [📖 [docs](https://www.11ty.dev/docs/data-global-custom/)] call on line 16.
+- Line 18 targets the `client-data` [directory](./11ty/client-data) of the Obsidian vault with `addPassthroughCopy` [📖 [docs](https://www.11ty.dev/docs/copy/)].
+- Line 19 targets the `src` [directory](./11ty/src) of the Obsidian vault with `addPassthroughCopy` [📖 [docs](https://www.11ty.dev/docs/copy/)]; without this, Vite will not be able to load the Typescript source files.
+- Line 23 specifies the `output` directory [📖 [docs](https://www.11ty.dev/docs/config/#output-directory)].
 
 ## additional eleventy and Obsidian details
 
@@ -138,6 +139,5 @@ Each of the Markdown files in the Obsidian vault will go into detail about selec
 
 - processing (or lack thereof) for images pasted into Obsidian
 - JSON front matter support by eleventy (but not much by Obsidian)
-
 
 [Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼
