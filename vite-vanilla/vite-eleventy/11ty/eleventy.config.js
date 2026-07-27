@@ -12,6 +12,8 @@ export default function (config) {
     config.addGlobalData('staticJson', staticJson);
 
     config.addPassthroughCopy({'client-data': 'data'});
+    config.addPassthroughCopy({'public': '/'});
+    config.addPassthroughCopy('src');
 
     return {
         dir: {

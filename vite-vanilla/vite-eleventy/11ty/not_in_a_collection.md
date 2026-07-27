@@ -1,9 +1,9 @@
-# Markdown File Not a Collection
+1# Markdown File Not a Collection
 
-Will `11ty` ignore this file? Here is the answer:
+Will `11ty` ignore this file because it is not in an eleventy [collection](https://www.11ty.dev/docs/collections-api/)? Here is the answer:
 
 ```console
-Writing docs/not_in_a_collection/index.html from ./not_in_a_collection.md.
+[11ty] Writing ../_site/not_in_a_collection/index.html from ./not_in_a_collection.md (liquid)
 ```
 
 [Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

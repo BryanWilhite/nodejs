@@ -11,7 +11,7 @@
         <base href="{{ settings.url }}" />
 
         <link rel="canonical" href="{{ settings.url }}" />
-        <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
         <title>{% if title %}{{ title }} - {% endif %}{{ settings.siteName }}</title>
     </head>
@@ -29,6 +29,7 @@
             <span class="index"><a href="./entries/">[index]</a></span>
             <span class="copyright">&copy; {{ "now" | date: "%Y" }} {{ settings.author.name }}</span>
         </footer>
+        <script type="module" src="/src/main.ts"></script>
     </body>
 
 </html>

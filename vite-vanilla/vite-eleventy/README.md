@@ -19,31 +19,52 @@ From the `vite-vanilla/vite-eleventy` [directory](../vite-eleventy/), I generate
 
 ```bash
 touch .gitignore
-mkdir 11ty \
-    && mkdir -p 11ty/_data \
-    && touch 11ty/_data/settings.json \
-    && mkdir -p 11ty/_includes/layouts \
+
+mkdir -p 11ty/src \
+    && touch 11ty/src/main.ts
+
+mkdir -p 11ty/_data
+    && touch 11ty/_data/settings.json
+
+mkdir -p 11ty/_includes/layouts \
     && touch 11ty/_includes/layouts/base.html \
-    && touch 11ty/_includes/layouts/entry.html \
-    && mkdir client-data \
-    && touch client-data/my.csv \
-    && touch client-data/my.json \
+    && touch 11ty/_includes/layouts/entry.html
+
+mkdir -p 11ty/client-data \
+    && touch 11ty/client-data/my.csv \
+    && touch 11ty/client-data/my.json
+
+mkdir -p 11ty/entry \
     && touch 11ty/entry/entry.json \
     && touch 11ty/.eleventyignore \
     && touch 11ty/eleventy.config.js \
-    && touch 11ty/index.html \
-    && cd 11ty && npm init -y \
-    && npm pkg set name="rx-vite-eleventy" \
-    && npm pkg set type="module" \
-    && npm pkg set repository.type="git" \
-    && npm pkg set repository.url="https://github.com/BryanWilhite/nodejs/vite-vanilla/vite-eleventy" \
-    && npm i -D @11ty/eleventy @11ty/eleventy-plugin-vite @11ty/eleventy-plugin-rss \
-    && npm i d3-dsv \
-    && npm pkg set scripts.build="npx @11ty/eleventy" \
-    && npm pkg set scripts.clean="rm -rf _site && rm -rf .11ty-vite" \
-    && npm pkg set scripts.start="npx @11ty/eleventy --serve --quiet --incremental" \
-    && cd ..
+    && touch 11ty/index.html
+
+cd 11ty
+
+npm init -y
+npm pkg set name="rx-vite-eleventy"
+npm pkg set type="module"
+npm pkg set repository.type="git"
+npm pkg set repository.url="https://github.com/BryanWilhite/nodejs/vite-vanilla/vite-eleventy"
+
+npm i -D @11ty/eleventy @11ty/eleventy-plugin-vite @11ty/eleventy-plugin-rss typescript
+npm i d3-dsv
+
+touch tsconfig.json
+
+npm pkg set scripts.build="npx @11ty/eleventy"
+npm pkg set scripts.clean="rm -rf _site && rm -rf .11ty-vite"
+npm pkg set scripts.start="npx @11ty/eleventy --serve --quiet --incremental"
+
+cd ..
 ```
+
+…where:
+
+- the `11ty/src/main.ts` [file](11ty/src/main.ts) will be loaded by the `index.html` [file](11ty/index.html), following the pattern from the `vite-counter` [sample](../vite-counter/tsconfig.json)
+- `tsconfig.json` can be copied over from the `vite-counter` [sample](../vite-counter/tsconfig.json)
+- `d3-dsv` [🔗 [npm](https://www.npmjs.com/package/d3-dsv)] can be used to load the CSV [file](./11ty/client-data/my.csv) in our Obsidian vault
 
 After which, my structure should look like this:
 
@@ -81,7 +102,12 @@ $ tree -a -I node_modules .
 │   ├── other-entry
 │   │   └── one.md
 │   ├── package.json
-│   └── package-lock.json
+│   ├── package-lock.json
+│   ├── public
+│   │   └── favicon.svg
+│   ├── src
+│   │   └── main.ts
+│   └── tsconfig.json
 ├── .gitignore
 └── README.md
 ```
@@ -99,7 +125,19 @@ Selected details of the eleventy-relevant files in this sample:
 
 ## `eleventy.config.js` details
 
-## Obsidian `Pasted image *.png` files
+The `eleventy.config.js` [file](11ty/eleventy.config.js) has these notable additions:
+
+- Line 1 `import`s the static JSON file, `vite-vanilla/vite-eleventy/11ty/client-data/my.json` in order to add it to eleventy global data with the `addGlobalData` [📖 [docs](https://www.11ty.dev/docs/data-global-custom/)] call on line 12.
+- Line 14 targets the `client-data` directory of the Obsidian vault with `addPassthroughCopy` [📖 [docs](https://www.11ty.dev/docs/copy/)].
+- Line 15 targets the `public` directory of the Obsidian vault with `addPassthroughCopy` because this is a Vite convention that is apparently _not_ working through eleventy [📖 [docs](https://vite.dev/guide/assets#the-public-directory)].
+- Line 19 specifies the `output` directory [📖 [docs](https://www.11ty.dev/docs/config/#output-directory)].
+
+## additional eleventy and Obsidian details
+
+Each of the Markdown files in the Obsidian vault will go into detail about selected issues:
+
+- processing (or lack thereof) for images pasted into Obsidian
+- JSON front matter support by eleventy (but not much by Obsidian)
 
 
 [Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼

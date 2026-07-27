@@ -2,20 +2,25 @@
     title: 'entry one'
     date: 2019-06-24
 ---
-
 This is a test of the markdown features available when `markdownTemplateEngine: "liquid"` in `.eleventy.js`.
 
 This _should_ be the **second** paragraph in a second set of `p` elements.
 
-### tables
+## tables
 
-Table ||
----- | ---- |
-cell 1 | cell 2
+| one              | two                                    |
+| ---------------- | -------------------------------------- |
+| This is the one. | This is not the one but still a table. |
+| Another row.     | Yes, another one.                      |
 
 ### images
 
-![kitten](http://placekitten.com/200/300)
+<figure> 
+    <a href="https://www.youtube.com/watch?v=bLoukY64gYk"> 
+        <img alt="OBSIDIAN: Getting Started, Facts &amp; Pricing" src="https://img.youtube.com/vi/bLoukY64gYk/maxresdefault.jpg" width="480" /> 
+    </a> 
+    <p><small>OBSIDIAN: Getting Started, Facts &amp; Pricing</small></p> 
+</figure> 
 
 ### code block: console
 
@@ -23,7 +28,7 @@ cell 1 | cell 2
 Hello world.
 ```
 
-### code block: c#
+### code block: C\#
 
 ```c#
 var x = 10;
@@ -34,3 +39,5 @@ var x = 10;
 ```sql
 SET @x INT = 10;
 ```
+
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼
