@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "288dc3fcce72c95e",
+        "id": "c7f85cecc7697a71",
         "type": "tabs",
         "children": [
           {
-            "id": "9ca2e8f1b7e4e64c",
+            "id": "34146e4238e4298b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -183,8 +183,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "9ca2e8f1b7e4e64c",
+  "active": "34146e4238e4298b",
   "lastOpenFiles": [
+    "other-entry/one.md",
+    "eleventy_read_me.md",
     "eleventy.config.js",
     "index.html",
     "entry/entry.json",
@@ -195,14 +197,11 @@
     "_data/settings.json",
     "_data",
     "attachments/Pasted image 20260725184754.png",
-    "other-entry/one.md",
     "not_in_a_collection.md",
     "not_in_a_collection_with_permalink.md",
     "other-entry",
     "entry/one.md",
-    "entry",
     "attachments/Pasted image 20260725183712.png",
-    "Pasted image 20260725183340.png",
-    "eleventy_read_me.md"
+    "Pasted image 20260725183340.png"
   ]
 }

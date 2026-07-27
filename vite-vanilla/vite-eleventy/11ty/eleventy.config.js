@@ -1,8 +1,6 @@
-import staticJson from '../app-staging/data/static.json' with { type: 'json' };
+import staticJson from './client-data/my.json' with { type: 'json' };
 
 export default function (config) {
-    config.addGlobalData('staticJson', staticJson);
-
     config.addCollection('entries', collection => {
         return collection.getFilteredByGlob('entry/*.md');
     });
@@ -11,9 +9,12 @@ export default function (config) {
         return collection.getFilteredByGlob('other-entry/*.md');
     });
 
+    config.addGlobalData('staticJson', staticJson);
+
+    config.addPassthroughCopy({'client-data': 'data'});
+
     return {
         dir: {
-            input: ".",
             output: "../_site"
         },
         htmlTemplateEngine: "liquid",

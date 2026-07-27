@@ -1,0 +1,28 @@
+{
+    "name": "rx-vite-eleventy",
+    "version": "1.0.0",
+    "description": "",
+    "main": "eleventy.config.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "npx @11ty/eleventy",
+        "clean": "rm -rf ../_site && rm -rf .11ty-vite",
+        "start": "npx @11ty/eleventy --serve --quiet --incremental"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BryanWilhite/nodejs/vite-vanilla/vite-eleventy"
+    },
+    "devDependencies": {
+        "@11ty/eleventy": "^3.1.2",
+        "@11ty/eleventy-plugin-rss": "^3.0.0",
+        "@11ty/eleventy-plugin-vite": "^8.0.0"
+    },
+    "dependencies": {
+        "d3-dsv": "^3.0.1"
+    }
+}
