@@ -19,11 +19,8 @@ export default function (config) {
     config.addPassthroughCopy('src');
 
     return {
-        dir: {
-            output: "../_site"
-        },
-        htmlTemplateEngine: "liquid",
-        markdownTemplateEngine: "liquid",
-        templateFormats: ["html", "md", "css"]
+        htmlTemplateEngine: 'liquid',
+        markdownTemplateEngine: 'liquid',
+        templateFormats: ['html', 'md', 'css']
     };
 };

@@ -36,8 +36,8 @@ mkdir -p 11ty/client-data \
 
 mkdir -p 11ty/entry \
     && touch 11ty/entry/entry.json \
+    && touch 11ty/.eleventy.js \
     && touch 11ty/.eleventyignore \
-    && touch 11ty/eleventy.config.js \
     && touch 11ty/index.html
 
 cd 11ty
@@ -54,16 +54,16 @@ npm i d3-fetch
 
 touch tsconfig.json
 
-npm pkg set scripts.build="npx @11ty/eleventy"
-npm pkg set scripts.clean="rm -rf _site && rm -rf .11ty-vite"
-npm pkg set scripts.start="npx @11ty/eleventy --serve --quiet --incremental"
+npm pkg set scripts.build="npx @11ty/eleventy --output=../dist"
+npm pkg set scripts.clean="rm -rf _site"
+npm pkg set scripts.start="npx @11ty/eleventy --serve --quiet"
 
 cd ..
 ```
 
 …where:
 
-- the `11ty/src/main.ts` [file](11ty/src/main.ts) will be loaded by the `index.html` [file](11ty/index.html), following the pattern from the `vite-counter` [sample](../vite-counter/tsconfig.json)
+- the `11ty/src/main.ts` [file](11ty/src/main.ts) will be loaded by the `index.html` [file](11ty/index.html), following the pattern from the `vite-counter` [sample](../vite-counter/)
 - `tsconfig.json` can be copied over from the `vite-counter` [sample](../vite-counter/tsconfig.json)
 - `d3-fetch` [🔗 [npm](https://www.npmjs.com/package/d3-fetch)] can be used to load the CSV [file](./11ty/client-data/my.csv) in our Obsidian vault
 
@@ -81,8 +81,8 @@ $ tree -a -I node_modules .
 │   │   └── my.json
 │   ├── _data
 │   │   └── settings.json
-│   ├── eleventy.config.js
 │   ├── .eleventyignore
+│   ├── .eleventy.js
 │   ├── eleventy_read_me.md
 │   ├── entry
 │   │   ├── entry.json
@@ -121,23 +121,25 @@ Selected details of the eleventy-relevant files in this sample:
 | - | - |
 | `11ty/_data/settings.json` | …a typical eleventy [global data file](https://www.11ty.dev/docs/data-global/) at the top of “the data cascade.” |
 | `11ty/entry/entry.json` | …declares that all Markdown files in the `11ty/entry/` directory use a specified layout HTML file [📖 [docs](https://www.11ty.dev/docs/data-template-dir/#apply-a-default-layout-to-multiple-templates)] |
-| `eleventy.config.js` | …this optional file explored below (see “`eleventy.config.js` details”) [📖 [docs](https://www.11ty.dev/docs/config/)] |
 | `.eleventyignore` | …omits assets from being processed by eleventy and can partition or segment the rendering of large eleventy publications [📖 [docs](https://www.11ty.dev/docs/ignores/)] |
+| `.eleventy.js` | …this optional file explored below (see “`.eleventy.js` details”) [📖 [docs](https://www.11ty.dev/docs/config/)] |
 
-## `eleventy.config.js` details
+## `.eleventy.js` details
 
-The `eleventy.config.js` [file](11ty/eleventy.config.js) has these notable additions:
+The `.eleventy.js` [file](11ty/.eleventy.js) has these notable additions:
 
 - Line 1 `import`s the `@11ty/eleventy-plugin-vite` plugin [📖 [docs](https://github.com/11ty/eleventy-plugin-vite#esm-eleventyjs-config)] and line 6 calls `addPlugin` to load it
 - Line 3 `import`s the static JSON file, `vite-vanilla/vite-eleventy/11ty/client-data/my.json` in order to add it to eleventy global data with the `addGlobalData` [📖 [docs](https://www.11ty.dev/docs/data-global-custom/)] call on line 16.
 - Line 18 targets the `client-data` [directory](./11ty/client-data) of the Obsidian vault with `addPassthroughCopy` [📖 [docs](https://www.11ty.dev/docs/copy/)].
 - Line 19 targets the `src` [directory](./11ty/src) of the Obsidian vault with `addPassthroughCopy` [📖 [docs](https://www.11ty.dev/docs/copy/)]; without this, Vite will not be able to load the Typescript source files.
-- Line 23 specifies the `output` directory [📖 [docs](https://www.11ty.dev/docs/config/#output-directory)].
+
+Note how an output directory is _not_ specified in the `.eleventy.js` file. This is done because Vite needs to operate in sight of the `node_modules` directory at design time. By default, Vite will generate a `_site` directory next to the the `node_modules` directory when we `npm start`. I tried customizing this with guidance [from the eleventy side](https://github.com/11ty/eleventy-plugin-vite#options) and the Vite side but failed 😐⌛ 🐇🕳️
 
 ## additional eleventy and Obsidian details
 
-Each of the Markdown files in the Obsidian vault will go into detail about selected issues:
+Each of the Markdown files in the Obsidian vault will go into detail about selected issues, including:
 
+- the power of eleventy permalinks [📖 [docs](https://www.11ty.dev/docs/permalinks/)]
 - processing (or lack thereof) for images pasted into Obsidian
 - JSON front matter support by eleventy (but not much by Obsidian)
 
