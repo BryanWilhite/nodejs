@@ -7,7 +7,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "npx @11ty/eleventy",
         "clean": "rm -rf ../_site && rm -rf .11ty-vite",
-        "start": "npx @11ty/eleventy --serve --quiet --incremental"
+        "start": "npx @11ty/eleventy --serve --quiet"
     },
     "keywords": [],
     "author": "",
@@ -21,9 +21,10 @@
         "@11ty/eleventy": "^3.1.2",
         "@11ty/eleventy-plugin-rss": "^3.0.0",
         "@11ty/eleventy-plugin-vite": "^8.0.0",
+        "@types/d3-fetch": "^3.0.7",
         "typescript": "^7.0.2"
     },
     "dependencies": {
-        "d3-dsv": "^3.0.1"
+        "d3-fetch": "^3.0.1"
     }
 }

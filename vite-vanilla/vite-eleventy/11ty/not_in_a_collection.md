@@ -1,4 +1,8 @@
-1# Markdown File Not a Collection
+---
+layout: layouts/entry.html
+title: Markdown File Not a Collection
+---
+# Markdown File Not a Collection
 
 Will `11ty` ignore this file because it is not in an eleventy [collection](https://www.11ty.dev/docs/collections-api/)? Here is the answer:
 

@@ -1,5 +1,7 @@
 ---
+layout: layouts/entry.html
 permalink: not_the_default.html
+title: Markdown File Not a Collection with `permalink`
 ---
 # Markdown File Not a Collection with `permalink`
 

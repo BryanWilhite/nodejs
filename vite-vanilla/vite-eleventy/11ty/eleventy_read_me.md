@@ -1,3 +1,7 @@
+---
+layout: layouts/entry.html
+title: eleventy README
+---
 >[!important]
 >I have renamed this file from `Welcome` to `eleventy_read_me`🚜
 >

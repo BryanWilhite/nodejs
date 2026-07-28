@@ -8,7 +8,7 @@
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <base href="{{ settings.url }}" />
+        <base href="/" />
 
         <link rel="canonical" href="{{ settings.url }}" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -17,16 +17,11 @@
     </head>
 
     <body>
-        <header>
-            <h1>{{ settings.siteName }}</h1>
-            <h2>{{ settings.description }}</h2>
-        </header>
         <main>
             {{ content }}
         </main>
         <footer>
             <span class="home"><a href="{{ settings.url }}">[home]</a></span>
-            <span class="index"><a href="./entries/">[index]</a></span>
             <span class="copyright">&copy; {{ "now" | date: "%Y" }} {{ settings.author.name }}</span>
         </footer>
         <script type="module" src="/src/main.ts"></script>

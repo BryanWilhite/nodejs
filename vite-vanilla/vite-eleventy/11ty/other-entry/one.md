@@ -1,6 +1,8 @@
 ---json
 {
-    "permalink": "./one-from-json.html"
+    "permalink": "./one-from-json.html",
+    "layout": "layouts/entry.html",
+    "title": "other entry"
 }
 ---
 # Markdown File in a Collection with JSON `permalink`

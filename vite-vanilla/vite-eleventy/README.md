@@ -49,7 +49,8 @@ npm pkg set repository.type="git"
 npm pkg set repository.url="https://github.com/BryanWilhite/nodejs/vite-vanilla/vite-eleventy"
 
 npm i -D @11ty/eleventy @11ty/eleventy-plugin-vite @11ty/eleventy-plugin-rss typescript
-npm i d3-dsv
+npm i -D @types/d3-fetch
+npm i d3-fetch
 
 touch tsconfig.json
 
@@ -64,7 +65,7 @@ cd ..
 
 - the `11ty/src/main.ts` [file](11ty/src/main.ts) will be loaded by the `index.html` [file](11ty/index.html), following the pattern from the `vite-counter` [sample](../vite-counter/tsconfig.json)
 - `tsconfig.json` can be copied over from the `vite-counter` [sample](../vite-counter/tsconfig.json)
-- `d3-dsv` [🔗 [npm](https://www.npmjs.com/package/d3-dsv)] can be used to load the CSV [file](./11ty/client-data/my.csv) in our Obsidian vault
+- `d3-fetch` [🔗 [npm](https://www.npmjs.com/package/d3-fetch)] can be used to load the CSV [file](./11ty/client-data/my.csv) in our Obsidian vault
 
 After which, my structure should look like this:
 

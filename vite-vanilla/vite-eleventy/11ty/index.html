@@ -2,6 +2,55 @@
 layout: layouts/base.html
 ---
 
-<h1>Hello World!</h1>
+<h1>Hello Publication!</h1>
 
-<h2>report from static data</h2>
+<h2 id="collections">eleventy collections</h2>
+
+<h3><code>entries</code> collection</h3>
+<ul>
+{%- for d in collections.entries -%}
+    <li><a href="{{ d.url }}">{{ d.data.title }}</a></li>
+{%- endfor -%}
+</ul>
+
+<h3><code>others</code> collection</h3>
+<ul>
+{%- for d in collections.others -%}
+    <li><a href="{{ d.url }}">{{ d.data.title }}</a></li>
+{%- endfor -%}
+</ul>
+
+<h3>default <code>all</code> collection</h3>
+<ul>
+{%- for d in collections.all -%}
+    <li>
+        <a href="{{ d.url }}">{% if d.data.title %}{{ d.data.title }}{% else %}[no title]{% endif %}</a>
+    </li>
+{%- endfor -%}
+</ul>
+
+<h2 id="csv-data">CSV data</h2>
+
+<table id="csv-table">
+    <thead>
+        <th>ID</th><th>name</th><th>score</th>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<h2 id="global-data">eleventy global data</h2>
+<table>
+    <thead>
+        <th>date</th><th>temperature</th><th>condition</th>
+    </thead>
+    <tbody>
+{%- for observation in staticJson -%}
+        <tr>
+            <td>{{ observation.date }}</td>
+            <td>{{ observation.temperature }}</td>
+            <td>{{ observation.condition }}</td>
+        </tr>
+{%- endfor -%}
+    </tbody>
+</table>
