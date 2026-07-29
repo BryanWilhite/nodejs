@@ -1,5 +1,9 @@
 # Markdown-driving web sites with eleventy (and Vite—and Obsidian)
 
+>[!error]
+>This sample is not working correctly 🙁 Read [additional note](./BROKEN.md) for details 🐇🕳️
+>
+
 [eleventy](https://11ty.io) is the current static-site generator solution of the Songhay Studio. These are the main reasons why eleventy is the current choice:
 
 - 11ty uses several templating engines, `liquid` [[docs](https://help.shopify.com/en/themes/liquid)] being the default.
