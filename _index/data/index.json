@@ -1,5 +1,5 @@
 {
-    "inceptDate": "2026-07-28T18:40:45.711067",
+    "inceptDate": "2026-07-28T18:49:42.848803",
     "segmentName": "Node.js samples and experiments",
     "segments": [
         {
@@ -167,10 +167,7 @@
             "segmentName": "Samples based on researched material for Vite.",
             "documents": [
                 "vite-vanilla/vite-counter/dist/index.html",
-                "vite-vanilla/vite-eleventy/dist/eleventy_read_me/index.html",
-                "vite-vanilla/vite-eleventy/dist/entry/one/index.html",
-                "vite-vanilla/vite-eleventy/dist/index.html",
-                "vite-vanilla/vite-eleventy/dist/not_in_a_collection/index.html"
+                "vite-vanilla/vite-eleventy/dist/index.html"
             ]
         },
         {
