@@ -5,7 +5,7 @@
     "main": "eleventy.config.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "npx @11ty/eleventy --output=../dist",
+        "build": "tsc && npx @11ty/eleventy --output=../dist",
         "clean": "rm -rf ./_site",
         "start": "npx @11ty/eleventy --serve --quiet"
     },

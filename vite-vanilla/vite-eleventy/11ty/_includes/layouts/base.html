@@ -8,10 +8,8 @@
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <base href="/" />
-
         <link rel="canonical" href="{{ settings.url }}" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
 
         <title>{% if title %}{{ title }} - {% endif %}{{ settings.siteName }}</title>
     </head>
@@ -24,7 +22,7 @@
             <span class="home"><a href="{{ settings.url }}">[home]</a></span>
             <span class="copyright">&copy; {{ "now" | date: "%Y" }} {{ settings.author.name }}</span>
         </footer>
-        <script type="module" src="/src/main.ts"></script>
+        <script type="module" src="./src/main.ts"></script>
     </body>
 
 </html>

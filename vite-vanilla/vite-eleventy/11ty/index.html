@@ -8,25 +8,25 @@ layout: layouts/base.html
 
 <h3><code>entries</code> collection</h3>
 <ul>
-{%- for d in collections.entries -%}
-    <li><a href="{{ d.url }}">{{ d.data.title }}</a></li>
-{%- endfor -%}
+{% for d in collections.entries %}
+    <li><a href=".{{ d.url }}">{{ d.data.title }}</a></li>
+{% endfor %}
 </ul>
 
 <h3><code>others</code> collection</h3>
 <ul>
-{%- for d in collections.others -%}
-    <li><a href="{{ d.url }}">{{ d.data.title }}</a></li>
-{%- endfor -%}
+{% for d in collections.others %}
+    <li><a href=".{{ d.url }}">{{ d.data.title }}</a></li>
+{% endfor %}
 </ul>
 
 <h3>default <code>all</code> collection</h3>
 <ul>
-{%- for d in collections.all -%}
+{% for d in collections.all %}
     <li>
-        <a href="{{ d.url }}">{% if d.data.title %}{{ d.data.title }}{% else %}[no title]{% endif %}</a>
+        <a href=".{{ d.url }}">{% if d.data.title %}{{ d.data.title }}{% else %}[no title]{% endif %}</a>
     </li>
-{%- endfor -%}
+{% endfor %}
 </ul>
 
 <h2 id="csv-data">CSV data</h2>
@@ -50,12 +50,12 @@ layout: layouts/base.html
         <th>date</th><th>temperature</th><th>condition</th>
     </thead>
     <tbody>
-{%- for observation in staticJson -%}
+{% for observation in staticJson %}
         <tr>
             <td>{{ observation.date }}</td>
             <td>{{ observation.temperature }}</td>
             <td>{{ observation.condition }}</td>
         </tr>
-{%- endfor -%}
+{% endfor %}
     </tbody>
 </table>
