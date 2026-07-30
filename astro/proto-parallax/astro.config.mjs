@@ -6,8 +6,7 @@ import { defineConfig, fontProviders } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://rasx-node-js.netlify.app/',
-    base: './',
+    site: 'https://rasx-node-js.netlify.app/astro/proto-parallax/dist',
     integrations: [mdx(), sitemap()],
     fonts: [
         {

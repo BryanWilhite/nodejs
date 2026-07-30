@@ -1,5 +1,5 @@
 {
-    "inceptDate": "2026-07-28T22:00:52.648934",
+    "inceptDate": "2026-07-29T18:44:57.003557",
     "segmentName": "Node.js samples and experiments",
     "segments": [
         {
@@ -16,8 +16,10 @@
         },
         {
             "clientId": "astro",
-            "segmentName": "Nothing here yet. New material is on the way.",
-            "documents": []
+            "segmentName": "Experiments mostly based on official samples from the Astro folks.",
+            "documents": [
+                "astro/proto-parallax/dist/index.html"
+            ]
         },
         {
             "clientId": "bulma",
