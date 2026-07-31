@@ -1,10 +1,9 @@
 ---
-title: 'Obsidian and Astro'
-description: 'An introduction to using Obsidian with Astro.'
-pubDate: 'Jul 30 2026'
-heroImage: '../src/assets/blog-placeholder-3.jpg'
+title: Obsidian and Astro
+description: An introduction to using Obsidian with Astro.
+pubDate: Jul 30 2026
+heroImage: ../../src/assets/blog-placeholder-3.jpg
 ---
-
 Instead of using a full-blown, online CMS like:
 
 - [Storyblok](https://www.storyblok.com/)

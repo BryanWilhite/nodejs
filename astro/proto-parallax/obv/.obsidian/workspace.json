@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "obsidian-and-astro.md",
+                "file": "blog/third-post.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "obsidian-and-astro"
+              "title": "third-post"
             }
           }
         ]
@@ -185,6 +185,11 @@
   },
   "active": "f23ac3cfdaa4289c",
   "lastOpenFiles": [
-    "obsidian-and-astro.md"
+    "blog/second-post.md",
+    "blog/obsidian-and-astro.md",
+    "blog/markdown-style-guide.md",
+    "blog/first-post.md",
+    "blog/third-post.md",
+    "blog"
   ]
 }
