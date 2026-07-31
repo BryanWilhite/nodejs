@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { Content as RxNote } from '../../obv/index.md';
 ---
 
 <!doctype html>
@@ -43,6 +44,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
                 <a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
                 by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
             </p>
+            <RxNote />
         </main>
         <Footer />
     </body>
