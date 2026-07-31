@@ -28,4 +28,6 @@ The second major change was injecting `import.meta.env.BASE_URL` all over the pl
 
 The third change was diving into the `astro/proto-parallax/src/content.config.ts` file and moving the location of the `blog` [content collection](https://docs.astro.build/en/guides/content-collections/). I wanted to move the Markdown files out of the `src` directory to a dedicated [Obsidian](https://obsidian.md/) vault which is treating Markdown more like a data source than source code. I go in to a bit more detail on this in [a Blog post](./blog/obsidian-and-astro) I also added to this starter template.
 
-Finally, the words you are reading now were loaded into the `astro/proto-parallax/src/pages/index.astro` file [via Typescript](https://docs.astro.build/en/guides/markdown-content/#file-imports-vs-content-collections-queries) which I think is freaking cool!
+Finally, the words you are reading now were loaded into the `astro/proto-parallax/src/pages/index.astro` file [via Typescript](https://docs.astro.build/en/guides/markdown-content/#file-imports-vs-content-collections-queries) with the `<Content />` component \[📖 [docs](https://docs.astro.build/en/guides/markdown-content/#the-content--component)\] which I think is freaking cool!
+
+[Bryan Wilhite is on LinkedIn](https://www.linkedin.com/in/wilhite)🇺🇸💼
