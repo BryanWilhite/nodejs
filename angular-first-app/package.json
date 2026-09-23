@@ -4,7 +4,7 @@
     "scripts": {
         "ng": "npx ng",
         "start": "npx ng serve --host 192.168.1.20",
-        "build": "npx ng build",
+        "build": "npx ng build --base-href /angular-first-app/dist/first-app/browser/",
         "watch": "npx ng build --watch --configuration development"
     },
     "private": true,
