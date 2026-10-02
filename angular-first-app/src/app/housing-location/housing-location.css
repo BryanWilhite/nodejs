@@ -21,7 +21,7 @@
 }
 
 .listing-location::before {
-    content: url('/public/location-pin.svg') / '';
+    content: url('../../public/location-pin.svg') / '';
 }
 
 section.listing a {
