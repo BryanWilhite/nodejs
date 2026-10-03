@@ -4,12 +4,18 @@ import { HousingLocationInfo } from './housing-location-info';
 @Service()
 export class HousingService {
 
-    getAllHousingLocations() : HousingLocationInfo[] {
+    getAllHousingLocations(): HousingLocationInfo[] {
         return this.housingLocationList;
     }
 
     getHousingLocationById(id: number): HousingLocationInfo | undefined {
         return this.housingLocationList.find((housingLocation) => housingLocation.id === id);
+    }
+
+    submitApplication(firstName: string, lastName: string, email: string) {
+        console.log(
+            `Homes application received: firstName: ${firstName}, lastName: ${lastName}, email: ${email}.`,
+        );
     }
 
     readonly baseUrl = 'https://angular.dev/assets/images/tutorials/common';
