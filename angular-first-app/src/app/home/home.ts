@@ -40,11 +40,12 @@ export class Home {
     filterResults(text: string) {
         if (!text) {
             this.filteredLocationList = this.housingLocationList;
+
             return;
         }
 
         this.filteredLocationList = this.housingLocationList.filter((housingLocation) =>
-            housingLocation?.city.toLowerCase().includes(text.toLowerCase()),
+            housingLocation?.city.toLowerCase().includes(text.toLowerCase())
         );
     }
 }
